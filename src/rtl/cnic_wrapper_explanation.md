@@ -5,7 +5,7 @@
 `cnic_wrapper` is the **top-level FPGA / emulation wrapper** for a Converged NIC (CNIC) SoC subsystem. It instantiates the main network-controller subsystem (`nac_ss`), generates the emulation clock tree, forces internal clocks and resets for prototyping, and provides per-port Ethernet PHY, I2C, and peripheral infrastructure for up to **NUM_PORTS** (default 8) network ports.
 
 **File:** `src/rtl/cnic_wrapper.sv`
-**Lines:** ~2 547
+**Lines:** ~2547
 
 ---
 
@@ -101,19 +101,21 @@ Approximately 950 lines declare internal `logic` / `wire` signals. These fall in
 
 An instance named `nsc_veloce_pll_inst` of `fpga_chs_car0` generates a full clock tree from the 20 MHz `ephy_refclk` input. It produces divided and domain-specific clocks:
 
-| Output Clock | Approx. Frequency | Purpose |
-|-------------|-------------------|---------|
-| `core_clk` (gclk1_div2) | ~10 MHz (emu) | Core domain for many NSS IPs |
+| Output Clock | ASIC Freq / Emu Freq | Purpose |
+|-------------|----------------------|---------|
+| `core_clk` (gclk1_div2) | 900 MHz / ~10 MHz | Core domain for many NSS IPs |
 | `nss_cosq_clk` | Same | NSS CoS queue clock |
 | `nss_core_clk`, `nss_fxp_clk`, `nss_hif_clk`, `nss_lan_clk` | Same | Various NSS domain clocks |
 | `imc_core_clk`, `mt_clk`, `ecm_clk` | Same | IMC, memory-test, ECM clocks |
 | `physs_intf0_clk`, `physs_funcx2_clk` | Same | PHY subsystem interface clocks |
-| `div_2_clk` (gclk1_div4) | ~5 MHz | `imc_sys_clk`, `nss_psm_clk`, etc. |
-| `div_4_clk` (gclk1_div8) | ~4 MHz | `soc_tsgen_clk`, NCSI clock |
-| `div_8_clk` (gclk1_div16) | ~2.5 MHz | `soc_per_clk`, APB bus clock |
-| `div_16_clk` (gclk1_div32) | ~1.25 MHz | Low-speed peripherals |
-| `div_32_clk` (gclk1_div64) | ~1.25 MHz | DFX clocks |
-| `div8_div5_clk` (gclk1_div40) | ~20 MHz | UART reference clock |
+| `div_2_clk` (gclk1_div4) | 450 MHz / ~5 MHz | `imc_sys_clk`, `nss_psm_clk`, etc. |
+| `div_4_clk` (gclk1_div8) | 250 MHz / ~2.5 MHz | `soc_tsgen_clk`, NCSI clock |
+| `div_8_clk` (gclk1_div16) | 112.5 MHz / ~1.25 MHz | `soc_per_clk`, APB bus clock |
+| `div_16_clk` (gclk1_div32) | 50 MHz / ~625 kHz | Low-speed peripherals |
+| `div_32_clk` (gclk1_div64) | 25 MHz / ~312.5 kHz | DFX clocks |
+| `div8_div5_clk` (gclk1_div40) | 20 MHz / ~500 kHz | UART reference clock |
+
+> **Note:** The ASIC frequencies reflect the real silicon clock plan. The emulation frequencies are scaled down by the FPGA PLL from the 20 MHz `ephy_refclk` input. Exact emulation frequencies depend on the `fpga_chs_car0` PLL configuration.
 
 ---
 
@@ -134,7 +136,7 @@ An `initial` block uses `force` statements to drive internal clocks inside the `
 
 1. **NSS clocks** (lines 1158–1197): Forces all NSS domain clocks (`aonclk1x`, `imc_core_clk`, `nss_core_clk`, `nss_lan_clk`, `ecm_clk`, etc.) to the appropriate divided clock from the FPGA PLL.
 
-2. **HLP clocks** (lines 1200–1212, guarded by `` `ifndef HLP_PHYSS_STUB `` / `` `ifndef NAC_STUB `` / `` `ifndef NMC_ONLY ``): Forces HLP block clocks (`pgcb_clk`, `aclk_s`, `ports_clk`, `switch_clk`) and asserts `hlp_rst_b`.
+2. **HLP clocks** (lines 1200–1212, guarded by `ifndef HLP_PHYSS_STUB` / `ifndef NAC_STUB` / `ifndef NMC_ONLY`): Forces HLP block clocks (`pgcb_clk`, `aclk_s`, `ports_clk`, `switch_clk`) and asserts `hlp_rst_b`.
 
 3. **PHY SS clocks** (lines 1215–1227): Forces PHY subsystem clocks (`rclk_diff_p/n`, `soc_per_clk`, `physs_intf0_clk`, `physs_funcx2_clk`, `tsu_clk`, `nss_cosq_clk0/1`, `clk_1588_freq`).
 
@@ -264,7 +266,7 @@ cnic_wrapper (top)
 
 1. **Emulation/Prototyping Focus**: The extensive use of `force` statements and behavioral models (`RED_VUART`, `RED_VAPB`, `vps_n25q512a_sm`) indicates this wrapper is designed for FPGA prototyping or hardware emulation (e.g., Veloce), not for ASIC synthesis.
 
-2. **Conditional Compilation**: Multiple `` `ifdef `` / `` `ifndef `` guards control feature inclusion:
+2. **Conditional Compilation**: Multiple `ifdef` / `ifndef` guards control feature inclusion:
    - `SPI_HW` — real SPI pads vs. behavioral flash model
    - `HLP_PHYSS_STUB`, `NAC_STUB`, `NMC_ONLY` — stub/partial configurations
    - `ON_BOARD_MEM` — on-board memory initialization
