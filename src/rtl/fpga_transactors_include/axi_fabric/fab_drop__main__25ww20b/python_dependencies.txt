@@ -1,0 +1,8 @@
+argparse
+Jinja2
+prettytable
+cocotb
+pyuvm
+paramiko
+pandas
+pyyaml

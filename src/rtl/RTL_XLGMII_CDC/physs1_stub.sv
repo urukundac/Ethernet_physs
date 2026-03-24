@@ -1,0 +1,714 @@
+//PHYSS1 STUB
+//Generated from rtl/physs1.sv
+//This is a stub module with all outputs tied to 0
+
+module physs1
+// EDIT_PORT BEGIN
+ ( 
+inout [3:0] ioa_ck_pma3_ref_right_pquad0_physs1, //abutment signal on pam3
+inout [3:0] ioa_ck_pma0_ref_left_pquad0_physs1, //abutment signal on pam0
+inout [3:0] ioa_ck_pma0_ref_left_pquad1_physs1, //abutment signal on pam0
+inout [3:0] ioa_ck_pma3_ref_right_pquad1_physs1, //abutment signal on pam3
+input [31:0] SSN_START_from_parmisc_physs0_bus_data_in,
+input SSN_START_from_parmisc_physs0_bus_clock_in,
+output [31:0] SSN_END_chain_towards_parmisc_physs0_bus_data_out,
+input mbp_repeater_odi_parmisc_physs0_5_ubp_out,
+input mbp_repeater_sfe_parmisc_physs0_2_ubp_out,
+input [7:0] dfxagg_security_policy,
+input dfxagg_policy_update,
+input dfxagg_early_boot_debug_exit,
+input [7:0] dfxagg_debug_capabilities_enabling,
+input dfxagg_debug_capabilities_enabling_valid,
+input fdfx_powergood,
+input ETH_RXN8,
+input ETH_RXP8,
+input ETH_RXN9,
+input ETH_RXP9,
+input ETH_RXN10,
+input ETH_RXP10,
+input ETH_RXN11,
+input ETH_RXP11,
+output versa_xmp_2_xoa_pma0_tx_n_l0,
+output versa_xmp_2_xoa_pma0_tx_p_l0,
+output versa_xmp_2_xoa_pma1_tx_n_l0,
+output versa_xmp_2_xoa_pma1_tx_p_l0,
+output versa_xmp_2_xoa_pma2_tx_n_l0,
+output versa_xmp_2_xoa_pma2_tx_p_l0,
+output versa_xmp_2_xoa_pma3_tx_n_l0,
+output versa_xmp_2_xoa_pma3_tx_p_l0,
+input ETH_RXN12,
+input ETH_RXP12,
+input ETH_RXN13,
+input ETH_RXP13,
+input ETH_RXN14,
+input ETH_RXP14,
+input ETH_RXN15,
+input ETH_RXP15,
+output versa_xmp_3_xoa_pma0_tx_n_l0,
+output versa_xmp_3_xoa_pma0_tx_p_l0,
+output versa_xmp_3_xoa_pma1_tx_n_l0,
+output versa_xmp_3_xoa_pma1_tx_p_l0,
+output versa_xmp_3_xoa_pma2_tx_n_l0,
+output versa_xmp_3_xoa_pma2_tx_p_l0,
+output versa_xmp_3_xoa_pma3_tx_n_l0,
+output versa_xmp_3_xoa_pma3_tx_p_l0,
+inout wire ioa_pma_remote_diode_i_anode,
+inout wire ioa_pma_remote_diode_i_anode_0,
+inout wire ioa_pma_remote_diode_i_anode_1,
+inout wire ioa_pma_remote_diode_i_anode_2,
+inout wire ioa_pma_remote_diode_i_anode_3,
+inout wire ioa_pma_remote_diode_i_anode_4,
+inout wire ioa_pma_remote_diode_i_anode_5,
+inout wire ioa_pma_remote_diode_i_anode_6,
+inout wire ioa_pma_remote_diode_v_anode,
+inout wire ioa_pma_remote_diode_v_anode_0,
+inout wire ioa_pma_remote_diode_v_anode_1,
+inout wire ioa_pma_remote_diode_v_anode_2,
+inout wire ioa_pma_remote_diode_v_anode_3,
+inout wire ioa_pma_remote_diode_v_anode_4,
+inout wire ioa_pma_remote_diode_v_anode_5,
+inout wire ioa_pma_remote_diode_v_anode_6,
+inout wire ioa_pma_remote_diode_i_cathode,
+inout wire ioa_pma_remote_diode_i_cathode_0,
+inout wire ioa_pma_remote_diode_i_cathode_1,
+inout wire ioa_pma_remote_diode_i_cathode_2,
+inout wire ioa_pma_remote_diode_i_cathode_3,
+inout wire ioa_pma_remote_diode_i_cathode_4,
+inout wire ioa_pma_remote_diode_i_cathode_5,
+inout wire ioa_pma_remote_diode_i_cathode_6,
+inout wire ioa_pma_remote_diode_v_cathode,
+inout wire ioa_pma_remote_diode_v_cathode_0,
+inout wire ioa_pma_remote_diode_v_cathode_1,
+inout wire ioa_pma_remote_diode_v_cathode_2,
+inout wire ioa_pma_remote_diode_v_cathode_3,
+inout wire ioa_pma_remote_diode_v_cathode_4,
+inout wire ioa_pma_remote_diode_v_cathode_5,
+inout wire ioa_pma_remote_diode_v_cathode_6,
+output [3:0] quadpcs100_2_pcs_link_status,
+output [3:0] quadpcs100_3_pcs_link_status,
+input [5:0] physs_hd2prf_trim_fuse_in,
+input [6:0] physs_hs2prf_trim_fuse_in,
+input [7:0] physs_rfhs_trim_fuse_in,
+input [15:0] physs_hdspsr_trim_fuse_in,
+input physs_bbl_100G_2_disable,
+input [3:0] physs_bbl_serdes_2_disable,
+input physs_bbl_100G_3_disable,
+input [3:0] physs_bbl_serdes_3_disable,
+input physs_bbl_spare_2,
+input physs_bbl_spare_3,
+input physs_bbl_100G_0_disable,
+input physs_bbl_100G_1_disable,
+input ethphyss_post_clkungate,
+input wire soc_per_clk_adop_parmisc_physs0_clkout_0,
+input wire physs_func_clk_adop_parmisc_physs0_clkout,
+output logic o_ck_pma0_rx_postdiv_l0_adop_parpquad0_clkout,
+output logic o_ck_pma1_rx_postdiv_l0_adop_parpquad0_clkout,
+output logic o_ck_pma2_rx_postdiv_l0_adop_parpquad0_clkout,
+output logic o_ck_pma3_rx_postdiv_l0_adop_parpquad0_clkout,
+output logic o_ck_pma0_rx_postdiv_l0_adop_parpquad1_clkout,
+output logic o_ck_pma1_rx_postdiv_l0_adop_parpquad1_clkout,
+output logic o_ck_pma2_rx_postdiv_l0_adop_parpquad1_clkout,
+output logic o_ck_pma3_rx_postdiv_l0_adop_parpquad1_clkout,
+input fscan_txrxword_byp_clk,
+input o_ck_pma0_cmnplla_postdiv_clk_mux_parmquad0_clkout,
+input wire fscan_ref_clk_adop_parmisc_physs0_clkout_0,
+input wire uart_clk_adop_parmisc_physs0_clkout_0,
+input physs_registers_wrapper_0_reset_ref_clk_override,
+input physs_registers_wrapper_0_reset_pcs100_override_en,
+input physs_registers_wrapper_0_clk_gate_en_100G_mac_pcs,
+input physs_registers_wrapper_0_power_fsm_clk_gate_en,
+input physs_registers_wrapper_0_power_fsm_reset_gate_en,
+input physs_registers_wrapper_1_reset_ref_clk_override,
+input physs_registers_wrapper_1_reset_pcs100_override_en,
+input physs_registers_wrapper_1_clk_gate_en_100G_mac_pcs,
+input physs_registers_wrapper_1_power_fsm_clk_gate_en,
+input physs_registers_wrapper_1_power_fsm_reset_gate_en,
+input physs_registers_wrapper_0_clk_gate_en_800G_mac_pcs,
+output physs_registers_wrapper_2_reset_ref_clk_override_0,
+output physs_registers_wrapper_2_reset_pcs100_override_en_0,
+output physs_registers_wrapper_2_clk_gate_en_100G_mac_pcs_0,
+output physs_registers_wrapper_2_power_fsm_clk_gate_en_0,
+output physs_registers_wrapper_2_power_fsm_reset_gate_en_0,
+output physs_registers_wrapper_3_reset_ref_clk_override_0,
+output physs_registers_wrapper_3_reset_pcs100_override_en_0,
+output physs_registers_wrapper_3_clk_gate_en_100G_mac_pcs_0,
+output physs_registers_wrapper_3_power_fsm_clk_gate_en_0,
+output physs_registers_wrapper_3_power_fsm_reset_gate_en_0,
+input pd_vinf_5_bisr_clk,
+input pd_vinf_5_bisr_reset,
+input pd_vinf_5_bisr_shift_en,
+input parmisc_physs0_pd_vinf_5_bisr_so,
+output parmisc_physs1_pd_vinf_5_2_bisr_so,
+input pd_vinf_6_bisr_clk,
+input pd_vinf_6_bisr_reset,
+input pd_vinf_6_bisr_shift_en,
+input parmisc_physs0_pd_vinf_6_bisr_so,
+output parmisc_physs1_pd_vinf_6_2_bisr_so,
+input physs1_func_rst_raw_n,
+input ethphyss_post_clk_mux_ctrl,
+output parpquad0_DIAG_AGGR_pquad_mbist_diag_done,
+output parpquad1_DIAG_AGGR_pquad_mbist_diag_done,
+input physs_bbl_800G_0_disable,
+input [7:0] physs_registers_wrapper_1_reset_sd_tx_clk_override_800G_0,
+input [7:0] physs_registers_wrapper_1_reset_sd_rx_clk_override_800G_0,
+output versa_xmp_2_o_ucss_uart_txd,
+output versa_xmp_3_o_ucss_uart_txd,
+input physs_uart_demux_out2,
+input physs_uart_demux_out3,
+input versa_xmp_0_o_rst_ucss_srds_pcs_rx_reset_pma0_l0_b_a_0,
+input versa_xmp_0_o_rst_ucss_srds_pcs_rx_reset_pma1_l0_b_a_0,
+input versa_xmp_0_o_rst_ucss_srds_pcs_rx_reset_pma2_l0_b_a_0,
+input versa_xmp_0_o_rst_ucss_srds_pcs_rx_reset_pma3_l0_b_a_0,
+input versa_xmp_1_o_rst_ucss_srds_pcs_rx_reset_pma0_l0_b_a_0,
+input versa_xmp_1_o_rst_ucss_srds_pcs_rx_reset_pma1_l0_b_a_0,
+input versa_xmp_1_o_rst_ucss_srds_pcs_rx_reset_pma2_l0_b_a_0,
+input versa_xmp_1_o_rst_ucss_srds_pcs_rx_reset_pma3_l0_b_a_0,
+input fary_post_force_fail,
+input fary_4_trigger_post,
+input [5:0] fary_post_algo_select,
+output logic xmp_mem_wrapper_2_aary_post_pass,
+output logic xmp_mem_wrapper_2_aary_post_complete,
+output logic xmp_mem_wrapper_3_aary_post_pass,
+output logic xmp_mem_wrapper_3_aary_post_complete,
+input fary_5_trigger_post,
+output logic pcs100_mem_wrapper_2_aary_post_pass,
+output logic pcs100_mem_wrapper_2_aary_post_complete,
+output logic pcs100_mem_wrapper_3_aary_post_pass,
+output logic pcs100_mem_wrapper_3_aary_post_complete,
+output parmisc_physs1_dfx_ubp_ctrl_trig_in_to_parmisc_physs0_ubpc,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_pma0_txdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_pma1_txdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_pma2_txdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_pma3_txdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_pma0_rx,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_pma1_rx,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_pma2_rx,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_pma3_rx,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_pma0_rxdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_pma1_rxdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_pma2_rxdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_pma3_rxdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_pma0_cmnplla_postdiv,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_pma1_cmnplla_postdiv,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_pma2_cmnplla_postdiv,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_pma3_cmnplla_postdiv,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_slv_pcs1,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_ucss_mem_dram,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_ucss_mem_iram,
+input parmisc_physs0_trig_clock_stop_to_parpquad0_o_ck_ucss_mem_tracemem,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_pma0_txdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_pma1_txdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_pma2_txdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_pma3_txdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_pma0_rx,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_pma1_rx,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_pma2_rx,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_pma3_rx,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_pma0_rxdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_pma1_rxdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_pma2_rxdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_pma3_rxdat,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_pma0_cmnplla_postdiv,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_pma1_cmnplla_postdiv,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_pma2_cmnplla_postdiv,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_pma3_cmnplla_postdiv,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_slv_pcs1,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_ucss_mem_dram,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_ucss_mem_iram,
+input parmisc_physs0_trig_clock_stop_to_parpquad1_o_ck_ucss_mem_tracemem,
+output [27:0] quadpcs100_2_pcs_desk_buf_rlevel,
+output [31:0] quadpcs100_2_pcs_sd_bit_slip,
+output [3:0] quadpcs100_2_pcs_link_status_tsu,
+output [27:0] quadpcs100_3_pcs_desk_buf_rlevel,
+output [31:0] quadpcs100_3_pcs_sd_bit_slip,
+output [3:0] quadpcs100_3_pcs_link_status_tsu,
+inout wire versa_xmp_2_xioa_ck_pma0_ref0_n,
+inout wire versa_xmp_2_xioa_ck_pma0_ref0_p,
+inout wire versa_xmp_2_xioa_ck_pma0_ref1_n,
+inout wire versa_xmp_2_xioa_ck_pma0_ref1_p,
+inout wire versa_xmp_2_xioa_ck_pma1_ref0_n,
+inout wire versa_xmp_2_xioa_ck_pma1_ref0_p,
+inout wire versa_xmp_2_xioa_ck_pma1_ref1_n,
+inout wire versa_xmp_2_xioa_ck_pma1_ref1_p,
+inout wire versa_xmp_2_xioa_ck_pma2_ref0_n,
+inout wire versa_xmp_2_xioa_ck_pma2_ref0_p,
+inout wire versa_xmp_2_xioa_ck_pma2_ref1_n,
+inout wire versa_xmp_2_xioa_ck_pma2_ref1_p,
+inout wire versa_xmp_2_xioa_ck_pma3_ref0_n,
+inout wire versa_xmp_2_xioa_ck_pma3_ref0_p,
+inout wire versa_xmp_2_xioa_ck_pma3_ref1_n,
+inout wire versa_xmp_2_xioa_ck_pma3_ref1_p,
+output versa_xmp_2_xoa_pma0_dcmon1,
+output versa_xmp_2_xoa_pma0_dcmon2,
+output versa_xmp_2_xoa_pma1_dcmon1,
+output versa_xmp_2_xoa_pma1_dcmon2,
+output versa_xmp_2_xoa_pma2_dcmon1,
+output versa_xmp_2_xoa_pma2_dcmon2,
+output versa_xmp_2_xoa_pma3_dcmon1,
+output versa_xmp_2_xoa_pma3_dcmon2,
+inout wire versa_xmp_3_xioa_ck_pma0_ref0_n,
+inout wire versa_xmp_3_xioa_ck_pma0_ref0_p,
+inout wire versa_xmp_3_xioa_ck_pma0_ref1_n,
+inout wire versa_xmp_3_xioa_ck_pma0_ref1_p,
+inout wire versa_xmp_3_xioa_ck_pma1_ref0_n,
+inout wire versa_xmp_3_xioa_ck_pma1_ref0_p,
+inout wire versa_xmp_3_xioa_ck_pma1_ref1_n,
+inout wire versa_xmp_3_xioa_ck_pma1_ref1_p,
+inout wire versa_xmp_3_xioa_ck_pma2_ref0_n,
+inout wire versa_xmp_3_xioa_ck_pma2_ref0_p,
+inout wire versa_xmp_3_xioa_ck_pma2_ref1_n,
+inout wire versa_xmp_3_xioa_ck_pma2_ref1_p,
+inout wire versa_xmp_3_xioa_ck_pma3_ref0_n,
+inout wire versa_xmp_3_xioa_ck_pma3_ref0_p,
+inout wire versa_xmp_3_xioa_ck_pma3_ref1_n,
+inout wire versa_xmp_3_xioa_ck_pma3_ref1_p,
+output versa_xmp_3_xoa_pma0_dcmon1,
+output versa_xmp_3_xoa_pma0_dcmon2,
+output versa_xmp_3_xoa_pma1_dcmon1,
+output versa_xmp_3_xoa_pma1_dcmon2,
+output versa_xmp_3_xoa_pma2_dcmon1,
+output versa_xmp_3_xoa_pma2_dcmon2,
+output versa_xmp_3_xoa_pma3_dcmon1,
+output versa_xmp_3_xoa_pma3_dcmon2,
+output logic interrupts_counter_level_fatal_int_1_out_signal_sync,
+output logic interrupts_counter_level_imc_int_1_out_signal_sync,
+output versa_xmp_2_o_ucss_irq_cpi_0_a,
+output versa_xmp_3_o_ucss_irq_cpi_0_a,
+output versa_xmp_2_o_ucss_irq_cpi_1_a,
+output versa_xmp_3_o_ucss_irq_cpi_1_a,
+output versa_xmp_2_o_ucss_irq_cpi_2_a,
+output versa_xmp_3_o_ucss_irq_cpi_2_a,
+output versa_xmp_2_o_ucss_irq_cpi_3_a,
+output versa_xmp_3_o_ucss_irq_cpi_3_a,
+output versa_xmp_2_o_ucss_irq_cpi_4_a,
+output versa_xmp_3_o_ucss_irq_cpi_4_a,
+output versa_xmp_2_o_ucss_irq_to_soc_l0_a,
+output versa_xmp_2_o_ucss_irq_to_soc_l1_a,
+output versa_xmp_2_o_ucss_irq_to_soc_l2_a,
+output versa_xmp_2_o_ucss_irq_to_soc_l3_a,
+output versa_xmp_3_o_ucss_irq_to_soc_l0_a,
+output versa_xmp_3_o_ucss_irq_to_soc_l1_a,
+output versa_xmp_3_o_ucss_irq_to_soc_l2_a,
+output versa_xmp_3_o_ucss_irq_to_soc_l3_a,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac0_xlgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac0_xlgmii_rx_clkena,
+output logic [7:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac0_xlgmii_rx_rxc,
+output logic [63:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac0_xlgmii_rx_rxd,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac0_xlgmii_rxt0_next,
+input wire [7:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs0_xlgmii_tx_txc,
+input wire [63:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs0_xlgmii_tx_txd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu0_xlgmii_rx_sd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu0_xlgmii_rx_tsu,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu0_xlgmii_tx_tsu,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac1_xlgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac1_xlgmii_rx_clkena,
+output logic [7:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac1_xlgmii_rx_rxc,
+output logic [63:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac1_xlgmii_rx_rxd,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac1_xlgmii_rxt0_next,
+input wire [7:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs1_xlgmii_tx_txc,
+input wire [63:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs1_xlgmii_tx_txd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu1_xlgmii_rx_sd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu1_xlgmii_rx_tsu,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu1_xlgmii_tx_tsu,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac2_xlgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac2_xlgmii_rx_clkena,
+output logic [7:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac2_xlgmii_rx_rxc,
+output logic [63:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac2_xlgmii_rx_rxd,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac2_xlgmii_rxt0_next,
+input wire [7:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs2_xlgmii_tx_txc,
+input wire [63:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs2_xlgmii_tx_txd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu2_xlgmii_rx_sd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu2_xlgmii_rx_tsu,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu2_xlgmii_tx_tsu,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac3_xlgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac3_xlgmii_rx_clkena,
+output logic [7:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac3_xlgmii_rx_rxc,
+output logic [63:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac3_xlgmii_rx_rxd,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac3_xlgmii_rxt0_next,
+input wire [7:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs3_xlgmii_tx_txc,
+input wire [63:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs3_xlgmii_tx_txd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu3_xlgmii_rx_sd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu3_xlgmii_rx_tsu,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad0_0_tsu3_xlgmii_tx_tsu,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac0_cgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac0_cgmii_rx_clkena,
+output logic [15:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac0_cgmii_rx_rxc,
+output logic [127:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac0_cgmii_rx_rxd,
+input wire [15:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs0_cgmii_tx_txc,
+input wire [127:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs0_cgmii_tx_txd,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac1_cgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac1_cgmii_rx_clkena,
+output logic [15:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac1_cgmii_rx_rxc,
+output logic [127:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac1_cgmii_rx_rxd,
+input wire [15:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs1_cgmii_tx_txc,
+input wire [127:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs1_cgmii_tx_txd,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac2_cgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac2_cgmii_rx_clkena,
+output logic [15:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac2_cgmii_rx_rxc,
+output logic [127:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac2_cgmii_rx_rxd,
+input wire [15:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs2_cgmii_tx_txc,
+input wire [127:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs2_cgmii_tx_txd,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac3_cgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad0_0_mac3_cgmii_rx_clkena,
+output logic [15:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac3_cgmii_rx_rxc,
+output logic [127:0] pcs_mac_pipeline_top_wrap_pquad0_0_mac3_cgmii_rx_rxd,
+input wire [15:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs3_cgmii_tx_txc,
+input wire [127:0] pcs_mac_pipeline_top_wrap_pquad0_1_pcs3_cgmii_tx_txd,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac0_xlgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac0_xlgmii_rx_clkena,
+output logic [7:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac0_xlgmii_rx_rxc,
+output logic [63:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac0_xlgmii_rx_rxd,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac0_xlgmii_rxt0_next,
+input wire [7:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs0_xlgmii_tx_txc,
+input wire [63:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs0_xlgmii_tx_txd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu0_xlgmii_rx_sd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu0_xlgmii_rx_tsu,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu0_xlgmii_tx_tsu,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac1_xlgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac1_xlgmii_rx_clkena,
+output logic [7:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac1_xlgmii_rx_rxc,
+output logic [63:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac1_xlgmii_rx_rxd,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac1_xlgmii_rxt0_next,
+input wire [7:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs1_xlgmii_tx_txc,
+input wire [63:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs1_xlgmii_tx_txd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu1_xlgmii_rx_sd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu1_xlgmii_rx_tsu,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu1_xlgmii_tx_tsu,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac2_xlgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac2_xlgmii_rx_clkena,
+output logic [7:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac2_xlgmii_rx_rxc,
+output logic [63:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac2_xlgmii_rx_rxd,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac2_xlgmii_rxt0_next,
+input wire [7:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs2_xlgmii_tx_txc,
+input wire [63:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs2_xlgmii_tx_txd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu2_xlgmii_rx_sd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu2_xlgmii_rx_tsu,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu2_xlgmii_tx_tsu,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac3_xlgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac3_xlgmii_rx_clkena,
+output logic [7:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac3_xlgmii_rx_rxc,
+output logic [63:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac3_xlgmii_rx_rxd,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac3_xlgmii_rxt0_next,
+input wire [7:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs3_xlgmii_tx_txc,
+input wire [63:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs3_xlgmii_tx_txd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu3_xlgmii_rx_sd,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu3_xlgmii_rx_tsu,
+output logic [1:0] pcs_mac_pipeline_top_wrap_pquad1_0_tsu3_xlgmii_tx_tsu,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac0_cgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac0_cgmii_rx_clkena,
+output logic [15:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac0_cgmii_rx_rxc,
+output logic [127:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac0_cgmii_rx_rxd,
+input wire [15:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs0_cgmii_tx_txc,
+input wire [127:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs0_cgmii_tx_txd,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac1_cgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac1_cgmii_rx_clkena,
+output logic [15:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac1_cgmii_rx_rxc,
+output logic [127:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac1_cgmii_rx_rxd,
+input wire [15:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs1_cgmii_tx_txc,
+input wire [127:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs1_cgmii_tx_txd,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac2_cgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac2_cgmii_rx_clkena,
+output logic [15:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac2_cgmii_rx_rxc,
+output logic [127:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac2_cgmii_rx_rxd,
+input wire [15:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs2_cgmii_tx_txc,
+input wire [127:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs2_cgmii_tx_txd,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac3_cgmii_tx_clkena,
+output logic pcs_mac_pipeline_top_wrap_pquad1_0_mac3_cgmii_rx_clkena,
+output logic [15:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac3_cgmii_rx_rxc,
+output logic [127:0] pcs_mac_pipeline_top_wrap_pquad1_0_mac3_cgmii_rx_rxd,
+input wire [15:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs3_cgmii_tx_txc,
+input wire [127:0] pcs_mac_pipeline_top_wrap_pquad1_1_pcs3_cgmii_tx_txd,
+input [3:0] physs_1_AWID,
+input [22:0] physs_1_AWADDR,
+input [7:0] physs_1_AWLEN,
+input [2:0] physs_1_AWSIZE,
+input [1:0] physs_1_AWBURST,
+input physs_1_AWLOCK,
+input [3:0] physs_1_AWCACHE,
+input [2:0] physs_1_AWPROT,
+input physs_1_AWVALID,
+input [31:0] physs_1_WDATA,
+input [3:0] physs_1_WSTRB,
+input physs_1_WLAST,
+input physs_1_WVALID,
+input physs_1_BREADY,
+input [3:0] physs_1_ARID,
+input [22:0] physs_1_ARADDR,
+input [7:0] physs_1_ARLEN,
+input [2:0] physs_1_ARSIZE,
+input [1:0] physs_1_ARBURST,
+input physs_1_ARLOCK,
+input [3:0] physs_1_ARCACHE,
+input [2:0] physs_1_ARPROT,
+input physs_1_ARVALID,
+output nic400_physs_1_awready_slave_physs,
+output nic400_physs_1_wready_slave_physs,
+input physs_1_RREADY,
+output [3:0] nic400_physs_1_bid_slave_physs,
+output [1:0] nic400_physs_1_bresp_slave_physs,
+output nic400_physs_1_bvalid_slave_physs,
+output nic400_physs_1_arready_slave_physs,
+output [3:0] nic400_physs_1_rid_slave_physs,
+output [31:0] nic400_physs_1_rdata_slave_physs,
+output [1:0] nic400_physs_1_rresp_slave_physs,
+output nic400_physs_1_rlast_slave_physs,
+output nic400_physs_1_rvalid_slave_physs,
+output socviewpin_4to1digimux_1_outmux,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_scan_in,
+output parmisc_physs1_BSCAN_PIPE_OUT_scan_out,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_force_disable,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_select_jtag_input,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_select_jtag_output,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_ac_init_clock0,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_ac_init_clock1,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_ac_signal,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_ac_mode_en,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_intel_update_clk,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_intel_clamp_en,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_intel_bscan_mode,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_select,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_bscan_clock,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_capture_en,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_shift_en,
+input parmisc_physs0_BSCAN_PIPE_OUT_TO_parmisc_physs1_update_en,
+input PHYSS_BSCAN_BYPASS,
+input PHYSS_BSCAN_BYPASS_0,
+input PHYSS_BSCAN_BYPASS_1,
+input PHYSS_BSCAN_BYPASS_2,
+input PHYSS_BSCAN_BYPASS_3,
+input PHYSS_BSCAN_BYPASS_4,
+input PHYSS_BSCAN_BYPASS_5,
+input PHYSS_BSCAN_BYPASS_6,
+input PHYSS_BSCAN_BYPASS_7,
+input PHYSS_BSCAN_BYPASS_8,
+output parmisc_physs1_BSCAN_PIPE_OUT_2_bscan_to_intel_d6actestsig_b,
+input parmisc_physs0_BSCAN_PIPE_OUT_2_bscan_to_intel_d6actestsig_b,
+input tms,
+input tck,
+input tdi,
+input trst_b,
+output parmisc_physs1_NW_IN_tdo,
+output parmisc_physs1_NW_IN_tdo_en,
+input parmisc_physs0_NW_OUT_parmisc_physs1_ijtag_to_reset,
+input parmisc_physs0_NW_OUT_parmisc_physs1_ijtag_to_ce,
+input parmisc_physs0_NW_OUT_parmisc_physs1_ijtag_to_se,
+input parmisc_physs0_NW_OUT_parmisc_physs1_ijtag_to_ue,
+input parmisc_physs0_NW_OUT_parmisc_physs1_ijtag_to_sel,
+input parmisc_physs0_NW_OUT_parmisc_physs1_ijtag_to_si,
+output parmisc_physs1_NW_IN_ijtag_so,
+input shift_ir_dr,
+input tms_park_value,
+input nw_mode,
+output parmisc_physs1_NW_IN_tap_sel_out );
+
+//Stub implementation - tie all outputs to 0
+
+assign SSN_END_chain_towards_parmisc_physs0_bus_data_out = 'b0;
+assign versa_xmp_2_xoa_pma0_tx_n_l0 = 'b0;
+assign versa_xmp_2_xoa_pma0_tx_p_l0 = 'b0;
+assign versa_xmp_2_xoa_pma1_tx_n_l0 = 'b0;
+assign versa_xmp_2_xoa_pma1_tx_p_l0 = 'b0;
+assign versa_xmp_2_xoa_pma2_tx_n_l0 = 'b0;
+assign versa_xmp_2_xoa_pma2_tx_p_l0 = 'b0;
+assign versa_xmp_2_xoa_pma3_tx_n_l0 = 'b0;
+assign versa_xmp_2_xoa_pma3_tx_p_l0 = 'b0;
+assign versa_xmp_3_xoa_pma0_tx_n_l0 = 'b0;
+assign versa_xmp_3_xoa_pma0_tx_p_l0 = 'b0;
+assign versa_xmp_3_xoa_pma1_tx_n_l0 = 'b0;
+assign versa_xmp_3_xoa_pma1_tx_p_l0 = 'b0;
+assign versa_xmp_3_xoa_pma2_tx_n_l0 = 'b0;
+assign versa_xmp_3_xoa_pma2_tx_p_l0 = 'b0;
+assign versa_xmp_3_xoa_pma3_tx_n_l0 = 'b0;
+assign versa_xmp_3_xoa_pma3_tx_p_l0 = 'b0;
+assign quadpcs100_2_pcs_link_status = 'b0;
+assign quadpcs100_3_pcs_link_status = 'b0;
+assign o_ck_pma0_rx_postdiv_l0_adop_parpquad0_clkout = 'b0;
+assign o_ck_pma1_rx_postdiv_l0_adop_parpquad0_clkout = 'b0;
+assign o_ck_pma2_rx_postdiv_l0_adop_parpquad0_clkout = 'b0;
+assign o_ck_pma3_rx_postdiv_l0_adop_parpquad0_clkout = 'b0;
+assign o_ck_pma0_rx_postdiv_l0_adop_parpquad1_clkout = 'b0;
+assign o_ck_pma1_rx_postdiv_l0_adop_parpquad1_clkout = 'b0;
+assign o_ck_pma2_rx_postdiv_l0_adop_parpquad1_clkout = 'b0;
+assign o_ck_pma3_rx_postdiv_l0_adop_parpquad1_clkout = 'b0;
+assign physs_registers_wrapper_2_reset_ref_clk_override_0 = 'b0;
+assign physs_registers_wrapper_2_reset_pcs100_override_en_0 = 'b0;
+assign physs_registers_wrapper_2_clk_gate_en_100G_mac_pcs_0 = 'b0;
+assign physs_registers_wrapper_2_power_fsm_clk_gate_en_0 = 'b0;
+assign physs_registers_wrapper_2_power_fsm_reset_gate_en_0 = 'b0;
+assign physs_registers_wrapper_3_reset_ref_clk_override_0 = 'b0;
+assign physs_registers_wrapper_3_reset_pcs100_override_en_0 = 'b0;
+assign physs_registers_wrapper_3_clk_gate_en_100G_mac_pcs_0 = 'b0;
+assign physs_registers_wrapper_3_power_fsm_clk_gate_en_0 = 'b0;
+assign physs_registers_wrapper_3_power_fsm_reset_gate_en_0 = 'b0;
+assign parmisc_physs1_pd_vinf_5_2_bisr_so = 'b0;
+assign parmisc_physs1_pd_vinf_6_2_bisr_so = 'b0;
+assign parpquad0_DIAG_AGGR_pquad_mbist_diag_done = 'b0;
+assign parpquad1_DIAG_AGGR_pquad_mbist_diag_done = 'b0;
+assign versa_xmp_2_o_ucss_uart_txd = 'b0;
+assign versa_xmp_3_o_ucss_uart_txd = 'b0;
+assign xmp_mem_wrapper_2_aary_post_pass = 'b0;
+assign xmp_mem_wrapper_2_aary_post_complete = 'b0;
+assign xmp_mem_wrapper_3_aary_post_pass = 'b0;
+assign xmp_mem_wrapper_3_aary_post_complete = 'b0;
+assign pcs100_mem_wrapper_2_aary_post_pass = 'b0;
+assign pcs100_mem_wrapper_2_aary_post_complete = 'b0;
+assign pcs100_mem_wrapper_3_aary_post_pass = 'b0;
+assign pcs100_mem_wrapper_3_aary_post_complete = 'b0;
+assign parmisc_physs1_dfx_ubp_ctrl_trig_in_to_parmisc_physs0_ubpc = 'b0;
+assign quadpcs100_2_pcs_desk_buf_rlevel = 'b0;
+assign quadpcs100_2_pcs_sd_bit_slip = 'b0;
+assign quadpcs100_2_pcs_link_status_tsu = 'b0;
+assign quadpcs100_3_pcs_desk_buf_rlevel = 'b0;
+assign quadpcs100_3_pcs_sd_bit_slip = 'b0;
+assign quadpcs100_3_pcs_link_status_tsu = 'b0;
+assign versa_xmp_2_xoa_pma0_dcmon1 = 'b0;
+assign versa_xmp_2_xoa_pma0_dcmon2 = 'b0;
+assign versa_xmp_2_xoa_pma1_dcmon1 = 'b0;
+assign versa_xmp_2_xoa_pma1_dcmon2 = 'b0;
+assign versa_xmp_2_xoa_pma2_dcmon1 = 'b0;
+assign versa_xmp_2_xoa_pma2_dcmon2 = 'b0;
+assign versa_xmp_2_xoa_pma3_dcmon1 = 'b0;
+assign versa_xmp_2_xoa_pma3_dcmon2 = 'b0;
+assign versa_xmp_3_xoa_pma0_dcmon1 = 'b0;
+assign versa_xmp_3_xoa_pma0_dcmon2 = 'b0;
+assign versa_xmp_3_xoa_pma1_dcmon1 = 'b0;
+assign versa_xmp_3_xoa_pma1_dcmon2 = 'b0;
+assign versa_xmp_3_xoa_pma2_dcmon1 = 'b0;
+assign versa_xmp_3_xoa_pma2_dcmon2 = 'b0;
+assign versa_xmp_3_xoa_pma3_dcmon1 = 'b0;
+assign versa_xmp_3_xoa_pma3_dcmon2 = 'b0;
+assign interrupts_counter_level_fatal_int_1_out_signal_sync = 'b0;
+assign interrupts_counter_level_imc_int_1_out_signal_sync = 'b0;
+assign versa_xmp_2_o_ucss_irq_cpi_0_a = 'b0;
+assign versa_xmp_3_o_ucss_irq_cpi_0_a = 'b0;
+assign versa_xmp_2_o_ucss_irq_cpi_1_a = 'b0;
+assign versa_xmp_3_o_ucss_irq_cpi_1_a = 'b0;
+assign versa_xmp_2_o_ucss_irq_cpi_2_a = 'b0;
+assign versa_xmp_3_o_ucss_irq_cpi_2_a = 'b0;
+assign versa_xmp_2_o_ucss_irq_cpi_3_a = 'b0;
+assign versa_xmp_3_o_ucss_irq_cpi_3_a = 'b0;
+assign versa_xmp_2_o_ucss_irq_cpi_4_a = 'b0;
+assign versa_xmp_3_o_ucss_irq_cpi_4_a = 'b0;
+assign versa_xmp_2_o_ucss_irq_to_soc_l0_a = 'b0;
+assign versa_xmp_2_o_ucss_irq_to_soc_l1_a = 'b0;
+assign versa_xmp_2_o_ucss_irq_to_soc_l2_a = 'b0;
+assign versa_xmp_2_o_ucss_irq_to_soc_l3_a = 'b0;
+assign versa_xmp_3_o_ucss_irq_to_soc_l0_a = 'b0;
+assign versa_xmp_3_o_ucss_irq_to_soc_l1_a = 'b0;
+assign versa_xmp_3_o_ucss_irq_to_soc_l2_a = 'b0;
+assign versa_xmp_3_o_ucss_irq_to_soc_l3_a = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac0_xlgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac0_xlgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac0_xlgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac0_xlgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac0_xlgmii_rxt0_next = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu0_xlgmii_rx_sd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu0_xlgmii_rx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu0_xlgmii_tx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac1_xlgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac1_xlgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac1_xlgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac1_xlgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac1_xlgmii_rxt0_next = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu1_xlgmii_rx_sd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu1_xlgmii_rx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu1_xlgmii_tx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac2_xlgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac2_xlgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac2_xlgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac2_xlgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac2_xlgmii_rxt0_next = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu2_xlgmii_rx_sd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu2_xlgmii_rx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu2_xlgmii_tx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac3_xlgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac3_xlgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac3_xlgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac3_xlgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac3_xlgmii_rxt0_next = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu3_xlgmii_rx_sd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu3_xlgmii_rx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_tsu3_xlgmii_tx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac0_cgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac0_cgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac0_cgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac0_cgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac1_cgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac1_cgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac1_cgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac1_cgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac2_cgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac2_cgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac2_cgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac2_cgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac3_cgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac3_cgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac3_cgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad0_0_mac3_cgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac0_xlgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac0_xlgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac0_xlgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac0_xlgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac0_xlgmii_rxt0_next = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu0_xlgmii_rx_sd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu0_xlgmii_rx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu0_xlgmii_tx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac1_xlgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac1_xlgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac1_xlgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac1_xlgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac1_xlgmii_rxt0_next = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu1_xlgmii_rx_sd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu1_xlgmii_rx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu1_xlgmii_tx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac2_xlgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac2_xlgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac2_xlgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac2_xlgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac2_xlgmii_rxt0_next = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu2_xlgmii_rx_sd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu2_xlgmii_rx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu2_xlgmii_tx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac3_xlgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac3_xlgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac3_xlgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac3_xlgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac3_xlgmii_rxt0_next = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu3_xlgmii_rx_sd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu3_xlgmii_rx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_tsu3_xlgmii_tx_tsu = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac0_cgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac0_cgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac0_cgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac0_cgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac1_cgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac1_cgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac1_cgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac1_cgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac2_cgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac2_cgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac2_cgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac2_cgmii_rx_rxd = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac3_cgmii_tx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac3_cgmii_rx_clkena = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac3_cgmii_rx_rxc = 'b0;
+assign pcs_mac_pipeline_top_wrap_pquad1_0_mac3_cgmii_rx_rxd = 'b0;
+assign nic400_physs_1_awready_slave_physs = 'b0;
+assign nic400_physs_1_wready_slave_physs = 'b0;
+assign nic400_physs_1_bid_slave_physs = 'b0;
+assign nic400_physs_1_bresp_slave_physs = 'b0;
+assign nic400_physs_1_bvalid_slave_physs = 'b0;
+assign nic400_physs_1_arready_slave_physs = 'b0;
+assign nic400_physs_1_rid_slave_physs = 'b0;
+assign nic400_physs_1_rdata_slave_physs = 'b0;
+assign nic400_physs_1_rresp_slave_physs = 'b0;
+assign nic400_physs_1_rlast_slave_physs = 'b0;
+assign nic400_physs_1_rvalid_slave_physs = 'b0;
+assign socviewpin_4to1digimux_1_outmux = 'b0;
+assign parmisc_physs1_BSCAN_PIPE_OUT_scan_out = 'b0;
+assign parmisc_physs1_BSCAN_PIPE_OUT_2_bscan_to_intel_d6actestsig_b = 'b0;
+assign parmisc_physs1_NW_IN_tdo = 'b0;
+assign parmisc_physs1_NW_IN_tdo_en = 'b0;
+assign parmisc_physs1_NW_IN_ijtag_so = 'b0;
+
+endmodule

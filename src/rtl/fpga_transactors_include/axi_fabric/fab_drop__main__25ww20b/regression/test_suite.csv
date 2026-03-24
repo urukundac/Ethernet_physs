@@ -1,0 +1,7 @@
+Fabric Type,Num Producers,Num Consumers,Shared FIFOs
+axim,1,2,Yes
+axim,1,2,No
+axim,2,3,Yes
+axim,2,3,No
+axim,3,4,Yes
+axim,3,4,No

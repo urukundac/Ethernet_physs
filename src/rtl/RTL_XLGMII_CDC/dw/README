@@ -1,0 +1,7 @@
+Because of the DW implementation, the following needs to be added
+to the *qsf when using the DW_shifter:
+
+set_global_assignment -name VERILOG_NON_CONSTANT_LOOP_LIMIT 550
+
+This many need to be increased if the parameter settings on the
+DW are larger than the test case I ran.

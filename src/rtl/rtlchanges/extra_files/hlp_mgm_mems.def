@@ -1,0 +1,51 @@
+`ifndef HLP_MEMS_DEF
+`define HLP_MEMS_DEF
+
+`ifdef INTEL_DC
+`define HLP_MEMS_DEF_DOING_SYNTHESIS
+`endif
+
+`ifdef HLP_SYNTHESIS
+`define HLP_MEMS_DEF_DOING_SYNTHESIS
+`endif
+
+`ifdef HLP_MEMS_DEF_DOING_SYNTHESIS
+// 1274 vs 1275 differ on the names and this messes up correspondence with mem_gen
+//`define NO_PWR_PINS
+//clc `define HLP_FCMN_ASIC_MEMS
+//clc `define HLP_FGHASH_ASIC_MEMS
+//clc `define HLP_FGRP_ASIC_MEMS
+//clc `define HLP_FWD_ASIC_MEMS
+`define HLP_MAC4_ASIC_MEMS
+//clc `define HLP_MOD_ASIC_MEMS
+`define HLP_MSEC_ASIC_MEMS
+`define HLP_PARSER_ASIC_MEMS
+`define HLP_PM_ASIC_MEMS
+`define HLP_SCHED_ASIC_MEMS
+`define HLP_SIA_ASIC_MEMS
+`define HLP_TAIL_ASIC_MEMS
+`define HLP_IMN_ASIC_MEMS
+`else
+    `ifndef INTEL_EMULATION
+        `define HLP_RTL
+    `endif
+`endif
+
+       `define HLP_MEM_DBG_DW_SEL_WIDTH    8
+       `define HLP_MEM_DBG_RD_ADR_WIDTH	   18
+       `define HLP_MEM_RM_WIDTH            4
+       `define HLP_MEM_GEN_ECC_INST_NUM    128
+
+       `define HLP_TCAM_DBG_DW_SEL_WIDTH   8
+       `define HLP_TCAM_DBG_RD_ADR_WIDTH   18
+       `define HLP_TCAM_ANALOG_TUNE_CONFG_WIDTH	12
+       `define HLP_TCAM_SWPR_IDLE          2'h0
+       `define HLP_TCAM_SWPR_RD_E0         2'h1
+       `define HLP_TCAM_SWPR_RD_E1         2'h2
+       `define HLP_TCAM_SWPR_WR            2'h3
+
+       `define HLP_BCAM_SWPR_IDLE          2'h0
+       `define HLP_BCAM_SWPR_RD            2'h1
+       `define HLP_BCAM_SWPR_WR            2'h2
+
+`endif

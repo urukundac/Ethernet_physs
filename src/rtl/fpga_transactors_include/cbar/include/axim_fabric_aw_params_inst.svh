@@ -1,0 +1,13 @@
+
+ .AWID_W      (AWID_W    )
+,.AWADDR_W    (AWADDR_W  )
+,.AWLEN_W     (AWLEN_W   )
+,.AWSIZE_W    (AWSIZE_W  )
+,.AWBURST_W   (AWBURST_W )
+,.AWLOCK_W    (AWLOCK_W  )
+,.AWCACHE_W   (AWCACHE_W )
+,.AWPROT_W    (AWPROT_W  )
+,.AWQOS_W     (AWQOS_W   )
+,.AWREGION_W  (AWREGION_W)
+,.AWUSER_W    (AWUSER_W  )
+

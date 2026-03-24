@@ -1,0 +1,518 @@
+
+// Author: Ehud Cohn
+
+module sfi_fifo_to_txdesc_converter #(
+		parameter D = 64  //supported values: 64, 128
+                    )
+//import desc_pkg::*;
+//import sfi_hdr_pkg::*;
+(
+    input  	wire         			clk,
+    input  	wire         			rst_n,
+    //sfi
+    input 	wire   	[3:0]          	wr_tx_fifo,
+    input 	wire   	[3:0]  [127:0] 	din_tx_fifo,
+    output  wire  	[3:0]          	full_tx_fifo,
+    //desc
+    output	reg						wr_cmd_fifo,			
+    output 	logic 	[127:0]			din_cmd_fifo,		
+    input  	wire					full_cmd_fifo,
+    output	reg						wr_data_fifo,			
+    output 	reg 	[63:0]			din_data_fifo,		
+    input  	wire					full_data_fifo
+);
+  
+  
+	//logic			wr_length_fifo;
+    //logic	[9:0]	din_length_fifo;
+	wire			full_length_fifo;
+	logic			rd_length_fifo;
+	wire	[9:0]	dout_length_fifo;
+	wire			empty_length_fifo;
+	//reg				half_flag;
+	//reg				wait_flag;
+	reg				rd_HDR_fifo;
+	wire	[127:0]	dout_HDR_fifo;
+	wire			empty_HDR_fifo;
+	reg				rd_DATA_fifo;
+	wire	[63:0]	dout_DATA_fifo;
+	wire			empty_DATA_fifo;
+	//logic	[9:0]	length_2;
+    logic	[9:0]	length_minus_one;
+    logic 	[127:0]	din_cmd_fifo_1;
+
+  
+  
+ generic_async_fifo #(      
+             .WRITE_WIDTH 		(128),
+             .READ_WIDTH  		(128),
+             .NUM_BITS    		(128*64),
+             .AFULL_THRESHOLD	(128*60)
+                       )
+    fifo_128_to_128_fwft_HDR (
+
+   .wr_clk        (clk),
+   .wr_rst_n      (rst_n),
+   .wr_en         (wr_tx_fifo[2]),
+   .wr_data       (din_tx_fifo[2]),
+   .wr_full       (),
+   .wr_afull      (full_tx_fifo[2]),
+   .wr_occupancy  (),
+   .wr_overflow   (),
+   .rd_clk        (clk),
+   .rd_rst_n      (rst_n),
+   .rd_en         (rd_HDR_fifo),
+   .rd_data       (dout_HDR_fifo),
+   .rd_empty      (empty_HDR_fifo),
+   .rd_occupancy  (),
+   .rd_underflow  ()
+
+);
+
+generic_async_fifo #(      
+             .WRITE_WIDTH 		(128),
+             .READ_WIDTH  		(64),
+             .NUM_BITS    		(128*64),
+             .AFULL_THRESHOLD	(128*60)
+                       )
+    fifo_128_to_128_fwft_DATA (
+
+   .wr_clk        (clk),
+   .wr_rst_n      (rst_n),
+   .wr_en         (wr_tx_fifo[0]),
+   .wr_data       ({din_tx_fifo[0][63:0],din_tx_fifo[0][127:64]}),
+   .wr_full       (),
+   .wr_afull      (full_tx_fifo[0]),
+   .wr_occupancy  (),
+   .wr_overflow   (),
+   .rd_clk        (clk),
+   .rd_rst_n      (rst_n),
+   .rd_en         (rd_DATA_fifo),
+   .rd_data       (dout_DATA_fifo),
+   .rd_empty      (empty_DATA_fifo),
+   .rd_occupancy  (),
+   .rd_underflow  ()
+
+);
+  
+ 
+ 
+ 
+ ////////////////////
+ 
+ 
+ //	THIS IS WRITTEN ONLY FOR COMPLETIONS
+ //	I ASSUME HERE THAT IF THERE IS OHC-E4 so that means that there are more then 8 dw's IN THE HEADER
+ // I CAN DO THAT CALCULATION USING THE INFO BYTES BUT I PREFER FOR NOW NOT TO ADD LOGIC ON THE HDR_MD
+   
+        //signals
+   parameter  IDLE_2       	= 2'b00;
+   parameter  REST_2		= 2'b01; 
+   parameter  READ_HDR		= 2'b10; 
+   parameter  READ_EXTRA	= 2'b11; 
+   
+	reg 	[1:0] 	current_state_2;
+	reg				over_8_flag;
+	reg				half_flag;
+	reg				end_flag;
+	reg				OHC_A_flag;
+	
+   always @ (posedge clk or negedge rst_n)
+   begin
+   if (rst_n == 1'b0) begin //  Asynchronous reset
+		current_state_2 			<= IDLE_2;
+		wr_cmd_fifo					<= 1'b0;
+		rd_HDR_fifo					<= 1'b0;
+		din_cmd_fifo				<=  'b0;
+		over_8_flag					<= 1'b0;
+		half_flag					<= 1'b0;
+		end_flag					<= 1'b0;
+		OHC_A_flag					<= 1'b0;
+    end
+   else begin
+      case(current_state_2) 
+		IDLE_2:
+     begin 
+        if (~empty_HDR_fifo) begin
+				current_state_2 				<= REST_2; 
+				rd_HDR_fifo						<= 1'b1; 
+				wr_cmd_fifo						<= 1'b0;
+				din_cmd_fifo					<= din_cmd_fifo_1;
+				over_8_flag						<= dout_HDR_fifo[44] & dout_HDR_fifo[43]; 	//i assume here that there is a Vendoe defined DW and then these bits are bits[4:3] of OHC field
+				OHC_A_flag						<= dout_HDR_fifo[40]; 						//this is bit [0] of OHC field
+			end else begin
+				current_state_2 				<= IDLE_2; 
+				rd_HDR_fifo						<= 1'b0;
+				wr_cmd_fifo						<= 1'b0;
+	     end
+     end
+     
+		REST_2:	
+   begin
+		if (wr_cmd_fifo) begin
+			if (over_8_flag) begin
+				current_state_2 				<= READ_EXTRA; 
+			end else begin
+				current_state_2 				<= IDLE_2;
+			end
+				rd_HDR_fifo						<= 1'b0; 
+				wr_cmd_fifo						<= 1'b0;
+		end else begin
+			if (end_flag) begin
+				current_state_2 				<= IDLE_2; 
+				end_flag						<= 1'b0;
+				over_8_flag						<= 1'b0;
+			end else if (over_8_flag) begin
+				if (half_flag) begin
+				current_state_2 				<= READ_EXTRA; 
+				end else begin
+				current_state_2 				<= READ_HDR;
+				end
+			end else begin
+				current_state_2 				<= READ_HDR;
+			end
+				rd_HDR_fifo						<= 1'b0; 
+	     end
+   end
+        
+		READ_HDR:	
+   begin
+		if (~empty_HDR_fifo & ~full_cmd_fifo) begin
+				if (OHC_A_flag) begin
+				din_cmd_fifo[79:77]				<= dout_HDR_fifo[26:24];  	//	Completion Status
+				din_cmd_fifo[33:32]				<= dout_HDR_fifo[28:27];	//	Lower address [1:0]
+				end else begin
+				din_cmd_fifo[79:77]				<= 3'h0;					//top of page 199 of pcie6 spec
+				din_cmd_fifo[33:32]				<= 2'h0;					//top of page 199 of pcie6 spec
+				end
+				current_state_2 				<= REST_2;  
+				rd_HDR_fifo						<= 1'b1; 
+				wr_cmd_fifo						<= 1'b1;
+		end else begin
+				current_state_2 				<= READ_HDR;  
+				rd_HDR_fifo						<= 1'b0; 
+				wr_cmd_fifo						<= 1'b0;
+				din_cmd_fifo					<= din_cmd_fifo;
+			end
+   end
+   
+		READ_EXTRA:	
+   begin
+		if (~empty_HDR_fifo) begin
+			if (half_flag) begin
+				current_state_2 				<= REST_2; 
+				rd_HDR_fifo						<= 1'b1;
+				half_flag						<= 1'b0;
+				end_flag						<= 1'b1;
+			end else begin
+				current_state_2 				<= REST_2;
+				rd_HDR_fifo						<= 1'b1;
+				half_flag						<= 1'b1;
+			end
+		end else begin
+				current_state_2 				<= READ_EXTRA;  
+				rd_HDR_fifo						<= 1'b0; 
+			end
+   end
+   
+  default:
+     current_state_2  <= IDLE_2;
+     endcase
+   end  
+   end 
+ 
+ 
+ 
+ 
+ 
+ ///////////////////////////
+ 
+ 
+ 
+ /*
+  
+   always @ (posedge clk or negedge rst_n)
+   begin
+      if (!rst_n) begin 
+			half_flag  		<= 1'b0;
+			wr_cmd_fifo		<= 1'b0;
+			wait_flag		<= 1'b0;
+			rd_HDR_fifo		<= 1'b0;
+		 end else begin 
+			if (~empty_HDR_fifo & ~full_cmd_fifo & ~full_length_fifo & ~wait_flag) begin
+					if (half_flag) begin
+						wr_cmd_fifo		<= 1'b0;
+					end else begin
+						wr_cmd_fifo		<= 1'b1;
+					end
+					half_flag 		<= ~half_flag;
+					wait_flag		<= 1'b1;
+					rd_HDR_fifo		<= 1'b1;
+			end else begin
+					half_flag 		<= half_flag;
+					wr_cmd_fifo		<= 1'b0;
+					wait_flag		<= 1'b0;
+					rd_HDR_fifo		<= 1'b0;
+			end
+		end	
+	end	*/
+	
+	  		
+	assign full_tx_fifo[3]	= 1'b0;
+	assign full_tx_fifo[1]	= 1'b0;
+	
+	
+	
+	
+	logic	[6:0]		pcie2_fmt_type;
+	logic	[2:0]		pcie2_tc;
+	logic				pcie2_td;
+	logic				pcie2_ep;
+	logic	[1:0]		pcie2_attr;
+	logic	[9:0]		pcie2_length;
+	logic	[15:0]		pcie2_completer_id;
+	logic	[2:0]		pcie2_status;
+	logic				pcie2_B;
+	logic	[11:0]		pcie2_byte_count;
+	logic	[15:0]		pcie2_requestor_id;
+	logic	[7:0]		pcie2_tag;
+	logic	[6:0]		pcie2_lower_address;
+	
+  
+  always @ (*)
+begin
+   case (dout_HDR_fifo[39:32])	//i assume there is a vendor defined TLP E.C.
+     /* 7'h04, 7'h05, 7'h44, 7'h45: 			//04: cfg rd type0.  05: cfg rd type1.  44: cfg wr type0.  45: cfg wr type0
+		begin
+           pcie6_hdr_ohc				<= 	5'h05;
+           pcie6_hdr_type				<=  {1'b0,dout_cmd_fifo[126:120]};
+           pcie6_hdr_tc					<=  3'h0;
+           pcie6_hdr_length				<=  10'h001;
+           pcie6_hdr_attr				<=  3'h0;
+           pcie6_hdr_ts					<=  3'h0;
+           pcie6_hdr_requestor_id		<=  dout_cmd_fifo[95:80];
+           pcie6_hdr_tag				<=  {6'h0,dout_cmd_fifo[79:72]};
+           pcie6_hdr_ep					<=  dout_cmd_fifo[110];
+           pcie6_hdr_dest_bdf			<=  dout_cmd_fifo[64:48];
+           pcie6_hdr_reg_num			<=  dout_cmd_fifo[43:34];
+           pcie6_OHCA3_lbe				<=  4'h0;
+		   pcie6_OHCA3_fbe				<=  dout_cmd_fifo[67:64];
+		   pcie6_OHCA3_dsv				<=  1'b0;
+		   pcie6_OHCA3_dest_seg			<=  8'h0;
+       	   pcie6_OHCC_sub_stream		<=   'h0;
+		   pcie6_OHCC_rsv				<=   'h0;
+		   pcie6_OHCC_k					<=   'h0;
+		   pcie6_OHCC_t					<=   'h0;
+		   pcie6_OHCC_stream_id			<=   'h0;
+		   pcie6_OHCC_pr_sent_counter	<=   'h0;
+		   pcie6_OHCC_requestor_segment	<=   'h0;
+           pcie6_OHC_A3					<=  {pcie6_OHCA3_lbe,pcie6_OHCA3_fbe,pcie6_OHCA3_dsv,7'h00,8'h00,pcie6_OHCA3_dest_seg};
+           pcie6_OHC_C					<=  {pcie6_OHCC_sub_stream,pcie6_OHCC_rsv,1'b0,pcie6_OHCC_k,pcie6_OHCC_t,pcie6_OHCC_stream_id,pcie6_OHCC_pr_sent_counter,pcie6_OHCC_requestor_segment};
+           
+           din_cmd_fifo					<= 
+           
+           din_HDR_fifo 				<=  {64'h0,pcie6_OHC_C,pcie6_OHC_A3,pcie6_hdr_reg_num[5:0],2'h0,4'h0,pcie6_hdr_reg_num[9:6],pcie6_hdr_dest_bdf[7:0],pcie6_hdr_dest_bdf[15:8],pcie6_hdr_tag[7:0],pcie6_hdr_ep,1'b0,pcie6_hdr_tag[13:8],pcie6_hdr_requestor_id[7:0],pcie6_hdr_requestor_id[15:8],pcie6_hdr_length[7:0],pcie6_hdr_ts,pcie6_hdr_attr,pcie6_hdr_length[9:8],pcie6_hdr_tc,pcie6_hdr_ohc,pcie6_hdr_type,vendor_defined_prefix};
+           sfi_hdr_size					<= 	4'h6;	//1DW for vendor defined prefix. 3DW for header of configuration transactions. 2DW for OHC's
+			case (dout_cmd_fifo[126:120])
+				7'h04, 7'h05: 				//04: cfg rd type0.  05: cfg rd type1
+				din_HDR_MD_fifo 		<=  {'b0,sfi_hdr_parity,sfi_hdr_doesnt_have_data,sfi_hdr_used_shared_crd,sfi_hdr_vc_id,sfi_hdr_size,2'b00,sfi_hdr_fc_id_np};
+				7'h44, 7'h45: 				//44: cfg wr type0.  45: cfg wr type0
+				din_HDR_MD_fifo 		<=  {'b0,sfi_hdr_parity,sfi_hdr_has_data,sfi_hdr_used_shared_crd,sfi_hdr_vc_id,sfi_hdr_size,2'b00,sfi_hdr_fc_id_np};
+			endcase
+        end*/
+      8'h0a, 8'h4a: 						//0a: cpl W/O data.		4a:  cpl with data
+		begin
+           pcie2_fmt_type				<= 	dout_HDR_fifo[38:32];
+           pcie2_tc						<=	dout_HDR_fifo[47:45];
+           pcie2_attr					<=  dout_HDR_fifo[52:50];
+           pcie2_ep						<=  dout_HDR_fifo[87];
+           pcie2_td						<=  1'b0; //E.C. to make sure
+           pcie2_length					<=  {dout_HDR_fifo[49:48],dout_HDR_fifo[63:56]};
+		   pcie2_completer_id			<=  {dout_HDR_fifo[71:64],dout_HDR_fifo[79:72]};
+		   pcie2_status					<=  3'b000;	//this field should come from OHC a5
+		   pcie2_B						<=  1'b0;	//E.C. to make sure
+		   pcie2_byte_count				<=  {dout_HDR_fifo[115:112],dout_HDR_fifo[127:120]};
+	       pcie2_requestor_id			<=  {dout_HDR_fifo[103:96],dout_HDR_fifo[111:104]};
+		   pcie2_tag					<=  dout_HDR_fifo[95:88];
+		   pcie2_lower_address			<=  {dout_HDR_fifo[86],dout_HDR_fifo[119:116],2'b00}; //the two lsb bit should come from OHC a5
+           din_cmd_fifo_1				<=  {1'b0,pcie2_fmt_type,1'b0,pcie2_tc,4'h0,pcie2_td,pcie2_ep,pcie2_attr,2'b00,pcie2_length,pcie2_completer_id,pcie2_status,pcie2_B,pcie2_byte_count,pcie2_requestor_id,pcie2_tag,1'b0,pcie2_lower_address,32'h0};
+        end
+      default:
+		begin
+		   pcie2_fmt_type				<= 	dout_HDR_fifo[38:32];
+           pcie2_tc						<=	dout_HDR_fifo[47:45];
+           pcie2_attr					<=  dout_HDR_fifo[52:50];
+           pcie2_ep						<=  dout_HDR_fifo[87];
+           pcie2_td						<=  'b0;
+           pcie2_length					<=  {dout_HDR_fifo[49:48],dout_HDR_fifo[63:56]};
+		   pcie2_completer_id			<=  'b0;
+		   pcie2_status					<=  'b0;	
+		   pcie2_B						<=  'b0;
+		   pcie2_byte_count				<=  {dout_HDR_fifo[115:112],dout_HDR_fifo[127:120]};
+	       pcie2_requestor_id			<=  'b0;
+		   pcie2_tag					<=  dout_HDR_fifo[95:88];
+		   pcie2_lower_address			<=  {dout_HDR_fifo[86],dout_HDR_fifo[119:116],2'b00};
+           din_cmd_fifo_1 				<=  {1'b0,pcie2_fmt_type,1'b0,pcie2_tc,4'h0,pcie2_td,pcie2_ep,pcie2_attr,2'b00,pcie2_length,pcie2_completer_id,pcie2_status,pcie2_B,pcie2_byte_count,pcie2_requestor_id,pcie2_tag,1'b0,pcie2_lower_address};
+        end
+   endcase 
+end
+  
+  
+  
+  generic_async_fifo # (      
+             .WRITE_WIDTH (10),
+             .READ_WIDTH  (10),
+             .NUM_BITS    (128*10),
+             .AFULL_THRESHOLD (120*10)//,
+
+        
+           ) fifo_64b_fwft_length(
+              
+
+   .wr_clk        (clk),
+   .wr_rst_n      (rst_n),
+   .wr_en         (wr_cmd_fifo & din_cmd_fifo[126]),
+   .wr_data       (din_cmd_fifo[105:96]),
+   .wr_full       (),
+   .wr_afull      (full_length_fifo),
+   .wr_occupancy  (),
+   .wr_overflow   (),
+   .rd_clk        (clk),
+   .rd_rst_n      (rst_n),
+   .rd_en         (rd_length_fifo),
+   .rd_data       (dout_length_fifo),
+   .rd_empty      (empty_length_fifo),
+   .rd_aempty     (),
+   .rd_occupancy  (),
+   .rd_underflow  ()
+);
+  
+  
+  //assign length_2			= dout_length_fifo;
+	
+	always @(*) begin
+    if (dout_length_fifo == 0)
+        length_minus_one = 10'h0;
+    else 
+        length_minus_one = (dout_length_fifo - 1);
+	end
+  
+  
+        //signals
+   parameter  IDLE       		= 2'b00;
+   parameter  READ_DATA			= 2'b01; 
+   parameter  REST				= 2'b10; 
+   parameter  EMPTY_FIFO		= 2'b11; 
+   
+	reg 	[1:0] 	current_state;
+	reg		[9:0]	writes_of_64;
+	reg		[3:0]	throw_out_cntr;
+	
+   always @ (posedge clk or negedge rst_n)
+   begin
+   if (rst_n == 1'b0) begin //  Asynchronous reset
+		current_state 						<= IDLE;
+		writes_of_64						<= 10'h0;
+		throw_out_cntr						<= 4'h0;
+		din_data_fifo						<=  'b0;
+		wr_data_fifo						<= 1'b0;
+		rd_length_fifo						<= 1'b0;
+		rd_DATA_fifo						<= 1'b0;
+    end
+   else begin
+      case(current_state) 
+		IDLE:
+     begin 
+        if (~empty_length_fifo) begin
+				current_state 					<= READ_DATA;  
+				writes_of_64					<= dout_length_fifo[9:1] + dout_length_fifo[0];										//according to length field (which is by DW's) we calculate how many write of 64b will we need to pass all the length
+				throw_out_cntr					<= (D==128) ? (4'd15 - length_minus_one[4:1]) : {1'b0,~length_minus_one[3:1]};		//this calculates how many packets of 64b need to be thrown out since they are not used for the specific length
+				wr_data_fifo					<= 1'b0;
+				rd_length_fifo					<= 1'b1;
+				rd_DATA_fifo					<= 1'b0;
+			end else begin
+				current_state 					<= IDLE; 
+				writes_of_64					<= writes_of_64;
+				throw_out_cntr					<= throw_out_cntr;
+				wr_data_fifo					<= 1'b0;
+				rd_length_fifo					<= 1'b0;
+				rd_DATA_fifo					<= 1'b0;					
+	     end
+     end
+        
+		READ_DATA:	
+   begin
+		if (~empty_DATA_fifo & ~full_data_fifo) begin
+				current_state 					<= REST;  
+				writes_of_64					<= writes_of_64-1;
+				din_data_fifo					<= dout_DATA_fifo;
+				wr_data_fifo					<= 1'b1;
+				rd_length_fifo					<= 1'b0;
+				rd_DATA_fifo					<= 1'b1;
+		end else begin
+				current_state 					<= READ_DATA;  
+				writes_of_64					<= writes_of_64;
+				din_data_fifo					<= din_data_fifo;
+				wr_data_fifo					<= 1'b0;
+				rd_length_fifo					<= 1'b0;
+				rd_DATA_fifo					<= 1'b0;
+			end
+   end
+   
+   REST:	
+   begin
+		if (writes_of_64 == 0) begin
+			if (throw_out_cntr > 0) begin
+				current_state	 				<= EMPTY_FIFO;
+			end else begin
+				current_state 					<= IDLE;
+			end
+				din_data_fifo					<= din_data_fifo;
+				wr_data_fifo					<= 1'b0;
+				rd_length_fifo					<= 1'b0;
+				rd_DATA_fifo					<= 1'b0;
+		end else begin
+				current_state 					<= READ_DATA;
+				din_data_fifo					<= din_data_fifo;
+				wr_data_fifo					<= 1'b0;
+				rd_length_fifo					<= 1'b0;
+				rd_DATA_fifo					<= 1'b0;
+		end					
+   end
+   
+		EMPTY_FIFO:  
+   begin
+		if (~empty_DATA_fifo) begin
+			if (throw_out_cntr > 1) begin
+				current_state 					<= REST;
+			end else begin
+				current_state 					<= IDLE;
+			end
+				throw_out_cntr					<= throw_out_cntr-1;
+				din_data_fifo					<= din_data_fifo;
+				wr_data_fifo					<= 1'b0;
+				rd_length_fifo					<= 1'b0;
+				rd_DATA_fifo					<= 1'b1;
+
+		end else begin
+				current_state 					<= EMPTY_FIFO;  
+				throw_out_cntr					<= throw_out_cntr;
+				din_data_fifo					<= din_data_fifo;
+				wr_data_fifo					<= 1'b0;
+				rd_length_fifo					<= 1'b0;
+				rd_DATA_fifo					<= 1'b0;
+		end
+   end
+     
+     
+  default:
+     current_state  <= IDLE;
+     endcase
+   end  
+   end 
+    
+    
+  
+		
+endmodule
+

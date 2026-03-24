@@ -1,0 +1,144 @@
+NETBATCH:
+  ZSC11:
+        POOL: zsc11_express
+        SLOT: /IVE/LNL/fpga
+        CLASS: SLES12&&15G
+        LOCAL: 0
+        ANALYZE:
+            LIGHT:
+                CLASS: SLES12&&16G
+                # Disable delegates for analysis
+                USE_DELEGATES: NO  
+        FRONTEND:
+            LIGHT:
+               CLASS: SLES12&&16G
+            HEAVY:
+               CLASS: SLES12&&32G
+        BACKEND:
+            LIGHT:
+               CLASS: SLES12&&64G&&8C
+            HEAVY:
+                #this is used for vcs elab  , for vivado should be changed !!!
+               CLASS: SLES12&&32G&&2C
+        PROTOCOMPILER_CUSTOM:
+            1C_JOBS:
+                PARALLEL_PROCESSORS: 1 
+                POOL: zsc11_express
+                SLOT: /IVE/LNL/fpga
+                CLASS: SLES12&&1C&&32G
+                TASKS:
+                    - partition
+                    - pre_partition
+            4C_JOBS:
+                PARALLEL_PROCESSORS: 4
+                POOL: zsc11_express
+                SLOT: /IVE/LNL/fpga
+                CLASS: SLES12&&4C&&80G
+                TASKS:
+                    - system_route
+                    - system_generate                                                                    
+            6C_JOBS:
+                PARALLEL_PROCESSORS: 6
+                POOL: zsc11_express
+                SLOT: /IVE/LNL/fpga
+                CLASS: SLES12&&6C&&100G
+                TASKS:
+                    - compile                    
+                    - partitioning_compile                      
+            8C_128G_JOBS:
+                PARALLEL_PROCESSORS: 8
+                POOL: zsc11_express
+                SLOT: /IVE/LNL/fpga
+                CLASS: SLES12&&8C&&200G
+                TASKS:                                                                                
+                    - synthesis    
+
+  SC:
+        POOL: sc8_express 
+        SLOT: /IVE/LNL/fpga
+        CLASS: SLES12&&8G
+        LIGHT:
+            LOCAL: 0
+        HEAVY:
+            LOCAL: 0
+        FRONTEND:
+            LOCAL: 0
+            HEAVY:
+               CLASS: SLES12&&15G
+            LIGHT:
+               CLASS: SLES12&&15G
+        BACKEND:
+            LOCAL: 0 
+            HEAVY:
+               CLASS: SLES12&&128G
+            LIGHT:
+               CLASS: SLES12&&128G&&8C&&cpucount>8
+        VPS_CUSTOM:
+            MEMHIGH:
+              LOCAL: 0
+              RAM: 256G
+              TASKS:
+                  - condition
+                  - qualify
+                  - route  
+            MEMHIGH2:
+              LOCAL: 0
+              RAM: 350G
+              TASKS:
+                  - recondb
+                  - pbannotate
+                  - wrap
+            MEMHIGH3:
+              LOCAL: 0
+              RAM: 250G
+              TASKS:
+                  - spnr
+            MEMLOW:
+              LOCAL: 0
+              RAM: 15G
+              TASKS:
+                  - rtlc
+            MEMMED1:        
+              LOCAL: 0
+              RAM: 64G
+              TASKS:
+                  - visualizer
+            MEMMED3: 
+              LOCAL: 0
+              RAM: 150G
+              TASKS:
+                  - edit
+                  - part
+                  - tbuild
+            MEMHIGH4:
+              LOCAL: 0
+              RAM: 512G
+              TASKS:
+                  - wavegencompile 
+                  - split
+
+
+  IIL:
+    POOL: iil_express
+    SLOT: /sve_ppa/ppa_fpga
+    CLASS: SLES12&&64G
+    LIGHT:
+      LOCAL: 0
+    HEAVY:
+      LOCAL: 0
+    FRONTEND:
+      LOCAL: 0
+      HEAVY:
+        CLASS: 64G&&1C&&SLES12
+      LIGHT:
+        CLASS: 64G&&1C&&SLES12
+    BACKEND:
+      SLOT: /sve_ppa/ppa_fpga
+      LOCAL: 0            
+      HEAVY:
+        CLASS: 64G&&4C&&SLES12
+      ISE:
+        CLASS: 64G&&4C&&SLES12
+      LIGHT:
+        CLASS: 64G&&4C&&SLES12
+

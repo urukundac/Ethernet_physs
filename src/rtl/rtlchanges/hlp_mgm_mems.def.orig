@@ -1,0 +1,227 @@
+`ifndef HLP_MEMS_DEF
+`define HLP_MEMS_DEF
+
+`ifdef INTEL_DC
+`define HLP_MEMS_DEF_DOING_SYNTHESIS
+`endif
+
+`ifdef SYNTHESIS
+`define HLP_MEMS_DEF_DOING_SYNTHESIS
+`endif
+
+`ifdef HLP_MEMS_DEF_DOING_SYNTHESIS
+// 1274 vs 1275 differ on the names and this messes up correspondence with mem_gen
+`define NO_PWR_PINS
+`define HLP_FCMN_ASIC_MEMS
+`define HLP_FGHASH_ASIC_MEMS
+`define HLP_FGRP_ASIC_MEMS
+`define HLP_FWD_ASIC_MEMS
+`define HLP_MAC4_ASIC_MEMS
+`define HLP_MOD_ASIC_MEMS
+`define HLP_MSEC_ASIC_MEMS
+`define HLP_PARSER_ASIC_MEMS
+`define HLP_PM_ASIC_MEMS
+`define HLP_SCHED_ASIC_MEMS
+`define HLP_SIA_ASIC_MEMS
+`define HLP_TAIL_ASIC_MEMS
+`endif
+	`define	HLP_MEM_DBG_DW_SEL_WIDTH	 8
+	`define	HLP_MEM_DBG_RD_ADR_WIDTH	18
+	`define	HLP_MEM_RM_WIDTH		 4
+	`define HLP_MEM_GEN_ECC_INST_NUM      128
+	`define	HLP_TCAM_DBG_DW_SEL_WIDTH	    	8
+        `define	HLP_TCAM_DBG_RD_ADR_WIDTH	    	18
+        `define	HLP_TCAM_ANALOG_TUNE_CONFG_WIDTH	12
+
+	
+		`ifdef	HLP_ASIC_MEMS
+		
+				`ifndef	HLP_CMLAN_ASIC_MEMS_EXCLUDE
+					`define HLP_CMLAN_ASIC_MEMS
+				`endif
+			
+				`ifndef	HLP_CMPE_ASIC_MEMS_EXCLUDE
+						`define HLP_CMPE_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_DPU_ASIC_MEMS_EXCLUDE
+						`define HLP_DPU_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_FOC_ASIC_MEMS_EXCLUDE
+						`define HLP_FOC_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_MNG_ASIC_MEMS_EXCLUDE
+						`define HLP_MNG_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_ITR_ASIC_MEMS_EXCLUDE
+						`define HLP_ITR_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PBLOC_ASIC_MEMS_EXCLUDE
+						`define HLP_PBLOC_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PCIE_ASIC_MEMS_EXCLUDE
+						`define HLP_PCIE_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PDOC_ASIC_MEMS_EXCLUDE
+						`define HLP_PDOC_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_AMP_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_AMP_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_CPUW_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_CPUW_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_CQM_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_CQM_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_CSR_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_CSR_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_PAL_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_PAL_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_PRX_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_PRX_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_PTX_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_PTX_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_PUSH_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_PUSH_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_SFP_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_SFP_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_STATS_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_STATS_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_TBUF_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_TBUF_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_TMR_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_TMR_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PE_WQM_ASIC_MEMS_EXCLUDE
+						`define HLP_PE_WQM_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PEOC_ASIC_MEMS_EXCLUDE
+						`define HLP_PEOC_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PMAT_ASIC_MEMS_EXCLUDE
+						`define HLP_PMAT_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PPRS_ASIC_MEMS_EXCLUDE
+						`define HLP_PPRS_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_RCB_ASIC_MEMS_EXCLUDE
+						`define HLP_RCB_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_RCU_PRE_ASIC_MEMS_EXCLUDE
+						`define HLP_RCU_PRE_ASIC_MEMS
+				`endif
+		
+				`ifndef	HLP_RCU_PST_ASIC_MEMS_EXCLUDE
+						`define HLP_RCU_PST_ASIC_MEMS
+				`endif
+
+				`ifndef	HLP_RCU_SWR_ASIC_MEMS_EXCLUDE
+						`define HLP_RCU_SWR_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_RDPU_ASIC_MEMS_EXCLUDE
+						`define HLP_RDPU_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_RLAN_ASIC_MEMS_EXCLUDE
+						`define HLP_RLAN_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_RLAN_QCS_ASIC_MEMS_EXCLUDE
+						`define HLP_RLAN_QCS_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_RPB_ASIC_MEMS_EXCLUDE
+						`define HLP_RPB_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_STAT_MAC_ASIC_MEMS_EXCLUDE
+						`define HLP_STAT_MAC_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_STAT_RCU_ASIC_MEMS_EXCLUDE
+						`define HLP_STAT_RCU_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_STAT_TDPU_ASIC_MEMS_EXCLUDE
+						`define HLP_STAT_TDPU_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_TCB_ASIC_MEMS_EXCLUDE
+						`define HLP_TCB_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_TDPU_ASIC_MEMS_EXCLUDE
+						`define HLP_TDPU_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_TLAN_ASIC_MEMS_EXCLUDE
+						`define HLP_TLAN_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_TPB_ASIC_MEMS_EXCLUDE
+						`define HLP_TPB_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_TSCD_ASIC_MEMS_EXCLUDE
+						`define HLP_TSCD_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PQM_ASIC_MEMS_EXCLUDE
+						`define HLP_PQM_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_PSM_ASIC_MEMS_EXCLUDE
+						`define HLP_PSM_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_TCLAN_ASIC_MEMS_EXCLUDE
+						`define HLP_TCLAN_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_TCVMLR_ASIC_MEMS_EXCLUDE
+						`define HLP_TCVMLR_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_FDS_ASIC_MEMS_EXCLUDE
+						`define HLP_FDS_ASIC_MEMS
+				`endif
+	
+				`ifndef	HLP_TCPMG_ASIC_MEMS_EXCLUDE
+						`define HLP_TCPMG_ASIC_MEMS
+				`endif
+		`endif
+`endif

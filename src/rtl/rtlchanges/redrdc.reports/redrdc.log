@@ -1,0 +1,25 @@
+
+-----------------------------------------------------------
+redrdc
+Veloce Prototyping System version: 2024.2
+Veloce Prototyping System build: 5766880
+	           Unpublished work. Copyright 2024 Siemens
+	       This material contains trade secrets or otherwise
+	confidential information owned by Siemens Industry Software Inc.
+	  or its affiliates (collectively, "SISW"), or its licensors.
+	 Access to and use of this information is strictly limited as
+	 set forth in the Customer's applicable agreements with SISW.
+Time: Thu Feb 19 01:08:11 2026
+-----------------------------------------------------------
+
+Fatal     [redrdc-29004][01]: Specified hnl directory doesn't exist or doesn't contain a design.info
+
+Message Summary
+----------------------------------------------------------------------------------------------------
+Count  Type            Message ID          Summary                                                         
+----------------------------------------------------------------------------------------------------
+1      Fatal           redrdc-29004        Redrdc general message.                                         
+----------------------------------------------------------------------------------------------------
+
+Redrdc finished with: 
+      1 Fatal Error

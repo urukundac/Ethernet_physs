@@ -1,0 +1,11 @@
++incdir+//nfs/site/disks/zsc14.xne_cnic.rtl.001/nverma/RTL_XLGMII_CDC
+/nfs/site/disks/zsc14.xne_cnic.rtl.001/nverma/RTL_XLGMII_CDC/xlgmii_cdc_wrapper.sv
+/nfs/site/disks/zsc14.xne_cnic.rtl.001/nverma/RTL_XLGMII_CDC/xlgmii_cdc_125_to_1.sv
+/nfs/site/disks/zsc14.xne_cnic.rtl.001/nverma/RTL_XLGMII_CDC/xlgmii_cdc_1_to_125.sv
+/nfs/site/disks/zsc14.xne_cnic.rtl.001/nverma/RTL_XLGMII_CDC/IW_fpga_async_fifo.sv
+/nfs/site/disks/zsc14.xne_cnic.rtl.001/nverma/RTL_XLGMII_CDC/memwrappers/fpgamem.v
+/nfs/site/disks/zsc14.xne_cnic.rtl.001/nverma/RTL_XLGMII_CDC/IW_fifo_ctl_dc.sv
+/nfs/site/disks/zsc14.xne_cnic.rtl.001/nverma/RTL_XLGMII_CDC/IW_fpga_double_sync.sv
+/nfs/site/disks/zsc14.xne_cnic.rtl.001/nverma/RTL_XLGMII_CDC/IW_bin2gray.sv
+/nfs/site/disks/zsc14.xne_cnic.rtl.001/nverma/RTL_XLGMII_CDC/IW_sync_posedge.sv      
+/nfs/site/disks/zsc14.xne_cnic.rtl.001/nverma/RTL_XLGMII_CDC/IW_gray2bin.sv
