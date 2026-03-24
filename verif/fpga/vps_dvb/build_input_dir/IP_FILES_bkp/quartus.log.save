@@ -1,0 +1,10 @@
+# Start logging UI actions
+# Mon Apr 7 10:57:48 2025
+[Mon Apr  7 10:58:07 2025] Window title: 'Quartus Prime' | QPushButton '&Yes' pressed!
+[Mon Apr  7 10:58:09 2025] Window title: 'Quartus Prime' | QPushButton '&Yes' pressed!
+[Mon Apr  7 10:58:09 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - /nfs/site/disks/xne_tip_0003/urukunda/quartus_20_3_grr/s10_xcvr_phy_reset_controller/ip_gen - ip_gen [*]' | P&rocessing > 'Compilation Dashboard' was pressed
+[Mon Apr  7 10:58:13 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - /nfs/site/disks/xne_tip_0003/urukunda/quartus_20_3_grr/s10_xcvr_phy_reset_controller/ip_gen - ip_gen [*]' | &Assignments > '&Device...' was pressed
+[Mon Apr  7 10:58:15 2025] Window title: 'Device' | 'Target device': QRadioButton '&Specific device selected in 'Available devices' list' was checked
+[Mon Apr  7 10:58:29 2025] Window title: 'Device' | QPushButton 'OK' pressed!
+# End of logging UI actions
+# Mon Apr 7 10:59:43 2025

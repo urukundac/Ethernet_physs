@@ -1,0 +1,19 @@
+# system info serdes_tbi_loopback_fifo on 2025.04.07.11:01:31
+system_info:
+name,value
+DEVICE,1SG10MHN3F74C2LG_U1
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for serdes_tbi_loopback_fifo on 2025.04.07.11:01:31
+files:
+filepath,kind,attributes,module,is_top
+sim/serdes_tbi_loopback_fifo.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,serdes_tbi_loopback_fifo,true
+fifo_1923/sim/serdes_tbi_loopback_fifo_fifo_1923_titfvra.v,VERILOG,,serdes_tbi_loopback_fifo_fifo_1923_titfvra,false
+fifo_1923/sim/serdes_tbi_loopback_fifo_fifo_1923_titfvra.sdc,SDC_ENTITY,NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION,serdes_tbi_loopback_fifo_fifo_1923_titfvra,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+serdes_tbi_loopback_fifo.fifo_0,serdes_tbi_loopback_fifo_fifo_1923_titfvra

@@ -1,0 +1,19 @@
+# system info i2c_ip_inst_conduit_end_bfm_ip on 2025.07.10.10:02:38
+system_info:
+name,value
+DEVICE,1SG10MHN3F74C2LG_U2
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for i2c_ip_inst_conduit_end_bfm_ip on 2025.07.10.10:02:38
+files:
+filepath,kind,attributes,module,is_top
+sim/i2c_ip_inst_conduit_end_bfm_ip.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,i2c_ip_inst_conduit_end_bfm_ip,true
+altera_conduit_bfm_191/sim/verbosity_pkg.sv,SYSTEM_VERILOG, COMMON_SYSTEMVERILOG_PACKAGE=avalon_vip_verbosity_pkg,i2c_ip_inst_conduit_end_bfm_ip_altera_conduit_bfm_191_tdqh7na,false
+altera_conduit_bfm_191/sim/i2c_ip_inst_conduit_end_bfm_ip_altera_conduit_bfm_191_tdqh7na.sv,SYSTEM_VERILOG,,i2c_ip_inst_conduit_end_bfm_ip_altera_conduit_bfm_191_tdqh7na,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+i2c_ip_inst_conduit_end_bfm_ip.i2c_ip_inst_conduit_end_bfm,i2c_ip_inst_conduit_end_bfm_ip_altera_conduit_bfm_191_tdqh7na

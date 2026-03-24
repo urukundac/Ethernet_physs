@@ -1,0 +1,1018 @@
+{
+    "top": "physs",
+    "ipDetails": {
+        "sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0": {
+            "version": "/p/ipx/ipcache2/mmg/sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0/MMGA0P00RTL1IFC1V12/3/mmg.sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0",
+            "overrideLib": "sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0_lib",
+            "ipType": "hip",
+            "sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0/sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0/sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0:sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0_lib"
+            ]
+        },
+        "saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0": {
+            "version": "/p/ipx/ipcache2/mmg/saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0/MMGA0P00RTL1IFC1V13/3/mmg.saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0",
+            "overrideLib": "saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0_lib",
+            "ipType": "hip",
+            "saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0/saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0/saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0:saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0_lib"
+            ]
+        },
+        "saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0": {
+            "version": "/p/ipx/ipcache2/mmg/saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0/MMGA0P00RTL1IFC1V13/3/mmg.saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0",
+            "overrideLib": "saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0_lib",
+            "ipType": "hip",
+            "saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0/saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0/saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0:saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0_lib"
+            ]
+        },
+        "saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0": {
+            "version": "/p/ipx/ipcache2/mmg/saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0/MMGA0P00RTL1IFC1V12/3/mmg.saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0",
+            "overrideLib": "saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0_lib",
+            "ipType": "hip",
+            "saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0/saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0/saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0:saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0_lib"
+            ]
+        },
+        "saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0": {
+            "version": "/p/ipx/ipcache2/mmg/saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0/MMGA0P00RTL1IFC1V12/3/mmg.saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0",
+            "overrideLib": "saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0_lib",
+            "ipType": "hip",
+            "saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0/saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0/saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0:saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0_lib"
+            ]
+        },
+        "saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0": {
+            "version": "/p/ipx/ipcache2/mmg/saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0/MMGA0P00RTL1IFC1V12/3/mmg.saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0",
+            "overrideLib": "saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0_lib",
+            "ipType": "hip",
+            "saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0/saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0/saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0:saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0_lib"
+            ]
+        },
+        "odi05top": {
+            "version": "$DCLHOME_ODI05TOP",
+            "overrideLib": "odi05top_lib",
+            "ipType": "hip",
+            "odi05top_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/odi05top/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/odi05top/odi05top.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/odi05top/odi05top.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "odi05top:odi05top_lib"
+            ]
+        },
+        "vdm05top": {
+            "version": "$DCLHOME_VDM05TOP",
+            "overrideLib": "vdm05top_lib",
+            "ipType": "hip",
+            "vdm05top_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/vdm05top/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/vdm05top/vdm05top.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/vdm05top/vdm05top.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "vdm05top:vdm05top_lib"
+            ]
+        },
+        "project_globals": {
+            "version": "$PROJECT_GLOBALS",
+            "overrideLib": "project_globals_lib",
+            "ipType": "sip",
+            "project_globals_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/project_globals/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/project_globals/project_globals.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/project_globals/project_globals.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "project_globals:project_globals_lib"
+            ]
+        },
+        "nss_gen_por": {
+            "version": "$DCLHOME_GEN_POR",
+            "overrideLib": "nss_gen_por_lib",
+            "ipType": "sip",
+            "nss_gen_por_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/nss_gen_por/filelists/gen_por_lib.rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/nss_gen_por/nss_gen_por.gen_por_lib.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/nss_gen_por/nss_gen_por.gen_por_lib.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "nss_gen_por:nss_gen_por_lib"
+            ]
+        },
+        "nss_aw_logic": {
+            "version": "$DCLHOME_AW_LOGIC",
+            "overrideLib": "aw_logic_lib",
+            "ipType": "sip",
+            "aw_logic_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/nss_aw_logic/filelists/aw_logic_lib.rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/nss_aw_logic/filelists/aw_logic_lib.rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/nss_aw_logic/nss_aw_logic.aw_logic_lib.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/nss_aw_logic/nss_aw_logic.aw_logic_lib.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "nss_aw_logic:aw_logic_lib"
+            ]
+        },
+        "sji_shared_logic": {
+            "version": "$DCLHOME_SJI_SHARED_LOGIC",
+            "overrideLib": "sji_shared_logic_lib",
+            "ipType": "sip",
+            "sji_shared_logic_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/sji_shared_logic/filelists/sji_shared_logic_lib.rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/sji_shared_logic/filelists/sji_shared_logic_lib.rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/sji_shared_logic/sji_shared_logic.sji_shared_logic_lib.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/sji_shared_logic/sji_shared_logic.sji_shared_logic_lib.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "sji_shared_logic:sji_shared_logic_lib"
+            ]
+        },
+        "ipu_md": {
+            "version": "$DCLHOME_IPU_MD",
+            "overrideLib": "ipu_md_lib",
+            "ipType": "sip",
+            "ipu_md_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/ipu_md/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/ipu_md/ipu_md.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/ipu_md/ipu_md.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ipu_md:ipu_md_lib"
+            ]
+        },
+        "PLLTS5FFPLJFRACL": {
+            "version": "/p/ipx/ipcache2/mmg/PLLTS5FFPLJFRACL/MMGA0P00RTL2IFC2V9/3/mmg.PLLTS5FFPLJFRACL",
+            "overrideLib": "PLLTS5FFPLJFRACL_lib",
+            "ipType": "hip",
+            "PLLTS5FFPLJFRACL_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/PLLTS5FFPLJFRACL/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/PLLTS5FFPLJFRACL/PLLTS5FFPLJFRACL.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/PLLTS5FFPLJFRACL/PLLTS5FFPLJFRACL.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "PLLTS5FFPLJFRACL:PLLTS5FFPLJFRACL_lib"
+            ]
+        },
+        "FGTS5FFPFRACL": {
+            "version": "/p/ipx/ipcache2/mmg/FGTS5FFPFRACL/MMGA0P00RTL3IFC1V1/3/mmg.FGTS5FFPFRACL",
+            "overrideLib": "FGTS5FFPFRACL_lib",
+            "ipType": "hip",
+            "FGTS5FFPFRACL_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/FGTS5FFPFRACL/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/FGTS5FFPFRACL/FGTS5FFPFRACL.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/FGTS5FFPFRACL/FGTS5FFPFRACL.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "FGTS5FFPFRACL:FGTS5FFPFRACL_lib"
+            ]
+        },
+        "cgb_fracl": {
+            "version": "/p/ipx/ipcache2/mmg/cgb_fracl/MMGA0P00RTL1IFC1V20/3/mmg.cgb_fracl",
+            "overrideLib": "cgb_fracl_lib",
+            "ipType": "hip",
+            "cgb_fracl_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/cgb_fracl/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/cgb_fracl/cgb_fracl.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/cgb_fracl/cgb_fracl.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "cgb_fracl:cgb_fracl_lib"
+            ]
+        },
+        "cgb_fgfracl": {
+            "version": "/p/ipx/ipcache2/mmg/cgb_fgfracl/MMGA0P00RTL2IFC2V8/3/mmg.cgb_fgfracl",
+            "overrideLib": "cgb_fgfracl_lib",
+            "ipType": "hip",
+            "cgb_fgfracl_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/cgb_fgfracl/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/cgb_fgfracl/cgb_fgfracl.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/cgb_fgfracl/cgb_fgfracl.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "cgb_fgfracl:cgb_fgfracl_lib"
+            ]
+        },
+        "clkss": {
+            "version": "$DCLHOME_CLKSS",
+            "overrideLib": "clkss_lib",
+            "ipType": "sip",
+            "clkss_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/clkss/filelists/clkss_lib.rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/clkss/clkss.clkss_lib.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/clkss/clkss.clkss_lib.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "nss_gen_por:nss_gen_por_lib",
+                "PLLTS5FFPLJFRACL:PLLTS5FFPLJFRACL_lib",
+                "FGTS5FFPFRACL:FGTS5FFPFRACL_lib",
+                "cgb_fracl:cgb_fracl_lib",
+                "cgb_fgfracl:cgb_fgfracl_lib",
+                "clkss:clkss_lib"
+            ]
+        },
+        "noc_modifiables": {
+            "version": "$DCLHOME_NOC_MODIFIABLES",
+            "overrideLib": "noc_modifiables_lib",
+            "ipType": "sip",
+            "noc_modifiables_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/noc_modifiables/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/noc_modifiables/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/noc_modifiables/noc_modifiables.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/noc_modifiables/noc_modifiables.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "noc_modifiables:noc_modifiables_lib"
+            ]
+        },
+        "visa_dfxsecure_plugin": {
+            "version": "$DCLHOME_VISA_DFXSECURE_PLUGIN",
+            "overrideLib": "visa_dfxsecure_plugin_lib",
+            "ipType": "sip",
+            "visa_dfxsecure_plugin_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/visa_dfxsecure_plugin/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/visa_dfxsecure_plugin/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/visa_dfxsecure_plugin/visa_dfxsecure_plugin.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/visa_dfxsecure_plugin/visa_dfxsecure_plugin.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "visa_dfxsecure_plugin:visa_dfxsecure_plugin_lib"
+            ]
+        },
+        "design_common_libs": {
+            "version": "$DCLHOME",
+            "overrideLib": "design_common_libs_lib",
+            "ipType": "sip",
+            "design_common_libs_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/design_common_libs/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/design_common_libs/design_common_libs.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/design_common_libs/design_common_libs.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "design_common_libs:design_common_libs_lib"
+            ]
+        },
+        "dwc_sensors_dts_ndnw": {
+            "version": "/p/ipx/ipcache2/mmg/dwc_sensors_dts_ndnw/MMGA0P00RTL3IFC3V3/3/mmg.dwc_sensors_dts_ndnw",
+            "overrideLib": "dwc_sensors_dts_ndnw_lib",
+            "ipType": "hip",
+            "dwc_sensors_dts_ndnw_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_sensors_dts_ndnw/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_sensors_dts_ndnw/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_sensors_dts_ndnw/dwc_sensors_dts_ndnw.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_sensors_dts_ndnw/dwc_sensors_dts_ndnw.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dwc_sensors_dts_ndnw:dwc_sensors_dts_ndnw_lib"
+            ]
+        },
+        "dwc_sensors_dtsrs_ndnw": {
+            "version": "/p/ipx/ipcache2/mmg/dwc_sensors_dtsrs_ndnw/MMGA0P00RTL1IFC1V10/3/mmg.dwc_sensors_dtsrs_ndnw",
+            "overrideLib": "dwc_sensors_dtsrs_ndnw_lib",
+            "ipType": "hip",
+            "dwc_sensors_dtsrs_ndnw_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_sensors_dtsrs_ndnw/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_sensors_dtsrs_ndnw/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_sensors_dtsrs_ndnw/dwc_sensors_dtsrs_ndnw.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_sensors_dtsrs_ndnw/dwc_sensors_dtsrs_ndnw.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dwc_sensors_dtsrs_ndnw:dwc_sensors_dtsrs_ndnw_lib"
+            ]
+        },
+        "dwc_sensors_pd": {
+            "version": "/p/ipx/ipcache2/mmg/dwc_sensors_pd/MMGA0P00RTL1IFC1V4/3/mmg.dwc_sensors_pd",
+            "overrideLib": "dwc_sensors_pd_lib",
+            "ipType": "hip",
+            "dwc_sensors_pd_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_sensors_pd/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_sensors_pd/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_sensors_pd/dwc_sensors_pd.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_sensors_pd/dwc_sensors_pd.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dwc_sensors_pd:dwc_sensors_pd_lib"
+            ]
+        },
+        "dwc_sensors_vm": {
+            "version": "/p/ipx/ipcache2/mmg/dwc_sensors_vm/MMGA0P00RTL1IFC1V4/3/mmg.dwc_sensors_vm",
+            "overrideLib": "dwc_sensors_vm_lib",
+            "ipType": "hip",
+            "dwc_sensors_vm_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_sensors_vm/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_sensors_vm/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_sensors_vm/dwc_sensors_vm.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_sensors_vm/dwc_sensors_vm.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dwc_sensors_vm:dwc_sensors_vm_lib"
+            ]
+        },
+        "dwc_sensors_td": {
+            "version": "/p/ipx/ipcache2/mmg/dwc_sensors_td/MMGA0P00RTL1IFC1V2/3/mmg.dwc_sensors_td",
+            "overrideLib": "dwc_sensors_td_lib",
+            "ipType": "hip",
+            "dwc_sensors_td_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_sensors_td/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_sensors_td/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_sensors_td/dwc_sensors_td.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_sensors_td/dwc_sensors_td.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dwc_sensors_td:dwc_sensors_td_lib"
+            ]
+        },
+        "mmg_pvt_controller": {
+            "version": "$DCLHOME_MMG_PVT_CONTROLLER",
+            "overrideLib": "mmg_pvt_controller_lib",
+            "ipType": "sip",
+            "mmg_pvt_controller_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/mmg_pvt_controller/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/mmg_pvt_controller/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/mmg_pvt_controller/mmg_pvt_controller.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/mmg_pvt_controller/mmg_pvt_controller.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "mmg_pvt_controller:mmg_pvt_controller_lib"
+            ]
+        },
+        "snps_pcs_mac_q1": {
+            "version": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.017/mmg/sip/epm_sip/snps_pcs_mac_q1_rev_m4_24ww44e",
+            "overrideLib": "snps_pcs_mac_q1_lib",
+            "ipType": "sip",
+            "snps_pcs_mac_q1_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/snps_pcs_mac_q1/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/snps_pcs_mac_q1/snps_pcs_mac_q1.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/snps_pcs_mac_q1/snps_pcs_mac_q1.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "snps_pcs_mac_q1:snps_pcs_mac_q1_lib"
+            ]
+        },
+        "snps_pcs_mac_q0": {
+            "version": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.017/mmg/sip/epm_sip/snps_pcs_mac_ver_m4_24ww44e",
+            "overrideLib": "snps_pcs_mac_q0_lib",
+            "ipType": "sip",
+            "snps_pcs_mac_q0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/overrides/sip/snps_pcs_mac_q0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/snps_pcs_mac_q0/snps_pcs_mac_q0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/snps_pcs_mac_q0/snps_pcs_mac_q0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "snps_pcs_mac_q0:snps_pcs_mac_q0_lib"
+            ]
+        },
+        "mmg_visa_dfxsecure_plugin": {
+            "version": "$DCLHOME_VISA_DFXSECURE_PLUGIN",
+            "overrideLib": "mmg_visa_dfxsecure_plugin_lib",
+            "ipType": "sip",
+            "mmg_visa_dfxsecure_plugin_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/mmg_visa_dfxsecure_plugin/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/mmg_visa_dfxsecure_plugin/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/mmg_visa_dfxsecure_plugin/mmg_visa_dfxsecure_plugin.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/mmg_visa_dfxsecure_plugin/mmg_visa_dfxsecure_plugin.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "mmg_visa_dfxsecure_plugin:mmg_visa_dfxsecure_plugin_lib"
+            ]
+        },
+        "dwc_112g_lrm_phy_pma_ns_cm_serdes_top": {
+            "version": "/p/ipx/ipcache2/mmg/dwc_112g_lrm_phy_pma_ns_cm_serdes_top/MMGA0P00RTL3IFC1V2/3/mmg.dwc_112g_lrm_phy_pma_ns_cm_serdes_top",
+            "overrideLib": "dwc_112g_lrm_phy_pma_ns_cm_serdes_top_lib",
+            "ipType": "hip",
+            "dwc_112g_lrm_phy_pma_ns_cm_serdes_top_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_112g_lrm_phy_pma_ns_cm_serdes_top/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_112g_lrm_phy_pma_ns_cm_serdes_top/dwc_112g_lrm_phy_pma_ns_cm_serdes_top.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_112g_lrm_phy_pma_ns_cm_serdes_top/dwc_112g_lrm_phy_pma_ns_cm_serdes_top.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dwc_112g_lrm_phy_pma_ns_cm_serdes_top:dwc_112g_lrm_phy_pma_ns_cm_serdes_top_lib"
+            ]
+        },
+        "dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover": {
+            "version": "/p/ipx/ipcache2/mmg/dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover/MMGA0P00RTL1IFC1V8/3/mmg.dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover",
+            "overrideLib": "dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover_lib",
+            "ipType": "hip",
+            "dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover/dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover/dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover:dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover_lib"
+            ]
+        },
+        "dwc_112g_lrm_phy_pma_ns_txrx_top": {
+            "version": "/p/ipx/ipcache2/mmg/dwc_112g_lrm_phy_pma_ns_txrx_top/MMGA0P00RTL4IFC1V2/3/mmg.dwc_112g_lrm_phy_pma_ns_txrx_top",
+            "overrideLib": "dwc_112g_lrm_phy_pma_ns_txrx_top_lib",
+            "ipType": "hip",
+            "dwc_112g_lrm_phy_pma_ns_txrx_top_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/hip/dwc_112g_lrm_phy_pma_ns_txrx_top/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_112g_lrm_phy_pma_ns_txrx_top/dwc_112g_lrm_phy_pma_ns_txrx_top.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dwc_112g_lrm_phy_pma_ns_txrx_top/dwc_112g_lrm_phy_pma_ns_txrx_top.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dwc_112g_lrm_phy_pma_ns_txrx_top:dwc_112g_lrm_phy_pma_ns_txrx_top_lib"
+            ]
+        },
+        "snps_pmd": {
+            "version": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.023/mmg/sip/physs_sip/snps_pmd_rev_1p01b_24ww11",
+            "overrideLib": "snps_pmd_lib",
+            "ipType": "sip",
+            "snps_pmd_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/snps_pmd/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/snps_pmd/snps_pmd.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/snps_pmd/snps_pmd.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "snps_pmd:snps_pmd_lib"
+            ]
+        },
+        "dvp": {
+            "version": "/p/hdk/rtl/ip_releases/nhdk/mmg/sip/dvp/MMGA0P00RTL1IFC1V2",
+            "overrideLib": "dvp_lib",
+            "ipType": "sip",
+            "dvp_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/dvp/filelists/dvp_cfg_mmg_top.rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/dvp/filelists/dvp_cfg_mmg_top.rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dvp/dvp.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dvp/dvp.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dvp:dvp_lib"
+            ]
+        },
+        "dtf_arbiter": {
+            "version": "/p/hdk/rtl/ip_releases/nhdk/mmg/sip/dtf_arbiter/MMGA0P00RTL1IFC1V2",
+            "overrideLib": "dtf_arbiter_lib",
+            "ipType": "sip",
+            "dtf_arbiter_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/dtf_arbiter/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dtf_arbiter/dtf_arbiter.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dtf_arbiter/dtf_arbiter.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dtf_arbiter:dtf_arbiter_lib"
+            ]
+        },
+        "dlw": {
+            "version": "$DCLHOME_DLW",
+            "overrideLib": "dlw_lib",
+            "ipType": "sip",
+            "dlw_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/dlw/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/dlw/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dlw/dlw.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dlw/dlw.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dlw:dlw_lib"
+            ]
+        },
+        "dft_misc_rtl": {
+            "version": "/p/hdk/rtl/ip_releases/nhdk/mmg/sip/dft_misc_rtl/dft_misc_rtl_v22ww26",
+            "overrideLib": "dft_misc_rtl_lib",
+            "ipType": "sip",
+            "dft_misc_rtl_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/dft_misc_rtl/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/dft_misc_rtl/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dft_misc_rtl/dft_misc_rtl.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/dft_misc_rtl/dft_misc_rtl.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dft_misc_rtl:dft_misc_rtl_lib"
+            ]
+        },
+        "physs_uart": {
+            "version": "$DCLHOME_UART",
+            "overrideLib": "physs_uart_lib",
+            "ipType": "sip",
+            "physs_uart_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/physs_uart/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/subip/sip/physs_uart/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/physs_uart/physs_uart.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/physs_uart/physs_uart.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "physs_uart:physs_uart_lib"
+            ]
+        },
+        "physs": {
+            "version": "",
+            "overrideLib": "physs_lib",
+            "ipType": "top",
+            "designOpts": {
+                "sv": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/physs/physs.sv.design_opts.f"
+            },
+            "physs_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/filelists/physs.rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/physs/physs.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/nhdk.zsc7.mmg.ipr.202/physs/physs-mmg800-a0-24ww52e-drop.0/output/physs/genfilelist/ip/physs/physs.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dft_misc_rtl:dft_misc_rtl_lib",
+                "odi05top:odi05top_lib",
+                "vdm05top:vdm05top_lib",
+                "physs:physs_lib"
+            ]
+        }
+    },
+    "ipOrderList": [
+        "sacrls0g4l2p128x52m1b2w0c0p0d1s1rm4rw10zh0h0ms0mg0",
+        "saduls0g4l1p12800x137m8b8w0c1p0d1s2rm4rw11e18zh0h0ms1mg0",
+        "saduls0g4l1p8192x52m16b4w1c1p0d1s2rm4rw11e18zh0h0ms1mg0",
+        "saculs0g4u2p128x166m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0",
+        "saculs0g4u2p128x172m2b1w0c1p0d1s1rm4rw10e18zh0h0ms0mg0",
+        "saculs0g4u2p128x90m2b1w0c0p0d1s1rm4rw10e18zh0h0ms0mg0",
+        "odi05top",
+        "vdm05top",
+        "project_globals",
+        "nss_gen_por",
+        "nss_aw_logic",
+        "sji_shared_logic",
+        "ipu_md",
+        "PLLTS5FFPLJFRACL",
+        "FGTS5FFPFRACL",
+        "cgb_fracl",
+        "cgb_fgfracl",
+        "clkss",
+        "noc_modifiables",
+        "visa_dfxsecure_plugin",
+        "design_common_libs",
+        "dwc_sensors_dts_ndnw",
+        "dwc_sensors_dtsrs_ndnw",
+        "dwc_sensors_pd",
+        "dwc_sensors_vm",
+        "dwc_sensors_td",
+        "mmg_pvt_controller",
+        "snps_pcs_mac_q1",
+        "snps_pcs_mac_q0",
+        "mmg_visa_dfxsecure_plugin",
+        "dwc_112g_lrm_phy_pma_ns_cm_serdes_top",
+        "dwc_112g_lrm_phy_pma_ns_pma_x4_lcllcl_0_cover",
+        "dwc_112g_lrm_phy_pma_ns_txrx_top",
+        "snps_pmd",
+        "dvp",
+        "dtf_arbiter",
+        "dlw",
+        "dft_misc_rtl",
+        "physs_uart",
+        "physs"
+    ]
+}

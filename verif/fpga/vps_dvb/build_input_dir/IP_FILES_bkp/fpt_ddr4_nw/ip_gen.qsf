@@ -1,0 +1,32 @@
+set_global_assignment -name TOP_LEVEL_ENTITY ip_gen
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "20.3.0 SP0.44FW"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:19:19  AUGUST 27, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.3.0 Pro Edition"
+set_global_assignment -name FAMILY "Stratix 10"
+set_global_assignment -name DEVICE 1SG280LU3F50E1VG
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/clk_mm_4.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/ddr_emif_usr_clk_0.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/clk_mm_1.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/clk_mm_2.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/clk_mm_3.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/fpt_ddr4_nw_mm_clock_crossing_bridge_0.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/clkx_1.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/clkx_2.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/clkx_3.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/fpt_ddr4_nw_mm_clock_crossing_bridge_1.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/fpt_ddr4_nw_mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/fpt_ddr4_nw_reset_in.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/fpt_ddr4_nw_clock_in.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/ddr4_amm_0.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/mm_1.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/mm_2.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/mm_3.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/mm_5.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/mm_4.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/mm_csr_0.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/rst_mm_4.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/ddr_emif_reset_in_1.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/rst_mm_1.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/rst_mm_2.ip
+set_global_assignment -name IP_FILE ip/fpt_ddr4_nw/rst_mm_3.ip
+set_global_assignment -name QSYS_FILE fpt_ddr4_nw.qsys

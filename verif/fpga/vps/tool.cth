@@ -1,0 +1,9 @@
+[INCLUDES]
+$WORKAREA/baseline_tools/vps/tool.cth          # RELEASED baseline_tools tool.cth
+$WORKAREA/verif/fpga/vps_dvb/compute.cth    # BUILD_DIR specific file having compute sections only
+
+[TOOLVERSION]
+
+[PARAMS]
+
+[ENVS]

@@ -1,0 +1,42 @@
+######################################################################
+#    Veloce Prototyping System
+#    /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/redcomp.out/logs/redcomp.log -- Automatically generated from redcomp
+#    Version: 2023.06
+#    Build : 5694875
+#    Date : Fri Jan 17 02:10:13 2025
+#    Unpublished work. Copyright 2023 Siemens
+#    This material contains trade secrets or otherwise
+#    confidential information owned by Siemens Industry Software Inc.
+#    or its affiliates (collectively, "SISW"), or its licensors.
+#    Access to and use of this information is strictly limited as
+#    set forth in the Customer's applicable agreements with SISW.
+######################################################################
+
+Redcomp Launch Command: /nfs/site/disks/crt_tools_062/mentor/VPS/2023.06/partitioner/bin/redcomp -settings redcomp.tcl -task view.post_condition
+
+Info      [redcomp-10658][01]: Using the TCL settings file '/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/redcomp.tcl'.
+Info      [redcomp-97007][01]: Loading PHD hardware from file /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/build_input_dir/7_quad/7_QUAD/boardgen/outputs/hardware.phd.
+Info      [redcomp-10519][02]: Validating distribution settings ...
+Warning   [redcomp-10437][01]: Configuration file option 'distrib -mem_req' specified with distribution tag 'vpsmemhigh' is not supported for task 'rtlc' and will be ignored.
+Info      [redcomp-10086][01]: Parsing PHD file /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/build_input_dir/7_quad/7_QUAD/boardgen/outputs/hardware.phd ...
+Info      [redcomp-10087][01]: PHD file parsed successfully.
+Info      [redcomp-10027][01]: Setting up environment variables ...
+Info      [redcomp-10045][01]: Using VPS package from environment $RED_HOME set to '/nfs/site/disks/crt_tools_062/mentor/VPS/2023.06'.
+Info      [redcomp-10028][01]: Environment variables setup successful.
+Info      [redcomp-10504][01]: Validating license fprunbase ...
+Info      [redcomp-10023][01]: Validating binaries for the tasks to run ...
+Info      [redcomp-10024][01]: Binaries validation complete.
+Fatal     [redcomp-10235][10]: One or more of the preceding tasks including 'rtlc' is incomplete. Please rerun these tasks before running 'view.post_condition'.
+Info      [redcomp-10075][01]: Unlocking redcomp session for the current execution.
+Info      [redcomp-10079][01]: Unlocking output directory '/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/redcomp.out' for current redcomp session.
+
+Message Summary
+----------------------------------------------------------------------------------------------------
+Count  Type            Message ID          Summary                                                         
+----------------------------------------------------------------------------------------------------
+1      Warning         redcomp-10437       Distribution option not supported for RTLC task.                
+1      Fatal           redcomp-10235       Preceding task incomplete.                                      
+----------------------------------------------------------------------------------------------------
+
+Redcomp finished with: 
+      18 Info Messages, 1 Warning, 1 Fatal Error

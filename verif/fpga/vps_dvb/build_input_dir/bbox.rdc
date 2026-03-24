@@ -1,0 +1,77 @@
+
+# # Dual Port RAM
+# set fifo_design_list [list \
+#    dpram_132x256  \
+#    dpram_96x256   \
+#    dpram_10x64    \
+#    dpram_3x256    \
+#    dpram_64x128   \
+#    dpram_2kx8     \
+#    dpram_64x4     \
+#    ram_fd32x256_bd64x128 \
+#    ram_fd_32x4096_bd64x2048 \
+#    sippx_vram2dq_256x512 \
+# ]
+# 
+# 
+# foreach design ${fifo_design_list} {
+#    if {[llength [get_designs -quiet ${design}]]} {
+#       set_blackbox_clock                [get_ports -quiet clka -of_objects [get_designs ${design}]]
+#       set_blackbox_clock_enable  -clock [get_ports -quiet clka -of_objects [get_designs ${design}]] [get_ports -quiet ena                      -of_objects [get_designs ${design}]]
+#       set_blackbox_tsu           -clock [get_ports -quiet clka -of_objects [get_designs ${design}]] [get_ports -quiet [list dina* wea* addra*] -of_objects [get_designs ${design}]]
+#       if {[llength [get_ports -quiet [list douta*] -of_objects [get_designs ${design}]]]} {
+#          set_blackbox_tco        -clock [get_ports -quiet clka -of_objects [get_designs ${design}]] [get_ports -quiet [list douta* ]           -of_objects [get_designs ${design}]]
+#       }
+# 
+#       set_blackbox_clock                [get_ports -quiet clkb -of_objects [get_designs ${design}]]
+#       set_blackbox_clock_enable  -clock [get_ports -quiet clkb -of_objects [get_designs ${design}]] [get_ports -quiet enb                      -of_objects [get_designs ${design}]]
+#       set_blackbox_tsu           -clock [get_ports -quiet clkb -of_objects [get_designs ${design}]] [get_ports -quiet [list dinb* web* addrb*] -of_objects [get_designs ${design}]]
+#       if {[llength [get_ports -quiet [list doutb*] -of_objects [get_designs ${design}]]]} {
+#          set_blackbox_tco        -clock [get_ports -quiet clkb -of_objects [get_designs ${design}]] [get_ports -quiet [list doutb* ]           -of_objects [get_designs ${design}]]
+#       }
+#    }
+# }
+# 
+# 
+# Async FIFOs
+# set fifo_design_list [list \
+#    dmi_gasket_fifo_rx \
+#    dmi_gasket_fifo_tx \
+#    fifo_1kx40_b \
+#    fifo_1kx37_b      \
+# ]
+# 
+# 
+# foreach design ${fifo_design_list} {
+#    if {[llength [get_designs -quiet ${design}]]} {
+#       set_blackbox_clock                [get_ports -quiet wr_clk -of_objects [get_designs ${design}]]
+#       set_blackbox_clock_enable  -clock [get_ports -quiet wr_clk -of_objects [get_designs ${design}]] [get_ports -quiet wr_en                    -of_objects [get_designs ${design}]]
+#       set_blackbox_tsu           -clock [get_ports -quiet wr_clk -of_objects [get_designs ${design}]] [get_ports -quiet [list din* wr_en]        -of_objects [get_designs ${design}]]
+#       set_blackbox_tco           -clock [get_ports -quiet wr_clk -of_objects [get_designs ${design}]] [get_ports -quiet [list full almost_full prog_full]  -of_objects [get_designs ${design}]]
+# 
+#       set_blackbox_clock                [get_ports -quiet rd_clk -of_objects [get_designs ${design}]]
+#       set_blackbox_clock_enable  -clock [get_ports -quiet rd_clk -of_objects [get_designs ${design}]] [get_ports -quiet rd_en                    -of_objects [get_designs ${design}]]
+#       set_blackbox_tsu           -clock [get_ports -quiet rd_clk -of_objects [get_designs ${design}]] [get_ports -quiet [list rd_en]             -of_objects [get_designs ${design}]]
+#       set_blackbox_tco           -clock [get_ports -quiet rd_clk -of_objects [get_designs ${design}]] [get_ports -quiet [list dout* empty valid] -of_objects [get_designs ${design}]]
+#    }
+# }
+# 
+# 
+# # Sync FIFOs
+# set fifo_design_list [list \
+#    dmi_gasket_fifo_rx \
+#    dmi_gasket_fifo_tx \
+#    fifo_1kx40_b \
+#    fifo_1kx37_b      \
+# ]
+# 
+# 
+# foreach design ${fifo_design_list} {
+#    if {[llength [get_designs -quiet ${design}]]} {
+#       set_blackbox_clock                [get_ports -quiet clk -of_objects [get_designs ${design}]]
+#       set_blackbox_clock_enable  -clock [get_ports -quiet clk -of_objects [get_designs ${design}]] [get_ports -quiet [list wr_en rd_en]                 -of_objects [get_designs ${design}]]
+#       set_blackbox_tsu           -clock [get_ports -quiet clk -of_objects [get_designs ${design}]] [get_ports -quiet [list din* wr_en rd_en]            -of_objects [get_designs ${design}]]
+#       set_blackbox_tco           -clock [get_ports -quiet clk -of_objects [get_designs ${design}]] [get_ports -quiet [list dout* full empty almost_full prog_full]  -of_objects [get_designs ${design}]]
+#    }
+# }
+# 

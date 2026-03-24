@@ -1,0 +1,66 @@
+
+namespace eval i2c_master_inst_reset_bfm_ip {
+  proc get_memory_files {QSYS_SIMDIR} {
+    set memory_files [list]
+    return $memory_files
+  }
+  
+  proc get_common_design_files {QSYS_SIMDIR} {
+    set design_files [dict create]
+    dict set design_files "altera_common_sv_packages::avalon_vip_verbosity_pkg" "$QSYS_SIMDIR/../altera_avalon_reset_source_191/sim/verbosity_pkg.sv"
+    return $design_files
+  }
+  
+  proc get_design_files {QSYS_SIMDIR} {
+    set design_files [dict create]
+    dict set design_files "altera_avalon_reset_source.sv"  "$QSYS_SIMDIR/../altera_avalon_reset_source_191/sim/altera_avalon_reset_source.sv"
+    dict set design_files "i2c_master_inst_reset_bfm_ip.v" "$QSYS_SIMDIR/i2c_master_inst_reset_bfm_ip.v"                                     
+    return $design_files
+  }
+  
+  proc get_non_duplicate_elab_option {ELAB_OPTIONS NEW_ELAB_OPTION} {
+    set IS_DUPLICATE [string first $NEW_ELAB_OPTION $ELAB_OPTIONS]
+    if {$IS_DUPLICATE == -1} {
+      return $NEW_ELAB_OPTION
+    } else {
+      return ""
+    }
+  }
+  
+  
+  proc get_elab_options {SIMULATOR_TOOL_BITNESS} {
+    set ELAB_OPTIONS ""
+    if ![ string match "bit_64" $SIMULATOR_TOOL_BITNESS ] {
+    } else {
+    }
+    return $ELAB_OPTIONS
+  }
+  
+  
+  proc get_sim_options {SIMULATOR_TOOL_BITNESS} {
+    set SIM_OPTIONS ""
+    if ![ string match "bit_64" $SIMULATOR_TOOL_BITNESS ] {
+    } else {
+    }
+    return $SIM_OPTIONS
+  }
+  
+  
+  proc get_env_variables {SIMULATOR_TOOL_BITNESS} {
+    set ENV_VARIABLES [dict create]
+    set LD_LIBRARY_PATH [dict create]
+    dict set ENV_VARIABLES "LD_LIBRARY_PATH" $LD_LIBRARY_PATH
+    if ![ string match "bit_64" $SIMULATOR_TOOL_BITNESS ] {
+    } else {
+    }
+    return $ENV_VARIABLES
+  }
+  
+  
+  proc get_dpi_libraries {QSYS_SIMDIR} {
+    set libraries [dict create]
+    
+    return $libraries
+  }
+  
+}

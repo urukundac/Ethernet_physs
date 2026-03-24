@@ -1,0 +1,68 @@
+Command Line: /p/hdk/rtl/cad/x86-64_linux26/synopsys/verdi3/W-2024.09/platform/LINUXAMD64/bin/Novas -ssf /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/i2c_synpsys/verif/emu/inter.fsdb
+uname(Linux sccc09200707 5.14.21-150400.24.158-default #1 SMP PREEMPT_DYNAMIC Tue Mar 18 15:20:28 UTC 2025 (e8e8035/lp) x86_64)
+type= DS_SIGNAL element= 15 field= 2
+VERILOG physs_eth_tb
+VERILOG i2c_apb_clk
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG i_reset
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG physs_func_rst_raw_n
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG I2C_SDA
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG I2C_SCL
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG i2c_psel
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG i2c_penable
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG i2c_pwrite
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG i2c_pprot[2:0]
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG i2c_pstrb[3:0]
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG i2c_paddr[7:0]
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG i2c_pwdata[31:0]
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG i2c_prdata[31:0]
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG i2c_pready
+-----
+second field= signal
+VERILOG physs_eth_tb
+VERILOG i2c_pslverr
+-----
+second field= signal
+type= DS_STRING
+i2c_apb_clk i_reset physs_func_rst_raw_n I2C_SDA I2C_SCL i2c_psel i2c_penable i2c_pwrite i2c_pprot[2:0] i2c_pstrb[3:0] i2c_paddr[7:0] i2c_pwdata[31:0] i2c_prdata[31:0] i2c_pready i2c_pslverr
+Cannot find /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/i2c_synpsys/output/physs_eth_tb/emu/haps_vcs_emuvcs/synpsys_1/MMG_PSS_SOC/vcs/simv.daidir/kdb.elab++/physs_lib_10m.lib++/tdc.sdb in _lbmCheckDocNeedReload
+[MessageBox] The KDB has been deleted by other processes. Regenerate the KDB; otherwise, you may get unexpected results. (Click "Yes" to  open the "Rebuild and Restart" panel.)
+au time 40630.999538 100.856573 58.199321 delta 258543616 258543616 total 1189199872 1189199872

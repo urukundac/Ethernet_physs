@@ -1,0 +1,9 @@
+	component fpll_125mhz_to_3_125mhz is
+		port (
+			rst      : in  std_logic := 'X'; -- reset
+			refclk   : in  std_logic := 'X'; -- clk
+			locked   : out std_logic;        -- export
+			outclk_0 : out std_logic         -- clk
+		);
+	end component fpll_125mhz_to_3_125mhz;
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/i2c_ip_tb.v"
+   type="VERILOG"
+   library="i2c_ip_tb"
+   hasInlineConfiguration="true" />
+ <topLevel name="i2c_ip_tb.i2c_ip_tb" />
+ <deviceFamily name="stratix10" />
+ <device name="1SG10MHN3F74C2LG_U2" />
+</simPackage>

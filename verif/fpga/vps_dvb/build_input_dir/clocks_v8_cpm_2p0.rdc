@@ -1,0 +1,130 @@
+
+###==== BEGIN Header
+
+# Synopsys, Inc. constraint file
+# /home/emu/mlbroadh/bel/lbg/ww37e/emu_bek_2-lb/scripts/emu/haps/cnstr/clocks.fdc
+# Written on Fri Sep 19 11:44:54 2014
+# by Synplify Premier, I-2014.03-1  FDC Constraint Editor
+
+# Custom constraint commands may be added outside of the SCOPE tab sections bounded with BEGIN/END.
+# These sections are generated from SCOPE spreadsheet tabs.
+
+###==== END Header
+#TBD: Need to remove as default value is 1 itself
+#By default, the software attempts to pack registers into I/O pad cells based on timing requirements. Setting the syn_useioff attribute to 0/false overrides the default behavior and prevents register packing. The attribute can be applied to individual registers or ports and can also be applied globally. When applied at the register level, the register is excluded from I/O pad cell packing, and when applied at the port level, all registers attached to the port are excluded.The syn_useioff attribute is supported in the compile point flow.
+#define_global_attribute syn_useioff {1}
+#define_global_attribute syn_dspstyle {logic}
+
+###==== BEGIN Collections - (Populated from tab in SCOPE, do not edit)
+###==== END Collections
+
+###==== BEGIN Clocks - (Populated from tab in SCOPE, do not edit)
+create_clock  -name hci_refclk -period 10  [get_ports pcie_ref_clk_p]
+#create_clock  -name {phy_ref_in_clk} {p:pcie_ref_clk_p} -period {10.0}
+
+###==== UHFI clocks
+create_clock  -name {hci_sysclk}          [get_pins -hier {*pcie_phy_wrapper.pcie_phy.bufg_gt_sysclk.O}]                            -period {10}
+create_clock  -name {hci_pclk}          [get_pins -hier {*pcie_phy_wrapper.pcie_phy.u_xcvu440_pcie_phy.phy_pclk}]                 -period {8}
+
+
+create_clock  -name {cpm_p_clk} {p:GCLK4_P} -period {100.0}
+create_clock  -name {uhfi_100mhz_clk} {p:GCLK5_P} -period {10.0}
+create_clock  -name {pgcb_clk} {p:GCLK6_P} -period {1000.0}
+
+###==== BEGIN "Generated Clocks" - (Populated from tab in SCOPE, do not edit)
+create_generated_clock -name {side_clk} -source { p:GCLK4_P } {n:i_cpm_top.parcpmhi.side_clk_parcpmhi_pdop.u_gnr_ctech_pdop_div_by_4.u_ctech_lib_clk_pdop_div_by_4.d2} -master_clock {c:cpm_p_clk} -divide_by {4}
+create_generated_clock -name {prim_clk} -source { p:GCLK4_P } {n:i_cpm_top.parcpmhi.prim_clk_parcpmhi_pdop.u_gnr_ctech_pdop_div_by_4.u_ctech_lib_clk_pdop_div_by_4.d2} -master_clock {c:cpm_p_clk} -divide_by {4}
+create_generated_clock -name {h_clk_aram} -source { p:GCLK4_P } {n:i_cpm_top.parcpmaram.h_clk_parcpmaram_pdop.u_gnr_ctech_pdop_div_by_4.u_ctech_lib_clk_pdop_div_by_4.d2} -master_clock {c:cpm_p_clk} -divide_by {4}
+create_generated_clock -name {p_clk_aram} -source { p:GCLK4_P } {n:i_cpm_top.parcpmaram.p_clk_parcpmaram_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {h_clk_hi} -source { p:GCLK4_P } {n:i_cpm_top.parcpmhi.h_clk_parcpmhi_pdop.u_gnr_ctech_pdop_div_by_4.u_ctech_lib_clk_pdop_div_by_4.d2} -master_clock {c:cpm_p_clk} -divide_by {4}
+create_generated_clock -name {p_clk_hi} -source { p:GCLK4_P } {n:i_cpm_top.parcpmhi.p_clk_parcpmhi_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_cast} -source { p:GCLK4_P } {n:i_cpm_top.parcpmcast1.p_clk_parcpmcast_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssma} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssma_xa.p_clk_parcpmssma_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmb} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmb.p_clk_parcpmssmb_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmc0} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmc_xa_0.p_clk_parcpmssmc_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmc1} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmc_xa_1.p_clk_parcpmssmc_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmd} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmd_xa.p_clk_parcpmssmd_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmf0} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmf_0.p_clk_parcpmssmf_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmf1} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmf_1.p_clk_parcpmssmf_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmf2} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmf_2.p_clk_parcpmssmf_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmf3} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmf_3.p_clk_parcpmssmf_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmg0} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmg_xa_0.p_clk_parcpmssmg_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmg1} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmg_xa_1.p_clk_parcpmssmg_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmh0} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmh_xa_0.p_clk_parcpmssmh_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmh1} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmh_xa_1.p_clk_parcpmssmh_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmh2} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmh_xa_2.p_clk_parcpmssmh_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {p_clk_ssmh3} -source { p:GCLK4_P } {n:i_cpm_top.parcpmssmh_xa_3.p_clk_parcpmssmh_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2} -master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {drng_clkdiv4} -source {n:i_cpm_top.parcpmhi.side_clk_parcpmhi_pdop.u_gnr_ctech_pdop_div_by_4.u_ctech_lib_clk_pdop_div_by_4.d2} {t:i_fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.i_out_blk.clkdiv4.Q[0]} -master_clock {c:side_clk} -divide_by {4}
+create_generated_clock -name {drng_clkdsdiv4} -source {n:i_cpm_top.parcpmhi.side_clk_parcpmhi_pdop.u_gnr_ctech_pdop_div_by_4.u_ctech_lib_clk_pdop_div_by_4.d2} {t:i_fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.i_out_blk.clkdsdiv4.Q[0]} -master_clock {c:side_clk} -invert -divide_by {16}
+create_generated_clock -name {drng_clkdsdiv32} -source {n:i_cpm_top.parcpmhi.side_clk_parcpmhi_pdop.u_gnr_ctech_pdop_div_by_4.u_ctech_lib_clk_pdop_div_by_4.d2} {t:i_fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.i_out_blk.clkdsdiv32.Q[0]} -master_clock {c:side_clk} -invert -divide_by {128}
+
+# for media_ip
+create_generated_clock -name {d_ss_clk} 	-source { p:GCLK4_P } {t:i_cpm_top.cpm_vid_top.parvc8000d_ss.p_clk_parvc8000d_ss_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2.Q[0]} 		-master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {e_part0_clk} 	-source { p:GCLK4_P } {t:i_cpm_top.cpm_vid_top.parvc8000e_part0.p_clk_parvc8000e_part0_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2.Q[0]} 	-master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {e_ss_clk} 	-source { p:GCLK4_P } {t:i_cpm_top.cpm_vid_top.parvc8000e_ss.p_clk_parvc8000e_ss_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2.Q[0]} 		-master_clock {c:cpm_p_clk} -divide_by {2}
+create_generated_clock -name {e_part3_clk} 	-source { p:GCLK4_P } {t:i_cpm_top.cpm_vid_top.parvc8000e_part3.p_clk_parvc8000e_part3_pdop.u_gnr_ctech_pdop_div_by_2.u_ctech_lib_clk_pdop_div_by_2.div2.Q[0]} 	-master_clock {c:cpm_p_clk} -divide_by {2}
+
+set_clock_groups -derive -asynchronous -name {phy_ref_in_clk_grp} -group { {c:phy_ref_in_clk} }
+set_clock_groups -derive -asynchronous -name {side_clk_grp} -group { {c:side_clk} {c:drng_clkdiv4} {c:drng_clkdsdiv4} {c:drng_clkdsdiv32} }
+set_clock_groups -derive -asynchronous -name {prim_clk_grp} -group { {c:prim_clk} }
+set_clock_groups -derive -asynchronous -name {uhfi_100mhz_clk_grp} -group { {c:uhfi_100mhz_clk} }
+set_clock_groups -derive -asynchronous -name {pgcb_grp} -group { {c:pgcb_clk} }
+set_clock_groups -derive -asynchronous -name {side_grp} -group { {c:side_clk} {c:h_clk_aram} {c:h_clk_hi} {c:p_clk_aram} {c:p_clk_hi} {c:p_clk_ssmh3} {c:p_clk_ssmh2} {c:p_clk_ssmh1} {c:p_clk_ssmh0} {c:p_clk_ssmg0} {c:p_clk_ssmg1} {c:p_clk_ssmf3} {c:p_clk_ssmf2} {c:p_clk_ssmf1} {c:p_clk_ssmf0} {c:p_clk_ssmd} {c:p_clk_ssmc1} {c:p_clk_ssmc0} {c:p_clk_ssmb} {c:p_clk_ssma} {c:p_clk_cast} }
+set_clock_groups -derive -asynchronous -name {side_grp} -group { {c:prim_clk} {c:side_clk} {c:h_clk_aram} {c:h_clk_hi} {c:p_clk_aram} {c:p_clk_hi} {c:p_clk_ssmh3} {c:p_clk_ssmh2} {c:p_clk_ssmh1} {c:p_clk_ssmh0} {c:p_clk_ssmg0} {c:p_clk_ssmg1} {c:p_clk_ssmf3} {c:p_clk_ssmf2} {c:p_clk_ssmf1} {c:p_clk_ssmf0} {c:p_clk_ssmd} {c:p_clk_ssmc1} {c:p_clk_ssmc0} {c:p_clk_ssmb} {c:p_clk_ssma} {c:p_clk_cast} }
+#set_clock_groups -derive -asynchronous -name {vid_grp } -group { {c:d_ss_clk} {c:e_part0_clk} {c:e_ss_clk} {c:e_part3_clk}}
+set_clock_groups -asynchronous -derive -name {group_pclk} -group {hci_pclk}
+
+
+
+
+define_attribute {n:i_cpm_top.parcpmssmb.i_cpmssmb_0.i_cpm_cpr_main_logic_0.i_oel.i_oel_ofifo.ARRAY_LATCH_STORAGE\.i_cpm_genram_packed.array_latch\.ext_or_no_parity\.gt_ram_packed_strg.if_latch_based7_un1_wren1_lat_masked_emul_1}  {.gcc_notclock} {1}
+define_attribute {n:i_cpm_top.parcpmssmb.i_cpmssmb_0.i_cpm_cpr_main_logic_0.i_oel.i_cpr_lz4_enc.i_lz4_enc_data_q.ARRAY_LATCH_STORAGE\.i_cpm_genram_packed.array_latch\.ext_or_no_parity\.gt_ram_packed_strg.if_latch_based7_un1_wren1_lat_masked_emul_1}  {.gcc_notclock} {1}
+
+###==== BEGIN Inputs/Outputs - (Populated from tab in SCOPE, do not edit)
+###==== END Inputs/Outputs
+
+###==== BEGIN Registers - (Populated from tab in SCOPE, do not edit)
+###==== END Registers
+
+###==== BEGIN "Delay Paths" - (Populated from tab in SCOPE, do not edit)
+set_false_path -through {t:i_fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.i_out_blk.enclkdsdiv4.D[0]}
+set_false_path -through {t:i_fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.i_out_blk.enclkdsdiv4.Q[0]}
+set_false_path -through {t:i_platform_doublesync_rst.d[0]}
+set_false_path -through {t:i_powergood_doublesync_rst.d[0]}
+set_false_path -through {t:i_primary_doublesync_rst.d[0]}
+set_false_path -through {t:i_sideband_doublesync_rst.d[0]}
+###==== END "Delay Paths"
+
+###==== BEGIN Attributes - (Populated from tab in SCOPE, do not edit)
+#define_attribute  [get_pins {i_hi_top.i_xilinx_pipe.refclk_ibuf.O}] {syn_noclockbuf} {1}
+
+#TBD: Try to remove it if its not creating any congestion issue
+#Reduce control set size for reducing areas congestion and better packing
+#The syn_reduce_controlset_size attribute sets the minimum size of the unique control-set on which control-set optimizations can occur. It lets you override the default settings for the tool. The control-set optimizations are not implemented for registers with timing critical paths and IOB registers. Use the syn_reduce_controlset_size attribute with caution. If you do not choose a value correctly for this attribute, utilization can increase and the design may not fit into the target technology.
+define_global_attribute syn_reduce_controlset_size {15}
+
+###==== UHFI attributes
+#TBD:User don't want to insert clock buffer 
+define_attribute [get_pins -hier {*i_aalpcie_top_xcvu440.i_pcie_top_xcvu440.user_clk}] syn_noclockbuf {1}
+#define_attribute [get_pins -hier {*i_pcie_top_xcvu440.i_pcie3_ultrascale_xcvu440.user_clk}] syn_noclockbuf {1}
+
+#This is used to limit fanout for particular signal
+define_attribute [get_nets -hier {*uhfi_pcie_ctrl.reset_mng.srst}] {syn_maxfan} {50}
+
+#User want to tell to replace design clock mux with BUFGMUX to improve timing and clock gating
+define_attribute {i:i_fuse_top.i_fuse_clock_power_cntrl.i_fuse_clkmux_cntrl} syn_insert_buffer {BUFGMUX}
+
+###==== END Attributes
+
+###==== BEGIN "I/O Standards" - (Populated from tab in SCOPE, do not edit)
+define_io_standard {p:*uhfi_100mhz_clk}  -delay_type input   syn_pad_type {LVDS_18}
+define_io_standard {p:*uhfi_100mhz_clk}  -delay_type input   syn_pad_type {LVDS_18}
+###==== END "I/O Standards"
+
+###==== BEGIN "Compile Points" - (Populated from tab in SCOPE, do not edit)
+###==== END "Compile Points"
+
+#set_false_path -through {n:pe_rst_n}
+###New memory which is not getting converted
+define_attribute {i:i_cpm_top.parcpmssmc_xa_1.cpm_dcpr_rf_mems.dcpr_wrap_mem_dcpr_sbuf00_shell_128x66.ram_row_0_col_0.iip7631rfhs2r2w128x68s0r1p1m_upf_wrapper.ip7631rfhs2r2w128x68s0r1p1m.i_qpram_ip7631rfhs2r2w128x68s0r1p1m} {syn_ramstyle} {no_rw_check}
+define_attribute {i:i_cpm_top.parcpmssmc_xa_1.cpm_dcpr_rf_mems.dcpr_wrap_mem_dcpr_sbuf01_shell_128x66.ram_row_0_col_0.iip7631rfhs2r2w128x68s0r1p1m_upf_wrapper.ip7631rfhs2r2w128x68s0r1p1m.i_qpram_ip7631rfhs2r2w128x68s0r1p1m} {syn_ramstyle} {no_rw_check}

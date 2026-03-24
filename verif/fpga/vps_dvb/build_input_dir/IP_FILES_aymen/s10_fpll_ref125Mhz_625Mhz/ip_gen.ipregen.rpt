@@ -1,0 +1,219 @@
+IP Upgrade report for ip_gen
+Sat Apr  5 05:16:31 2025
+Quartus Prime Version 23.3.0 Build 104 09/20/2023 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++---------------------------------------------------------------------------+
+; IP Upgrade Summary                                                        ;
++------------------------------+--------------------------------------------+
+; IP Components Upgrade Status ; Passed - Sat Apr  5 05:16:31 2025          ;
+; Quartus Prime Version        ; 23.3.0 Build 104 09/20/2023 SC Pro Edition ;
+; Revision Name                ; ip_gen                                     ;
+; Top-level Entity Name        ; ip_gen                                     ;
+; Family                       ; Stratix 10                                 ;
++------------------------------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                                            ;
++---------------------------+----------------+---------+------------------------------+------------------------------+-----------------+---------+
+; Entity Name               ; Component Name ; Version ; Original Source File         ; Generation File Path         ; New Source File ; Message ;
++---------------------------+----------------+---------+------------------------------+------------------------------+-----------------+---------+
+; s10_fpll_ref125Mhz_625Mhz ; QsysPrimePro   ; 24.1    ; s10_fpll_ref125Mhz_625Mhz.ip ; s10_fpll_ref125Mhz_625Mhz.ip ;                 ;         ;
++---------------------------+----------------+---------+------------------------------+------------------------------+-----------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz.ip" to "/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz.BAK.ip"
+Info (20325): ***************************************************************
+Info (20325): Quartus is a registered trademark of Intel Corporation in the
+Info (20325): US and other countries.  Portions of the Quartus Prime software
+Info (20325): code, and other portions of the code included in this download
+Info (20325): or on this DVD, are licensed to Intel Corporation and are the
+Info (20325): copyrighted property of third parties. For license details,
+Info (20325): refer to the End User License Agreement at
+Info (20325): http://fpgasoftware.intel.com/eula.
+Info (20325): ***************************************************************
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2E_REVB MAIN_ND7M_REVA die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2E_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND7M_REVA_HSSI_CRETE2E_REVB  device=1SG10MHN3F74C2LG_U2 die_types=HSSI_CRETE2E MAIN_ND7M die_revisions=HSSI_CRETE2E_REVB MAIN_ND7M_REVA supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2E_REVB MAIN_ND7M_REVA die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2E_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND7M_REVA_HSSI_CRETE2E_REVB  device=1SG10MHN3F74C2LG_U2 die_types=HSSI_CRETE2E MAIN_ND7M die_revisions=HSSI_CRETE2E_REVB MAIN_ND7M_REVA supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2E_REVB MAIN_ND7M_REVA die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2E_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND7M_REVA_HSSI_CRETE2E_REVB  device=1SG10MHN3F74C2LG_U2 die_types=HSSI_CRETE2E MAIN_ND7M die_revisions=HSSI_CRETE2E_REVB MAIN_ND7M_REVA supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2E_REVB MAIN_ND7M_REVA die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2E_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND7M_REVA_HSSI_CRETE2E_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2E MAIN_ND7M die_revisions=HSSI_CRETE2E_REVB MAIN_ND7M_REVA supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): 2025.04.05.05:16:13 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info (20325): 2025.04.05.05:16:13 Info: Finished upgrading the ip cores
+Info (20325): ***************************************************************
+Info (20325): Quartus is a registered trademark of Intel Corporation in the
+Info (20325): US and other countries.  Portions of the Quartus Prime software
+Info (20325): code, and other portions of the code included in this download
+Info (20325): or on this DVD, are licensed to Intel Corporation and are the
+Info (20325): copyrighted property of third parties. For license details,
+Info (20325): refer to the End User License Agreement at
+Info (20325): http://fpgasoftware.intel.com/eula.
+Info (20325): ***************************************************************
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): 2025.04.05.05:16:26 Info: Saving generation log to /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz_generation.rpt
+Info (20325): 2025.04.05.05:16:26 Info: Generated by version: 23.3 build 104
+Info (20325): 2025.04.05.05:16:26 Info: Starting: Create simulation model
+Info (20325): 2025.04.05.05:16:26 Info: qsys-generate /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz.ip --simulation=VERILOG --allow-mixed-language-simulation --output-directory=/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz --family="Stratix 10" --part=1SG280LU3F50E1VG
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): 2025.04.05.05:16:27 Info: s10_fpll_ref125Mhz_625Mhz.xcvr_fpll_s10_htile_0: For the selected device(1SG280LU3F50E1VG), PLL speed grade is 3.
+Info (20325): 2025.04.05.05:16:27 Info: s10_fpll_ref125Mhz_625Mhz: "Transforming system: s10_fpll_ref125Mhz_625Mhz"
+Info (20325): 2025.04.05.05:16:27 Info: s10_fpll_ref125Mhz_625Mhz: "Naming system components in system: s10_fpll_ref125Mhz_625Mhz"
+Info (20325): 2025.04.05.05:16:27 Info: s10_fpll_ref125Mhz_625Mhz: "Processing generation queue"
+Info (20325): 2025.04.05.05:16:27 Info: s10_fpll_ref125Mhz_625Mhz: "Generating: s10_fpll_ref125Mhz_625Mhz"
+Info (20325): 2025.04.05.05:16:27 Info: s10_fpll_ref125Mhz_625Mhz: "Generating: s10_fpll_ref125Mhz_625Mhz_altera_xcvr_fpll_s10_htile_1913_x6jqpja"
+Info (20325): 2025.04.05.05:16:27 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./altera_std_synchronizer_nocut.v VERILOG PATH ../../../../primitives/altera_std_synchronizer/altera_std_synchronizer_nocut.v
+Info (20325): 2025.04.05.05:16:27 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./s10_avmm_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_s10/source/s10_avmm_h.sv
+Info (20325): 2025.04.05.05:16:27 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./altera_xcvr_native_s10_functions_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_s10/source/altera_xcvr_native_s10_functions_h.sv
+Info (20325): 2025.04.05.05:16:27 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_native_anlg_reset_seq.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_s10/source/alt_xcvr_native_anlg_reset_seq.sv
+Info (20325): 2025.04.05.05:16:27 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_pll_rcfg_arb.sv SYSTEM_VERILOG PATH ../../common/alt_xcvr_pll_rcfg_arb.sv
+Info (20325): 2025.04.05.05:16:27 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_pll_embedded_debug.sv SYSTEM_VERILOG PATH ../../common/alt_xcvr_pll_embedded_debug.sv
+Info (20325): 2025.04.05.05:16:27 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_pll_avmm_csr.sv SYSTEM_VERILOG PATH ../../common/alt_xcvr_pll_avmm_csr.sv
+Info (20325): 2025.04.05.05:16:27 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info (20325): 2025.04.05.05:16:27 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_arbiter.sv
+Info (20325): 2025.04.05.05:16:27 Info: s10_fpll_ref125Mhz_625Mhz: Done "s10_fpll_ref125Mhz_625Mhz" with 2 modules, 18 files
+Info (20325): 2025.04.05.05:16:27 Info: Generating the following file(s) for VCS simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/ directory:
+Info (20325): 2025.04.05.05:16:27 Info:     common/vcs_files.tcl
+Info (20325): 2025.04.05.05:16:27 Info: Generating the following file(s) for RIVIERA simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/ directory:
+Info (20325): 2025.04.05.05:16:27 Info:     common/riviera_files.tcl
+Info (20325): 2025.04.05.05:16:27 Info: Generating the following file(s) for VCSMX simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/ directory:
+Info (20325): 2025.04.05.05:16:27 Info:     common/vcsmx_files.tcl
+Info (20325): 2025.04.05.05:16:27 Info: Generating the following file(s) for MODELSIM simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/ directory:
+Info (20325): 2025.04.05.05:16:27 Info:     common/modelsim_files.tcl
+Info (20325): 2025.04.05.05:16:27 Info: Generating the following file(s) for XCELIUM simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/ directory:
+Info (20325): 2025.04.05.05:16:27 Info:     common/xcelium_files.tcl
+Info (20325): 2025.04.05.05:16:27 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/.
+Info (20325): 2025.04.05.05:16:27 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info (20325): 2025.04.05.05:16:27 Info: Finished: Create simulation model
+Info (20325): 2025.04.05.05:16:27 Info: Starting: Create simulation script
+Info (20325): 2025.04.05.05:16:27 Info: sim-script-gen --system-file=/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz.ip --output-directory=/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/ --use-relative-paths=true
+Info (20325): 2025.04.05.05:16:28 Info: Generating the following file(s) for VCS simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/ directory:
+Info (20325): 2025.04.05.05:16:28 Info:     synopsys/vcs/vcs_setup.sh
+Info (20325): 2025.04.05.05:16:28 Info: Generating the following file(s) for RIVIERA simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/ directory:
+Info (20325): 2025.04.05.05:16:29 Info:     aldec/rivierapro_setup.tcl
+Info (20325): 2025.04.05.05:16:29 Info: Generating the following file(s) for VCSMX simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/ directory:
+Info (20325): 2025.04.05.05:16:29 Info:     synopsys/vcsmx/synopsys_sim.setup
+Info (20325): 2025.04.05.05:16:29 Info:     synopsys/vcsmx/vcsmx_setup.sh
+Info (20325): 2025.04.05.05:16:29 Info: Generating the following file(s) for MODELSIM simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/ directory:
+Info (20325): 2025.04.05.05:16:29 Info:     mentor/msim_setup.tcl
+Info (20325): 2025.04.05.05:16:29 Info: Generating the following file(s) for XCELIUM simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/ directory:
+Info (20325): 2025.04.05.05:16:29 Info:     xcelium/cds.lib
+Info (20325): 2025.04.05.05:16:29 Info:     xcelium/hdl.var
+Info (20325): 2025.04.05.05:16:29 Info:     xcelium/xcelium_setup.sh
+Info (20325): 2025.04.05.05:16:29 Info:     3 .cds.lib files in xcelium/cds_libs/ directory
+Info (20325): 2025.04.05.05:16:29 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/sim/.
+Info (20325): 2025.04.05.05:16:29 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info (20325): 2025.04.05.05:16:29 Info: Finished: Create simulation script
+Info (20325): 2025.04.05.05:16:29 Info: Starting: Create block symbol file (.bsf)
+Info (20325): 2025.04.05.05:16:29 Info: qsys-generate /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz.ip --block-symbol-file --output-directory=/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz --family="Stratix 10" --part=1SG280LU3F50E1VG
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): 2025.04.05.05:16:29 Info: s10_fpll_ref125Mhz_625Mhz.xcvr_fpll_s10_htile_0: For the selected device(1SG280LU3F50E1VG), PLL speed grade is 3.
+Info (20325): 2025.04.05.05:16:29 Info: Finished: Create block symbol file (.bsf)
+Info (20325): 2025.04.05.05:16:29 Info:
+Info (20325): 2025.04.05.05:16:29 Info: Starting: Create HDL design files for synthesis
+Info (20325): 2025.04.05.05:16:30 Info: qsys-generate /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz.ip --synthesis=VERILOG --output-directory=/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz --family="Stratix 10" --part=1SG280LU3F50E1VG
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: supported_die_types "MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): get_s10_die_pair:: device_die_revisions HSSI_CRETE2P_REVB MAIN_ND5_REVC die HSSI_CRETE2.* -> hssi_die_revision HSSI_CRETE2P_REVB
+Info (20325): get_s10_die_pair:: die_pair MAIN_ND5_REVC_HSSI_CRETE2P_REVB  device=1SG280LU3F50E1VG die_types=HSSI_CRETE2P MAIN_ND5 die_revisions=HSSI_CRETE2P_REVB MAIN_ND5_REVC supported_die_types="MAIN_ND.*" "HSSI_CRETE2.*"
+Info (20325): 2025.04.05.05:16:30 Info: s10_fpll_ref125Mhz_625Mhz.xcvr_fpll_s10_htile_0: For the selected device(1SG280LU3F50E1VG), PLL speed grade is 3.
+Info (20325): 2025.04.05.05:16:30 Info: s10_fpll_ref125Mhz_625Mhz: "Transforming system: s10_fpll_ref125Mhz_625Mhz"
+Info (20325): 2025.04.05.05:16:30 Info: s10_fpll_ref125Mhz_625Mhz: "Naming system components in system: s10_fpll_ref125Mhz_625Mhz"
+Info (20325): 2025.04.05.05:16:30 Info: s10_fpll_ref125Mhz_625Mhz: "Processing generation queue"
+Info (20325): 2025.04.05.05:16:30 Info: s10_fpll_ref125Mhz_625Mhz: "Generating: s10_fpll_ref125Mhz_625Mhz"
+Info (20325): 2025.04.05.05:16:30 Info: s10_fpll_ref125Mhz_625Mhz: "Generating: s10_fpll_ref125Mhz_625Mhz_altera_xcvr_fpll_s10_htile_1913_x6jqpja"
+Info (20325): 2025.04.05.05:16:30 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./altera_std_synchronizer_nocut.v VERILOG PATH ../../../../primitives/altera_std_synchronizer/altera_std_synchronizer_nocut.v
+Info (20325): 2025.04.05.05:16:30 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./s10_avmm_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_s10/source/s10_avmm_h.sv
+Info (20325): 2025.04.05.05:16:30 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./altera_xcvr_native_s10_functions_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_s10/source/altera_xcvr_native_s10_functions_h.sv
+Info (20325): 2025.04.05.05:16:30 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_native_anlg_reset_seq.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_s10/source/alt_xcvr_native_anlg_reset_seq.sv
+Info (20325): 2025.04.05.05:16:30 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_pll_rcfg_arb.sv SYSTEM_VERILOG PATH ../../common/alt_xcvr_pll_rcfg_arb.sv
+Info (20325): 2025.04.05.05:16:30 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_pll_embedded_debug.sv SYSTEM_VERILOG PATH ../../common/alt_xcvr_pll_embedded_debug.sv
+Info (20325): 2025.04.05.05:16:30 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_pll_avmm_csr.sv SYSTEM_VERILOG PATH ../../common/alt_xcvr_pll_avmm_csr.sv
+Info (20325): 2025.04.05.05:16:30 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info (20325): 2025.04.05.05:16:30 Info: xcvr_fpll_s10_htile_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_arbiter.sv
+Info (20325): 2025.04.05.05:16:30 Info: s10_fpll_ref125Mhz_625Mhz: Done "s10_fpll_ref125Mhz_625Mhz" with 2 modules, 14 files
+Info (20325): 2025.04.05.05:16:30 Info: Finished: Create HDL design files for synthesis
+Info (20325): 2025.04.05.05:16:30 Info: Generation of /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz.ip (s10_fpll_ref125Mhz_625Mhz) took 4279 ms
+Info (11131): Completed upgrading IP component QsysPrimePro with file "s10_fpll_ref125Mhz_625Mhz.ip"
+Error (23031): Evaluation of Tcl script /nfs/site/cproj/gnrd/zsc14.xne_00263/users/tools/altera/pro.23.3/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 2 errors, 0 warnings
+    Error: Peak virtual memory: 1055 megabytes
+    Error: Processing ended: Sat Apr  5 05:16:31 2025
+    Error: Elapsed time: 00:00:41
+    Error: System process ID: 23044
+
+

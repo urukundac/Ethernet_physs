@@ -1,0 +1,22 @@
+set_filling_rate -resources lut 0.65
+set_autoconnect_max_cables 150 -type lvds
+set_partition_iterations 100
+#set_filling_rate 0.7
+#set_max_mux_ratio 100
+
+#Guided partitioning
+
+#set_assignment -soft [list {xe3lpg2x6} {gtslice0} {gtxecore4}        ] -targets [ list MB1_FA1_F1 MB1_FA1_F2 MB1_FA2_F1 MB1_FA2_F2 MB1_FB1_F1 MB1_FB1_F2 MB1_FB2_F1 MB1_FB2_F2 ] ;
+#set_assignment -soft [list {xe3lpg2x6} {gtslice0} {gtxecore5}        ] -targets [ list MB1_FA1_F1 MB1_FA1_F2 MB1_FA2_F1 MB1_FA2_F2 MB1_FB1_F1 MB1_FB1_F2 MB1_FB2_F1 MB1_FB2_F2 ] ;
+#set_assignment -soft [list {xe3lpg2x6} {gtmempipeglobal} {gtmpnode0} ] -targets [ list MB2_FA1_F1 MB2_FA1_F2 MB2_FA2_F1 MB2_FA2_F2 MB2_FB1_F1 MB2_FB1_F2 MB2_FB2_F1 MB2_FB2_F2 ] ;
+#set_assignment -soft [list {xe3lpg2x6} {gtmempipeglobal} {gtmpnode1} ] -targets [ list MB2_FA1_F1 MB2_FA1_F2 MB2_FA2_F1 MB2_FA2_F2 MB2_FB1_F1 MB2_FB1_F2 MB2_FB2_F1 MB2_FB2_F2 ] ;
+#set_assignment -soft [list {xe3lpg2x6} {gtmempipeglobal}             ] -targets [ list MB2_FA1_F1 MB2_FA1_F2 MB2_FA2_F1 MB2_FA2_F2 MB2_FB1_F1 MB2_FB1_F2 MB2_FB2_F1 MB2_FB2_F2 ] ;
+#set_assignment -soft [list	{xe3lpg2x6} {gtslice0} {gtxecore2}        ] -targets [ list MB3_FA1_F1 MB3_FA1_F2 MB3_FA2_F1 MB3_FA2_F2 MB3_FB1_F1 MB3_FB1_F2 MB3_FB2_F1 MB3_FB2_F2 ] ;
+#set_assignment -soft [list	{xe3lpg2x6} {gtslice0} {gtxecore5}        ] -targets [ list MB3_FA1_F1 MB3_FA1_F2 MB3_FA2_F1 MB3_FA2_F2 MB3_FB1_F1 MB3_FB1_F2 MB3_FB2_F1 MB3_FB2_F2 ] ;
+#set_assignment -soft [list {xe3lpg2x6} {gtslice0} {gtsc}             ] -targets [ list MB4_FA1_F1 MB4_FA1_F2 MB4_FA2_F1 MB4_FA2_F2 MB4_FB1_F1 MB4_FB1_F2 MB4_FB2_F1 MB4_FB2_F2 ] ;
+#set_assignment -soft [list {xe3lpg2x6} {gtslice0} {gtxecore0}        ] -targets [ list MB4_FA1_F1 MB4_FA1_F2 MB4_FA2_F1 MB4_FA2_F2 MB4_FB1_F1 MB4_FB1_F2 MB4_FB2_F1 MB4_FB2_F2 ] ;
+#set_assignment -soft [list {xe3lpg2x6} {gtslice0} {gtxecore1}        ] -targets [ list MB5_FA1_F1 MB5_FA1_F2 MB5_FA2_F1 MB5_FA2_F2 MB5_FB1_F1 MB5_FB1_F2 MB5_FB2_F1 MB5_FB2_F2 ] ;
+#set_assignment -soft [list {xe3lpg2x6} {gtslice0} {gtxecore3}        ] -targets [ list MB5_FA1_F1 MB5_FA1_F2 MB5_FA2_F1 MB5_FA2_F2 MB5_FB1_F1 MB5_FB1_F2 MB5_FB2_F1 MB5_FB2_F2 ] ;
+#
+#set_assignment -soft [list  ] -targets [ list MB6_FA1_F1 MB6_FA1_F2 MB6_FA2_F1 MB6_FA2_F2 MB6_FB1_F1 MB6_FB1_F2 MB6_FB2_F1 MB6_FB2_F2 ] ;
+#set_assignment -soft [list  ] -targets [ list MB7_FA1_F1 MB7_FA1_F2 MB7_FA2_F1 MB7_FA2_F2 MB7_FB1_F1 MB7_FB1_F2 MB7_FB2_F1 MB7_FB2_F2 ] ;

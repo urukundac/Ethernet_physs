@@ -1,0 +1,84 @@
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.tx_clk :: physs_eth.rx_clk_out[0]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.rx_clk :: physs_eth.rx_clk_out[0]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.ref_clk :: physs_eth.rx_clk_out[0]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reg_clk :: physs_eth.rx_clk_out[0]
+
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.tx_clk :: physs_eth.rx_clk_out[1]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.rx_clk :: physs_eth.rx_clk_out[1]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.ref_clk :: physs_eth.rx_clk_out[1]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.reg_clk :: physs_eth.rx_clk_out[1]
+
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.tx_clk :: physs_eth.rx_clk_out[2]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.rx_clk :: physs_eth.rx_clk_out[2]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.ref_clk :: physs_eth.rx_clk_out[2]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.reg_clk :: physs_eth.rx_clk_out[2]
+
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.tx_clk :: physs_eth.rx_clk_out[3]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.rx_clk :: physs_eth.rx_clk_out[3]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.ref_clk :: physs_eth.rx_clk_out[3]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.reg_clk :: physs_eth.rx_clk_out[3]
+
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.tx_clk :: physs_eth.rx_clk_out[4]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.rx_clk :: physs_eth.rx_clk_out[4]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.ref_clk :: physs_eth.rx_clk_out[4]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reg_clk :: physs_eth.rx_clk_out[4]
+
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.tx_clk :: physs_eth.rx_clk_out[5]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.rx_clk :: physs_eth.rx_clk_out[5]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.ref_clk :: physs_eth.rx_clk_out[5]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.reg_clk :: physs_eth.rx_clk_out[5]
+
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.tx_clk :: physs_eth.rx_clk_out[6]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.rx_clk :: physs_eth.rx_clk_out[6]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.ref_clk :: physs_eth.rx_clk_out[6]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.reg_clk :: physs_eth.rx_clk_out[6]
+
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.tx_clk :: physs_eth.rx_clk_out[7]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.rx_clk :: physs_eth.rx_clk_out[7]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.ref_clk :: physs_eth.rx_clk_out[7]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.reg_clk :: physs_eth.rx_clk_out[7]
+
+
+
+
+
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reset_tx_clk :: physs_eth.sync_i_reset[0]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reset_rx_clk :: physs_eth.sync_i_reset[0]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reset_ref_clk :: physs_eth.sync_i_reset[0]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reset_reg_clk :: physs_eth.sync_i_reset[0]
+
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.reset_tx_clk :: physs_eth.sync_i_reset[1]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.reset_rx_clk :: physs_eth.sync_i_reset[1]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.reset_ref_clk :: physs_eth.sync_i_reset[1]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.reset_reg_clk :: physs_eth.sync_i_reset[1]
+
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.reset_tx_clk :: physs_eth.sync_i_reset[2]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.reset_rx_clk :: physs_eth.sync_i_reset[2]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.reset_ref_clk :: physs_eth.sync_i_reset[2]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.reset_reg_clk :: physs_eth.sync_i_reset[2]
+
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.reset_tx_clk :: physs_eth.sync_i_reset[3]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.reset_rx_clk :: physs_eth.sync_i_reset[3]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.reset_ref_clk :: physs_eth.sync_i_reset[3]
+DRIVER local physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.reset_reg_clk :: physs_eth.sync_i_reset[3]
+
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reset_tx_clk :: physs_eth.sync_i_reset[4]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reset_rx_clk :: physs_eth.sync_i_reset[4]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reset_ref_clk :: physs_eth.sync_i_reset[4]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reset_reg_clk :: physs_eth.sync_i_reset[4]
+
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.reset_tx_clk :: physs_eth.sync_i_reset[5]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.reset_rx_clk :: physs_eth.sync_i_reset[5]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.reset_ref_clk :: physs_eth.sync_i_reset[5]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_1.reset_reg_clk :: physs_eth.sync_i_reset[5]
+
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.reset_tx_clk :: physs_eth.sync_i_reset[6]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.reset_rx_clk :: physs_eth.sync_i_reset[6]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.reset_ref_clk :: physs_eth.sync_i_reset[6]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_2.reset_reg_clk :: physs_eth.sync_i_reset[6]
+
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.reset_tx_clk :: physs_eth.sync_i_reset[7]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.reset_rx_clk :: physs_eth.sync_i_reset[7]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.reset_ref_clk :: physs_eth.sync_i_reset[7]
+DRIVER local physs_eth.physs0.parmquad1.pcs100_wrap_1.quadpcs100_1.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_3.reset_reg_clk :: physs_eth.sync_i_reset[7]
+

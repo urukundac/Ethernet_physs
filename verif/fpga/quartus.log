@@ -1,0 +1,39 @@
+# **************************************************
+# Quartus Prime Version 24.1.0
+# Process ID 33283
+# Start logging UI actions
+# Mon Jul 7 20:37:47 2025
+# **************************************************
+[Mon Jul  7 20:37:59 2025] Window title: 'Quartus Prime' | QPushButton '&Yes' pressed!
+[Mon Jul  7 20:38:00 2025] Window title: 'Quartus Prime' | QPushButton '&OK' pressed!
+[Mon Jul  7 20:38:04 2025] Window title: 'Quartus Prime' | QPushButton '&No' pressed!
+[Mon Jul  7 20:38:09 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > 'Open P&roject...' was pressed
+[Mon Jul  7 20:38:34 2025] Window title: 'Open Project' | QPushButton '&Open' pressed!
+[Mon Jul  7 20:38:35 2025] Window title: 'Quartus Prime' | QPushButton '&Yes' pressed!
+[Mon Jul  7 20:38:37 2025] Window title: 'Quartus Prime' | QPushButton '&Yes' pressed!
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Instance' was unchecked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Instance Bus' was unchecked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Inst Port' was unchecked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Net' was unchecked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Net Bus' was unchecked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Mod Port' was unchecked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Port Bus' was unchecked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Instance' was checked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Instance Bus' was checked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Inst Port' was checked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Net' was checked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Net Bus' was checked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Mod Port' was checked
+[Mon Jul  7 20:38:38 2025] Window title: 'Options' | QCheckBox 'Port Bus' was checked
+[Mon Jul  7 20:38:38 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_serdes_Ltile_with8b10b_tbi_eth/ip_gen - ip_gen [*]' | P&rocessing > 'Compilation Dashboard' was pressed
+[Mon Jul  7 20:38:52 2025] Window title: 'Quartus Prime' | QPushButton '&OK' pressed!
+[Mon Jul  7 20:38:54 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_serdes_Ltile_with8b10b_tbi_eth/ip_gen - ip_gen [*]' | &Tools > '&IP Catalog ' was pressed
+[Mon Jul  7 20:39:24 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_serdes_Ltile_with8b10b_tbi_eth/ip_gen - ip_gen [*]' | &Tools > '&IP Catalog ' was pressed
+[Mon Jul  7 20:40:31 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_serdes_Ltile_with8b10b_tbi_eth/ip_gen - ip_gen [*]' | &Tools > '&IP Catalog ' was pressed
+[Mon Jul  7 20:46:38 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_serdes_Ltile_with8b10b_tbi_eth/ip_gen - ip_gen [*]' | &Tools > '&IP Catalog ' was pressed
+[Mon Jul  7 20:46:54 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_serdes_Ltile_with8b10b_tbi_eth/ip_gen - ip_gen [*]' | &File > '&Open...' was pressed
+[Mon Jul  7 20:46:58 2025] Window title: 'Open File' | QPushButton '&Open' pressed!
+# **************************************************
+# Wed Jul 23 16:49:29 2025
+# End of logging UI actions
+# **************************************************

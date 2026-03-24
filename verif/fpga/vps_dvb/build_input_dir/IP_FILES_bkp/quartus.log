@@ -1,0 +1,10 @@
+# Start logging UI actions
+# Mon Apr 7 11:00:21 2025
+[Mon Apr  7 11:00:39 2025] Window title: 'Quartus Prime' | QPushButton '&Yes' pressed!
+[Mon Apr  7 11:00:40 2025] Window title: 'Quartus Prime' | QPushButton '&Yes' pressed!
+[Mon Apr  7 11:00:41 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - /nfs/site/disks/xne_tip_0003/urukunda/quartus_20_3_grr/serdes_tbi_loopback_fifo/ip_gen - ip_gen [*]' | P&rocessing > 'Compilation Dashboard' was pressed
+[Mon Apr  7 11:00:46 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - /nfs/site/disks/xne_tip_0003/urukunda/quartus_20_3_grr/serdes_tbi_loopback_fifo/ip_gen - ip_gen [*]' | &Assignments > '&Device...' was pressed
+[Mon Apr  7 11:00:48 2025] Window title: 'Device' | 'Target device': QRadioButton '&Specific device selected in 'Available devices' list' was checked
+[Mon Apr  7 11:01:02 2025] Window title: 'Device' | QPushButton 'OK' pressed!
+[Mon Apr  7 11:01:06 2025] Window title: 'Upgrade IP Components' | QCheckBox '' was checked
+[Mon Apr  7 11:01:35 2025] Window title: 'Upgrade IP Components' | QPushButton 'Auto Upgrade' pressed!

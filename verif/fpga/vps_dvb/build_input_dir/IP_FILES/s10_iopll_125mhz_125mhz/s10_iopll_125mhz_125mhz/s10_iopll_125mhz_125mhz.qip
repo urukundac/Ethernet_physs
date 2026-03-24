@@ -1,0 +1,57 @@
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_TOOL_VERSION "24.2"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_iopll"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name OCS_IP_FILE "/nfs/site/disks/zsc7.xne_acccip.001/pdewanga/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz.ip"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name OCS_IP_TYPE "altera_iopll"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name OCS_IP_VERSION "19.3.1"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name OCS_IP_HASH "v2274uq"
+set_global_assignment -library "s10_iopll_125mhz_125mhz" -name SOPCINFO_FILE [file join $::quartus(qip_path) "s10_iopll_125mhz_125mhz.sopcinfo"]
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name SLD_INFO "QSYS_NAME s10_iopll_125mhz_125mhz HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "s10_iopll_125mhz_125mhz" -name MISC_FILE [file join $::quartus(qip_path) "s10_iopll_125mhz_125mhz.cmp"]
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_TARGETED_DEVICE_FAMILY "Stratix 10"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_TARGETED_PART_TRAIT "DEVICE_SPEEDGRADE::2"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_TARGETED_PART_TRAIT "part.DEVICE_IOBANK_REVISION::"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_GENERATED_DEVICE_FAMILY "{Stratix 10}"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "s10_iopll_125mhz_125mhz" -name MISC_FILE [file join $::quartus(qip_path) "../s10_iopll_125mhz_125mhz.ip"]
+
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_NAME "czEwX2lvcGxsXzEyNW1oel8xMjVtaHpfYWx0ZXJhX2lvcGxsXzE5MzFfdjIyNzR1cQ=="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_DISPLAY_NAME "SU9QTEwgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_VERSION "MTkuMy4x"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_DESCRIPTION "SW50ZWwgRlBHQSBQaGFzZS1Mb2NrZWQgTG9vcCAoSU9QTEwgSW50ZWwgRlBHQSBJUCkgY29yZSBhbGxvd3MgeW91IHRvIGNvbmZpZ3VyZSB0aGUgc2V0dGluZ3Mgb2YgdGhlICBJL08gUExMLg=="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL0Nsb2NrczsgUExMcyBhbmQgUmVzZXRzL1BMTA=="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzI4NS8="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzI4NS8="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzE5NS8yMC0zL2NvcmUtOTU3NTEuaHRtbA=="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4Mzc2MS8="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzc2OTAwMS8="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzE2Ni8="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_COMPONENT_NAME "czEwX2lvcGxsXzEyNW1oel8xMjVtaHo="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "s10_iopll_125mhz_125mhz" -library "s10_iopll_125mhz_125mhz" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "altera_iopll_1931" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_iopll_1931/synth/s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq.v"]
+set_instance_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name TCL_ENTITY_FILE [file join $::quartus(qip_path) "altera_iopll_1931/synth/s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq_all_ip_params.tcl"]
+set_instance_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name TCL_ENTITY_FILE [file join $::quartus(qip_path) "altera_iopll_1931/synth/s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq_parameters.tcl"]
+set_instance_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "altera_iopll_1931/synth/s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq.sdc"] -no_sdc_promotion  -no_auto_inst_discovery  -read_during_post_syn_and_post_fit_timing_analysis 
+set_instance_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name TCL_ENTITY_FILE [file join $::quartus(qip_path) "altera_iopll_1931/synth/s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq_pin_map.tcl"]
+set_global_assignment -library "altera_iopll_1931" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_iopll_1931/synth/stratix10_altera_iopll.v"]
+set_global_assignment -library "altera_iopll_1931" -name SOURCE_FILE [file join $::quartus(qip_path) "altera_iopll_1931/synth/s10_iobank_pll.ipxact"]
+set_global_assignment -library "s10_iopll_125mhz_125mhz" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/s10_iopll_125mhz_125mhz.v"]
+
+
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_TOOL_NAME "altera_iopll"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_TOOL_VERSION "19.3.1"
+set_global_assignment -entity "s10_iopll_125mhz_125mhz_altera_iopll_1931_v2274uq" -library "altera_iopll_1931" -name IP_TOOL_ENV "QsysPrimePro"
+

@@ -1,0 +1,95 @@
+	component s10_phy is
+		port (
+			tx_analogreset            : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- tx_analogreset
+			rx_analogreset            : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- rx_analogreset
+			tx_digitalreset           : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- tx_digitalreset
+			rx_digitalreset           : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- rx_digitalreset
+			tx_analogreset_stat       : out std_logic_vector(3 downto 0);                      -- tx_analogreset_stat
+			rx_analogreset_stat       : out std_logic_vector(3 downto 0);                      -- rx_analogreset_stat
+			tx_digitalreset_stat      : out std_logic_vector(3 downto 0);                      -- tx_digitalreset_stat
+			rx_digitalreset_stat      : out std_logic_vector(3 downto 0);                      -- rx_digitalreset_stat
+			tx_cal_busy               : out std_logic_vector(3 downto 0);                      -- tx_cal_busy
+			rx_cal_busy               : out std_logic_vector(3 downto 0);                      -- rx_cal_busy
+			tx_bonding_clocks         : in  std_logic_vector(23 downto 0)  := (others => 'X'); -- clk
+			rx_cdr_refclk0            : in  std_logic                      := 'X';             -- clk
+			tx_serial_data            : out std_logic_vector(3 downto 0);                      -- tx_serial_data
+			rx_serial_data            : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- rx_serial_data
+			rx_seriallpbken           : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- rx_seriallpbken
+			rx_is_lockedtoref         : out std_logic_vector(3 downto 0);                      -- rx_is_lockedtoref
+			rx_is_lockedtodata        : out std_logic_vector(3 downto 0);                      -- rx_is_lockedtodata
+			tx_coreclkin              : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- clk
+			rx_coreclkin              : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- clk
+			tx_clkout                 : out std_logic_vector(3 downto 0);                      -- clk
+			tx_clkout2                : out std_logic_vector(3 downto 0);                      -- clk
+			rx_clkout                 : out std_logic_vector(3 downto 0);                      -- clk
+			tx_parallel_data          : in  std_logic_vector(63 downto 0)  := (others => 'X'); -- tx_parallel_data
+			tx_datak                  : in  std_logic_vector(7 downto 0)   := (others => 'X'); -- tx_datak
+			pipe_tx_compliance        : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- pipe_tx_compliance
+			pipe_tx_elecidle          : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- pipe_tx_elecidle
+			pipe_tx_detectrx_loopback : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- pipe_tx_detectrx_loopback
+			pipe_powerdown            : in  std_logic_vector(7 downto 0)   := (others => 'X'); -- pipe_powerdown
+			pipe_tx_margin            : in  std_logic_vector(11 downto 0)  := (others => 'X'); -- pipe_tx_margin
+			pipe_tx_swing             : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- pipe_tx_swing
+			pipe_rx_polarity          : in  std_logic_vector(3 downto 0)   := (others => 'X'); -- pipe_rx_polarity
+			unused_tx_parallel_data   : in  std_logic_vector(207 downto 0) := (others => 'X'); -- unused_tx_parallel_data
+			rx_parallel_data          : out std_logic_vector(63 downto 0);                     -- rx_parallel_data
+			rx_datak                  : out std_logic_vector(7 downto 0);                      -- rx_datak
+			rx_syncstatus             : out std_logic_vector(7 downto 0);                      -- rx_syncstatus
+			pipe_phy_status           : out std_logic_vector(3 downto 0);                      -- pipe_phy_status
+			pipe_rx_valid             : out std_logic_vector(3 downto 0);                      -- pipe_rx_valid
+			pipe_rx_status            : out std_logic_vector(11 downto 0);                     -- pipe_rx_status
+			unused_rx_parallel_data   : out std_logic_vector(219 downto 0);                    -- unused_rx_parallel_data
+			pipe_hclk_in              : in  std_logic                      := 'X';             -- clk
+			pipe_hclk_out             : out std_logic;                                         -- clk
+			pipe_rx_eidleinfersel     : in  std_logic_vector(11 downto 0)  := (others => 'X'); -- pipe_rx_eidleinfersel
+			pipe_rx_elecidle          : out std_logic_vector(3 downto 0)                       -- pipe_rx_elecidle
+		);
+	end component s10_phy;
+
+	u0 : component s10_phy
+		port map (
+			tx_analogreset            => CONNECTED_TO_tx_analogreset,            --            tx_analogreset.tx_analogreset
+			rx_analogreset            => CONNECTED_TO_rx_analogreset,            --            rx_analogreset.rx_analogreset
+			tx_digitalreset           => CONNECTED_TO_tx_digitalreset,           --           tx_digitalreset.tx_digitalreset
+			rx_digitalreset           => CONNECTED_TO_rx_digitalreset,           --           rx_digitalreset.rx_digitalreset
+			tx_analogreset_stat       => CONNECTED_TO_tx_analogreset_stat,       --       tx_analogreset_stat.tx_analogreset_stat
+			rx_analogreset_stat       => CONNECTED_TO_rx_analogreset_stat,       --       rx_analogreset_stat.rx_analogreset_stat
+			tx_digitalreset_stat      => CONNECTED_TO_tx_digitalreset_stat,      --      tx_digitalreset_stat.tx_digitalreset_stat
+			rx_digitalreset_stat      => CONNECTED_TO_rx_digitalreset_stat,      --      rx_digitalreset_stat.rx_digitalreset_stat
+			tx_cal_busy               => CONNECTED_TO_tx_cal_busy,               --               tx_cal_busy.tx_cal_busy
+			rx_cal_busy               => CONNECTED_TO_rx_cal_busy,               --               rx_cal_busy.rx_cal_busy
+			tx_bonding_clocks         => CONNECTED_TO_tx_bonding_clocks,         --         tx_bonding_clocks.clk
+			rx_cdr_refclk0            => CONNECTED_TO_rx_cdr_refclk0,            --            rx_cdr_refclk0.clk
+			tx_serial_data            => CONNECTED_TO_tx_serial_data,            --            tx_serial_data.tx_serial_data
+			rx_serial_data            => CONNECTED_TO_rx_serial_data,            --            rx_serial_data.rx_serial_data
+			rx_seriallpbken           => CONNECTED_TO_rx_seriallpbken,           --           rx_seriallpbken.rx_seriallpbken
+			rx_is_lockedtoref         => CONNECTED_TO_rx_is_lockedtoref,         --         rx_is_lockedtoref.rx_is_lockedtoref
+			rx_is_lockedtodata        => CONNECTED_TO_rx_is_lockedtodata,        --        rx_is_lockedtodata.rx_is_lockedtodata
+			tx_coreclkin              => CONNECTED_TO_tx_coreclkin,              --              tx_coreclkin.clk
+			rx_coreclkin              => CONNECTED_TO_rx_coreclkin,              --              rx_coreclkin.clk
+			tx_clkout                 => CONNECTED_TO_tx_clkout,                 --                 tx_clkout.clk
+			tx_clkout2                => CONNECTED_TO_tx_clkout2,                --                tx_clkout2.clk
+			rx_clkout                 => CONNECTED_TO_rx_clkout,                 --                 rx_clkout.clk
+			tx_parallel_data          => CONNECTED_TO_tx_parallel_data,          --          tx_parallel_data.tx_parallel_data
+			tx_datak                  => CONNECTED_TO_tx_datak,                  --                  tx_datak.tx_datak
+			pipe_tx_compliance        => CONNECTED_TO_pipe_tx_compliance,        --        pipe_tx_compliance.pipe_tx_compliance
+			pipe_tx_elecidle          => CONNECTED_TO_pipe_tx_elecidle,          --          pipe_tx_elecidle.pipe_tx_elecidle
+			pipe_tx_detectrx_loopback => CONNECTED_TO_pipe_tx_detectrx_loopback, -- pipe_tx_detectrx_loopback.pipe_tx_detectrx_loopback
+			pipe_powerdown            => CONNECTED_TO_pipe_powerdown,            --            pipe_powerdown.pipe_powerdown
+			pipe_tx_margin            => CONNECTED_TO_pipe_tx_margin,            --            pipe_tx_margin.pipe_tx_margin
+			pipe_tx_swing             => CONNECTED_TO_pipe_tx_swing,             --             pipe_tx_swing.pipe_tx_swing
+			pipe_rx_polarity          => CONNECTED_TO_pipe_rx_polarity,          --          pipe_rx_polarity.pipe_rx_polarity
+			unused_tx_parallel_data   => CONNECTED_TO_unused_tx_parallel_data,   --   unused_tx_parallel_data.unused_tx_parallel_data
+			rx_parallel_data          => CONNECTED_TO_rx_parallel_data,          --          rx_parallel_data.rx_parallel_data
+			rx_datak                  => CONNECTED_TO_rx_datak,                  --                  rx_datak.rx_datak
+			rx_syncstatus             => CONNECTED_TO_rx_syncstatus,             --             rx_syncstatus.rx_syncstatus
+			pipe_phy_status           => CONNECTED_TO_pipe_phy_status,           --           pipe_phy_status.pipe_phy_status
+			pipe_rx_valid             => CONNECTED_TO_pipe_rx_valid,             --             pipe_rx_valid.pipe_rx_valid
+			pipe_rx_status            => CONNECTED_TO_pipe_rx_status,            --            pipe_rx_status.pipe_rx_status
+			unused_rx_parallel_data   => CONNECTED_TO_unused_rx_parallel_data,   --   unused_rx_parallel_data.unused_rx_parallel_data
+			pipe_hclk_in              => CONNECTED_TO_pipe_hclk_in,              --              pipe_hclk_in.clk
+			pipe_hclk_out             => CONNECTED_TO_pipe_hclk_out,             --             pipe_hclk_out.clk
+			pipe_rx_eidleinfersel     => CONNECTED_TO_pipe_rx_eidleinfersel,     --     pipe_rx_eidleinfersel.pipe_rx_eidleinfersel
+			pipe_rx_elecidle          => CONNECTED_TO_pipe_rx_elecidle           --          pipe_rx_elecidle.pipe_rx_elecidle
+		);
+

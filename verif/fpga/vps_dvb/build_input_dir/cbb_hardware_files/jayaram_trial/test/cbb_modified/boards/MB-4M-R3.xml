@@ -1,0 +1,13 @@
+<BOARD>
+  <NAME value="MB-4M-R3"/>
+  <TYPE value="MB"/>
+  <REV_HIGH value="2"/>
+  <REV_LOW value="0"/>
+  <VENDOR value="ProDesign"/>
+  <ORDER_CODE value="286414"/>
+  <BOARD_STATUS value="active"/> 
+  <PRODUCT value="Veloce PF quad Motherboard 2.0"/>
+  <CONFIGURABLE_DMBI_RATE value="yes"/>
+  <SERIAL_NO value="n.a."/>
+  <DESCRIPTION value="proFPGA quad Motherboard Gen 2"/>
+</BOARD>

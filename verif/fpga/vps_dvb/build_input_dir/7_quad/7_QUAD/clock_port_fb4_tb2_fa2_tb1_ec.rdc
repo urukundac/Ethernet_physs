@@ -1,0 +1,201 @@
+#create_clock -name {CLK_OBS_DIV2} [get_ports {CLK_OBS_DIV2}] -period {400.0}
+#create_clock -name {aonclk1x} [get_ports {aonclk1x}] -period {400.0}
+#create_clock -name {hifmc_UARTCLK} [get_ports {hifmc_UARTCLK}] -period {400.0}
+#create_clock -name {nss_core_clk} [get_ports {nss_core_clk}] -period {400.0}
+#create_clock -name {nss_fxp_clk} [get_ports {nss_fxp_clk}] -period {400.0}
+#create_clock -name {nss_hif_clk} [get_ports {nss_hif_clk}] -period {400.0}
+#create_clock -name {nss_lan_clk} [get_ports {nss_lan_clk}] -period {400.0}
+#create_clock -name {nss_psm_clk} [get_ports {nss_psm_clk}] -period {400.0}
+#create_clock -name {nss_sep_clk} [get_ports {nss_sep_clk}] -period {400.0}
+#create_clock -name {physs_func_clk} [get_ports {physs_func_clk}] -period {400.0}
+##create_clock -name {pmu_dso_clk} [get_ports {pmu_dso_clk}] -period {400.0}
+##create_clock -name {pmu_ng_clk} [get_ports {pmu_ng_clk}] -period {400.0}
+#create_clock -name {rdma_nss_core_clk} [get_ports {rdma_nss_core_clk}] -period {400.0}
+#create_clock -name {sep_nss_core_clk} [get_ports {sep_nss_core_clk}] -period {400.0}
+#create_clock -name {soc_per_clk} [get_ports {soc_per_clk}] -period {400.0}
+#create_clock -name {timeref_clk_div8} [get_ports {timeref_clk_div8}] -period {400.0}
+##create_clock -name {time1588_refclk} [get_ports {time1588_refclk}] -period {400.0}
+#create_clock -name {ate_ssn_bus_clock_in} [get_ports {ate_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {bsr_ssn_bus_clock_in} [get_ports {bsr_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {cosq_ssn_bus_clock_in} [get_ports {cosq_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {cxp_ssn_bus_clock_in} [get_ports {cxp_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {fxp_ssn_bus_clock_in} [get_ports {fxp_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {hif_core_ssn_bus_clock_in} [get_ports {hif_core_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {hif_nocss_ssn_bus_clock_in} [get_ports {hif_nocss_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {ice_ssn_bus_clock_in} [get_ports {ice_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {lanpe_ssn_bus_clock_in} [get_ports {lanpe_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {rdma_ssn_bus_clock_in} [get_ports {rdma_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {sep_ssn_bus_clock_in} [get_ports {sep_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {ts_ssn_bus_clock_in} [get_ports {ts_ssn_bus_clock_in}] -period {400.0}
+#set_clock_groups -asynchronous -group [list aonclk1x nss_core_clk nss_fxp_clk nss_hif_clk nss_lan_clk nss_psm_clk nss_sep_clk physs_func_clk rdma_nss_core_clk sep_nss_core_clk soc_per_clk timeref_clk_div8 ate_ssn_bus_clock_in bsr_ssn_bus_clock_in cosq_ssn_bus_clock_in cxp_ssn_bus_clock_in fxp_ssn_bus_clock_in hif_core_ssn_bus_clock_in hif_nocss_ssn_bus_clock_in ice_ssn_bus_clock_in lanpe_ssn_bus_clock_in rdma_ssn_bus_clock_in sep_ssn_bus_clock_in ts_ssn_bus_clock_in]
+    #input   [1:0]   NMF_cxp_ARBURST,
+    #input   [1:0]   NMF_cxp_AWBURST,
+    #input   [1:0]   NMF_fxp_ARBURST,
+    #input   [1:0]   NMF_fxp_AWBURST,
+    #input   [1:0]   NMF_ice_ARBURST,
+    #input   [1:0]   NMF_ice_AWBURST,
+    #input   [1:0]   NMF_lan_ARBURST,
+    #input   [1:0]   NMF_lan_AWBURST,
+    #input   [1:0]   NMF_macsec_ARBURST,
+    #input   [1:0]   NMF_macsec_AWBURST,
+    #input   [1:0]   NMF_rdma_ARBURST,
+    #input   [1:0]   NMF_rdma_AWBURST,
+    #input           ate_jtag_pri_source_FTAP_TRST_B,
+    #input           bsr_jtag_pri_source_FTAP_TRST_B,
+    #input           cosq_jtag_pri_source_FTAP_TRST_B,
+    #input           cxp_jtag_pri_source_FTAP_TRST_B,
+    #input           fxp_jtag_pri_source_FTAP_TRST_B,
+    #input           hif_core_jtag_pri_source_FTAP_TRST_B,
+    #input           hif_nocss_jtag_pri_source_FTAP_TRST_B,
+    #input           ice_jtag_pri_source_FTAP_TRST_B,
+    #input   [1:0]   imc_nmfpcieslv_ARBURST,
+    #input   [1:0]   imc_nmfpcieslv_AWBURST,
+    #input           lanpe_jtag_pri_source_FTAP_TRST_B,
+    #input           nss_rst_prep_ate,
+    #input           nss_rst_prep_cxp,
+    #input           nss_rst_prep_fxp,
+    #input           nss_rst_prep_hif,
+    #input           nss_rst_prep_hif_imcr,
+    #input           nss_rst_prep_ice,
+    #input           nss_rst_prep_ipr_top,
+    #input           nss_rst_prep_rdma,
+    #input           nss_rst_prep_sep,
+    #input           nss_rst_prep_ts,
+    #input           pkb_jtag_pri_source_FTAP_TRST_B,
+    #input           rdma_jtag_pri_source_FTAP_TRST_B,
+    #input           reset_acc1_hif_acc_rcip_prst_n,
+    #input           reset_imc0_n_pvt0_rst,
+    #input           reset_imc0_n_pvt2_rst,
+    #input           reset_imc1_perst_rst_n,
+    #input           scon_hif_imc_rcip_prst_n,
+    #input           sep_jtag_pri_source_FTAP_TRST_B,
+    #input           ts_jtag_pri_source_FTAP_TRST_B,
+    #input   [1:0]   nlf_hif_ep_ARBURST,
+    #input   [1:0]   nlf_hif_ep_AWBURST,
+    #input   [1:0]   nlf_hif_hbc0_ARBURST,
+    #input   [1:0]   nlf_hif_hbc0_AWBURST,
+    #input   [1:0]   nlf_hif_hbc1_ARBURST,
+    #input   [1:0]   nlf_hif_hbc1_AWBURST,
+    #input   [1:0]   nmf_ipr_arburst,
+    #input   [1:0]   nmf_ipr_awburst,
+    #input           pcie0_PERST_n0,
+    #input           pcie0_PERST_n1,
+    #input           pcie0_PERST_n2,
+    #input           pcie0_PERST_n3,
+    #input           pcie1_PERST_n0,
+    #input           pcie1_PERST_n2,
+###create_clock  -name {YY_TXCKN_2_3} [get_ports {YY_TXCKN_2_3}] -period {400.0}
+##create_clock -name {BSCAN_bscan_in_FBSCAN_TCK } [get_ports {BSCAN_bscan_in_FBSCAN_TCK }] -period {400.0}
+#create_clock -name {NAC_NCSI_CLK_IN} [get_ports {NAC_NCSI_CLK_IN}] -period {400.0}
+##create_clock -name {STF2_CLK_RST_BUF_STF2_CLK_stf2_clk_in} [get_ports {STF2_CLK_RST_BUF_STF2_CLK_stf2_clk_in}] -period {400.0}
+#create_clock -name {ck_crystal} [get_ports {ck_crystal}] -period {400.0}
+##create_clock -name {dist16_rpt3_tclk} [get_ports {dist16_rpt3_tclk }] -period {400.0}
+#create_clock -name {ext_rmnrxclk_rcv0_i} [get_ports {ext_rmnrxclk_rcv0_i}] -period {100.0}
+#create_clock -name {ext_rmnrxclk_rcv1_i} [get_ports {ext_rmnrxclk_rcv1_i}] -period {200.0}
+#create_clock -name {ext_rmnrxclk_rcv2_i} [get_ports {ext_rmnrxclk_rcv2_i}] -period {600.0}
+#create_clock -name {ext_rmnrxclk_rcv3_i} [get_ports {ext_rmnrxclk_rcv3_i}] -period {700.0}
+##create_clock -name {iosf_dfx_dfxsecure_plugin_POLICY_UPDATE} [get_ports {iosf_dfx_dfxsecure_plugin_POLICY_UPDATE}] -period {400.0}
+#create_clock -name {nac_rstb_clk} [get_ports {nac_rstb_clk}] -period {400.0}
+#create_clock -name {oack_ref_pad2cmos_aips} [get_ports {oack_ref_pad2cmos_aips}] -period {400.0}
+#create_clock -name {pm_side_clk} [get_ports {pm_side_clk}] -period {400.0}
+#create_clock -name {soc_crox2clk} [get_ports {soc_crox2clk}] -period {400.0}
+#create_clock -name {soc_crox4clk} [get_ports {soc_crox4clk}] -period {700.0}
+#create_clock -name {xtal_25m_clk} [get_ports {xtal_25m_clk}] -period {400.0}
+##create_clock -name {JTAG_jtag_pri_source_FTAP_TCK} [get_ports {JTAG_jtag_pri_source_FTAP_TCK}] -period {400.0}
+#create_clock -name {NAC_NCSI_CLK_IN_FT_I[0]} [get_ports {NAC_NCSI_CLK_IN_FT_I[0]}] -period {400.0}
+#create_clock -name {NAC_NCSI_CLK_IN_FT_I[1]} [get_ports {NAC_NCSI_CLK_IN_FT_I[1]}] -period {400.0}
+#create_clock -name {ext_onpi_clk_i[0]} [get_ports {ext_onpi_clk_i[0]}] -period {400.0}
+#create_clock -name {ext_onpi_clk_i[1]} [get_ports {ext_onpi_clk_i[1]}] -period {400.0}
+#create_clock -name {ext_onpi_clk_i[2]} [get_ports {ext_onpi_clk_i[2]}] -period {400.0}
+#create_clock -name {ext_onpi_clk_i[3]} [get_ports {ext_onpi_clk_i[3]}] -period {400.0}            
+#set_port_assignment [get_ports BSCAN_bscan_in_FBSCAN_TCK] -disconnect
+##set_port_assignment [get_ports STF2_CLK_RST_BUF_STF2_CLK_stf2_clk_in] -disconnect
+##set_port_assignment [get_ports dist16_rpt3_tclk] -disconnect
+##set_port_assignment [get_ports iosf_dfx_dfxsecure_plugin_POLICY_UPDATE] -disconnect
+#set_port_assignment [get_ports JTAG_jtag_pri_source_FTAP_TCK] -disconnect
+##set_port_assignment [get_pins par_nac/hlp1_avisa_clk\[0\]] -disconnect
+##set_port_assignment [get_pins par_nac/cpm1_cpm_visa_lane3_VISA_CLK] -disconnect
+##set_port_assignment [get_pins par_nac/cpm1_cpm_visa_lane0_VISA_CLK] -disconnect
+##set_port_assignment [get_pins par_nac/rmnrxclk_3] -disconnect
+##set_port_assignment [get_pins par_nac/rmnrxclk_1] -disconnect
+##set_port_assignment [get_pins par_nac/paruxquad_mtip_top_10_25_40_50_100_mac_pcs_mtip_avisa_clk\[2\]] -disconnect
+##set_port_assignment [get_pins par_nac/rmnrxclk_0] -disconnect
+##set_port_assignment [get_pins par_nac/paruxquad_mtip_top_10_25_40_50_100_mac_pcs_mtip_avisa_clk\[3\]] -disconnect
+##set_port_assignment [get_pins par_nac/paruxquad_mtip_top_10_25_40_50_100_mac_pcs_mtip_avisa_clk\[0\]] -disconnect
+##set_port_assignment [get_pins par_nac/paruxquad_mtip_top_10_25_40_50_100_mac_pcs_mtip_avisa_clk\[1\]] -disconnect
+##set_port_assignment [get_pins par_nac/hlp1_avisa_clk\[3\]] -disconnect
+##set_port_assignment [get_pins par_nac/cpm1_cpm_visa_lane1_VISA_CLK] -disconnect
+##set_port_assignment [get_pins par_nac/hlp1_avisa_clk\[2\]] -disconnect
+##set_port_assignment [get_pins par_nac/hlp1_avisa_clk\[1\]] -disconnect
+##set_port_assignment [get_pins par_nac/paruxquad_eth56g_onpi_gen_onpi_clk\[2\]] -disconnect
+##set_port_assignment [get_pins par_nac/paruxquad_eth56g_onpi_gen_onpi_clk\[1\]] -disconnect
+##set_port_assignment [get_pins par_nac/paruxquad_eth56g_onpi_gen_onpi_clk\[3\]] -disconnect
+##set_port_assignment [get_pins par_nac/rmnrxclk_2] -disconnect
+##set_port_assignment [get_pins par_nac/paruxquad_eth56g_onpi_gen_onpi_clk\[0\]] -disconnect
+##set_port_assignment [get_pins par_nac/cpm1_cpm_visa_lane2_VISA_CLK] -disconnect
+##
+###create_clock  -name {YY_RXSBCLK1_0} [get_ports {YY_RXSBCLK1_0}] -period {400.0}
+###create_clock  -name {YY_RXSBCLK1_1} [get_ports {YY_RXSBCLK1_1}] -period {400.0}
+###create_clock  -name {YY_RXSBCLK1_2} [get_ports {YY_RXSBCLK1_2}] -period {400.0}
+###create_clock  -name {YY_RXSBCLK1_3} [get_ports {YY_RXSBCLK1_3}] -period {400.0}
+###
+###create_clock  -name {YY_RXSBCLK2_0} [get_ports {YY_RXSBCLK2_0}] -period {400.0}
+###create_clock  -name {YY_RXSBCLK2_1} [get_ports {YY_RXSBCLK2_1}] -period {400.0}
+###create_clock  -name {YY_RXSBCLK2_2} [get_ports {YY_RXSBCLK2_2}] -period {400.0}
+###create_clock  -name {YY_RXSBCLK2_3} [get_ports {YY_RXSBCLK2_3}] -period {400.0}
+###
+###
+####RESET CONNECTIONS
+#create_reset -name nac_s5_rstb_rst_b [get_ports nac_s5_rstb_rst_b] -clock [get_clocks soc_crox2clk] -active low
+#create_reset -name pm_side_rst_b [get_ports pm_side_rst_b] -clock [get_clocks soc_crox2clk] -active low
+#create_reset -name prim_rst_b [get_ports prim_rst_b] -clock [get_clocks soc_crox2clk] -active low
+#create_reset -name punit_pma_pwrgood_rst_b [get_ports punit_pma_pwrgood_rst_b] -clock [get_clocks soc_crox2clk] -active low
+#create_reset -name s5_dtf_rst_in_b [get_ports s5_dtf_rst_in_b] -clock [get_clocks soc_crox2clk] -active low
+#create_reset -name s5_gpsb_rst_b [get_ports s5_gpsb_rst_b] -clock [get_clocks soc_crox2clk] -active low
+#create_reset -name vnn_fdfx_pwrgood_rst_b [get_ports vnn_fdfx_pwrgood_rst_b] -clock [get_clocks soc_crox2clk] -active low
+#create_reset -name nac_stf2_clk_rst_buf_stf2_rst_in [get_ports nac_stf2_clk_rst_buf_stf2_rst_in] -clock [get_clocks soc_crox2clk] -active low
+#create_reset -name nac_sbr_rpt_protect_from_s5pmsb_rst [get_ports nac_sbr_rpt_protect_from_s5pmsb_rst] -clock [get_clocks soc_crox2clk] -active low
+#create_reset -name RSMRST_1V_N [get_ports RSMRST_1V_N] -clock [get_clocks soc_crox2clk] -active low
+#create_reset -name JTAG_jtag_pri_source_FTAP_TRST_B [get_ports JTAG_jtag_pri_source_FTAP_TRST_B] -clock [get_clocks soc_crox2clk] -active low
+##create_clock -name {CLK_OBS_DIV2} [get_ports {CLK_OBS_DIV2}] -period {400.0}
+#create_clock -name {aonclk1x} [get_ports {aonclk1x}] -period {400.0}
+##create_clock -name {hifmc_UARTCLK} [get_ports {hifmc_UARTCLK}] -period {400.0}
+#create_clock -name {nss_core_clk} [get_ports {nss_core_clk}] -period {400.0}
+#create_clock -name {nss_fxp_clk} [get_ports {nss_fxp_clk}] -period {400.0}
+#create_clock -name {nss_hif_clk} [get_ports {nss_hif_clk}] -period {400.0}
+#create_clock -name {nss_lan_clk} [get_ports {nss_lan_clk}] -period {400.0}
+#create_clock -name {nss_psm_clk} [get_ports {nss_psm_clk}] -period {400.0}
+#create_clock -name {nss_sep_clk} [get_ports {nss_sep_clk}] -period {400.0}
+#create_clock -name {physs_func_clk} [get_ports {physs_func_clk}] -period {400.0}
+##create_clock -name {pmu_dso_clk} [get_ports {pmu_dso_clk}] -period {400.0}
+##create_clock -name {pmu_ng_clk} [get_ports {pmu_ng_clk}] -period {400.0}
+#create_clock -name {rdma_nss_core_clk} [get_ports {rdma_nss_core_clk}] -period {400.0}
+#create_clock -name {sep_nss_core_clk} [get_ports {sep_nss_core_clk}] -period {400.0}
+#create_clock -name {soc_per_clk} [get_ports {soc_per_clk}] -period {400.0}
+#create_clock -name {timeref_clk_div8} [get_ports {timeref_clk_div8}] -period {400.0}
+##create_clock -name {time1588_refclk} [get_ports {time1588_refclk}] -period {400.0}
+#create_clock -name {ate_ssn_bus_clock_in} [get_ports {ate_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {bsr_ssn_bus_clock_in} [get_ports {bsr_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {cosq_ssn_bus_clock_in} [get_ports {cosq_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {cxp_ssn_bus_clock_in} [get_ports {cxp_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {fxp_ssn_bus_clock_in} [get_ports {fxp_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {hif_core_ssn_bus_clock_in} [get_ports {hif_core_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {hif_nocss_ssn_bus_clock_in} [get_ports {hif_nocss_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {ice_ssn_bus_clock_in} [get_ports {ice_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {lanpe_ssn_bus_clock_in} [get_ports {lanpe_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {rdma_ssn_bus_clock_in} [get_ports {rdma_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {sep_ssn_bus_clock_in} [get_ports {sep_ssn_bus_clock_in}] -period {400.0}
+#create_clock -name {ts_ssn_bus_clock_in} [get_ports {ts_ssn_bus_clock_in}] -period {400.0}
+#set_clock_groups -asynchronous -group [list aonclk1x nss_core_clk nss_fxp_clk nss_hif_clk nss_lan_clk nss_psm_clk nss_sep_clk physs_func_clk rdma_nss_core_clk sep_nss_core_clk soc_per_clk timeref_clk_div8 ate_ssn_bus_clock_in bsr_ssn_bus_clock_in cosq_ssn_bus_clock_in cxp_ssn_bus_clock_in fxp_ssn_bus_clock_in hif_core_ssn_bus_clock_in hif_nocss_ssn_bus_clock_in ice_ssn_bus_clock_in lanpe_ssn_bus_clock_in rdma_ssn_bus_clock_in sep_ssn_bus_clock_in ts_ssn_bus_clock_in]
+
+
+
+#create_clock -name {physs_intf0_clk} [get_ports {physs_intf0_clk}] -period {8.0}
+create_clock -name {physs_func_clk} [get_ports {physs_func_clk}] -period {8.0}
+#create_clock -name {physs_funcx2_clk} [get_ports {physs_funcx2_clk}] -period {8.0}
+#create_clock -name {physs_intf0_clk} [get_ports {physs_intf0_clk}] -period {8.0}
+#create_clock -name {physs_uart_clk} [get_ports {physs_uart_clk}] -period {8.0}
+create_clock -name {soc_per_clk} [get_ports {soc_per_clk}] -period {8.0}
+#create_clock -name {timeref_clk} [get_ports {timeref_clk}] -period {8.0}
+
+create_reset -name physs_func_rst_raw_n [get_ports physs_func_rst_raw_n] -clock [get_clocks physs_func_clk] -active low

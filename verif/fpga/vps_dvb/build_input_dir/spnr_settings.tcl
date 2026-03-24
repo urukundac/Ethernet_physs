@@ -1,0 +1,2 @@
+
+#local quartus options settings

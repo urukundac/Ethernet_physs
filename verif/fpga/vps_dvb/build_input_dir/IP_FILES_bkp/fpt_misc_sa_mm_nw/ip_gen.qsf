@@ -1,0 +1,39 @@
+set_global_assignment -name TOP_LEVEL_ENTITY ip_gen
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "20.3.0 SP0.44FW"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:19:19  AUGUST 27, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.3.0 Pro Edition"
+set_global_assignment -name FAMILY "Stratix 10"
+set_global_assignment -name DEVICE 1SG280LU3F50E1VG
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_address_span_extender_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/i2c_clock_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/i2c_reset_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_mm_bridge_4.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_mm_clock_crossing_bridge_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_mm_bridge_5.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/usr_status_bridge_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_mm_clock_crossing_bridge_2.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/sys_clk_sync_clock_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/sys_clk_sync_reset_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_mm_bridge_1.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_clock_bridge_1.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_mm_bridge_3.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_mm_clock_crossing_bridge_3.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_reset_bridge_1.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/mon_clock_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/mon_reset_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_mm_bridge_2.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_clock_in.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_reset_in.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_mm_clock_crossing_bridge_4.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_merlin_apb_translator_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_clock_bridge_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_reset_bridge_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/pcie_hst_bridge_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/infra_avst_clock_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_mm_clock_crossing_bridge_1.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/infra_avst_reset_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpt_misc_sa_mm_nw_pio_0.ip
+set_global_assignment -name IP_FILE ip/fpt_misc_sa_mm_nw/fpga_glbl_bridge_0.ip
+set_global_assignment -name QSYS_FILE fpt_misc_sa_mm_nw.qsys

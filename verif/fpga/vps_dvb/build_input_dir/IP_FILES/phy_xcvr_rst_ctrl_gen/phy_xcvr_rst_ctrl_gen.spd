@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/altera_std_synchronizer_nocut.v"
+   type="VERILOG"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/alt_xcvr_resync_std.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/altera_xcvr_reset_control_s10.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/alt_xcvr_reset_counter_s10.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/mentor/altera_xcvr_reset_control_s10.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_xcvr_reset_control_s10_1911"
+   simulator="modelsim" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/mentor/alt_xcvr_reset_counter_s10.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_xcvr_reset_control_s10_1911"
+   simulator="modelsim" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/plain_files.txt"
+   type="OTHER"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/mentor_files.txt"
+   type="OTHER"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/cadence_files.txt"
+   type="OTHER"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/synopsys_files.txt"
+   type="OTHER"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/aldec_files.txt"
+   type="OTHER"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="sim/phy_xcvr_rst_ctrl_gen.v"
+   type="VERILOG"
+   library="phy_xcvr_rst_ctrl_gen"
+   hasInlineConfiguration="true" />
+ <topLevel name="phy_xcvr_rst_ctrl_gen.phy_xcvr_rst_ctrl_gen" />
+ <deviceFamily name="stratix10" />
+</simPackage>

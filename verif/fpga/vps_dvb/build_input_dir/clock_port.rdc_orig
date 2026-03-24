@@ -1,0 +1,114 @@
+#for xtor
+create_clock -name {pcie_ref_clk_p} -period {10.0} [get_ports pcie_ref_clk_p] 
+set_property preserve_period TRUE [get_clocks pcie_ref_clk_p]
+
+#need to comeback for this
+#create_clock  -name {pcie_user_clk} -period  {8.0} [get_pins fpga_transactors_top_inst/generic_chassis_top_inst/dut/app_clock_out_clk_clk]
+#set_property preserve_period on [get_clocks pcie_user_clk]
+#set_clock_groups -asynchronous -group [get_clocks pcie_user_clk]
+
+
+# Clock Relationships
+#set_clock_groups -asynchronous -group [get_clocks {glbclk1}]
+#set_clock_groups -asynchronous -group [get_clocks {glbclk4}] 
+set_clock_groups -asynchronous -group [get_clocks {pcie_ref_clk_p}] 
+
+#create_clock -name {lb_clk} -period {200.0} [get_ports lb_clk_ext] 
+#create_reset -name altera_sys_rst_n  [get_ports altera_sys_rst_n] -clock  [get_clocks lb_clk] -active low 
+
+
+source /nfs/site/disks/xne_tip_0003/bindhus/FGT/fpga_transactors-lnl-main-master-23ww41a-drop.0/fpga_synth/quartus/settings/pcie_perst_functions.tcl
+
+
+
+
+#CLOCK connections
+create_clock  -name {ckcp_sb_clk} [get_ports {ckcp_sb_clk}] -period {400.0}
+create_clock  -name {ckcp_crystal_clk} [get_ports {ckcp_crystal_clk}] -period {400.0}
+create_clock  -name {ckcp_gcfca_clk} [get_ports {ckcp_gcfca_clk}] -period {400.0}
+create_clock  -name {bypass_clk} [get_ports {bypass_clk}] -period {400.0}
+create_clock  -name {prim_clk} [get_ports {prim_clk}] -period {400.0}
+create_clock  -name {uhfi_100mhz_clk} [get_ports {uhfi_100mhz_clk}] -period {10.0}
+#create_clock  -name {dtfe_clk} [get_nets {dtfe_clk}] -period {400.0}
+#create_clock  -name {fvisa_serstb} [get_nets {fvisa_serstb}] -period {400.0}
+#create_clock  -name {ckcp_gtunslpllout_clk} [get_nets {ckcp_gtunslpllout_clk}] -period {400.0}
+
+#RESET CONNECTIONS
+create_reset -name sys_rst_n [get_ports sys_rst_n] -clock [get_clocks ckcp_crystal_clk] -active low
+#create_reset -name RESET_1 [get_ports side_pwrgood_rst_b] -clock [get_clocks ckcp_crystal_clk] -active low
+#create_reset -name RESET_2 [get_ports gp_side_rst_b] -clock [get_clocks ckcp_crystal_clk] -active low
+#create_reset -name RESET_3 [get_ports pm_side_rst_b] -clock [get_clocks ckcp_crystal_clk] -active low
+#create_reset -name RESET_4 [get_ports fdfx_rst_b] -clock [get_clocks ckcp_crystal_clk] -active low
+#create_reset -name RESET_5 [get_ports cfcm_prim_pwrgood_rst_b] -clock [get_clocks ckcp_crystal_clk] -active low
+#create_reset -name RESET_6 [get_ports adtf_rst_b] -clock [get_clocks ckcp_crystal_clk] -active low
+#create_reset -name RESET_7 [get_ports cfcm_prim_rst_b] -clock [get_clocks ckcp_crystal_clk] -active low
+
+#set_port_assignment [get_ports ckcp_gtunslpllout_clk] -disconnect
+#set_port_assignment [get_ports dtfe_clk] -disconnect
+#set_port_assignment [get_ports fvisa_serstb] -disconnect
+#
+set_port_assignment [get_ports {pci_exp_txp[0]}]  -fpga [get_hw_fpgas MB1_FA2_F1] -user_managed
+set_port_assignment [get_ports {pci_exp_txp[1]}]  -fpga [get_hw_fpgas MB1_FA2_F1] -user_managed
+set_port_assignment [get_ports {pci_exp_txp[2]}]  -fpga [get_hw_fpgas MB1_FA2_F1] -user_managed
+set_port_assignment [get_ports {pci_exp_txp[3]}]  -fpga [get_hw_fpgas MB1_FA2_F1] -user_managed
+
+#set_port_assignment [get_ports {pci_exp_txp[0]}]  -fpga [get_hw_fpgas MB1_FB1_F1] -user_managed
+#set_port_assignment [get_ports {pci_exp_txp[1]}]  -fpga [get_hw_fpgas MB1_FB1_F1] -user_managed
+#set_port_assignment [get_ports {pci_exp_txp[2]}]  -fpga [get_hw_fpgas MB1_FB1_F1] -user_managed
+#set_port_assignment [get_ports {pci_exp_txp[3]}]  -fpga [get_hw_fpgas MB1_FB1_F1] -user_managed
+
+set_port_assignment [get_ports {pci_exp_txn[0]}] -disconnect
+set_port_assignment [get_ports {pci_exp_txn[1]}]  -disconnect
+set_port_assignment [get_ports {pci_exp_txn[2]}]  -disconnect
+set_port_assignment [get_ports {pci_exp_txn[3]}]  -disconnect
+
+
+set_port_assignment [get_ports {pci_exp_rxp[0]}]  -fpga [get_hw_fpgas MB1_FA2_F1] -user_managed
+set_port_assignment [get_ports {pci_exp_rxp[1]}]  -fpga [get_hw_fpgas MB1_FA2_F1] -user_managed
+set_port_assignment [get_ports {pci_exp_rxp[2]}]  -fpga [get_hw_fpgas MB1_FA2_F1] -user_managed
+set_port_assignment [get_ports {pci_exp_rxp[3]}]  -fpga [get_hw_fpgas MB1_FA2_F1] -user_managed
+
+#set_port_assignment [get_ports{pci_exp_rxp[0]}]  -fpga [get_hw_fpgas MB1_FB1_F1] -user_managed
+#set_port_assignment [get_ports{pci_exp_rxp[1]}]  -fpga [get_hw_fpgas MB1_FB1_F1] -user_managed
+#set_port_assignment [get_ports{pci_exp_rxp[2]}]  -fpga [get_hw_fpgas MB1_FB1_F1] -user_managed
+#set_port_assignment [get_ports{pci_exp_rxp[3]}]  -fpga [get_hw_fpgas MB1_FB1_F1] -user_managed
+
+set_port_assignment [get_ports {pci_exp_rxn[0]}]  -disconnect
+set_port_assignment [get_ports {pci_exp_rxn[1]}]  -disconnect
+set_port_assignment [get_ports {pci_exp_rxn[2]}]  -disconnect
+set_port_assignment [get_ports {pci_exp_rxn[3]}]  -disconnect
+
+#set_port_assignment [get_ports pcie_ref_clk_p] -track [get_hw_interface_tracks "MB1_FA2_F1*PCIe*REF_CLK_P_0"] -iostandard none
+#set_port_assignment [get_ports pcie_ref_clk_n] -disconnect
+
+#set_port_assignment [get_ports "altera_PCIE_nCPRSNT"] -track [get_hw_interface_tracks "MB1_FA2_F1*PCIe*NCPRSNT_0"] -iostandard LVCMOS18
+#set_assignment [get_ports "altera_EXT_PERST_N"] -track [get_hw_interface_tracks "MB1_FA2_F1*PCIe*NCPERST_0"] -iostandard LVCMOS18
+#set_assignment [get_ports "altera_LOOP_PERST_N"] -pin [get_hw_fpga_pins [get_pcie_loop_perst_pin -fpga MB1_FA2_F1 -sampleTrack [get_hw_interface_tracks  "MB1_FA2_F1*PCIe*REF_CLK_P_0"]]] -iostandard LVCMOS18
+#set_assignment [get_ports "altera_SWITCHED_PERST_N"] -pin [get_hw_fpga_pins [get_pcie_switched_perst_pin -fpga MB1_FA2_F1 -sampleTrack [get_hw_interface_tracks "MB1_FA2_F1*PCIe*REF_CLK_P_0"]]] -iostandard LVTTL30
+#set_assignment [get_ports "altera_PCIE_CPWRON"] -track [get_hw_interface_tracks "MB1_FA2_F1*PCIe*CPWRON_0"] -iostandard LVCMOS18
+
+#R4
+#
+set FPGA_NAME {MB1_FB1_F2}
+set PD_LOC_NAME {MB1_FB1_F2_fb1_tb1_eb1}
+
+set PROTID_NAME {DEFAULT_EB_PDS_PCIe_Cable_R4}
+set dsn_port_pcie_refclk_p {FPGA_REF_CLK_P_0}
+set dsn_port_pcie_refclk_n {FPGA_REF_CLK_N_0}
+set dsn_port_pcie_cpwron   {FPGA_CPWRON_0}
+set dsn_port_pcie_ncprsnt  {FPGA_NCPRSNT_0}
+set dsn_port_pcie_ncwake   {FPGA_NCWAKE_0}
+set dsn_port_pcie_ncperst  {FPGA_NCPERST_0}
+
+
+#set_assignment [get_ports pcie_ref_clk_p] -track [get_hw_interface_tracks ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_refclk_p}] -iostandard none
+#set_assignment [get_ports pcie_ref_clk_n] -track [get_hw_interface_tracks ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_refclk_n}] -iostandard none
+#
+#
+#
+#set_assignment [get_ports pwron_n] -track [get_hw_interface_tracks ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_cpwron}] -iostandard LVCMOS18
+#set_assignment [get_ports prsnt_n] -track [get_hw_interface_tracks ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_ncprsnt}] -iostandard LVCMOS18
+#set_assignment [get_ports wake_n] -track [get_hw_interface_tracks ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_ncwake}] -iostandard LVCMOS18
+#set_assignment [get_ports pdeb_pcie_perst_n] -track [get_hw_interface_tracks  ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_ncperst}] -iostandard LVCMOS18
+#set_assignment [get_ports tosw_pcie_perst_n] -pin [get_hw_fpga_pins  ${FPGA_NAME}/U33]  -iostandard LVCMOS18
+#set_assignment [get_ports frsw_pcie_perst_n] -pin [get_hw_fpga_pins ${FPGA_NAME}/CN11] -iostandard LVCMOS18

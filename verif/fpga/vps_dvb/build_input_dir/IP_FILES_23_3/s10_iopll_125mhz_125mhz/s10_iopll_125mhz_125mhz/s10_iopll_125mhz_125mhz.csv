@@ -1,0 +1,19 @@
+# system info s10_iopll_125mhz_125mhz on 2025.04.01.23:22:17
+system_info:
+name,value
+DEVICE,1SG280LU3F50E1VG
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for s10_iopll_125mhz_125mhz on 2025.04.01.23:22:17
+files:
+filepath,kind,attributes,module,is_top
+sim/s10_iopll_125mhz_125mhz.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,s10_iopll_125mhz_125mhz,true
+altera_iopll_1931/sim/s10_iopll_125mhz_125mhz_altera_iopll_1931_35qpuni.vo,VERILOG,,s10_iopll_125mhz_125mhz_altera_iopll_1931_35qpuni,false
+altera_iopll_1931/sim/stratix10_altera_iopll.v,VERILOG,,s10_iopll_125mhz_125mhz_altera_iopll_1931_35qpuni,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+s10_iopll_125mhz_125mhz.iopll_0,s10_iopll_125mhz_125mhz_altera_iopll_1931_35qpuni

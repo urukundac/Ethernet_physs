@@ -1,0 +1,14 @@
+#-------------------------------------------------------------------------------
+# Source timing constraints
+#-------------------------------------------------------------------------------
+source /nfs/site/disks/sc1_sv_00003/bsadashx/cpm_media_vps/gnrd-cpm-media-vps/verif/fpga/vps/build_input_dir/clocks_v8_cpm_2p0.rdc
+
+#-------------------------------------------------------------------------------
+# Source blackbox annotation settings
+#-------------------------------------------------------------------------------
+source /nfs/site/disks/sc1_sv_00003/bsadashx/cpm_media_vps/gnrd-cpm-media-vps/verif/fpga/vps/build_input_dir/bbox.rdc
+
+#-------------------------------------------------------------------------------
+# Source physical (cable, pin, and partitioning) constraints
+#-------------------------------------------------------------------------------
+source /nfs/site/disks/sc1_sv_00003/bsadashx/cpm_media_vps/gnrd-cpm-media-vps/verif/fpga/vps/build_input_dir/physical.rdc

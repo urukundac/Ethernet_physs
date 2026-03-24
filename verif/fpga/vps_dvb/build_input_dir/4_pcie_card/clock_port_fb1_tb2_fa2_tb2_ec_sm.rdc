@@ -1,0 +1,181 @@
+
+###==== UHFI clocks
+create_clock  -name hci_refclk -period 10  [get_ports pcie_ref_clk_p]
+set_property preserve_period on [get_clocks hci_refclk]
+set_clock_groups -asynchronous -group [get_clocks hci_refclk]
+
+#jmoctezu, already in physical.rdc set_port_assignment [get_ports CO18_PCIE_RESET_N] -tie1
+
+#create_clock -name pipe_clock -period 8 [get_pins uhfi/uhfi_pcie_ctrl/i_pcie_bridge_top/u_phy_top/genblk1i.pcie_phy_wrapper/pipe_clk]
+create_clock -name pipe_clock -period 8 [get_pins uhfi/uhfi_pcie_ctrl/i_pcie_bridge_top/u_phy_top/pipe_clk]
+set_property preserve_period on [get_clocks pipe_clock]
+set_clock_groups -asynchronous -group [get_clocks pipe_clock]
+
+create_clock -name {PCIE_REFCLK_P_uhfi} -period {10.0} [get_ports pcie_ref_clk_p_uhfi] 
+set_property preserve_period TRUE [get_clocks PCIE_REFCLK_P_uhfi]
+
+
+create_clock  -name {pcie_user_clk} -period  {8.0} [get_pins fpga_transactors_top_inst/generic_chassis_top_inst/dut/app_clock_out_clk_clk]
+
+#source /nfs/site/disks/xne_tip_0003/bindhus/FGT/fpga_transactors-lnl-main-master-23ww41a-drop.0/fpga_synth/quartus/settings/pcie_perst_functions.tcl
+
+create_clock  -name {ckcp_sb_clk} [get_ports {ckcp_sb_clk}] -period {400.0}
+create_clock  -name {ckcp_crystal_clk} [get_ports {ckcp_crystal_clk}] -period {400.0}
+create_clock  -name {ckcp_gcfca_clk} [get_ports {ckcp_gcfca_clk}] -period {400.0}
+create_clock  -name {bypass_clk} [get_ports {bypass_clk}] -period {400.0}
+create_clock  -name {prim_clk} [get_ports {prim_clk}] -period {400.0}
+create_clock  -name {uhfi_100mhz_clk} [get_ports {uhfi_100mhz_clk}] -period {10.0}
+
+
+#RESET CONNECTIONS
+#create_reset -name sys_rst_n [get_ports sys_rst_n] -clock [get_clocks ckcp_crystal_clk] -active low
+
+
+
+
+## BEGIN P2 PCH ADPS
+#
+#------------------------------------
+# UHFI assignments
+#------------------------------------
+#set FPGA_NAME {MB1_FB1_F2}
+#set PD_LOC_NAME {MB1_FB1_F2_fb1_tb1_eb1}
+#set PORT {1}
+#R3
+#set PORTID_NAME {PCIE}
+#set dsn_port_pcie_refclk_p {sys_clk_p}
+#set dsn_port_pcie_refclk_n {sys_clk_n}
+#set dsn_port_pcie_cpwron   {CPWRON}
+#set dsn_port_pcie_ncprsnt  {nCPRSNT}
+#set dsn_port_pcie_ncwake   {nCWAKE}
+#set dsn_port_pcie_ncperst  {nCPERST}
+
+#R4
+#
+#
+set PORTID_NAME {DEFAULT_EB_PDS_PCIe_Cable_R6}
+set port {0}
+#port 0 - FGT (SM)
+
+#set FPGA_NAME_1 {MB1_FB1_F2}
+#set PD_LOC_NAME_1 {MB1_FB1_F2_mb1_fb1_tb1_eb1}
+
+#port 0 - FGT (EC host) uncomment for EC
+set FPGA_NAME_1 {MB1_FB1_F1}
+set PD_LOC_NAME_1 {MB1_FB1_F1_mb1_fb1_tb2_eb1}
+
+
+set dsn_port_pcie_refclk_p {FPGA_REF_CLK_P_0}
+set dsn_port_pcie_refclk_n {FPGA_REF_CLK_N_0}
+set dsn_port_pcie_cpwron   {FPGA_CPWRON_0}
+set dsn_port_pcie_ncprsnt  {FPGA_NCPRSNT_0}
+set dsn_port_pcie_ncwake   {FPGA_NCWAKE_0}
+set dsn_port_pcie_ncperst  {FPGA_NCPERST_0}
+
+
+
+
+#port 0 UHFI (SM)
+set FPGA_NAME_2 {MB1_FA2_F1}
+set PD_LOC_NAME_2 {MB1_FA2_F1_mb1_fa2_tb2_eb1}
+
+
+#port 0 UHFI (EC host)
+#set FPGA_NAME_2 {MB1_FA2_F2} uncomment for EC
+#set PD_LOC_NAME_2 {MB1_FA2_F2_mb1_fa2_tb1_eb1}
+
+
+set dsn_port_pcie_refclk_p_uhfi {FPGA_REF_CLK_P_0}
+set dsn_port_pcie_refclk_n_uhfi {FPGA_REF_CLK_N_0}
+set dsn_port_pcie_cpwron_uhfi   {FPGA_CPWRON_0}
+set dsn_port_pcie_ncprsnt_uhfi  {FPGA_NCPRSNT_0}
+set dsn_port_pcie_ncwake_uhfi   {FPGA_NCWAKE_0}
+set dsn_port_pcie_ncperst_uhfi  {FPGA_NCPERST_0}
+
+
+
+
+create_reset -name RESET [get_ports sys_rst_n] -clock [get_clocks uhfi_100mhz_clk] -active low
+set_assignment [get_ports led_red] -disconnect
+
+set_assignment [get_ports {pci_exp_txn[3]}] -disconnect
+set_assignment [get_ports {pci_exp_txn[2]}] -disconnect
+set_assignment [get_ports {pci_exp_txn[1]}] -disconnect
+set_assignment [get_ports {pci_exp_txn[0]}] -disconnect
+
+set_assignment [get_ports {pci_exp_txn_uhfi[3]}] -disconnect
+set_assignment [get_ports {pci_exp_txn_uhfi[2]}] -disconnect
+set_assignment [get_ports {pci_exp_txn_uhfi[1]}] -disconnect
+set_assignment [get_ports {pci_exp_txn_uhfi[0]}] -disconnect
+
+#set_assignment [get_ports pci_exp_rxp\[0\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PER_P_${PORT_1}_0] -iostandard none
+#set_assignment [get_ports pci_exp_rxp\[1\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PER_P_${PORT_1}_1] -iostandard none
+#set_assignment [get_ports pci_exp_rxp\[2\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PER_P_${PORT_1}_2] -iostandard none
+#set_assignment [get_ports pci_exp_rxp\[3\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PER_P_${PORT_1}_3] -iostandard none
+#set_assignment [get_ports pci_exp_txp\[0\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PET_P_${PORT_1}_0] -iostandard none
+#set_assignment [get_ports pci_exp_txp\[1\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PET_P_${PORT_1}_1] -iostandard none
+#set_assignment [get_ports pci_exp_txp\[2\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PET_P_${PORT_1}_2] -iostandard none
+#set_assignment [get_ports pci_exp_txp\[3\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PET_P_${PORT_1}_3] -iostandard none
+
+
+#FGT _SM 
+set_port_assignment [get_ports {pci_exp_txp[0]}]  -fpga [get_hw_fpgas FPGA_NAME_1] -user_managed
+set_port_assignment [get_ports {pci_exp_txp[1]}]  -fpga [get_hw_fpgas FPGA_NAME_1] -user_managed
+set_port_assignment [get_ports {pci_exp_txp[2]}]  -fpga [get_hw_fpgas FPGA_NAME_1] -user_managed
+set_port_assignment [get_ports {pci_exp_txp[3]}]  -fpga [get_hw_fpgas FPGA_NAME_1] -user_managed
+set_port_assignment [get_ports {pci_exp_rxp[0]}]  -fpga [get_hw_fpgas FPGA_NAME_1] -user_managed
+set_port_assignment [get_ports {pci_exp_rxp[1]}]  -fpga [get_hw_fpgas FPGA_NAME_1] -user_managed
+set_port_assignment [get_ports {pci_exp_rxp[2]}]  -fpga [get_hw_fpgas FPGA_NAME_1] -user_managed
+set_port_assignment [get_ports {pci_exp_rxp[3]}]  -fpga [get_hw_fpgas FPGA_NAME_1] -user_managed
+
+
+set_port_assignment [get_ports pci_exp_rxp_uhfi[0] ] -fpga [get_hw_fpgas FPGA_NAME_2] -user_managed
+set_port_assignment [get_ports pci_exp_rxp_uhfi[1] ] -fpga [get_hw_fpgas FPGA_NAME_2] -user_managed
+set_port_assignment [get_ports pci_exp_rxp_uhfi[2] ] -fpga [get_hw_fpgas FPGA_NAME_2] -user_managed
+set_port_assignment [get_ports pci_exp_rxp_uhfi[3] ] -fpga [get_hw_fpgas FPGA_NAME_2] -user_managed
+set_port_assignment [get_ports pci_exp_txp_uhfi[0] ] -fpga [get_hw_fpgas FPGA_NAME_2] -user_managed
+set_port_assignment [get_ports pci_exp_txp_uhfi[1] ] -fpga [get_hw_fpgas FPGA_NAME_2] -user_managed
+set_port_assignment [get_ports pci_exp_txp_uhfi[2] ] -fpga [get_hw_fpgas FPGA_NAME_2] -user_managed
+set_port_assignment [get_ports pci_exp_txp_uhfi[3] ] -fpga [get_hw_fpgas FPGA_NAME_2] -user_managed
+
+#set_assignment [get_ports pci_exp_rxp_uhfi\[0\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PER_P_${PORT_2}_0] -iostandard none
+#set_assignment [get_ports pci_exp_rxp_uhfi\[1\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PER_P_${PORT_2}_1] -iostandard none
+#set_assignment [get_ports pci_exp_rxp_uhfi\[2\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PER_P_${PORT_2}_2] -iostandard none
+#set_assignment [get_ports pci_exp_rxp_uhfi\[3\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PER_P_${PORT_2}_3] -iostandard none
+#set_assignment [get_ports pci_exp_txp_uhfi\[0\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PET_P_${PORT_2}_0] -iostandard none
+#set_assignment [get_ports pci_exp_txp_uhfi\[1\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PET_P_${PORT_2}_1] -iostandard none
+#set_assignment [get_ports pci_exp_txp_uhfi\[2\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PET_P_${PORT_2}_2] -iostandard none
+#set_assignment [get_ports pci_exp_txp_uhfi\[3\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PET_P_${PORT_2}_3] -iostandard none
+
+set_assignment [get_ports pcie_ref_clk_p] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_refclk_p}] -iostandard none
+set_assignment [get_ports pcie_ref_clk_n] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_refclk_n}] -iostandard none
+
+set_assignment [get_ports pcie_ref_clk_p_uhfi] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_refclk_p_uhfi}] -iostandard none
+set_assignment [get_ports pcie_ref_clk_n_uhfi] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_refclk_n_uhfi}] -iostandard none
+
+
+set_assignment [get_ports pwron_n] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_cpwron}] -iostandard LVCMOS18
+set_assignment [get_ports prsnt_n] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_ncprsnt}] -iostandard LVCMOS18
+set_assignment [get_ports wake_n] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_ncwake}] -iostandard LVCMOS18
+set_assignment [get_ports pdeb_pcie_perst_n] -track [get_hw_interface_tracks  ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_ncperst}] -iostandard LVCMOS18
+
+
+set_assignment [get_ports pwron_n_uhfi] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_cpwron_uhfi}] -iostandard LVCMOS18
+set_assignment [get_ports prsnt_n_uhfi] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_ncprsnt_uhfi}] -iostandard LVCMOS18
+set_assignment [get_ports wake_n_uhfi] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_ncwake_uhfi}] -iostandard LVCMOS18
+set_assignment [get_ports pdeb_pcie_perst_n_uhfi] -track [get_hw_interface_tracks  ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_ncperst_uhfi}] -iostandard LVCMOS18
+
+#SM host
+#set_assignment [get_ports tosw_pcie_perst_n] -pin [get_hw_fpga_pins  ${FPGA_NAME_1}/U33]  -iostandard LVCMOS18
+#set_assignment [get_ports frsw_pcie_perst_n] -pin [get_hw_fpga_pins ${FPGA_NAME_1}/CN11] -iostandard LVTTL30
+#EC host
+set_assignment [get_ports tosw_pcie_perst_n] -pin [get_hw_fpga_pins  ${FPGA_NAME_1}/BL38]  -iostandard LVCMOS18
+set_assignment [get_ports frsw_pcie_perst_n] -pin [get_hw_fpga_pins ${FPGA_NAME_1}/CN59] -iostandard LVTTL30
+
+# SM host
+set_assignment [get_ports tosw_pcie_perst_n_uhfi] -pin [get_hw_fpga_pins  ${FPGA_NAME_2}/BL38]  -iostandard LVCMOS18
+set_assignment [get_ports frsw_pcie_perst_n_uhfi] -pin [get_hw_fpga_pins ${FPGA_NAME_2}/CN59] -iostandard LVTTL30
+
+# EC host
+#set_assignment [get_ports tosw_pcie_perst_n_uhfi] -pin [get_hw_fpga_pins  ${FPGA_NAME_2}/U33]  -iostandard LVCMOS18
+#set_assignment [get_ports frsw_pcie_perst_n_uhfi] -pin [get_hw_fpga_pins ${FPGA_NAME_2}/CN11] -iostandard LVTTL30

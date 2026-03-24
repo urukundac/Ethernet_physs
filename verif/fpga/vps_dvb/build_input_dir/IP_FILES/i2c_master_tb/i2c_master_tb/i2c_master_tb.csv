@@ -1,0 +1,21 @@
+# system info i2c_master_tb on 2025.07.14.09:56:49
+system_info:
+name,value
+DEVICE,1SG10MHN3F74C2LG_U2
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for i2c_master_tb on 2025.07.14.09:56:49
+files:
+filepath,kind,attributes,module,is_top
+sim/i2c_master_tb.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,i2c_master_tb,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+i2c_master_tb.i2c_master_inst,i2c_master
+i2c_master_tb.i2c_master_inst_avalon_master_bfm,i2c_master_inst_avalon_master_bfm_ip
+i2c_master_tb.i2c_master_inst_clock_bfm,i2c_master_inst_clock_bfm_ip
+i2c_master_tb.i2c_master_inst_conduit_end_bfm,i2c_master_inst_conduit_end_bfm_ip
+i2c_master_tb.i2c_master_inst_reset_bfm,i2c_master_inst_reset_bfm_ip

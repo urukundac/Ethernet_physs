@@ -1,0 +1,13 @@
+# **************************************************
+# Quartus Prime Version 24.1.0
+# Process ID 33283
+# Start logging TCL commands
+# Mon Jul 7 20:37:47 2025
+# **************************************************
+project_open "/nfs/site/disks/zsc14.xne_cnic.emu-fpga.002/kumarlok/nac_0p5_09_06/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_serdes_Ltile_with8b10b_tbi_eth/ip_gen.qpf"
+project_open "/nfs/site/disks/zsc14.xne_cnic.emu-fpga.002/kumarlok/nac_0p5_09_06/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_serdes_Ltile_with8b10b_tbi_eth/ip_gen.qpf"
+project_open "/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_serdes_Ltile_with8b10b_tbi_eth/ip_gen.qpf"
+# **************************************************
+# Wed Jul 23 16:49:29 2025
+# End of logging TCL commands
+# **************************************************

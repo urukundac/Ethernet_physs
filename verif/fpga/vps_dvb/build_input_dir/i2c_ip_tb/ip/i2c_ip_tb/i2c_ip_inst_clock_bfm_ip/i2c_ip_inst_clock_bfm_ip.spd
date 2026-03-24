@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_avalon_clock_source_191/sim/verbosity_pkg.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_common_sv_packages"
+   systemVerilogPackageName="avalon_vip_verbosity_pkg" />
+ <file
+   path="altera_avalon_clock_source_191/sim/altera_avalon_clock_source.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_avalon_clock_source_191" />
+ <file
+   path="sim/i2c_ip_inst_clock_bfm_ip.v"
+   type="VERILOG"
+   library="i2c_ip_inst_clock_bfm_ip"
+   hasInlineConfiguration="true" />
+ <topLevel name="i2c_ip_inst_clock_bfm_ip.i2c_ip_inst_clock_bfm_ip" />
+ <deviceFamily name="stratix10" />
+ <device name="1SG10MHN3F74C2LG_U2" />
+</simPackage>

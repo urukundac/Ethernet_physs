@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.07.09.22:30:55"
+ outputDirectory="/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/mdio_ethernet_ip/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Stratix 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="1SG10MHN3F74C2LG_U2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clock_reset" kind="reset" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="256" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clock" />
+   <property name="associatedReset" value="clock_reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="csr_write" direction="input" role="write" width="1" />
+   <port name="csr_read" direction="input" role="read" width="1" />
+   <port name="csr_address" direction="input" role="address" width="6" />
+   <port name="csr_writedata" direction="input" role="writedata" width="32" />
+   <port name="csr_readdata" direction="output" role="readdata" width="32" />
+   <port
+       name="csr_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+  </interface>
+  <interface name="mdio" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="mdc" direction="output" role="mdc" width="1" />
+   <port name="mdio_in" direction="input" role="mdio_in" width="1" />
+   <port name="mdio_out" direction="output" role="mdio_out" width="1" />
+   <port name="mdio_oen" direction="output" role="mdio_oen" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="mdio_ethernet_ip" version="1.0" name="mdio_ethernet_ip">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="1SG10MHN3F74C2LG_U2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix 10" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/mdio_ethernet_ip/synth/mdio_ethernet_ip.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/mdio_ethernet_ip/synth/mdio_ethernet_ip.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/mdio_ethernet_ip.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/nfs/site/disks/crt_tools_079/altera/quartus_prime_pro/24.1/ip/altera/ethernet/ethernet_ucore/altera_eth_mdio/altera_eth_mdio_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="mdio_ethernet_ip">"Generating: mdio_ethernet_ip"</message>
+   <message level="Info" culprit="mdio_ethernet_ip">"Generating: altera_eth_mdio"</message>
+  </messages>
+ </entity>
+ <entity kind="altera_eth_mdio" version="19.3.2" name="altera_eth_mdio">
+  <generatedFiles>
+   <file
+       path="/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/mdio_ethernet_ip/altera_eth_mdio_1932/synth/altera_eth_mdio.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/vps_dvb/build_input_dir/IP_FILES/mdio_ethernet_ip/altera_eth_mdio_1932/synth/altera_eth_mdio.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/nfs/site/disks/crt_tools_079/altera/quartus_prime_pro/24.1/ip/altera/ethernet/ethernet_ucore/altera_eth_mdio/altera_eth_mdio_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="mdio_ethernet_ip" as="eth_mdio_0" />
+  <messages>
+   <message level="Info" culprit="mdio_ethernet_ip">"Generating: altera_eth_mdio"</message>
+  </messages>
+ </entity>
+</deploy>

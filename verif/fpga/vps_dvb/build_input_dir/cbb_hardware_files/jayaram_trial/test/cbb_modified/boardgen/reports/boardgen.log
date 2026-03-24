@@ -1,0 +1,23 @@
+-----------------------------------------------------------
+redboardgen
+Veloce Prototyping System version: 2023.06
+Veloce Prototyping System build: 5694875
+	           Unpublished work. Copyright 2023 Siemens
+	       This material contains trade secrets or otherwise
+	confidential information owned by Siemens Industry Software Inc.
+	  or its affiliates (collectively, "SISW"), or its licensors.
+	 Access to and use of this information is strictly limited as
+	 set forth in the Customer's applicable agreements with SISW.
+Time: Wed Apr  3 19:44:32 2024
+-----------------------------------------------------------
+Fatal     [boardgen-93003][04]: Tcl error in file cbb_modified.cfg on line 1 : invalid command name "name".
+
+Message Summary
+----------------------------------------------------------------------------------------------------
+Count  Type            Message ID          Summary                                                         
+----------------------------------------------------------------------------------------------------
+1      Fatal           boardgen-93003                                                                      
+----------------------------------------------------------------------------------------------------
+
+Boardgen finished with: 
+      1 Fatal Error

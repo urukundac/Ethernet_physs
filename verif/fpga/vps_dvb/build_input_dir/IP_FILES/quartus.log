@@ -1,0 +1,31 @@
+# **************************************************
+# Quartus Prime Version 24.2.0
+# Process ID 11359
+# Start logging UI actions
+# Mon Nov 18 19:32:23 2024
+# **************************************************
+[Mon Nov 18 19:32:28 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:32:39 2024] Window title: 'Open File' | QPushButton '&Open' pressed!
+[Mon Nov 18 19:44:34 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:44:40 2024] Window title: 'Open File' | QPushButton '&Cancel' pressed!
+[Mon Nov 18 19:44:43 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:45:41 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:45:55 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Close' was pressed
+[Mon Nov 18 19:45:57 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:47:11 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:48:02 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:48:26 2024] Window title: 'Open File' | 'fileTypeCombo' combo box changed to: 'Project Files (*.qpf)'
+[Mon Nov 18 19:48:30 2024] Window title: 'Open File' | 'fileTypeCombo' combo box changed to: 'IP Variation Files (*.qip *.qsys *.sip *.ip)'
+[Mon Nov 18 19:48:36 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:48:39 2024] Window title: 'Open File' | 'fileTypeCombo' combo box changed to: 'All Files (*.*)'
+[Mon Nov 18 19:48:51 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:49:17 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Close' was pressed
+[Mon Nov 18 19:49:18 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:50:09 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:51:37 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > '&Open...' was pressed
+[Mon Nov 18 19:51:46 2024] Window title: 'Open File' | QPushButton '&Cancel' pressed!
+[Mon Nov 18 19:51:49 2024] [Action triggered] Window title: 'Quartus Prime Pro Edition' | &File > 'E&xit' was pressed
+# **************************************************
+# Mon Nov 18 19:51:49 2024
+# End of logging UI actions
+# **************************************************

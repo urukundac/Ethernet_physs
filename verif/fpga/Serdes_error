@@ -1,0 +1,27 @@
+
+MB2_FB1_F1 BB1 --> MB5_FA2_F1 BB1 	SERDES_LOCKED: 1 	RX_LOCKED: 1 	TRANSMISSION_ERROR: 1
+MB1_FB2_F1 TB2 --> MB5_FB1_F1 BA2 	SERDES_LOCKED: 1 	RX_LOCKED: 1 	TRANSMISSION_ERROR: 1
+
+
+RED_DAFM_config (2 errors / 99 pinmux)
+	MB1_FA1_F2 TB1 --> MB5_FA2_F1 TB2 	SERDES_LOCKED: 1 	RX_LOCKED: 0 	TRANSMISSION_ERROR: 1
+	MB2_FB1_F1 BB1 --> MB5_FA2_F1 BB1 	SERDES_LOCKED: 1 	RX_LOCKED: 1 	TRANSMISSION_ERROR: 1
+
+RED_DAFM_config (1 errors / 27 pinmux)
+	MB1_FB2_F1 TB2 --> MB5_FB1_F1 BA2 	SERDES_LOCKED: 1 	RX_LOCKED: 1 	TRANSMISSION_ERROR: 1
+
+
+force `PHYSS_QUAD(0, 0).pcs100_wrap_0.physs_pcs_mux_0_srds_rdy_out_100G = 4'hF;
+
+part_setting_files need to be revert back incase pinmuc error is because of this die
+
+
+/data/kumarlok/spi_hw_24_06 (this has some SPI accesses)
+/data/kumarlok/spi_hw_enabled_28_06 (reset phase ok but SPI transaction is not coming)
+/data/kumarlok/uhfi_fix (this SPI soft module has lots of SPI accesses happening but UART is not happening)
+
+
+visualizer -designfile /data/kumarlok/uhfi_fix/outputs/_red_veloce.med/visualizer.out/VIS_DATA/design.bin -wavefile /data/kumarlok/uhfi_fix/redrt.out/debug/outputs/config0.db -do /data/kumarlok/uhfi_fix/redrt.out/debug/outputs/config0.db.do +waveconcatopt
+
+Opening QWave: /home/echost1/bindhus/vps_install_2024.2/visualizer/bin/vis -designfile /data/kumarlok/uhfi_fix/outputs/_red_veloce.med/visualizer.out/VIS_DATA/design.bin -wavefile /data/kumarlok/uhfi_fix/redrt.out/debug/outputs/config0.db -do /data/kumarlok/uhfi_fix/redrt.out/debug/outputs/config0.db.do +waveconcatopt
+

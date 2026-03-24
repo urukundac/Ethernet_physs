@@ -1,0 +1,7 @@
+set_global_assignment -name TOP_LEVEL_ENTITY ip_gen
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "20.3.0 SP0.44FW"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:19:19  AUGUST 27, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.3.0 Pro Edition"
+set_global_assignment -name FAMILY "Stratix 10"
+set_global_assignment -name DEVICE 1SG280LU3F50E1VG
+set_global_assignment -name IP_FILE sys_pll.ip

@@ -1,0 +1,1 @@
+set_clock_groups -asynchronous -group [get_clocks {part|physs0|parmquad0|pcs100_wrap_0|quadpcs100_0|U_PCS_TOP|U_SGMII4x_USXGMII4x_INST|U_SGMII_10B_0|io_pll_125mhz_eth_clks|*outclk*}] -group [get_clocks {physs_func_clk}] -group [get_clocks {soc_per_clk}] 

@@ -1,0 +1,147 @@
+IP Upgrade report for ip_gen
+Sat Apr  5 05:21:33 2025
+Quartus Prime Version 23.3.0 Build 104 09/20/2023 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++---------------------------------------------------------------------------+
+; IP Upgrade Summary                                                        ;
++------------------------------+--------------------------------------------+
+; IP Components Upgrade Status ; Passed - Sat Apr  5 05:21:33 2025          ;
+; Quartus Prime Version        ; 23.3.0 Build 104 09/20/2023 SC Pro Edition ;
+; Revision Name                ; ip_gen                                     ;
+; Top-level Entity Name        ; ip_gen                                     ;
+; Family                       ; Stratix 10                                 ;
++------------------------------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                                      ;
++-------------------------+----------------+---------+----------------------------+----------------------------+-----------------+---------+
+; Entity Name             ; Component Name ; Version ; Original Source File       ; Generation File Path       ; New Source File ; Message ;
++-------------------------+----------------+---------+----------------------------+----------------------------+-----------------+---------+
+; s10_iopll_125mhz_125mhz ; QsysPrimePro   ; 24.2    ; s10_iopll_125mhz_125mhz.ip ; s10_iopll_125mhz_125mhz.ip ;                 ;         ;
++-------------------------+----------------+---------+----------------------------+----------------------------+-----------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz.ip" to "/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz.BAK.ip"
+Info (20325): ***************************************************************
+Info (20325): Quartus is a registered trademark of Intel Corporation in the
+Info (20325): US and other countries.  Portions of the Quartus Prime software
+Info (20325): code, and other portions of the code included in this download
+Info (20325): or on this DVD, are licensed to Intel Corporation and are the
+Info (20325): copyrighted property of third parties. For license details,
+Info (20325): refer to the End User License Agreement at
+Info (20325): http://fpgasoftware.intel.com/eula.
+Info (20325): ***************************************************************
+Info (20325): 2025.04.05.05:21:20 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info (20325): 2025.04.05.05:21:20 Info: Finished upgrading the ip cores
+Info (20325): ***************************************************************
+Info (20325): Quartus is a registered trademark of Intel Corporation in the
+Info (20325): US and other countries.  Portions of the Quartus Prime software
+Info (20325): code, and other portions of the code included in this download
+Info (20325): or on this DVD, are licensed to Intel Corporation and are the
+Info (20325): copyrighted property of third parties. For license details,
+Info (20325): refer to the End User License Agreement at
+Info (20325): http://fpgasoftware.intel.com/eula.
+Info (20325): ***************************************************************
+Info (20325): 2025.04.05.05:21:29 Info: Saving generation log to /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz_generation.rpt
+Info (20325): 2025.04.05.05:21:29 Info: Generated by version: 23.3 build 104
+Info (20325): 2025.04.05.05:21:29 Info: Starting: Create simulation model
+Info (20325): 2025.04.05.05:21:29 Info: qsys-generate /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz.ip --simulation=VERILOG --allow-mixed-language-simulation --output-directory=/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz --family="Stratix 10" --part=1SG280LU3F50E1VG
+Info (20325): 2025.04.05.05:21:30 Info: s10_iopll_125mhz_125mhz.iopll_0: Able to implement PLL with user settings
+Info (20325): 2025.04.05.05:21:30 Info: s10_iopll_125mhz_125mhz: "Transforming system: s10_iopll_125mhz_125mhz"
+Info (20325): 2025.04.05.05:21:30 Info: s10_iopll_125mhz_125mhz: "Naming system components in system: s10_iopll_125mhz_125mhz"
+Info (20325): 2025.04.05.05:21:30 Info: s10_iopll_125mhz_125mhz: "Processing generation queue"
+Info (20325): 2025.04.05.05:21:30 Info: s10_iopll_125mhz_125mhz: "Generating: s10_iopll_125mhz_125mhz"
+Info (20325): 2025.04.05.05:21:30 Info: s10_iopll_125mhz_125mhz: "Generating: s10_iopll_125mhz_125mhz_altera_iopll_1931_35qpuni"
+Info (20325): 2025.04.05.05:21:30 Info: s10_iopll_125mhz_125mhz: Done "s10_iopll_125mhz_125mhz" with 2 modules, 3 files
+Info (20325): 2025.04.05.05:21:30 Info: Generating the following file(s) for VCSMX simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/ directory:
+Info (20325): 2025.04.05.05:21:30 Info:     common/vcsmx_files.tcl
+Info (20325): 2025.04.05.05:21:30 Info: Generating the following file(s) for VCS simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/ directory:
+Info (20325): 2025.04.05.05:21:30 Info:     common/vcs_files.tcl
+Info (20325): 2025.04.05.05:21:30 Info: Generating the following file(s) for XCELIUM simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/ directory:
+Info (20325): 2025.04.05.05:21:30 Info:     common/xcelium_files.tcl
+Info (20325): 2025.04.05.05:21:30 Info: Generating the following file(s) for RIVIERA simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/ directory:
+Info (20325): 2025.04.05.05:21:30 Info:     common/riviera_files.tcl
+Info (20325): 2025.04.05.05:21:30 Info: Generating the following file(s) for MODELSIM simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/ directory:
+Info (20325): 2025.04.05.05:21:30 Info:     common/modelsim_files.tcl
+Info (20325): 2025.04.05.05:21:30 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/.
+Info (20325): 2025.04.05.05:21:30 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info (20325): 2025.04.05.05:21:30 Info: Finished: Create simulation model
+Info (20325): 2025.04.05.05:21:30 Info: Starting: Create simulation script
+Info (20325): 2025.04.05.05:21:30 Info: sim-script-gen --system-file=/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz.ip --output-directory=/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/ --use-relative-paths=true
+Info (20325): 2025.04.05.05:21:32 Info: Generating the following file(s) for VCSMX simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/ directory:
+Info (20325): 2025.04.05.05:21:32 Info:     synopsys/vcsmx/synopsys_sim.setup
+Info (20325): 2025.04.05.05:21:32 Info:     synopsys/vcsmx/vcsmx_setup.sh
+Info (20325): 2025.04.05.05:21:32 Info: Generating the following file(s) for VCS simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/ directory:
+Info (20325): 2025.04.05.05:21:32 Info:     synopsys/vcs/vcs_setup.sh
+Info (20325): 2025.04.05.05:21:32 Info: Generating the following file(s) for XCELIUM simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/ directory:
+Info (20325): 2025.04.05.05:21:32 Info:     xcelium/cds.lib
+Info (20325): 2025.04.05.05:21:32 Info:     xcelium/hdl.var
+Info (20325): 2025.04.05.05:21:32 Info:     xcelium/xcelium_setup.sh
+Info (20325): 2025.04.05.05:21:32 Info:     2 .cds.lib files in xcelium/cds_libs/ directory
+Info (20325): 2025.04.05.05:21:32 Info: Generating the following file(s) for RIVIERA simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/ directory:
+Info (20325): 2025.04.05.05:21:32 Info:     aldec/rivierapro_setup.tcl
+Info (20325): 2025.04.05.05:21:32 Info: Generating the following file(s) for MODELSIM simulator in /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/ directory:
+Info (20325): 2025.04.05.05:21:32 Info:     mentor/msim_setup.tcl
+Info (20325): 2025.04.05.05:21:32 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz/sim/.
+Info (20325): 2025.04.05.05:21:32 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info (20325): 2025.04.05.05:21:32 Info: Finished: Create simulation script
+Info (20325): 2025.04.05.05:21:32 Info: Starting: Create block symbol file (.bsf)
+Info (20325): 2025.04.05.05:21:32 Info: qsys-generate /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz.ip --block-symbol-file --output-directory=/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz --family="Stratix 10" --part=1SG280LU3F50E1VG
+Info (20325): 2025.04.05.05:21:32 Info: s10_iopll_125mhz_125mhz.iopll_0: Able to implement PLL with user settings
+Info (20325): 2025.04.05.05:21:32 Info: Finished: Create block symbol file (.bsf)
+Info (20325): 2025.04.05.05:21:32 Info:
+Info (20325): 2025.04.05.05:21:32 Info: Starting: Create HDL design files for synthesis
+Info (20325): 2025.04.05.05:21:32 Info: qsys-generate /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz.ip --synthesis=VERILOG --output-directory=/nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz --family="Stratix 10" --part=1SG280LU3F50E1VG
+Info (20325): 2025.04.05.05:21:32 Info: s10_iopll_125mhz_125mhz.iopll_0: Able to implement PLL with user settings
+Info (20325): 2025.04.05.05:21:32 Info: s10_iopll_125mhz_125mhz: "Transforming system: s10_iopll_125mhz_125mhz"
+Info (20325): 2025.04.05.05:21:32 Info: s10_iopll_125mhz_125mhz: "Naming system components in system: s10_iopll_125mhz_125mhz"
+Info (20325): 2025.04.05.05:21:32 Info: s10_iopll_125mhz_125mhz: "Processing generation queue"
+Info (20325): 2025.04.05.05:21:32 Info: s10_iopll_125mhz_125mhz: "Generating: s10_iopll_125mhz_125mhz"
+Info (20325): 2025.04.05.05:21:32 Info: s10_iopll_125mhz_125mhz: "Generating: s10_iopll_125mhz_125mhz_altera_iopll_1931_35qpuni"
+Info (20325): 2025.04.05.05:21:33 Info: s10_iopll_125mhz_125mhz: Done "s10_iopll_125mhz_125mhz" with 2 modules, 8 files
+Info (20325): 2025.04.05.05:21:33 Info: Finished: Create HDL design files for synthesis
+Info (20325): 2025.04.05.05:21:33 Info: Generation of /nfs/site/disks/xne_tip_0003/urukunda/mquad_opt/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_iopll_125mhz_125mhz/s10_iopll_125mhz_125mhz.ip (s10_iopll_125mhz_125mhz) took 3293 ms
+Info (11131): Completed upgrading IP component QsysPrimePro with file "s10_iopll_125mhz_125mhz.ip"
+Error (23031): Evaluation of Tcl script /nfs/site/cproj/gnrd/zsc14.xne_00263/users/tools/altera/pro.23.3/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 2 errors, 0 warnings
+    Error: Peak virtual memory: 1055 megabytes
+    Error: Processing ended: Sat Apr  5 05:21:33 2025
+    Error: Elapsed time: 00:00:32
+    Error: System process ID: 26304
+
+

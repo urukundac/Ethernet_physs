@@ -1,0 +1,33 @@
+#NET physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.U_PCS.U_PCSMMD.U_GPCS.U_AUTONEG.an_done
+#NET physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.U_PCS.U_PCSMMD.U_GPCS.U_AUTONEG.an_ack
+#NET physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.U_PCS.U_PCSMMD.U_GPCS.U_AUTONEG.an_txidle
+#NET physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.U_PCS.U_PCSMMD.U_GPCS.U_AUTONEG.an_txena
+##I2C master force signals
+NET physs_eth.A00_i2c.U_DW_apb_i2c_mstfsm.mst_current_state[4:0]
+NET physs_eth.A00_i2c.U_DW_apb_i2c_regfile.ic_master 
+NET physs_eth.A00_i2c.U_DW_apb_i2c_regfile.speed[1:0] 
+NET physs_eth.A00_i2c.U_DW_apb_i2c_regfile.ic_ss 
+NET physs_eth.A00_i2c.U_DW_apb_i2c_regfile.ic_fs 
+NET physs_eth.A00_i2c.U_DW_apb_i2c_regfile.ic_rstrt_en
+NET physs_eth.A00_i2c.U_DW_apb_i2c_regfile.ic_10bit_mst
+
+NET physs_eth.i2c_pstrb
+NET physs_eth.A00_i2c.pstrb
+NET physs_eth.i2c_psel
+NET physs_eth.i2c_penable
+NET physs_eth.i2c_pwrite
+NET physs_eth.i2c_paddr
+NET physs_eth.i2c_pwdata
+NET physs_eth.I2C_MODSELL
+NET physs_eth.I2C_MODPRSL
+NET physs_eth.I2C_INTL
+NET physs_eth.I2C_RESETL
+NET physs_eth.I2C_SDA
+NET physs_eth.I2C_SCL
+NET physs_eth.I2C_LPMODE
+
+##Fiber and Copper control net
+NET physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.U_PCS.U_PCSMMD.U_PCSREG.dev_ability
+NET physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.U_PCS.U_PCSMMD.U_PCSREG.partner_ability
+NET physs_eth.physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.U_PCS.U_PCSMMD.U_PCSREG.if_mode
+NET physs_eth.i_cfg_pcs_loopback 

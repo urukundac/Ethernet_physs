@@ -1,0 +1,325 @@
+<BOARD>
+  <NAME              value = "FM-1SG10M-R1"/>
+  <TYPE              value = "FM"/>
+  <FPGA_TYPE         value = "1SG10MHN{XCVR}F74{TEMP}{SPEED}LG"/>
+  <SPEED_GRADE       value = "?"/>
+  <TEMPERATURE_GRADE value = "?"/>
+  <GRADE_VALUES      value = "2,3,C|2,3,E"/>
+  <GRADE_LABEL       value = "Fab-,Trans-,Temp-Grade"/>
+  <VENDOR            value = "ProDesign"/>
+  <FPGA_VENDOR       value = "INTEL"/>
+  <ORDER_CODE value = "?"/>
+  <BOARD_STATUS value = "?"/>
+  <ORDER_CODES_LIST value="n.a.|286457"/>
+  <BOARD_STATUS_LIST value="active|active"/>
+  <PRODUCT value="Veloce PF Stratix 1SG10M Module"/>
+  <POSSIBLE_DMBI_RATES value="200,500"/>
+  <SEP_FILES_FOR_EACH_DIE value = "1"/>
+  <DESCRIPTION       value = "Intel Stratix 10M"/>
+  <GRAPHIC>
+    <BOX value="-12,-83.5,0,128.5,223.5,BRD_HEIGHT"/>
+  </GRAPHIC>
+  <BOOT_OPTIONS>
+    <vref_source_ta0>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_ta0>
+    <vref_source_ta1>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_ta1>
+    <vref_source_ta2>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_ta2>
+    <vref_source_tab0>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_tab0>
+    <vref_source_ta1v1>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_ta1v1>
+    <vref_source_ta2v1>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_ta2v1>
+    <vref_source_tb0>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_tb0>
+    <vref_source_tb1>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_tb1>
+    <vref_source_tb2>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_tb2>
+    <vref_source_ba0>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_ba0>
+    <vref_source_ba1>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_ba1>
+    <vref_source_ba2>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_ba2>
+    <vref_source_bab0>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_bab0>
+    <vref_source_bb0>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_bb0>
+    <vref_source_bb1>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_bb1>
+    <vref_source_bb2>
+      <VALUE       value = "FM"/>
+      <VALUE_LIST  value = "FM|EB"/>
+      <DESCRIPTION value = "VREF Settings"/>
+    </vref_source_bb2>
+    
+    <oct_resistor_ta0>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_ta0>
+    <oct_resistor_ta1>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_ta1>
+    <oct_resistor_ta2>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_ta2>
+    <oct_resistor_tab0>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_tab0>
+    <oct_resistor_ta1v1>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_ta1v1>
+    <oct_resistor_ta2v1>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_ta2v1>
+    <oct_resistor_tb0>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_tb0>
+    <oct_resistor_tb1>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_tb1>
+    <oct_resistor_tb2>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_tb2>
+    <oct_resistor_ba0>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_ba0>
+    <oct_resistor_ba1>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_ba1>
+    <oct_resistor_ba2>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_ba2>
+    <oct_resistor_bab0>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_bab0>
+    <oct_resistor_bb0>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_bb0>
+    <oct_resistor_bb1>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_bb1>
+    <oct_resistor_bb2>
+      <VALUE       value = "100R"/>
+      <VALUE_LIST  value = "100R|240R"/>
+      <DESCRIPTION value = "OCT Resistor"/>
+    </oct_resistor_bb2>
+    
+    <tile1_io>
+      <VALUE       value = "ONBOARD"/>
+      <VALUE_LIST  value = "EXTERN|ONBOARD"/>
+      <DESCRIPTION value = "Transceiver Tile I/O Routing"/>
+    </tile1_io>
+    <tile2_io>
+      <VALUE       value = "ONBOARD"/>
+      <VALUE_LIST  value = "EXTERN|ONBOARD"/>
+      <DESCRIPTION value = "Transceiver Tile I/O Routing"/>
+    </tile2_io>
+    <tile3_io>
+      <VALUE       value = "ONBOARD"/>
+      <VALUE_LIST  value = "EXTERN|ONBOARD"/>
+      <DESCRIPTION value = "Transceiver Tile I/O Routing"/>
+    </tile3_io>
+    <tile4_io>
+      <VALUE       value = "ONBOARD"/>
+      <VALUE_LIST  value = "EXTERN|ONBOARD"/>
+      <DESCRIPTION value = "Transceiver Tile I/O Routing"/>
+    </tile4_io>
+    
+    <uart_switch>
+      <VALUE       value = "F1"/>
+      <VALUE_LIST  value = "F1|F2"/>
+      <DESCRIPTION value = "UART Signal Routing"/>
+    </uart_switch>
+  </BOOT_OPTIONS>
+  
+  <CONNECTORS>
+    <BA0>
+      <MIN_VOLTAGE     value = "1140"/>
+      <DEF_VOLTAGE     value = "1800"/>
+      <MAX_VOLTAGE     value = "1890"/>
+      <POS_Y           value = "-75"/>
+      <MUST_BE_PLUGGED value = "false"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </BA0>
+    <BA1>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>      
+    </BA1>
+    <BA2>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </BA2>
+    <BAB0>
+      <MIN_VOLTAGE     value = "1140"/>
+      <DEF_VOLTAGE     value = "1800"/>
+      <MAX_VOLTAGE     value = "1890"/>
+      <POS_X           value = "CON_POS_AB"/>
+      <POS_Y           value = "-75"/>
+      <MUST_BE_PLUGGED value = "false"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </BAB0>
+    <BB0>
+      <MIN_VOLTAGE     value = "1140"/>
+      <DEF_VOLTAGE     value = "1800"/>
+      <MAX_VOLTAGE     value = "1890"/>
+      <POS_Y           value = "-75"/>
+      <MUST_BE_PLUGGED value = "false"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </BB0>
+    <BB1>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </BB1>
+    <BB2>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </BB2>
+    <TA0>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POS_Y       value = "-75"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </TA0>
+    <TA1>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </TA1>
+    <TA2>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </TA2>
+    <TAB0>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POS_X       value = "CON_POS_AB"/>
+      <POS_Y       value = "-75"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </TAB0>
+    <TA1V1>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POS_X       value = "CON_POS_AB"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </TA1V1>
+    <TA2V1>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POS_X       value = "CON_POS_AB"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </TA2V1>
+    <TB0>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POS_Y       value = "-75"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </TB0>
+    <TB1>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </TB1>
+    <TB2>
+      <MIN_VOLTAGE value = "1140"/>
+      <DEF_VOLTAGE value = "1800"/>
+      <MAX_VOLTAGE value = "1890"/>
+      <POSSIBLE_VOLTAGES value="1200,1250,1350,1500,1800"/>
+    </TB2>
+  </CONNECTORS>
+</BOARD>
+

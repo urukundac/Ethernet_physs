@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="eth_mdio_0"
+ megafunction_name="ALTERA_ETH_MDIO"
+ specifies="all_ports">
+ <global>
+  <pin name="clk" direction="input" scope="external" />
+  <pin name="reset" direction="input" scope="external" />
+  <pin name="csr_write" direction="input" scope="external" />
+  <pin name="csr_read" direction="input" scope="external" />
+  <pin name="csr_address[5..0]" direction="input" scope="external" />
+  <pin name="csr_writedata[31..0]" direction="input" scope="external" />
+  <pin name="csr_readdata[31..0]" direction="output" scope="external" />
+  <pin name="csr_waitrequest" direction="output" scope="external" />
+  <pin name="mdc" direction="output" scope="external" />
+  <pin name="mdio_in" direction="input" scope="external" />
+  <pin name="mdio_out" direction="output" scope="external" />
+  <pin name="mdio_oen" direction="output" scope="external" />
+ </global>
+</pinplan>

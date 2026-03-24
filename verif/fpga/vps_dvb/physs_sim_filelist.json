@@ -1,0 +1,956 @@
+{
+    "top": "physs",
+    "ipDetails": {
+        "ctech": {
+            "version": "/p/hdk/cad/stdcells/lib783_i0m_180h_50pp/pdk080_r4v2p0_efv/ctech",
+            "overrideLib": "ctehc_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/hdk/cad/stdcells/lib783_i0m_180h_50pp/pdk080_r4v2p0_efv/ctech/source/p1278/180h_i0m_50pp/lvt",
+            "ctehc_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/overrides/hip/ctech/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/overrides/hip/ctech/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ctech/ctech.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ctech/ctech.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ctech:ctehc_lib"
+            ]
+        },
+        "ctech_exp": {
+            "version": "/p/hdk/cad/ctech/ctech_exp_c4v23ww32_hdk162_1278d3_i0m_pdk080.all_xpg",
+            "overrideLib": "ctech_exp_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/hdk/cad/ctech/ctech_exp_c4v23ww32_hdk162_1278d3_i0m_pdk080.all_xpg/source/p1278/i0m/bn",
+            "ctech_exp_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/overrides/hip/ctech_exp/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/overrides/hip/ctech_exp/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ctech_exp/ctech_exp.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ctech_exp/ctech_exp.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ctech_exp:ctech_exp_lib"
+            ]
+        },
+        "brkxmp_ns_1lane_pma": {
+            "version": "/p/ipx/ipcache2/cnic/brkxmp_ns_1lane_pma/CNICBEA0P05RTL1IFC1V1/3/cnic.brkxmp_ns_1lane_pma/rtl/brkxmp_ns_1lane_pma",
+            "overrideLib": "brkxmp_ns_1lane_pma_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/brkxmp_ns_1lane_pma/CNICBEA0P05RTL1IFC1V1/3/cnic.brkxmp_ns_1lane_pma",
+            "brkxmp_ns_1lane_pma_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/overrides/hip/brkxmp_ns_1lane_pma/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/brkxmp_ns_1lane_pma/brkxmp_ns_1lane_pma.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/brkxmp_ns_1lane_pma/brkxmp_ns_1lane_pma.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "brkxmp_ns_1lane_pma:brkxmp_ns_1lane_pma_lib"
+            ]
+        },
+        "socviewpin_32to1digimux": {
+            "version": "/p/ipx/ipcache2/cnic/socviewpin_32to1digimux/CNICA0eFVRTL1IFC1V1/2/cnic.socviewpin_32to1digimux/rtl",
+            "overrideLib": "socviewpin_32to1digimux_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/socviewpin_32to1digimux/CNICA0eFVRTL1IFC1V1/2/cnic.socviewpin_32to1digimux",
+            "socviewpin_32to1digimux_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/socviewpin_32to1digimux/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/socviewpin_32to1digimux/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/socviewpin_32to1digimux/socviewpin_32to1digimux.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/socviewpin_32to1digimux/socviewpin_32to1digimux.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "socviewpin_32to1digimux:socviewpin_32to1digimux_lib"
+            ]
+        },
+        "tegp2p783hd2prf128x162s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf128x162s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/4/cnic.tegp2p783hd2prf128x162s0c1r1p0d0v0",
+            "overrideLib": "tegp2p783hd2prf128x162s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf128x162s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/4/cnic.tegp2p783hd2prf128x162s0c1r1p0d0v0",
+            "tegp2p783hd2prf128x162s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/tegp2p783hd2prf128x162s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf128x162s0c1r1p0d0v0/tegp2p783hd2prf128x162s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf128x162s0c1r1p0d0v0/tegp2p783hd2prf128x162s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "tegp2p783hd2prf128x162s0c1r1p0d0v0:tegp2p783hd2prf128x162s0c1r1p0d0v0_lib"
+            ]
+        },
+        "tegp2p783hd2prf128x42s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf128x42s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/4/cnic.tegp2p783hd2prf128x42s0c1r1p0d0v0",
+            "overrideLib": "tegp2p783hd2prf128x42s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf128x42s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/4/cnic.tegp2p783hd2prf128x42s0c1r1p0d0v0",
+            "tegp2p783hd2prf128x42s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/tegp2p783hd2prf128x42s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf128x42s0c1r1p0d0v0/tegp2p783hd2prf128x42s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf128x42s0c1r1p0d0v0/tegp2p783hd2prf128x42s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "tegp2p783hd2prf128x42s0c1r1p0d0v0:tegp2p783hd2prf128x42s0c1r1p0d0v0_lib"
+            ]
+        },
+        "tegp2p783hd2prf128x82s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf128x82s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf128x82s0c1r1p0d0v0",
+            "overrideLib": "tegp2p783hd2prf128x82s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf128x82s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf128x82s0c1r1p0d0v0",
+            "tegp2p783hd2prf128x82s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/tegp2p783hd2prf128x82s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf128x82s0c1r1p0d0v0/tegp2p783hd2prf128x82s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf128x82s0c1r1p0d0v0/tegp2p783hd2prf128x82s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "tegp2p783hd2prf128x82s0c1r1p0d0v0:tegp2p783hd2prf128x82s0c1r1p0d0v0_lib"
+            ]
+        },
+        "tegp2p783hd2prf16x130s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf16x130s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf16x130s0c1r1p0d0v0",
+            "overrideLib": "tegp2p783hd2prf16x130s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf16x130s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf16x130s0c1r1p0d0v0",
+            "tegp2p783hd2prf16x130s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/tegp2p783hd2prf16x130s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf16x130s0c1r1p0d0v0/tegp2p783hd2prf16x130s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf16x130s0c1r1p0d0v0/tegp2p783hd2prf16x130s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "tegp2p783hd2prf16x130s0c1r1p0d0v0:tegp2p783hd2prf16x130s0c1r1p0d0v0_lib"
+            ]
+        },
+        "ip783hd2prf16x84s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/ip783hd2prf16x84s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hd2prf16x84s0c1r1p0d0v0",
+            "overrideLib": "ip783hd2prf16x84s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/ip783hd2prf16x84s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hd2prf16x84s0c1r1p0d0v0",
+            "ip783hd2prf16x84s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/ip783hd2prf16x84s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hd2prf16x84s0c1r1p0d0v0/ip783hd2prf16x84s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hd2prf16x84s0c1r1p0d0v0/ip783hd2prf16x84s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ip783hd2prf16x84s0c1r1p0d0v0:ip783hd2prf16x84s0c1r1p0d0v0_lib"
+            ]
+        },
+        "ip783hd2prf32x108s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/ip783hd2prf32x108s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hd2prf32x108s0c1r1p0d0v0",
+            "overrideLib": "ip783hd2prf32x108s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/ip783hd2prf32x108s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hd2prf32x108s0c1r1p0d0v0",
+            "ip783hd2prf32x108s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/ip783hd2prf32x108s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hd2prf32x108s0c1r1p0d0v0/ip783hd2prf32x108s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hd2prf32x108s0c1r1p0d0v0/ip783hd2prf32x108s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ip783hd2prf32x108s0c1r1p0d0v0:ip783hd2prf32x108s0c1r1p0d0v0_lib"
+            ]
+        },
+        "tegp2p783hd2prf32x64s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf32x64s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf32x64s0c1r1p0d0v0",
+            "overrideLib": "tegp2p783hd2prf32x64s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf32x64s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf32x64s0c1r1p0d0v0",
+            "tegp2p783hd2prf32x64s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/tegp2p783hd2prf32x64s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf32x64s0c1r1p0d0v0/tegp2p783hd2prf32x64s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf32x64s0c1r1p0d0v0/tegp2p783hd2prf32x64s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "tegp2p783hd2prf32x64s0c1r1p0d0v0:tegp2p783hd2prf32x64s0c1r1p0d0v0_lib"
+            ]
+        },
+        "ip783hd2prf32x66s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/ip783hd2prf32x66s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hd2prf32x66s0c1r1p0d0v0",
+            "overrideLib": "ip783hd2prf32x66s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/ip783hd2prf32x66s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hd2prf32x66s0c1r1p0d0v0",
+            "ip783hd2prf32x66s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/ip783hd2prf32x66s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hd2prf32x66s0c1r1p0d0v0/ip783hd2prf32x66s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hd2prf32x66s0c1r1p0d0v0/ip783hd2prf32x66s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ip783hd2prf32x66s0c1r1p0d0v0:ip783hd2prf32x66s0c1r1p0d0v0_lib"
+            ]
+        },
+        "tegp2p783hd2prf32x66s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf32x66s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf32x66s0c1r1p0d0v0",
+            "overrideLib": "tegp2p783hd2prf32x66s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf32x66s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf32x66s0c1r1p0d0v0",
+            "tegp2p783hd2prf32x66s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/tegp2p783hd2prf32x66s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf32x66s0c1r1p0d0v0/tegp2p783hd2prf32x66s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf32x66s0c1r1p0d0v0/tegp2p783hd2prf32x66s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "tegp2p783hd2prf32x66s0c1r1p0d0v0:tegp2p783hd2prf32x66s0c1r1p0d0v0_lib"
+            ]
+        },
+        "tegp2p783hd2prf512x32s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf512x32s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf512x32s0c1r1p0d0v0",
+            "overrideLib": "tegp2p783hd2prf512x32s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf512x32s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf512x32s0c1r1p0d0v0",
+            "tegp2p783hd2prf512x32s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/tegp2p783hd2prf512x32s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf512x32s0c1r1p0d0v0/tegp2p783hd2prf512x32s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf512x32s0c1r1p0d0v0/tegp2p783hd2prf512x32s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "tegp2p783hd2prf512x32s0c1r1p0d0v0:tegp2p783hd2prf512x32s0c1r1p0d0v0_lib"
+            ]
+        },
+        "ip783hd2prf64x158s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/ip783hd2prf64x158s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hd2prf64x158s0c1r1p0d0v0",
+            "overrideLib": "ip783hd2prf64x158s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/ip783hd2prf64x158s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hd2prf64x158s0c1r1p0d0v0",
+            "ip783hd2prf64x158s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/ip783hd2prf64x158s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hd2prf64x158s0c1r1p0d0v0/ip783hd2prf64x158s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hd2prf64x158s0c1r1p0d0v0/ip783hd2prf64x158s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ip783hd2prf64x158s0c1r1p0d0v0:ip783hd2prf64x158s0c1r1p0d0v0_lib"
+            ]
+        },
+        "ip783hd2prf64x66s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/ip783hd2prf64x66s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hd2prf64x66s0c1r1p0d0v0",
+            "overrideLib": "ip783hd2prf64x66s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/ip783hd2prf64x66s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hd2prf64x66s0c1r1p0d0v0",
+            "ip783hd2prf64x66s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/ip783hd2prf64x66s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hd2prf64x66s0c1r1p0d0v0/ip783hd2prf64x66s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hd2prf64x66s0c1r1p0d0v0/ip783hd2prf64x66s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ip783hd2prf64x66s0c1r1p0d0v0:ip783hd2prf64x66s0c1r1p0d0v0_lib"
+            ]
+        },
+        "tegp2p783hd2prf64x56s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf64x56s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/4/cnic.tegp2p783hd2prf64x56s0c1r1p0d0v0",
+            "overrideLib": "tegp2p783hd2prf64x56s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf64x56s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/4/cnic.tegp2p783hd2prf64x56s0c1r1p0d0v0",
+            "tegp2p783hd2prf64x56s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/tegp2p783hd2prf64x56s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf64x56s0c1r1p0d0v0/tegp2p783hd2prf64x56s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf64x56s0c1r1p0d0v0/tegp2p783hd2prf64x56s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "tegp2p783hd2prf64x56s0c1r1p0d0v0:tegp2p783hd2prf64x56s0c1r1p0d0v0_lib"
+            ]
+        },
+        "tegp2p783hd2prf64x64s0c1r1p0d0v0": {
+            "version": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf64x64s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf64x64s0c1r1p0d0v0",
+            "overrideLib": "tegp2p783hd2prf64x64s0c1r1p0d0v0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/tegp2p783hd2prf64x64s0c1r1p0d0v0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.tegp2p783hd2prf64x64s0c1r1p0d0v0",
+            "tegp2p783hd2prf64x64s0c1r1p0d0v0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/tegp2p783hd2prf64x64s0c1r1p0d0v0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf64x64s0c1r1p0d0v0/tegp2p783hd2prf64x64s0c1r1p0d0v0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tegp2p783hd2prf64x64s0c1r1p0d0v0/tegp2p783hd2prf64x64s0c1r1p0d0v0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "tegp2p783hd2prf64x64s0c1r1p0d0v0:tegp2p783hd2prf64x64s0c1r1p0d0v0_lib"
+            ]
+        },
+        "ip783hdspsr4096x52m8b2s1c1r2p0d0a2": {
+            "version": "/p/ipx/ipcache2/cnic/ip783hdspsr4096x52m8b2s1c1r2p0d0a2/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hdspsr4096x52m8b2s1c1r2p0d0a2",
+            "overrideLib": "ip783hdspsr4096x52m8b2s1c1r2p0d0a2_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/ip783hdspsr4096x52m8b2s1c1r2p0d0a2/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hdspsr4096x52m8b2s1c1r2p0d0a2",
+            "ip783hdspsr4096x52m8b2s1c1r2p0d0a2_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/ip783hdspsr4096x52m8b2s1c1r2p0d0a2/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hdspsr4096x52m8b2s1c1r2p0d0a2/ip783hdspsr4096x52m8b2s1c1r2p0d0a2.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hdspsr4096x52m8b2s1c1r2p0d0a2/ip783hdspsr4096x52m8b2s1c1r2p0d0a2.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ip783hdspsr4096x52m8b2s1c1r2p0d0a2:ip783hdspsr4096x52m8b2s1c1r2p0d0a2_lib"
+            ]
+        },
+        "ip783hdspsr4096x40m8b2s0c1r2p0d0a2": {
+            "version": "/p/ipx/ipcache2/cnic/ip783hdspsr4096x40m8b2s0c1r2p0d0a2/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hdspsr4096x40m8b2s0c1r2p0d0a2",
+            "overrideLib": "ip783hdspsr4096x40m8b2s0c1r2p0d0a2_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/ip783hdspsr4096x40m8b2s0c1r2p0d0a2/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783hdspsr4096x40m8b2s0c1r2p0d0a2",
+            "ip783hdspsr4096x40m8b2s0c1r2p0d0a2_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/ip783hdspsr4096x40m8b2s0c1r2p0d0a2/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hdspsr4096x40m8b2s0c1r2p0d0a2/ip783hdspsr4096x40m8b2s0c1r2p0d0a2.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783hdspsr4096x40m8b2s0c1r2p0d0a2/ip783hdspsr4096x40m8b2s0c1r2p0d0a2.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ip783hdspsr4096x40m8b2s0c1r2p0d0a2:ip783hdspsr4096x40m8b2s0c1r2p0d0a2_lib"
+            ]
+        },
+        "ip783rfhs2r2w128x46s0c1p0d0": {
+            "version": "/p/ipx/ipcache2/cnic/ip783rfhs2r2w128x46s0c1p0d0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783rfhs2r2w128x46s0c1p0d0",
+            "overrideLib": "ip783rfhs2r2w128x46s0c1p0d0_lib",
+            "ipType": "hip",
+            "hipSearchPath": "/p/ipx/ipcache2/cnic/ip783rfhs2r2w128x46s0c1p0d0/CNICBEA0P05RTL1IFC1V1_HIP/3/cnic.ip783rfhs2r2w128x46s0c1p0d0",
+            "ip783rfhs2r2w128x46s0c1p0d0_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/hip/ip783rfhs2r2w128x46s0c1p0d0/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783rfhs2r2w128x46s0c1p0d0/ip783rfhs2r2w128x46s0c1p0d0.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ip783rfhs2r2w128x46s0c1p0d0/ip783rfhs2r2w128x46s0c1p0d0.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ip783rfhs2r2w128x46s0c1p0d0:ip783rfhs2r2w128x46s0c1p0d0_lib"
+            ]
+        },
+        "ijtag_nwip": {
+            "version": "/p/ipx/ipcache2/cnic/ijtag_tap_network/CNICA0UV1RTL1IFC1V1/3/cnic.ijtag_tap_network",
+            "overrideLib": "ijtag_nwip_lib",
+            "ipType": "sip",
+            "ijtag_nwip_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/ijtag_nwip/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/ijtag_nwip/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ijtag_nwip/ijtag_nwip.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/ijtag_nwip/ijtag_nwip.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "ijtag_nwip:ijtag_nwip_lib"
+            ]
+        },
+        "stap": {
+            "version": "/p/ipx/ipcache2/cnic/dteg_tap/CNICA0UV1RTL1IFC1V6/1/cnic.dteg_tap",
+            "overrideLib": "stap_lib",
+            "ipType": "sip",
+            "stap_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/overrides/sip/stap/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/stap/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/stap/stap.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/stap/stap.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "stap:stap_lib"
+            ]
+        },
+        "dfxsecure_plugin": {
+            "version": "/p/ipx/ipcache2/cnic/dfxsecure_plugin/CNICA0FVRTL1IFC1V1/3/cnic.dfxsecure_plugin",
+            "overrideLib": "dfxsecure_plugin_lib",
+            "ipType": "sip",
+            "dfxsecure_plugin_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/dfxsecure_plugin/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/dfxsecure_plugin/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/dfxsecure_plugin/dfxsecure_plugin.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/dfxsecure_plugin/dfxsecure_plugin.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "dfxsecure_plugin:dfxsecure_plugin_lib"
+            ]
+        },
+        "DWC_ether_hse_statistics": {
+            "version": "/p/ipx/ipcache2/cnic/dwc_ether_hse_statistics/CNICA0EV1RTL1IFC1V1/1/cnic.dwc_ether_hse_statistics",
+            "overrideLib": "DWC_ether_hse_statistics_lib",
+            "ipType": "sip",
+            "DWC_ether_hse_statistics_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/DWC_ether_hse_statistics/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/DWC_ether_hse_statistics/DWC_ether_hse_statistics.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/DWC_ether_hse_statistics/DWC_ether_hse_statistics.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "DWC_ether_hse_statistics:DWC_ether_hse_statistics_lib"
+            ]
+        },
+        "tsu_v1": {
+            "version": "/p/ipx/ipcache2/cnic/dwc_ether_time_stamping_predict_v1/CNICA0EV1RTL1IFC1V2/1/cnic.dwc_ether_time_stamping_predict_v1",
+            "overrideLib": "tsu_v1_lib",
+            "ipType": "sip",
+            "tsu_v1_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/tsu_v1/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tsu_v1/tsu_v1.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/tsu_v1/tsu_v1.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "tsu_v1:tsu_v1_lib"
+            ]
+        },
+        "DW_ahb": {
+            "version": "/p/ipx/ipcache2/cnic/dw_ahb_physs_bbl/CNICA0EV1RTL1IFC1V1/1/cnic.dw_ahb_physs_bbl",
+            "overrideLib": "DW_ahb_lib",
+            "ipType": "sip",
+            "DW_ahb_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/DW_ahb/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/DW_ahb/DW_ahb.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/DW_ahb/DW_ahb.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "DW_ahb:DW_ahb_lib"
+            ]
+        },
+        "mac100": {
+            "version": "/p/ipx/ipcache2/cnic/dwc_ether_hse_100gmac/CNICA0EV1RTL1IFC1V1/1/cnic.dwc_ether_hse_100gmac",
+            "overrideLib": "mac100_lib",
+            "ipType": "sip",
+            "mac100_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/mac100/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/mac100/mac100.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/mac100/mac100.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "mac100:mac100_lib"
+            ]
+        },
+        "mac400": {
+            "version": "/p/ipx/ipcache2/cnic/dwc_ether_hse_400gmac/CNICA0EV1RTL1IFC1V1/1/cnic.dwc_ether_hse_400gmac",
+            "overrideLib": "mac400_lib",
+            "ipType": "sip",
+            "mac400_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/mac400/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/mac400/mac400.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/mac400/mac400.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "mac400:mac400_lib"
+            ]
+        },
+        "nic400_physs": {
+            "version": "/p/ipx/ipcache2/cnic/nic400_physs/CNICA0EV1RTL1IFC2V1/1/cnic.nic400_physs",
+            "overrideLib": "nic400_physs_lib",
+            "ipType": "sip",
+            "nic400_physs_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/nic400_physs/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/nic400_physs/nic400_physs.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/nic400_physs/nic400_physs.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "nic400_physs:nic400_physs_lib"
+            ]
+        },
+        "nic400_quad": {
+            "version": "/p/ipx/ipcache2/cnic/nic400_quad/CNICA0EV1RTL1IFC1V1/1/cnic.nic400_quad/",
+            "overrideLib": "nic400_quad_lib",
+            "ipType": "sip",
+            "nic400_quad_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/nic400_quad/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/nic400_quad/nic400_quad.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/nic400_quad/nic400_quad.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "nic400_quad:nic400_quad_lib"
+            ]
+        },
+        "pcs400": {
+            "version": "/p/ipx/ipcache2/cnic/dwc_ether_hse_400gpcs/CNICA0EV1RTL1IFC1V1/1/cnic.dwc_ether_hse_400gpcs",
+            "overrideLib": "pcs400_lib",
+            "ipType": "sip",
+            "pcs400_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/pcs400/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/pcs400/pcs400.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/pcs400/pcs400.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "pcs400:pcs400_lib"
+            ]
+        },
+        "quad100": {
+            "version": "/p/ipx/ipcache2/cnic/quad100_cnic/CNICA0EV1RTL1IFC1V2/1/cnic.quad100_cnic",
+            "overrideLib": "quad100_lib",
+            "ipType": "sip",
+            "quad100_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/subip/sip/quad100/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/quad100/quad100.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/quad100/quad100.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "quad100:quad100_lib"
+            ]
+        },
+        "versa_4x1lane": {
+            "version": "/p/ipx/ipcache2/cnic/brkxmp_ns_4x1lane_sip/CNICA0EV1RTL1IFC1V2/1/cnic.brkxmp_ns_4x1lane_sip",
+            "overrideLib": "versa_4x1lane_lib",
+            "ipType": "sip",
+            "versa_4x1lane_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/overrides/sip/versa_4x1lane/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            ""
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/versa_4x1lane/versa_4x1lane.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/versa_4x1lane/versa_4x1lane.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "versa_4x1lane:versa_4x1lane_lib"
+            ]
+        },
+        "visa": {
+            "version": "/p/hdk/rtl/cad/x86-64_linux26/intel/VisaIT/5.3.3",
+            "overrideLib": "visa_lib",
+            "ipType": "sip",
+            "visa_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/overrides/sip/visa/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/overrides/sip/visa/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/visa/visa.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/visa/visa.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "visa:visa_lib"
+            ]
+        },
+        "imc_i2c": {
+            "version": "/p/ipx/ipcache2/nss_cnic/imc_i2c/25ww1/1/nss_cnic.imc_i2c",
+            "overrideLib": "imc_i2c_lib",
+            "ipType": "sip",
+            "imc_i2c_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/nac_ss/nac_ss-cnic-a0-master-25ww21c/subip/sip/imc_i2c/filelists/rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/cnic.mod.001/release/nac_ss/nac_ss-cnic-a0-master-25ww21c/subip/sip/imc_i2c/filelists/rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/nac_ss/nac_ss-cnic-a0-master-25ww21c/output/nac_ss/genfilelist/ip/imc_i2c/imc_i2c.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/nac_ss/nac_ss-cnic-a0-master-25ww21c/output/nac_ss/genfilelist/ip/imc_i2c/imc_i2c.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "imc_i2c:imc_i2c_lib"
+            ]
+        },
+        "physs": {
+            "version": "",
+            "overrideLib": "physs_lib",
+            "ipType": "top",
+            "designOpts": {
+                "sv": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/physs/physs.sv.design_opts.f"
+            },
+            "physs_lib": {
+                "sv": {
+                    "filelist_reference": {
+                        "sim_filelist": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/filelists/physs.rtl.f"
+                        ],
+                        "sim_opts": [
+                            "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/filelists/physs.rtl_opts.f"
+                        ]
+                    },
+                    "filelist_resolved": {
+                        "sim_filelist": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/physs/physs.sv.sim.f",
+                        "sim_opts": "/nfs/site/disks/cnic.mod.001/release/physs_bbl/physs_bbl-cnic-cnic_EV2_dft-25ww12b/output/physs/genfilelist/ip/physs/physs.sv.sim.opts.f"
+                    }
+                }
+            },
+            "libOrderList": [
+                "physs:physs_lib"
+            ]
+        }
+    },
+    "ipOrderList": [
+        "ctech",
+        "ctech_exp",
+        "brkxmp_ns_1lane_pma",
+        "socviewpin_32to1digimux",
+        "tegp2p783hd2prf128x162s0c1r1p0d0v0",
+        "tegp2p783hd2prf128x42s0c1r1p0d0v0",
+        "tegp2p783hd2prf128x82s0c1r1p0d0v0",
+        "tegp2p783hd2prf16x130s0c1r1p0d0v0",
+        "ip783hd2prf16x84s0c1r1p0d0v0",
+        "ip783hd2prf32x108s0c1r1p0d0v0",
+        "tegp2p783hd2prf32x64s0c1r1p0d0v0",
+        "ip783hd2prf32x66s0c1r1p0d0v0",
+        "tegp2p783hd2prf32x66s0c1r1p0d0v0",
+        "tegp2p783hd2prf512x32s0c1r1p0d0v0",
+        "ip783hd2prf64x158s0c1r1p0d0v0",
+        "ip783hd2prf64x66s0c1r1p0d0v0",
+        "tegp2p783hd2prf64x56s0c1r1p0d0v0",
+        "tegp2p783hd2prf64x64s0c1r1p0d0v0",
+        "ip783hdspsr4096x52m8b2s1c1r2p0d0a2",
+        "ip783hdspsr4096x40m8b2s0c1r2p0d0a2",
+        "ip783rfhs2r2w128x46s0c1p0d0",
+        "ijtag_nwip",
+        "stap",
+        "dfxsecure_plugin",
+        "DWC_ether_hse_statistics",
+        "tsu_v1",
+        "DW_ahb",
+        "mac100",
+        "mac400",
+        "nic400_physs",
+        "nic400_quad",
+        "pcs400",
+        "quad100",
+        "versa_4x1lane",
+        "visa",
+        "imc_i2c",
+        "physs"
+    ]
+}

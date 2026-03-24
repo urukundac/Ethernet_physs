@@ -1,0 +1,51 @@
+Thread 3 (Thread 0x7fffea702700 (LWP 41586) "Novas"):
+#0  0x00007ffff0ab946d in nanosleep () at /lib64/libc.so.6
+#1  0x00007ffff0ab9304 in sleep () at /lib64/libc.so.6
+#2  0x000000000a2cbcf4 in FxIQMFRK8KsvOdu ()
+#3  0x000000000a2cc00c in HVabMVODFWl7p9i ()
+#4  0x000000000b1a7b5f in sdp_wrap_start_routine ()
+#5  0x00007ffff6dbd6ca in start_thread () at /lib64/noelision/libpthread.so.0
+#6  0x00007ffff0aea21d in clone () at /lib64/libc.so.6
+Thread 2 (Thread 0x7fffee936700 (LWP 40985) "Novas"):
+#0  0x00007ffff0ab946d in nanosleep () at /lib64/libc.so.6
+#1  0x00007ffff0ab9304 in sleep () at /lib64/libc.so.6
+#2  0x00000000087a2041 in LicenseCheckUtility ()
+#3  0x000000000b1a7b5f in sdp_wrap_start_routine ()
+#4  0x00007ffff6dbd6ca in start_thread () at /lib64/noelision/libpthread.so.0
+#5  0x00007ffff0aea21d in clone () at /lib64/libc.so.6
+Thread 1 (Thread 0x7fffef6cfe00 (LWP 40886) "Novas"):
+#0  0x00007ffff0a69613 in _IO_proc_close@@GLIBC_2.2.5 () at /lib64/libc.so.6
+#1  0x00007ffff0a73120 in __GI__IO_file_close_it () at /lib64/libc.so.6
+#2  0x00007ffff0a67a10 in fclose@@GLIBC_2.2.5 () at /lib64/libc.so.6
+#3  0x000000000b27f399 in _sys_pclose ()
+#4  0x000000000b21db87 in system ()
+#5  0x000000000b20c59a in sysiCrash ()
+#6  0x000000000b20cad3 in actUnexpectAction ()
+#7  0x000000000b20cb1b in catchSignalCB ()
+#8  0x000000000a2aa690 in _anrep_handler_signal ()
+#9  0x00007ffff0a32140 in <signal handler called> () at /lib64/libc.so.6
+#10 0x00007ffff0a35d16 in ____strtoll_l_internal () at /lib64/libc.so.6
+#11 0x000000000a0f2e97 in smkUtil::_loadElabDBHurds(smkUtil::_smk_elabDBLangStuff_s&, SCSList*) ()
+#12 0x000000000a0f6313 in smkUtil::loadElabDB(char*, smkUtil::_smk_elabDBLangStuff_s&, SCSList*) ()
+#13 0x0000000009b9aca3 in impElab_C::invokeElab(char) ()
+#14 0x00000000098ff18b in designMgr_C::invokeImport(impFileIO*, impVMapFile*, int, char**, char, impVMapFile2*, hdbDataBaseEnum) ()
+#15 0x00000000098ffe97 in _kdbInvokeImportDesign(impFileIO*, impVMapFile*, int, char**, char, impVMapFile2*, hdbDataBaseEnum) ()
+#16 0x00000000099e0c05 in impFileIO::ohLmImpFromLib(char*, impVMapFile*, int*, char**, char*, impLmArgStru*, void (*)(hdbErrSeverityEnum, void*, char*, int, unsigned int, __va_list_tag*, char), void (*)(hdbErrSeverityEnum, char*, int, char*, char*)) ()
+#17 0x00000000099d20cc in impFileIO::_hdlArgPass(char*, int*, char**, char*, char*, char*, void (*)(hdbErrSeverityEnum, void*, char*, int, unsigned int, __va_list_tag*, char), void (*)(hdbErrSeverityEnum, char*, int, char*, char*), char, impFileIO::e_UsedType, _IO_FILE*) ()
+#18 0x00000000099d2428 in impFileIO::hdlArgPass(char*, int*, char**, char*, char*, char*, void (*)(hdbErrSeverityEnum, void*, char*, int, unsigned int, __va_list_tag*, char), void (*)(hdbErrSeverityEnum, char*, int, char*, char*), char, impFileIO::e_UsedType, _IO_FILE*) ()
+#19 0x0000000009921940 in hdbInitialize(char*, int*, char**, char*, char*, char*, void (*)(hdbErrSeverityEnum, void*, char*, int, unsigned int, __va_list_tag*, char), void (*)(hdbErrSeverityEnum, char*, int, char*, char*), char, impFileIO::e_UsedType, _IO_FILE*, hdbtsPreloadFunctor*) ()
+#20 0x0000000004e39a88 in hbImpFileIO::_ImportDesign(_wtHierBrowserRec*, nvfwArgArray&, char*, char*, char*, _IO_FILE*, SimImportArgUtil_C*) ()
+#21 0x0000000004e3ae2c in hbImpFileIO::_ImportDesign(_wtHierBrowserRec*, nvfwArgArray&, char*, SimImportArgUtil_C*) ()
+#22 0x0000000004e3b2b9 in hbImpFileIO::ImportDesign(_wtHierBrowserRec*, nvfwArgArray&, char*, SimImportArgUtil_C*) ()
+#23 0x0000000004e16b29 in hbImportFromCmdLine(_wtHierBrowserRec*, nvfwArgArray&, char*, SimImportArgUtil_C*) ()
+#24 0x0000000002fa6615 in debMain(prodMainStruct*, int, char**) ()
+#25 0x0000000002faae79 in main ()
+---------------
+branchName=Verdi_S-2021.09-SP2-8-T-20230322 cnlDate=-- Wed Mar 22 03:14:22 PDT 2023 cnlEnv=Linux.0/64bit
+uname(Linux sccf06014310 4.12.14-122.201-default #1 SMP Tue Mar 12 13:01:34 UTC 2024 (b92bd5a/lp-d14369e) x86_64)
+---------------
+Process Size: 676859904 bytes
+verdi detected abnormal termination.
+Log information written to
+/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/i2c_sim/verdiLog/sysinfo_Jul23_1448.tar.
+Please send this file to customer support.

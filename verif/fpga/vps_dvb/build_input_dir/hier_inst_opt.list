@@ -1,0 +1,4 @@
+perf physs_eth.physs0.paraquad0
+# perf soc_tb.soc.pciess_wrap.pciess.par_phy_tlpl_x4.sippcie2_parcore_wrap.sippcie2_parcore
+#perf haps_wrapper.i_cpm_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_uq
+#perf haps_wrapper.i_cpm_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_sb

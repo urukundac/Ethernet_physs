@@ -1,0 +1,7 @@
+Command Line: /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/bin/Novas -i -simflow -simBin /nfs/site/disks/zsc14.xne_cnic.emu-fpga.002/pragyaro/i2c/output/physs_eth_tb/emu/haps_vcs_emuvcs/i2c_sim/MMG_PSS_SOC/vcs/simv -simDelim -l testrlog +cxp_fastsimtrain +cxp_fast_eq_off +ppht_pll_quicksimlock +define+CXP_FAST_SIM_TRAIN +SVA_OFF -assert dumpoff +vpdfile+design.vpd
+uname(Linux sccf06014310 4.12.14-122.201-default #1 SMP Tue Mar 12 13:01:34 UTC 2024 (b92bd5a/lp-d14369e) x86_64)
+- System Information -
+Version: Verdi_S-2021.09-SP2-8-T-20230322, -- Wed Mar 22 03:14:22 PDT 2023
+System: Linux sccf06014310 4.12.14-122.201-default #1 SMP Tue Mar 12 13:01:34 UTC 2024 (b92bd5a/lp-d14369e) x86_64
+Total memory used: 676859904
+Run time: Wed Jul 23 14:48:23 2025

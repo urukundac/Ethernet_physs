@@ -1,0 +1,40 @@
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_eth_mdio"
+set_global_assignment -library "mdio_ethernet_ip" -name SOPCINFO_FILE [file join $::quartus(qip_path) "mdio_ethernet_ip.sopcinfo"]
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name SLD_INFO "QSYS_NAME mdio_ethernet_ip HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "mdio_ethernet_ip" -name MISC_FILE [file join $::quartus(qip_path) "mdio_ethernet_ip.cmp"]
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_TARGETED_DEVICE_FAMILY "Stratix 10"
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_GENERATED_DEVICE_FAMILY "{Stratix 10}"
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "mdio_ethernet_ip" -name MISC_FILE [file join $::quartus(qip_path) "../mdio_ethernet_ip.ip"]
+
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_COMPONENT_NAME "YWx0ZXJhX2V0aF9tZGlv"
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_COMPONENT_DISPLAY_NAME "RXRoZXJuZXQgTURJTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_COMPONENT_VERSION "MTkuMy4y"
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_COMPONENT_DESCRIPTION "RXRoZXJuZXQgTURJTyBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9FdGhlcm5ldC9SZWZlcmVuY2UgRGVzaWduIENvbXBvbmVudHM="
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvZGFtL3d3dy9wcm9ncmFtbWFibGUvdXMvZW4vcGRmcy9saXRlcmF0dXJlL3VnL3VnX2VtYmVkZGVkX2lwLnBkZg=="
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3NmbzE0MDA3ODc5NTI5MzIuaHRtbCNpZ2ExNDAxMzk1MzgzMTM5"
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_COMPONENT_NAME "bWRpb19ldGhlcm5ldF9pcA=="
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "mdio_ethernet_ip" -library "mdio_ethernet_ip" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "altera_eth_mdio_1932" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_eth_mdio_1932/synth/altera_eth_mdio.v"]
+set_global_assignment -library "mdio_ethernet_ip" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/mdio_ethernet_ip.v"]
+
+
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_TOOL_NAME "altera_eth_mdio"
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_TOOL_VERSION "19.3.2"
+set_global_assignment -entity "altera_eth_mdio" -library "altera_eth_mdio_1932" -name IP_TOOL_ENV "QsysPrimePro"
+

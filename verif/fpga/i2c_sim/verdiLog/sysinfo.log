@@ -1,0 +1,575 @@
+==========	uname -a	==========
+Linux sccf06014310 4.12.14-122.201-default #1 SMP Tue Mar 12 13:01:34 UTC 2024 (b92bd5a/lp-d14369e) x86_64 x86_64 x86_64 GNU/Linux
+-------------	end(uname -a)     -------------
+
+==========	limit		==========
+cputime      unlimited
+filesize     unlimited
+datasize     unlimited
+stacksize    8211 kbytes
+coredumpsize 0 kbytes
+memoryuse    unlimited
+vmemoryuse   unlimited
+descriptors  32768 
+memorylocked 64 kbytes
+maxproc      4096 
+maxlocks     unlimited
+maxsignal    4125077 
+maxmessage   819200 
+maxnice      0 
+maxrtprio    0 
+maxrttime    unlimited
+-------------	end(limit)     -------------
+==========	xdpyinfo	==========
+name of display:    scce02451905.zsc14.intel.com:1.0
+version number:    11.0
+vendor string:    The X.Org Foundation
+vendor release number:    60900000
+X.Org version: 6.9.0
+maximum request size:  16777212 bytes
+motion buffer size:  256
+bitmap unit, bit order, padding:    32, LSBFirst, 32
+image byte order:    LSBFirst
+number of supported pixmap formats:    5
+supported pixmap formats:
+    depth 32, bits_per_pixel 32, scanline_pad 32
+    depth 24, bits_per_pixel 32, scanline_pad 32
+    depth 8, bits_per_pixel 8, scanline_pad 32
+    depth 4, bits_per_pixel 8, scanline_pad 32
+    depth 1, bits_per_pixel 1, scanline_pad 32
+keycode range:    minimum 8, maximum 255
+focus:  window 0x4000320, revert to PointerRoot
+number of extensions:    27
+    BIG-REQUESTS
+    DAMAGE
+    DEC-XTRAP
+    DOUBLE-BUFFER
+    DPMS
+    Extended-Visual-Information
+    GLX
+    MIT-SCREEN-SAVER
+    MIT-SHM
+    MIT-SUNDRY-NONSTANDARD
+    RANDR
+    RECORD
+    RENDER
+    SECURITY
+    SGI-GLX
+    SHAPE
+    SYNC
+    TOG-CUP
+    X-Resource
+    XC-APPGROUP
+    XC-MISC
+    XFIXES
+    XFree86-Bigfont
+    XInputExtension
+    XKEYBOARD
+    XTEST
+    XVideo
+default screen number:    0
+number of screens:    1
+
+screen #0:
+  dimensions:    1900x989 pixels (643x335 millimeters)
+  resolution:    75x75 dots per inch
+  depths (5):    24, 32, 8, 4, 1
+  root window id:    0x35
+  depth of root window:    24 planes
+  number of colormaps:    minimum 1, maximum 1
+  default colormap:    0x20
+  default number of colormap cells:    256
+  preallocated pixels:    black 0, white 16777215
+  options:    backing-store YES, save-unders YES
+  largest cursor:    1900x989
+  current input event mask:    0xfac07f
+    KeyPressMask             KeyReleaseMask           ButtonPressMask          
+    ButtonReleaseMask        EnterWindowMask          LeaveWindowMask          
+    PointerMotionMask        KeymapStateMask          ExposureMask             
+    StructureNotifyMask      SubstructureNotifyMask   SubstructureRedirectMask 
+    FocusChangeMask          PropertyChangeMask       ColormapChangeMask       
+  number of visuals:    8
+  default visual id:  0x23
+  visual:
+    visual id:    0x23
+    class:    TrueColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x24
+    class:    TrueColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x25
+    class:    TrueColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x26
+    class:    TrueColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x27
+    class:    DirectColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x28
+    class:    DirectColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x29
+    class:    DirectColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x2a
+    class:    DirectColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+-------------	end(xdpyinfo)     -------------
+==========	Environment Variables	==========
+LESSKEY=/etc/lesskey.bin
+VCS_UCLI_STDIN_BLOCKING=1
+MANPATH=/usr/local/man:/usr/share/man:/opt/quest/man:/usr/intel/man:/usr/share/man:/usr/local/man:/opt/quest/man
+NNTPSERVER=news.intel.com
+FINALE_OUTDIR=:WARD:/runs/:BLOCK:/:TECH:/finale/finale_waivers
+PRODUCT_NAME=CNIC
+DISABLE_LIBRARY_MAP_CHECK=1
+RTLD_DEEPBIND=0
+USER_ITOOLS=/nfs/site/home/kumarlok/.itools
+__NB_SUBMISSION_POOL=zsc14_ion
+XLOCALEDIR=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/etc/access/locale
+HOSTNAME=sccf06014310.zsc14.intel.com
+SIGNAL_BASE_EXTRACTION=1
+XKEYSYMDB=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/etc/access/XKeysymDB2.1
+SNPSLMD_DISABLE_NTA_LICENSE_CHECKS=1
+IP_MODELS=/nfs/site/disks/cnic.mod.000
+WORKAREA=/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone
+NOVAS_SYNC_MOTIF_DISP=
+TERM=xterm
+__NB_RUNNING_ON_DYNAMIC_WSM=false
+__NB_LOG_FILE=/dev/null
+HOST=sccf06014310
+SHELL=/usr/intel/bin/tcsh
+__NB_QUEUE=zsc14_interactive
+PRODUCT_STEP=A0
+SIMV_DAIDIR_PATH=/nfs/site/disks/zsc14.xne_cnic.emu-fpga.002/pragyaro/i2c/output/physs_eth_tb/emu/haps_vcs_emuvcs/i2c_sim/MMG_PSS_SOC/vcs/simv.daidir
+FVWM_USERDIR=/nfs/site/home/kumarlok
+__NB_CLASS=tool
+FSDB_FILE=/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/i2c_sim/inter.fsdb
+ADE_NETBATCH_PROJECT_XML=/p/hdk/pu_tu/prd/sams/ipde/nb_config_file_ihdk.xml
+NOVAS_VERDI_SVTB_ALPHA=1
+PERL5LIB=/nfs/site/proj/hdk/pu_tu/prd/liteinfra/1.15/commonFlow/lib/perl
+CENTRAL_TOOL_CONFIG=/p/hdk/pu_tu/prd/global_tools/cnic/latest
+CENTRAL_TOOL_ORDER=/p/hdk/pu_tu/prd/global_tools/cnic/latest/central_tool_order.cth
+SNPS_SIM_DEFAULT_GUI=verdi
+NOVAS_WAVE_REDRAW_ALLVC=1
+EC_ENV_PROJ=default
+COMMANDS_PROPERTIES_DIR=/var/netstar/bin/NATIVE
+SPS_FONT_PATH=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/font
+LM_PROJECT=NXNE
+MORE=-sl
+WINDOWID=53463199
+VCS_STACK_EXEC=true
+__NB_LOCAL_BIN=/var/netstar/bin
+FINALE_APPROVALS_DIR=:WARD:/runs/:BLOCK:/:TECH:/finale/finale_approvals
+SPS_XFONT_PATH=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/XFont
+__NB_JOBID=zsc14_ion.17029802
+SETUP_R2G=source /p/hdk/pu_tu/prd/eou_system/2024.09.p2/bin/setup_r2g
+VCS_PATHMAP_PRELOAD_DONE=1
+HTTPS_CA_DIR=/var/lib/ca-certificates/pem
+EC_SITE=zsc14
+OS=linux
+LC_ALL=C
+CFG_PROJECT=cnic
+USER=kumarlok
+GROUP=intelall
+JRE_HOME=/usr/lib64/jvm/java-11-openjdk-11
+GROFF_NO_SGR=yes
+WAVE_REDRAW_ALLVC=1
+LS_COLORS=no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.lzma=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.xz=00;31:*.avi=01;35:*.bmp=01;35:*.fli=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mng=01;35:*.mov=01;35:*.mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.tga=01;35:*.tif=01;35:*.xbm=01;35:*.xpm=01;35:*.dl=01;35:*.gl=01;35:*.wmv=01;35:*.aiff=00;32:*.au=00;32:*.mid=00;32:*.mp3=00;32:*.ogg=00;32:*.voc=00;32:*.wav=00;32:
+LD_LIBRARY_PATH=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/bin:/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt:/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/tbb:/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/etc/lib/libstdc++/SUSE64:/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/share/NPI/lib/SUSE64:/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/zebu:
+MYSQL_HISTFILE=/dev/null
+CSHRCREAD=true
+CTH_PERL5LIB=/nfs/site/proj/hdk/pu_tu/prd/liteinfra/1.15/commonFlow/lib/perl
+FINALE_INDICATOR_DIR=:WARD:/runs/:BLOCK:/:TECH:/Indicators
+IPX_PROJECT_LIB=cnic
+SIGNAL_BASED_BA=0
+XNLSPATH=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/etc/access/nls
+REQUESTS_CA_BUNDLE=/var/lib/ca-certificates/ca-bundle.pem
+TCL_LIBRARY=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/etc/access/tcl86_library
+__NB_QSLOT=xne/lv_tool
+HOSTTYPE=x86_64-linux
+CTH_SESSION_ID=kumarlok_20922_72048347
+GIT_REPOS=/nfs/site/disks/cnic.git.001
+MALLOC_ARENA_MAX=1
+FROM_HEADER=
+USERNAME=kumarlok
+SNPSLMD_LICENSE_FILE=26586@synopsys123p.elic.intel.com:26586@synopsys60p.elic.intel.com:26586@synopsys75p.elic.intel.com:26586@synopsys81p.elic.intel.com:26586@synopsys83p.elic.intel.com:26586@synopsys44p.elic.intel.com:26586@synopsys23p.elic.intel.com:26586@synopsys01b.elic.intel.com:26586@synopsys02b.elic.intel.com:26586@synopsys07p.elic.intel.com:26586@synopsys20p.elic.intel.com:26586@synopsys22p.elic.intel.com:26586@synopsys30p.elic.intel.com:26586@synopsys55p.elic.intel.com:26586@synopsys71p.elic.intel.com
+PAGER=less
+EC_ZONE=zsc14
+CSHEDIT=emacs
+__NB_POOL=zsc14_ion
+XDG_CONFIG_DIRS=/etc/xdg
+NOVAS_SIGNAL_BASED_BA=0
+MINICOM=-c on
+__NB_UNIQUE_EXEC_ID=44846
+NOVAS_TCL_LIBRARY=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/etc/access/tcl86_library
+NOVAS_VERDI_SVTB_BETA=1
+MAIL=/var/spool/mail/kumarlok
+PATH=/p/hdk/pu_tu/prd/proj_bin/cnic/latest:/nfs/site/home/kumarlok/bin:/usr/intel/bin:/bin:/usr/bin:/usr/bin/X11:.:/usr/sbin:/usr/local/bin:/usr/games:/nfs/site/proj/hdk/pu_tu/prd/liteinfra/1.15/commonFlow/bin/
+FLEXLM_BORROWFILE=/nfs/site/home/kumarlok/.sccf06014310-borrow.txt
+CPU=x86_64
+FE_BASELINE_TOOLS=baseline_tools
+LC_COLLATE=C
+__NB_HOME=/nfs/site/gen/adm/netbatch/install/8.6.2_0991_06
+FINALE_GLOBALS_DIR=:WARD:/runs/finale_approvals/:TECH:/finale/finale_approvals
+logm_ini=0
+VERDI_HOME=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322
+INPUTRC=/etc/inputrc
+PWD=/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/i2c_sim
+DS_MONITOR_NAME=Cheetah2
+P4TRUST=/nfs/site/disks/p4_cheetah_scm/share/p4trust
+SNPSLMD_DISABLE_DEBUG_LICENSE_CHECKS=1
+VCS_HOME=/p/hdk/rtl/cad/x86-64_linux44/synopsys/vcsmx/V-2023.12-SP2/
+XMODIFIERS=@im=none
+EDITOR=/bin/vi
+__NB_CLASSRESERVATION=int_users=1,cores=2,int_memory=128,memory=128,int_cores=2
+LANG=C
+DOMAIN=cnic
+SYS_PROG_NAME=verdi
+PYTHONSTARTUP=/etc/pythonstart
+__NB_SUBMIT_PWD=/tmp
+__NB_SUBMITTING_USER=kumarlok
+SYNOPSYS_SIM=/p/hdk/rtl/cad/x86-64_linux44/synopsys/vcsmx/V-2023.12-SP2/
+VERDI_TB_HT=1
+TZ=PST8PDT
+FE_ACTIVITY_MAPPING=baseline_tools/activity_dir.map
+IP_MILESTONE_LIST=P00,EV1,P05,EV2,P08,UV1,P10,UVopt,POLO,UV2,PROD,eFV,FV
+WASH_LIST=-g cnic -n cip cnic dk1273 hdk10nm hdk10nmproc hdk7nm hdk7nmproc hfpga_farm intelall npg_rtl siphdk soc soc73 socenv srvr10nm
+TBSIM_SIM_LOG_PATH=/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/i2c_sim/testrlog
+SYS_INST_DIR=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322
+PERL_LWP_SSL_CA_PATH=/var/lib/ca-certificates/pem
+CTH_SETUP_CMD=/nfs/site/proj/hdk/pu_tu/prd/liteinfra/1.15/commonFlow/bin/cth_psetup -read_only -proj cnic/24.04.001 -cfg pmrcnic.cth
+SHLVL=8
+HOME=/nfs/site/home/kumarlok
+QT_SYSTEM_DIR=/usr/share/desktop-data
+DS_MONITOR_VERSION=2024.09
+LESS_ADVANCED_PREPROCESSOR=no
+OSTYPE=linux
+PRODUCT_MILESTONE=P00
+FSDB_SVA_STATUS=1
+EC_OU=unknown
+CTH_CONFIG_ROOT=/p/hdk/etc/Projects
+CALIBRE_LM_BULK_ENABLE=832987
+VCS_EXEC_DONE=1
+LS_OPTIONS=-N --color=tty -T 0
+XCURSOR_THEME=Industrial
+VERDI_ORIGNAL_LD_LIBRARY_PATH=
+VERDI_SVTB_ALPHA=1
+WINDOWMANAGER=/usr/bin/gnome
+__NB_TIMES_RESTARTED=0
+XDG_CACHE_HOME=/tmp/kdecache-kumarlok
+VENDOR=unknown
+G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-15,CP1252
+LESS=-M -I -R
+LOGNAME=kumarlok
+MACHTYPE=x86_64
+FINALE_WAIVERS_DIR=:WARD:/runs/:BLOCK:/:TECH:/finale/finale_waivers
+CVS_RSH=ssh
+SNPS_ANOMALY_URL=snpstelemetrysystem.intel.com
+VERDI_SVTB_BETA=1
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/usr/share/gnome
+__NB_INTERACTIVE_SESSIONID=zsc14_ion.17029802
+__NB_WSM_JETTY_CONTROLLER_PORT=31556
+SPS_RGB_PATH=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/etc/rgb
+NOVASHLPPATH=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/doc
+FSDB_VHDL_PROTECTED=1
+NOVAS_LC_ALL=C
+LESSOPEN=lessopen.sh %s
+FE_REPO_CMD=/usr/intel/bin/git rev-parse --show-toplevel
+FSDB_RD_IR_ENABLE=1
+IWRAPPER_DEPTH=1,1753023667
+INFOPATH=/usr/intel/pkgs/info/LATEST
+NB_JOB_IDS_TRACE=zsc14_ion.17027839 zsc14_ion.17029802 
+DISPLAY=scce02451905.zsc14.intel.com:1.0
+LD_NOVERSION=1
+SHIP_NB_VER=2.4.4_0500_29
+QT_PLUGIN_PATH=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt/plugins
+NOVAS_SIGNAL_BASE_EXTRACTION=1
+__NB_USER_LOG_FILE=/dev/null
+LESSCLOSE=lessclose.sh %s %s
+EC_UNAME=Linux_4.12.14-122.201-default_x86_64
+EC_SITECODE=SC
+CTH_PYTHONPATH=/nfs/site/proj/hdk/pu_tu/prd/liteinfra/1.15/commonFlow/lib/python
+NOVAS_VERDI_TB_HT=1
+G_BROKEN_FILENAMES=1
+P4CONFIG=.p4config
+SNPS_TELEMETRY_URL=snpstelemetrysystem.intel.com
+STEPPING=A0
+NBM_ID=
+EC_ENV_ROOT=/usr/intel/pkgs/eclogin/1.0
+COLORTERM=xfce4-terminal
+_=/p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/etc/access/sysinfo.sh
+-------------	end(env)     -------------
+==========	ps	    ==========
+  PID TTY          TIME CMD
+20922 pts/0    00:00:00 tcsh
+30382 pts/0    00:00:00 tcsh
+40886 pts/0    00:00:04 Novas
+41567 pts/0    00:00:00 ucli
+41568 pts/0    00:00:00 simv
+41579 pts/0    00:00:00 ucli.exe
+42471 pts/0    00:00:00 sysinfo.sh
+42484 pts/0    00:00:00 ps
+-------------	end(ps)     -------------
+==========       cat /proc/meminfo        ==========
+MemTotal:       1056160208 kB
+MemFree:        448731544 kB
+MemAvailable:   910810544 kB
+Buffers:          126892 kB
+Cached:         455773292 kB
+SwapCached:        16948 kB
+Active:         236937464 kB
+Inactive:       347133440 kB
+Active(anon):   125366024 kB
+Inactive(anon):  6151052 kB
+Active(file):   111571440 kB
+Inactive(file): 340982388 kB
+Unevictable:       24972 kB
+Mlocked:           24972 kB
+SwapTotal:      536879096 kB
+SwapFree:       529129644 kB
+Dirty:              1300 kB
+Writeback:            28 kB
+AnonPages:      128186488 kB
+Mapped:          1737804 kB
+Shmem:           3343400 kB
+Slab:           17491644 kB
+SReclaimable:   15611024 kB
+SUnreclaim:      1880620 kB
+KernelStack:       48192 kB
+PageTables:       316388 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    1064959200 kB
+Committed_AS:   152872684 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:      6144 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:    27179616 kB
+DirectMap2M:    981190656 kB
+DirectMap1G:    67108864 kB
+-------------	     end(cat /proc/meminfo)      -------------
+==========       xprop -root       ==========
+_NET_SHOWING_DESKTOP(CARDINAL) = 0
+_QT_CLIPBOARD_SENTINEL(WINDOW): window id # 0x700076e, 0x700076e
+WM_HINTS(WM_HINTS):
+		bitmap id # to use for icon: 0x400004f
+_NET_WM_ICON(CARDINAL) = 	Icon (32 x 32):
+	           kkbppddp             
+	        q0hhkbppqqphkq          
+	       0X0akkppqWqWp0ZQ         
+	     pCCX0akkbpwwwWqqdJJk       
+	kw  pfzCX0akkbqwmmqqwkOZJk      
+	0fM*fuzCY0akppwwWWmqdk*qLJd     
+	O[ff[uzCY0akOCffLZd*qdqkqQQM    
+	O[[[[uzCYOUuvvvrr}[Ldwq*8QXk    
+	O[[[[uzCOt[cc(!!(rr(]kww*wdkM   
+	O[[[[uzOt}c\:'.  ,?c(}kq*%*k*   
+	O[[[[uCU1cl```'''' >r\ukdMwkw   
+	O[[[uuCCj\:::`''''`.l{\UQ*@@8%  
+	0uuuuzCX0);;:";;``::;{lvOd8dw@  
+	WbbMMMLjL1--;(((>;---\l(JQ8@%@  
+	8$$@@$??(<>+!(!+>>+>>\l!LOM**@  
+	M*M@@8!l(>>>1>;,(}!ll\>+LOMMM@  
+	8*w%@@\>1!!l1[?1Ur?\1v((fQwM*8  
+	8@%@%%v;(??\\uOOz](|n0YJjxuccQ  
+	%8k*%MZ"l(\||\}v]}1({vCtnc][}Q  
+	 %@%%wk(`?(\(((111)1/;vtuc[}1Q  
+	 @8kMMkJ;`?(((((111\:+tju][}1Q  
+	 %%88%dXn;.+\(111\>`+CJxu][}1Q  
+	  @@wwMQfv>..:--"`,(YZLxuc[[}Q  
+	   %8M%*Qffv(+;;>1Ca0YLjucjj[Q  
+	   @@%k*8kOOQaQabbhoZYLjuzM8x0  
+	    @%%8wMM*qpppbbho0YLjj*@ Wb  
+	     @@%MMMM8Wmqpbho0YtJW@   $  
+	      @##$8MM*wqpbho0Yo%@       
+	        #$%8M*wqpbaobM@@        
+	          @$8MM*w*M$@@          
+	             @@@@@@             
+	                                
+
+
+_QT_SELECTION_SENTINEL(WINDOW): window id # 0x700076e, 0x0
+_MOTIF_DRAG_WINDOW(WINDOW): window id # 0x3e00001
+CUT_BUFFER7(STRING) = 
+CUT_BUFFER6(STRING) = 
+CUT_BUFFER5(STRING) = 
+CUT_BUFFER4(STRING) = 
+CUT_BUFFER3(STRING) = 
+CUT_BUFFER2(STRING) = 
+CUT_BUFFER1(STRING) = 
+_MOTIF_DEFAULT_BINDINGS(STRING) = "osfCancel:<Key>Escape,<Key>Cancel\nosfLeft:<Key>Left\nosfUp:<Key>Up\nosfRight:<Key>Right\nosfDown:<Key>Down\nosfEndLine:<Key>End\nosfBeginLine:<Key>Home,<Key>Begin\nosfPageUp:<Key>Prior\nosfPageDown:<Key>Next\nosfBackSpace:<Key>BackSpace\nosfDelete:<Key>Delete\nosfInsert:<Key>Insert\nosfAddMode:Shift<Key>F8\nosfHelp:<Key>F1,<Key>Help\nosfMenu:Shift<Key>F10,<Key>Menu\nosfMenuBar:<Key>F10,Shift<Key>Menu\nosfSelect:<Key>Select\nosfActivate:<Key>KP_Enter,<Key>Execute\nosfClear:<Key>Clear\nosfUndo:<Key>Undo\nosfSwitchDirection:Alt<Key>Return,Alt<Key>KP_Enter"
+VimRegistry(STRING) = "2200003 GVIM", "6000003 GVIM12", "7200003 GVIM10", "5a00003 GVIM9", "5c00003 GVIM11", "5600003 GVIM13", "4c00003 GVIM14", "7400003 GVIM15", "7c00003 GVIM16", "7a00003 GVIM8", "8400003 GVIM18", "8600003 GVIM19", "8000003 GVIM17", "5400003 GVIM4", "5e00003 GVIM5", "6200003 GVIM6", "4800003 GVIM1", "4000003 GVIMDIFF", "4a00003 GVIM2"
+CUT_BUFFER0(STRING) = "-l testrlog +cxp_fastsimtrain +cxp_fast_eq_off +ppht_pll_quicksimlock +define+CXP_FAST_SIM_TRAIN +SVA_OFF -assert dumpoff +vpdfile+design.vpd -gui\n"
+_XROOTPMAP_ID(PIXMAP): pixmap id # 0x35
+XFDESKTOP_IMAGE_FILE_0(STRING) = "/usr/share/wallpapers/Intel/contents/images/1920x1080.xfce.svg"
+NAUTILUS_DESKTOP_WINDOW_ID(WINDOW): window id # 0x1800003
+XFCE_DESKTOP_WINDOW(WINDOW): window id # 0x1800003
+_NET_DESKTOP_LAYOUT(CARDINAL) = 0, 0, 1, 0
+_NET_CLIENT_LIST_STACKING(WINDOW): window id # 0x1800003, 0xc0002a, 0xc0007d, 0x6a00004, 0x5600003, 0x5c00003, 0x3c00302, 0x420000c, 0x3400302, 0x2200003, 0x7400003, 0x6800302, 0x7000319, 0x3200003, 0x33a7fe3, 0x5a00003, 0x7200003, 0x2e00049, 0x2e00006, 0x51059f4, 0x32fc89f, 0x4000320, 0x1400002
+_NET_CLIENT_LIST(WINDOW): window id # 0xc0002a, 0x1400002, 0x1800003, 0xc0007d, 0x2200003, 0x3200003, 0x3400302, 0x7200003, 0x32fc89f, 0x3c00302, 0x51059f4, 0x5a00003, 0x5c00003, 0x5600003, 0x420000c, 0x33a7fe3, 0x6a00004, 0x6800302, 0x7400003, 0x7000319, 0x2e00006, 0x2e00049, 0x4000320
+_NET_ACTIVE_WINDOW(WINDOW): window id # 0x4000320, 0x0
+_NET_CURRENT_DESKTOP(CARDINAL) = 0
+_NET_DESKTOP_VIEWPORT(CARDINAL) = 0, 0
+_NET_DESKTOP_GEOMETRY(CARDINAL) = 1900, 989
+_NET_SUPPORTING_WM_CHECK(WINDOW): window id # 0x1000121
+_NET_SUPPORTED(ATOM) = _NET_ACTIVE_WINDOW, _NET_CLIENT_LIST, _NET_CLIENT_LIST_STACKING, _NET_CLOSE_WINDOW, _NET_CURRENT_DESKTOP, _NET_DESKTOP_GEOMETRY, _NET_DESKTOP_LAYOUT, _NET_DESKTOP_NAMES, _NET_DESKTOP_VIEWPORT, _NET_FRAME_EXTENTS, _NET_MOVERESIZE_WINDOW, _NET_NUMBER_OF_DESKTOPS, _NET_REQUEST_FRAME_EXTENTS, _NET_SHOWING_DESKTOP, _NET_SUPPORTED, _NET_SUPPORTING_WM_CHECK, _NET_SYSTEM_TRAY_OPCODE, _NET_WM_ACTION_ABOVE, _NET_WM_ACTION_BELOW, _NET_WM_ACTION_CHANGE_DESKTOP, _NET_WM_ACTION_CLOSE, _NET_WM_ACTION_FULLSCREEN, _NET_WM_ACTION_MAXIMIZE_HORZ, _NET_WM_ACTION_MAXIMIZE_VERT, _NET_WM_ACTION_MINIMIZE, _NET_WM_ACTION_MOVE, _NET_WM_ACTION_RESIZE, _NET_WM_ACTION_SHADE, _NET_WM_ACTION_STICK, _NET_WM_ALLOWED_ACTIONS, _NET_WM_BYPASS_COMPOSITOR, _NET_WM_CONTEXT_HELP, _NET_WM_DESKTOP, _NET_WM_FULLSCREEN_MONITORS, _NET_WM_ICON, _NET_WM_ICON_GEOMETRY, _NET_WM_ICON_NAME, _NET_WM_MOVERESIZE, _NET_WM_NAME, _NET_WM_OPAQUE_REGION, _NET_WM_PID, _NET_WM_PING, _NET_WM_STATE, _NET_WM_STATE_ABOVE, _NET_WM_STATE_BELOW, _NET_WM_STATE_DEMANDS_ATTENTION, _NET_WM_STATE_FOCUSED, _NET_WM_STATE_FULLSCREEN, _NET_WM_STATE_HIDDEN, _NET_WM_STATE_MAXIMIZED_HORZ, _NET_WM_STATE_MAXIMIZED_VERT, _NET_WM_STATE_MODAL, _NET_WM_STATE_SHADED, _NET_WM_STATE_SKIP_PAGER, _NET_WM_STATE_SKIP_TASKBAR, _NET_WM_STATE_STICKY, _NET_WM_STRUT, _NET_WM_STRUT_PARTIAL, _NET_WM_SYNC_REQUEST, _NET_WM_SYNC_REQUEST_COUNTER, _NET_WM_USER_TIME, _NET_WM_USER_TIME_WINDOW, _NET_WM_WINDOW_OPACITY, _NET_WM_WINDOW_OPACITY_LOCKED, _NET_WM_WINDOW_TYPE, _NET_WM_WINDOW_TYPE_DESKTOP, _NET_WM_WINDOW_TYPE_DIALOG, _NET_WM_WINDOW_TYPE_DOCK, _NET_WM_WINDOW_TYPE_MENU, _NET_WM_WINDOW_TYPE_NORMAL, _NET_WM_WINDOW_TYPE_SPLASH, _NET_WM_WINDOW_TYPE_TOOLBAR, _NET_WM_WINDOW_TYPE_UTILITY, _NET_WORKAREA, _GTK_FRAME_EXTENTS, _GTK_HIDE_TITLEBAR_WHEN_MAXIMIZED, _GTK_SHOW_WINDOW_MENU, _NET_STARTUP_ID
+_NET_DESKTOP_NAMES(UTF8_STRING) = "Workspace 1", "Workspace 2", ""
+_NET_WORKAREA(CARDINAL) = 0, 0, 1900, 958, 0, 0, 1900, 958
+_NET_NUMBER_OF_DESKTOPS(CARDINAL) = 2
+XKLAVIER_ALLOW_SECONDARY(INTEGER) = 0
+_DT_RESTORE_MODE(STRING) = "xfce4"
+_DT_SAVE_MODE(STRING) = "xfce4"
+InterpRegistry(STRING) = "6200001 tk #3", "5400001 tk", "3a00001 tk #2", "7800001 verdi #3", "6e00001 verdi", "5800001 verdi #4", "6000001 verdi #2", "4e00001 BusyDlg23425", "4600001 homefull #2", "c00001 pTk"
+AT_SPI_BUS(STRING) = "unix:path=/tmp/dbus-yUGs9426sW,guid=7e83aec045c06434c8d9570368197471"
+GDK_VISUALS(INTEGER) = 35, 0
+RESOURCE_MANAGER(STRING) = "*Scrollbar.foreground:\tgrey0\n*Scrollbar.position:\tright\n*XTerm*RightScrollBar:\ttrue\n*ttyModes:\terase ^H\n*vt100.alwaysUseMods:\ttrue\n*vt100.eightBitInput:\ttrue\n*vt100.eightBitOutput:\ttrue\nBIG*Font:\t-*-courier-medium-r-*-*-*-180-*-*-*-*-*-*\nBIG*boldFont:\t-*-courier-bold-r-*-*-*-180-*-*-*-*-*-*\nBIG*font1:\t-*-courier-medium-r-*-*-*-80-*-*-*-*-*-*\nBIG*font2:\t-*-courier-medium-r-*-*-*-100-*-*-*-*-*-*\nBIG*font3:\t-*-courier-medium-r-*-*-*-120-*-*-*-*-*-*\nBIG*font4:\t-*-courier-medium-r-*-*-*-140-*-*-*-*-*-*\nBIG*vt100.geometry:\t80x40\nEmacs*Font:\t-adobe-courier-medium-r-normal-*-*-180-*-*-m-*-*-1\nEmacs*cursorColor:\tred\nEmacs*pointerColor:\tred\nMaker.autoBackupOnSave:\tTrue\nMaker.autoSave:\tTrue\nMaker.autoSaveIdleTime:\t10\nMaker.autoSaveTime:\t5\nMaker.background:\tturquoise\nMaker.cmdEscape:\tTrue\nMaker.colorDocs:\tTrue\nMaker.colorImages:\tTrue\nMaker.console:\tTrue\nMaker.doubleClickTenths:\t10\nMaker.edit_markers.bb.x:\t100\nMaker.edit_markers.bb.y:\t100\nMaker.fontdesign.bb.x:\t800\nMaker.fontdesign.bb.y:\t650\nMaker.foreground:\tblack\nMaker.greekSize:\t7\nMaker.noViewerFile:\tTrue\nMaker.pgf.bb.x:\t800\nMaker.pgf.bb.y:\t300\nMaker.useBackingStore:\tTrue\nMwm*FocusAutoRaise:\tfalse\nMwm*Opus*clientDecoration:\t-menu\nMwm*activeBackground:\tyellow\nMwm*background:\tslateblue\nMwm*buttonBindings:\tDefaultButtonBindings\nMwm*doubleClickTime:\t1000\nMwm*fadeNormalIcon:\ttrue\nMwm*icon.background:\tMidnightBlue\nMwm*icon.bottomShadowColor:\twheat\nMwm*icon.topShadowColor:\twheat\nMwm*iconAutoPlace:\tTrue\nMwm*iconBoxGeometry:\t1x10-0+90\nMwm*iconDecoration:\tlabel\nMwm*iconImageMaximum:\t100x10\nMwm*iconbox.clientDecoration:\t+border +resizeh\nMwm*keyBindings:\tMyKeyBindings\nMwm*keyboardFocusPolicy:\tpointer\nMwm*limitResize:\tFalse\nMwm*mgti.clientDecoration:\t+border\nMwm*resizeBorderWidth:\t5\nMwm*saveunder:\ttrue\nMwm*showFeedback:\tbehavior move placement resize\nMwm*useIconBox:\ttrue\nMwm*xbiff.clientDecoration:\t+border\nMwm*xclock.clientDecoration:\t+border\nOpus*save_Under:\tTrue\nOpus.activeBannerColor:\t#bdcccc\nOpus.attentionTextColor:\t#333333\nOpus.background:\t#e0e0e0\nOpus.borderColor:\t#0000c0\nOpus.bottomShadowColor:\t#999999\nOpus.buttonColor:\t#800000\nOpus.dlsEncapWindow:\t500x150+700+1\nOpus.dlsGridForm:\t100x200+200+20\nOpus.dlsLevelBar:\t200x200+1+1\nOpus.editorBackground:\t#000000\nOpus.flashColor:\t#ff00ff\nOpus.foreground:\t#800000\nOpus.geometry:\t940x260+0-0\nOpus.height:\t200\nOpus.inactiveBannerColor:\t#cccccc\nOpus.recessColor:\t#bfbfbf\nOpus.textColor:\t#333333\nOpus.textEditor:\t/bin/vi\nOpus.topShadowColor:\t#ffffff\nOpus.width:\t800\nOpus.x:\t300\nOpus.y:\t5\nXLock.echokeys:\ton\nXLock.font:\t12x24\nXLock.info:\tEngineering Computing: scce02451905.zsc14.intel.com\nXTerm*VT100.Translations:\t#override \\n <Key>Prior: scroll-back(1,page) \\n <Key>Next: scroll-forw(1,page) \\n <Key>Home: scroll-back(1,line) \\n <Key>End: scroll-forw(1,line) \\n Shift<Key>Delete: string(\"\\177\") \\n Ctrl<Key>Delete: string(\"\\010\") \\n Alt<Key>Return: string(\"\\033\\015\") \\n Alt<Key>space: string(\"\\033\\040\") \\n Alt<Key>BackSpace: string(\"\\033\\010\") \\n <Key>BackSpace: string(0x08) \\n <Key>Delete: string(\"\\033[3~\")\nXTerm*charClass:\t33:48,37:48,45-47:48,64:48\nXTerm*cursorColor:\tred\nXTerm*font:\t9x15\nXTerm*saveLines:\t2048\nXTerm*scrollBar:\ttrue\nXTerm*scrollBarPosition:\tright\nXTerm*wm_option.title:\ton\nXautolock.corners:\t00+-\nXautolock.cornersize:\t50\nXautolock.locker:\t/usr/intel/bin/xlock -mode blank\nXautolock.notify:\t5\nXautolock.time:\t7\nXcursor.theme_core:\t1\nXft.hinting:\t1\nXft.hintstyle:\thintmedium\nXmh*BorderColor:\tmagenta\nXmh*BusyPointerColor:\tblack\nXmh*Command.background:\tBlue\nXmh*Command.foreground:\tYellow\nXmh*CommandButtonCount:\t9\nXmh*Grip.borderWidth:\t0\nXmh*HideBoringHeaders:\toff\nXmh*Label.background:\tgrey\nXmh*Label.borderWidth:\t0\nXmh*Label.foreground:\tblack\nXmh*MailWaitingFlag:\ton\nXmh*MenuButton.background:\tred\nXmh*MenuButton.borderWidth:\t0\nXmh*MenuButton.foreground:\tgreen\nXmh*PointerColor:\tblack\nXmh*PrintCommand:\tgenscript -2rG >/dev/null 2>/dev/null\nXmh*commandBox.button1.label:\tinc\nXmh*commandBox.button1.translations:\t#override <Btn1Down>,<Btn1Up>: XmhIncorporateNewMail()\nXmh*commandBox.button2.label:\tcompose\nXmh*commandBox.button2.translations:\t#override <Btn1Down>,<Btn1Up>: XmhComposeMessage()\nXmh*commandBox.button3.label:\tnext\nXmh*commandBox.button3.translations:\t#override <Btn1Down>,<Btn1Up>: XmhViewNextMessage()\nXmh*commandBox.button4.label:\tprev\nXmh*commandBox.button4.translations:\t#override <Btn1Down>,<Btn1Up>: XmhViewPreviousMessage()\nXmh*commandBox.button5.label:\tcommit\nXmh*commandBox.button5.translations:\t#override <Btn1Down>,<Btn1Up>: XmhCommitChanges()\nXmh*commandBox.button6.label:\tdelete\nXmh*commandBox.button6.translations:\t#override <Btn1Down>,<Btn1Up>: XmhMarkDelete()\nXmh*commandBox.button7.label:\tmove\nXmh*commandBox.button7.translations:\t#override <Btn1Down>,<Btn1Up>: XmhMarkMove()\nXmh*commandBox.button8.label:\treply\nXmh*commandBox.button8.translations:\t#override <Btn1Down>,<Btn1Up>: XmhViewReply()\nXmh*commandBox.button9.label:\texit\nXmh*commandBox.button9.translations:\t#override <Btn1Down>,<Btn1Up>: XmhClose()\nXmh*font:\t9x15\nXmh*messageMenu.MenuOnScreen:\tTrue\nXmh.geometry:\t900x800+225+150\nxbiff*Background:\tslateblue\nxbiff*Border:\tPeru\nxbiff*Delay:\t15\nxbiff*Font:\t9x15\nxbiff*Foreground:\twheat\nxbiff*MailCommand:\texmh\nxbiff*NewMailReverse:\ton\nxbiff*ReverseVideo:\toff\nxbiff*ScrollSize:\t5\nxbiff*Update:\t60\nxclock*Background:\tslateblue\nxclock*BorderWidth:\t10\nxclock*Foreground:\tblack\nxclock*InternalBorder:\t10\nxclock*Mode:\tAnalog\nxclock*Update:\t15\nxclock*hands:\twheat\nxload*Background:\tsteelblue\nxload*Foreground:\twhite\nxload*border:\tyellow\nxload*highlight:\tred\nxload*minScale:\t2\nxlock*mode:\tblank\nxperfmon*Background:\tsteelblue\nxperfmon*Foreground:\tred\n"
+-------------    end(xprop -root)      -------------
+==========       xset -q      ==========
+Keyboard Control:
+  auto repeat:  on    key click percent:  0    LED mask:  00000000
+  XKB indicators:
+    00: Caps Lock:   off    01: Num Lock:    off    02: Shift Lock:  off
+    03: Mouse Keys:  off    04: Scroll Lock: off    05: Group 2:     off
+  auto repeat delay:  500    repeat rate:  20
+  auto repeating keys:  00ffffffdffffbbf
+                        fedfffffffdfe5ff
+                        ffffffffffffffff
+                        ffffffffffffffff
+  bell percent:  50    bell pitch:  400    bell duration:  100
+Pointer Control:
+  acceleration:  2/1    threshold:  4
+Screen Saver:
+  prefer blanking:  yes    allow exposures:  yes
+  timeout:  600    cycle:  600
+Colors:
+  default colormap:  0x20    BlackPixel:  0x0    WhitePixel:  0xffffff
+Font Path:
+  /usr/share/fonts/100dpi,/usr/share/fonts/75dpi,/usr/share/fonts/cyrillic,/usr/share/fonts/misc,/usr/share/fonts/truetype,/usr/share/fonts/Type1
+Bug Mode: compatibility mode is disabled
+DPMS (Energy Star):
+  Display is not capable of DPMS
+Font cache:
+  Server does not have the FontCache Extension
+-------------    end(xset -q)      -------------
+==========       show OS patch level     ==========
+*******************************************************
+Use of this device and the Intel network are subject to
+security monitoring to protect against security
+vulnerabilities and to confirm Intel policy compliance.
+*******************************************************
+-------------    end(show OS patch level)      -------------
+=========       uptime      ==========
+ 14:48pm  up 330 days  3:01,  11 users,  load average: 1.28, 1.23, 1.24
+------------    end(uptime)    -------------
+=========       locale       ==========
+LANG=C
+LC_CTYPE="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_COLLATE="C"
+LC_MONETARY="C"
+LC_MESSAGES="C"
+LC_PAPER="C"
+LC_NAME="C"
+LC_ADDRESS="C"
+LC_TELEPHONE="C"
+LC_MEASUREMENT="C"
+LC_IDENTIFICATION="C"
+LC_ALL=C
+------------    end(locale)    -------------
+==========       ldd       ==========
+ldd /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/bin/Novas
+	linux-vdso.so.1 (0x00007ffff7fd9000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007ffff7fad000)
+	libvfs.so => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/bin/libvfs.so (0x00007ffff7f34000)
+	libpsslanguage.so => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/bin/libpsslanguage.so (0x00007ffff73c3000)
+	libRtxStable.so => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/zebu/libRtxStable.so (0x00007ffff73b9000)
+	libstdc++.so.6 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/etc/lib/libstdc++/SUSE64/libstdc++.so.6 (0x00007ffff6fd9000)
+	libfreetype.so.6 => /usr/lib64/libfreetype.so.6 (0x00007ffff6f3c000)
+	libxml2.so.2 => /usr/lib64/libxml2.so.2 (0x00007ffff6dd2000)
+	libpthread.so.0 => /lib64/noelision/libpthread.so.0 (0x00007ffff6db4000)
+	libQtSolutions_MotifExtension-2.7.so.1 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt/libQtSolutions_MotifExtension-2.7.so.1 (0x00007ffff6b9d000)
+	libQtGui.so.4 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt/libQtGui.so.4 (0x00007ffff5ff9000)
+	libQtCore.so.4 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt/libQtCore.so.4 (0x00007ffff5b5f000)
+	libQtXml.so.4 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt/libQtXml.so.4 (0x00007ffff5925000)
+	libQtWebKit.so.4 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt/libQtWebKit.so.4 (0x00007ffff4014000)
+	libQtNetwork.so.4 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt/libQtNetwork.so.4 (0x00007ffff3d05000)
+	libQt3Support.so.4 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt/libQt3Support.so.4 (0x00007ffff3865000)
+	libQtSql.so.4 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt/libQtSql.so.4 (0x00007ffff362e000)
+	libQtCommercialChart.so.1 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt/libQtCommercialChart.so.1 (0x00007ffff32fd000)
+	libQtScript.so.4 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/Qt/libQtScript.so.4 (0x00007ffff2e91000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007ffff2e8c000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007ffff2d8f000)
+	libsimprofile_verdi.so => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/bin/libsimprofile_verdi.so (0x00007ffff29db000)
+	libsnpsmalloc.so => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/bin/libsnpsmalloc.so (0x00007ffff29a0000)
+	libuuid.so.1 => /usr/lib64/libuuid.so.1 (0x00007ffff2998000)
+	libtbb.so.2 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/lib/tbb/libtbb.so.2 (0x00007ffff2956000)
+	libcmlp_cassandra-O.so => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/platform/SUSE64/bin/libcmlp_cassandra-O.so (0x00007ffff1e26000)
+	libXss.so.1 => /usr/lib64/libXss.so.1 (0x00007ffff1c22000)
+	libXft.so.2 => /usr/lib64/libXft.so.2 (0x00007ffff1a0c000)
+	libXt.so.6 => /usr/lib64/libXt.so.6 (0x00007ffff17a4000)
+	libXmu.so.6 => /usr/lib64/libXmu.so.6 (0x00007ffff1589000)
+	libX11.so.6 => /usr/lib64/libX11.so.6 (0x00007ffff144c000)
+	libXext.so.6 => /usr/lib64/libXext.so.6 (0x00007ffff1239000)
+	libfontconfig.so.1 => /usr/lib64/libfontconfig.so.1 (0x00007ffff0ffb000)
+	libnsl.so.1 => /lib64/libnsl.so.1 (0x00007ffff0fe1000)
+	libnuma.so.1 => /usr/lib64/libnuma.so.1 (0x00007ffff0dd4000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007ffff0dcb000)
+	libpng12.so.0 => /usr/lib64/libpng12.so.0 (0x00007ffff0ba0000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007ffff09fa000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007ffff7fdb000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007ffff09e2000)
+	libexpat.so.1 => /usr/lib64/libexpat.so.1 (0x00007ffff09b7000)
+	libgcc_s.so.1 => /p/hdk/rtl/cad/x86-64_linux26/synopsys/z_verdi/S-2021.09-SP2-8-T-20230322/etc/lib/libstdc++/SUSE64/libgcc_s.so.1 (0x00007ffff079e000)
+	libbz2.so.1 => /usr/lib64/libbz2.so.1 (0x00007ffff058f000)
+	libpng16.so.16 => /usr/lib64/libpng16.so.16 (0x00007ffff0352000)
+	liblzma.so.5 => /usr/lib64/liblzma.so.5 (0x00007ffff012b000)
+	libSM.so.6 => /usr/lib64/libSM.so.6 (0x00007fffeff23000)
+	libICE.so.6 => /usr/lib64/libICE.so.6 (0x00007fffefd05000)
+	libXrender.so.1 => /usr/lib64/libXrender.so.1 (0x00007fffefafb000)
+	libxcb.so.1 => /usr/lib64/libxcb.so.1 (0x00007fffef8da000)
+	libXau.so.6 => /usr/lib64/libXau.so.6 (0x00007fffef6d5000)
+-------------    end(ldd)      -------------

@@ -1,0 +1,241 @@
+#
+####==== UHFI clocks
+#create_clock  -name hci_refclk -period 10  [get_ports pcie_ref_clk_p]
+#set_property preserve_period on [get_clocks hci_refclk]
+#set_clock_groups -asynchronous -group [get_clocks hci_refclk]
+##
+###jmoctezu, already in physical.rdc set_port_assignment [get_ports CO18_PCIE_RESET_N] -tie1
+##
+###create_clock -name pipe_clock -period 8 [get_pins uhfi/uhfi_pcie_ctrl/i_pcie_bridge_top/u_phy_top/genblk1i.pcie_phy_wrapper/pipe_clk]
+#create_clock -name pipe_clock -period 8 [get_pins uhfi/uhfi_pcie_ctrl/i_pcie_bridge_top/u_phy_top/pipe_clk]
+#set_property preserve_period on [get_clocks pipe_clock]
+#set_clock_groups -asynchronous -group [get_clocks pipe_clock]
+##
+#create_clock -name {PCIE_REFCLK_P_uhfi} -period {10.0} [get_ports pcie_ref_clk_p_uhfi] 
+#set_property preserve_period TRUE [get_clocks PCIE_REFCLK_P_uhfi]
+##
+##
+#create_clock  -name {pcie_user_clk} -period  {8.0} [get_pins fpga_transactors_top_inst/generic_chassis_top_inst/dut/app_clock_out_clk_clk]
+##
+###source /nfs/site/disks/xne_tip_0003/bindhus/FGT/fpga_transactors-lnl-main-master-23ww41a-drop.0/fpga_synth/quartus/settings/pcie_perst_functions.tcl
+#
+##create_clock  -name {pll_1} [get_nets {mki_wrapper.mki.mki_uncore_misc.mci_cmn.parcgu.cgu_pll_top.cro800_pll_ckpllclkout1}] -period {400.0}
+##create_clock  -name {pll_2} [get_nets {mki_wrapper.mki.mki_uncore_misc.mci_cmn.parcgu.cgu_pll_top.mb_pll_ckpllclkout1}] -period {400.0}
+##create_clock  -name {pll_1} [get_nets {mki.mki_uncore_misc.mci_cmn.parcgu.cgu_pll_top.fivr_pll.ljpll_wrap.ljpll.pll_hip.pll_core__clk_pll_div1_red_O_2}] -period {400.0}
+##create_clock  -name {pll_3} [get_nets {mki.mki_uncore_misc.mci_cmn.parcgu.cgu_pll_top.cro800_pll.ljpll_wrap.ljpll.pll_hip.pll_core__clk_pll_div1_red_O_2}] -period {400.0}
+##create_clock  -name {pll_2} [get_nets {mki.mki_uncore_misc.mci_cmn.parcgu.cgu_pll_top.mb_pll.ljpll_wrap.ljpll.pll_hip.pll_core__clk_pll_div1_red_O_2}] -period {400.0}
+#create_clock  -name {YY_BCLK1} [get_nets {YY_BCLK1}] -period {400.0}
+##create_clock  -name {XX_HVM_TCK} [get_nets {XX_HVM_TCK}] -period {400.0}
+##create_clock  -name {XX_HVM_BCLK1} [get_nets {XX_HVM_BCLK1}] -period {400.0}
+##create_clock  -name {XX_HVM_XTAL_CLK} [get_nets {XX_HVM_XTAL_CLK}] -period {400.0}
+#create_clock  -name {YY_XTALCLK} [get_nets {YY_XTALCLK}] -period {400.0}
+#create_clock  -name {YY_TCK} [get_nets {YY_TCK}] -period {400.0}
+##create_clock  -name {YY_RXSBCLK0_0} [get_nets {YY_RXSBCLK0_0}] -period {400.0}
+##create_clock  -name {YY_RXSBCLK0_1} [get_nets {YY_RXSBCLK0_1}] -period {400.0}
+##create_clock  -name {YY_RXSBCLK0_2} [get_nets {YY_RXSBCLK0_2}] -period {400.0}
+##create_clock  -name {YY_RXSBCLK0_3} [get_nets {YY_RXSBCLK0_3}] -period {400.0}
+#create_clock  -name {uhfi_100mhz_clk} [get_ports {uhfi_100mhz_clk}] -period {10.0}
+#create_clock  -name {prim_clk} [get_ports {prim_clk}] -period {400.0}
+#create_clock  -name {ckcp_sb_clk} [get_ports {ckcp_sb_clk}] -period {400.0}
+#create_clock  -name {XX_HVM_TP_CLK} [get_nets {XX_HVM_TP_CLK}] -period {400.0}
+#create_clock  -name {YY_RXCKP_0_0} [get_nets {YY_RXCKP_0_0}] -period {400.0}
+#create_clock  -name {YY_RXCKP_0_1} [get_nets {YY_RXCKP_0_1}] -period {400.0}
+#create_clock  -name {YY_RXCKP_0_2} [get_nets {YY_RXCKP_0_2}] -period {400.0}
+#create_clock  -name {YY_RXCKP_0_3} [get_nets {YY_RXCKP_0_3}] -period {400.0}
+#create_clock  -name {YY_TXCKP_0_0} [get_nets {YY_TXCKP_0_0}] -period {400.0}
+#create_clock  -name {YY_TXCKP_0_1} [get_nets {YY_TXCKP_0_1}] -period {400.0}
+#create_clock  -name {YY_TXCKP_0_2} [get_nets {YY_TXCKP_0_2}] -period {400.0}
+#create_clock  -name {YY_TXCKP_0_3} [get_nets {YY_TXCKP_0_3}] -period {400.0}
+#create_clock  -name {YY_RXCKP_1_0} [get_nets {YY_RXCKP_1_0}] -period {400.0}
+#create_clock  -name {YY_RXCKP_1_1} [get_nets {YY_RXCKP_1_1}] -period {400.0}
+#create_clock  -name {YY_RXCKP_1_2} [get_nets {YY_RXCKP_1_2}] -period {400.0}
+#create_clock  -name {YY_RXCKP_1_3} [get_nets {YY_RXCKP_1_3}] -period {400.0}
+#create_clock  -name {YY_RXCKP_2_0} [get_nets {YY_RXCKP_2_0}] -period {400.0}
+#create_clock  -name {YY_RXCKP_2_1} [get_nets {YY_RXCKP_2_1}] -period {400.0}
+#create_clock  -name {YY_RXCKP_2_2} [get_nets {YY_RXCKP_2_2}] -period {400.0}
+#create_clock  -name {YY_RXCKP_2_3} [get_nets {YY_RXCKP_2_3}] -period {400.0}
+#create_clock  -name {YY_TXCKP_1_0} [get_nets {YY_TXCKP_1_0}] -period {400.0}
+#create_clock  -name {YY_TXCKP_1_1} [get_nets {YY_TXCKP_1_1}] -period {400.0}
+#create_clock  -name {YY_TXCKP_1_2} [get_nets {YY_TXCKP_1_2}] -period {400.0}
+#create_clock  -name {YY_TXCKP_1_3} [get_nets {YY_TXCKP_1_3}] -period {400.0}
+#create_clock  -name {YY_TXCKP_2_0} [get_nets {YY_TXCKP_2_0}] -period {400.0}
+#create_clock  -name {YY_TXCKP_2_1} [get_nets {YY_TXCKP_2_1}] -period {400.0}
+#create_clock  -name {YY_TXCKP_2_2} [get_nets {YY_TXCKP_2_2}] -period {400.0}
+#create_clock  -name {YY_TXCKP_2_3} [get_nets {YY_TXCKP_2_3}] -period {400.0}
+#create_clock  -name {YY_RXCKN_0_0} [get_nets {YY_RXCKN_0_0}] -period {400.0}
+#create_clock  -name {YY_RXCKN_0_1} [get_nets {YY_RXCKN_0_1}] -period {400.0}
+#create_clock  -name {YY_RXCKN_0_2} [get_nets {YY_RXCKN_0_2}] -period {400.0}
+#create_clock  -name {YY_RXCKN_0_3} [get_nets {YY_RXCKN_0_3}] -period {400.0}
+#create_clock  -name {YY_TXCKN_0_0} [get_nets {YY_TXCKN_0_0}] -period {400.0}
+#create_clock  -name {YY_TXCKN_0_1} [get_nets {YY_TXCKN_0_1}] -period {400.0}
+#create_clock  -name {YY_TXCKN_0_2} [get_nets {YY_TXCKN_0_2}] -period {400.0}
+#create_clock  -name {YY_TXCKN_0_3} [get_nets {YY_TXCKN_0_3}] -period {400.0}
+#create_clock  -name {YY_RXCKN_1_0} [get_nets {YY_RXCKN_1_0}] -period {400.0}
+#create_clock  -name {YY_RXCKN_1_1} [get_nets {YY_RXCKN_1_1}] -period {400.0}
+#create_clock  -name {YY_RXCKN_1_2} [get_nets {YY_RXCKN_1_2}] -period {400.0}
+#create_clock  -name {YY_RXCKN_1_3} [get_nets {YY_RXCKN_1_3}] -period {400.0}
+#create_clock  -name {YY_RXCKN_2_0} [get_nets {YY_RXCKN_2_0}] -period {400.0}
+#create_clock  -name {YY_RXCKN_2_1} [get_nets {YY_RXCKN_2_1}] -period {400.0}
+#create_clock  -name {YY_RXCKN_2_2} [get_nets {YY_RXCKN_2_2}] -period {400.0}
+#create_clock  -name {YY_RXCKN_2_3} [get_nets {YY_RXCKN_2_3}] -period {400.0}
+#create_clock  -name {YY_TXCKN_1_0} [get_nets {YY_TXCKN_1_0}] -period {400.0}
+#create_clock  -name {YY_TXCKN_1_1} [get_nets {YY_TXCKN_1_1}] -period {400.0}
+#create_clock  -name {YY_TXCKN_1_2} [get_nets {YY_TXCKN_1_2}] -period {400.0}
+#create_clock  -name {YY_TXCKN_1_3} [get_nets {YY_TXCKN_1_3}] -period {400.0}
+#create_clock  -name {YY_TXCKN_2_0} [get_nets {YY_TXCKN_2_0}] -period {400.0}
+#create_clock  -name {YY_TXCKN_2_1} [get_nets {YY_TXCKN_2_1}] -period {400.0}
+#create_clock  -name {YY_TXCKN_2_2} [get_nets {YY_TXCKN_2_2}] -period {400.0}
+#create_clock  -name {YY_TXCKN_2_3} [get_nets {YY_TXCKN_2_3}] -period {400.0}
+##
+##create_clock  -name {YY_RXSBCLK1_0} [get_ports {YY_RXSBCLK1_0}] -period {400.0}
+##create_clock  -name {YY_RXSBCLK1_1} [get_ports {YY_RXSBCLK1_1}] -period {400.0}
+##create_clock  -name {YY_RXSBCLK1_2} [get_ports {YY_RXSBCLK1_2}] -period {400.0}
+##create_clock  -name {YY_RXSBCLK1_3} [get_ports {YY_RXSBCLK1_3}] -period {400.0}
+##
+##create_clock  -name {YY_RXSBCLK2_0} [get_ports {YY_RXSBCLK2_0}] -period {400.0}
+##create_clock  -name {YY_RXSBCLK2_1} [get_ports {YY_RXSBCLK2_1}] -period {400.0}
+##create_clock  -name {YY_RXSBCLK2_2} [get_ports {YY_RXSBCLK2_2}] -period {400.0}
+##create_clock  -name {YY_RXSBCLK2_3} [get_ports {YY_RXSBCLK2_3}] -period {400.0}
+##create_clock  -name {d2d_sb_br_ucie_sb_clk} [get_ports {d2d_sb_br_ucie_sb_clk}] -period {400.0}
+##create_clock  -name {d2d_sb_br_gpsb_clk} [get_ports {d2d_sb_br_gpsb_clk}] -period {400.0}
+##create_clock  -name {xtal_clk} [get_ports {xtal_clk}] -period {400.0}
+##create_clock  -name {dvp_crystal_clk} [get_ports {dvp_crystal_clk}] -period {400.0}
+##create_clock  -name {dtf_clk} [get_ports {dtf_clk}] -period {400.0}
+##
+##
+###RESET CONNECTIONS
+#create_reset -name XX_HVM_S0_RESET_N [get_ports XX_HVM_S0_RESET_N] -clock [get_clocks uhfi_100mhz_clk] -active low
+#create_reset -name XX_HVM_S5_RESET_N [get_ports XX_HVM_S5_RESET_N] -clock [get_clocks uhfi_100mhz_clk] -active low
+#create_reset -name YY_S0_RESET_N [get_ports YY_S0_RESET_N] -clock [get_clocks uhfi_100mhz_clk] -active low
+#create_reset -name YY_S5_RESET_N [get_ports YY_S5_RESET_N] -clock [get_clocks uhfi_100mhz_clk] -active low
+#create_reset -name YY_S0_PWRGOOD [get_ports YY_S0_PWRGOOD] -clock [get_clocks uhfi_100mhz_clk] -active low
+#create_reset -name YY_S5_PWRGOOD [get_ports YY_S5_PWRGOOD] -clock [get_clocks uhfi_100mhz_clk] -active low
+#create_reset -name XX_HVM_S0_POWERGOOD [get_ports XX_HVM_S0_POWERGOOD] -clock [get_clocks uhfi_100mhz_clk] -active low
+#create_reset -name XX_HVM_S5_POWERGOOD [get_ports XX_HVM_S5_POWERGOOD] -clock [get_clocks uhfi_100mhz_clk] -active low
+#create_reset -name side_rst_n [get_ports side_rst_n] -clock [get_clocks uhfi_100mhz_clk] -active low
+#create_reset -name reset_n [get_ports reset_n] -clock [get_clocks uhfi_100mhz_clk] -active low
+#create_reset -name powergood_rst_n [get_ports powergood_rst_n] -clock [get_clocks uhfi_100mhz_clk] -active low
+#create_reset -name dtf_rst_n [get_ports dtf_rst_n] -clock [get_clocks uhfi_100mhz_clk] -active low
+##
+##
+##
+##
+#### BEGIN P2 PCH ADPS
+###
+###------------------------------------
+### UHFI assignments
+###------------------------------------
+###set FPGA_NAME {MB1_FB1_F2}
+###set PD_LOC_NAME {MB1_FB1_F2_fb1_tb1_eb1}
+###set PORT {1}
+###R3
+###set PORTID_NAME {PCIE}
+###set dsn_port_pcie_refclk_p {sys_clk_p}
+###set dsn_port_pcie_refclk_n {sys_clk_n}
+###set dsn_port_pcie_cpwron   {CPWRON}
+###set dsn_port_pcie_ncprsnt  {nCPRSNT}
+###set dsn_port_pcie_ncwake   {nCWAKE}
+###set dsn_port_pcie_ncperst  {nCPERST}
+##
+###R4
+###
+###
+#set PORTID_NAME {DEFAULT_EB_PDS_PCIe_Cable_R6}
+##
+###port 1 - FGT
+#
+#set FPGA_NAME_1 {MB2_FB1_F2}
+#set PD_LOC_NAME_1 {MB2_FB1_F2_mb2_fb1_tb1_eb1}
+#set PORT_1 {0}
+#set dsn_port_pcie_refclk_p {FPGA_REF_CLK_P_0}
+#set dsn_port_pcie_refclk_n {FPGA_REF_CLK_N_0}
+#set dsn_port_pcie_cpwron   {FPGA_CPWRON_0}
+#set dsn_port_pcie_ncprsnt  {FPGA_NCPRSNT_0}
+#set dsn_port_pcie_ncwake   {FPGA_NCWAKE_0}
+#set dsn_port_pcie_ncperst  {FPGA_NCPERST_0}
+##
+##
+##port 1 UHFI
+#set FPGA_NAME_2 {MB2_FB1_F1}
+#set PD_LOC_NAME_2 {MB2_FB1_F1_mb2_fb1_tb2_eb1}
+#set PORT_2 {0}
+#
+#set dsn_port_pcie_refclk_p_uhfi {FPGA_REF_CLK_P_0}
+#set dsn_port_pcie_refclk_n_uhfi {FPGA_REF_CLK_N_0}
+#set dsn_port_pcie_cpwron_uhfi   {FPGA_CPWRON_0}
+#set dsn_port_pcie_ncprsnt_uhfi  {FPGA_NCPRSNT_0}
+#set dsn_port_pcie_ncwake_uhfi   {FPGA_NCWAKE_0}
+#set dsn_port_pcie_ncperst_uhfi  {FPGA_NCPERST_0}
+#
+#create_reset -name RESET [get_ports sys_rst_n] -clock [get_clocks uhfi_100mhz_clk] -active low
+#set_assignment [get_ports led_red] -disconnect
+#
+#set_assignment [get_ports {pci_exp_txn[3]}] -disconnect
+#set_assignment [get_ports {pci_exp_txn[2]}] -disconnect
+#set_assignment [get_ports {pci_exp_txn[1]}] -disconnect
+#set_assignment [get_ports {pci_exp_txn[0]}] -disconnect
+#
+#set_assignment [get_ports {pci_exp_txn_uhfi[3]}] -disconnect
+#set_assignment [get_ports {pci_exp_txn_uhfi[2]}] -disconnect
+#set_assignment [get_ports {pci_exp_txn_uhfi[1]}] -disconnect
+#set_assignment [get_ports {pci_exp_txn_uhfi[0]}] -disconnect
+#
+##set_assignment [get_ports pci_exp_rxp\[0\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PER_P_${PORT_1}_0] -iostandard none
+##set_assignment [get_ports pci_exp_rxp\[1\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PER_P_${PORT_1}_1] -iostandard none
+##set_assignment [get_ports pci_exp_rxp\[2\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PER_P_${PORT_1}_2] -iostandard none
+##set_assignment [get_ports pci_exp_rxp\[3\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PER_P_${PORT_1}_3] -iostandard none
+##set_assignment [get_ports pci_exp_txp\[0\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PET_P_${PORT_1}_0] -iostandard none
+##set_assignment [get_ports pci_exp_txp\[1\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PET_P_${PORT_1}_1] -iostandard none
+##set_assignment [get_ports pci_exp_txp\[2\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PET_P_${PORT_1}_2] -iostandard none
+##set_assignment [get_ports pci_exp_txp\[3\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_FPGA_PET_P_${PORT_1}_3] -iostandard none
+#
+#
+##FGT _SM 
+#set_port_assignment [get_ports {pci_exp_txp[0]}]  -fpga [get_hw_fpgas MB2_FB1_F2] -user_managed
+#set_port_assignment [get_ports {pci_exp_txp[1]}]  -fpga [get_hw_fpgas MB2_FB1_F2] -user_managed
+#set_port_assignment [get_ports {pci_exp_txp[2]}]  -fpga [get_hw_fpgas MB2_FB1_F2] -user_managed
+#set_port_assignment [get_ports {pci_exp_txp[3]}]  -fpga [get_hw_fpgas MB2_FB1_F2] -user_managed
+#set_port_assignment [get_ports {pci_exp_rxp[0]}]  -fpga [get_hw_fpgas MB2_FB1_F2] -user_managed
+#set_port_assignment [get_ports {pci_exp_rxp[1]}]  -fpga [get_hw_fpgas MB2_FB1_F2] -user_managed
+#set_port_assignment [get_ports {pci_exp_rxp[2]}]  -fpga [get_hw_fpgas MB2_FB1_F2] -user_managed
+#set_port_assignment [get_ports {pci_exp_rxp[3]}]  -fpga [get_hw_fpgas MB2_FB1_F2] -user_managed
+#
+#
+#set_port_assignment [get_ports {pci_exp_rxp_uhfi[0]}] -fpga [get_hw_fpgas MB2_FB1_F1] -user_managed
+#set_port_assignment [get_ports {pci_exp_rxp_uhfi[1]}] -fpga [get_hw_fpgas MB2_FB1_F1] -user_managed
+#set_port_assignment [get_ports {pci_exp_rxp_uhfi[2]}] -fpga [get_hw_fpgas MB2_FB1_F1] -user_managed
+#set_port_assignment [get_ports {pci_exp_rxp_uhfi[3]}] -fpga [get_hw_fpgas MB2_FB1_F1] -user_managed
+#set_port_assignment [get_ports {pci_exp_txp_uhfi[0]}] -fpga [get_hw_fpgas MB2_FB1_F1] -user_managed
+#set_port_assignment [get_ports {pci_exp_txp_uhfi[1]}] -fpga [get_hw_fpgas MB2_FB1_F1] -user_managed
+#set_port_assignment [get_ports {pci_exp_txp_uhfi[2]}] -fpga [get_hw_fpgas MB2_FB1_F1] -user_managed
+#set_port_assignment [get_ports {pci_exp_txp_uhfi[3]}] -fpga [get_hw_fpgas MB2_FB1_F1] -user_managed
+#
+##set_assignment [get_ports pci_exp_rxp_uhfi\[0\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PER_P_${PORT_2}_0] -iostandard none
+##set_assignment [get_ports pci_exp_rxp_uhfi\[1\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PER_P_${PORT_2}_1] -iostandard none
+##set_assignment [get_ports pci_exp_rxp_uhfi\[2\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PER_P_${PORT_2}_2] -iostandard none
+##set_assignment [get_ports pci_exp_rxp_uhfi\[3\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PER_P_${PORT_2}_3] -iostandard none
+##set_assignment [get_ports pci_exp_txp_uhfi\[0\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PET_P_${PORT_2}_0] -iostandard none
+##set_assignment [get_ports pci_exp_txp_uhfi\[1\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PET_P_${PORT_2}_1] -iostandard none
+##set_assignment [get_ports pci_exp_txp_uhfi\[2\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PET_P_${PORT_2}_2] -iostandard none
+##set_assignment [get_ports pci_exp_txp_uhfi\[3\] ] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_FPGA_PET_P_${PORT_2}_3] -iostandard none
+#
+#set_assignment [get_ports pcie_ref_clk_p] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_refclk_p}] -iostandard none
+#set_assignment [get_ports pcie_ref_clk_n] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_refclk_n}] -iostandard none
+#
+#set_assignment [get_ports pcie_ref_clk_p_uhfi] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_refclk_p_uhfi}] -iostandard none
+#set_assignment [get_ports pcie_ref_clk_n_uhfi] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_refclk_n_uhfi}] -iostandard none
+#
+#
+#set_assignment [get_ports pwron_n] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_cpwron}] -iostandard LVCMOS18
+#set_assignment [get_ports prsnt_n] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_ncprsnt}] -iostandard LVCMOS18
+#set_assignment [get_ports wake_n] -track [get_hw_interface_tracks ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_ncwake}] -iostandard LVCMOS18
+#set_assignment [get_ports pdeb_pcie_perst_n] -track [get_hw_interface_tracks  ${PD_LOC_NAME_1}_${PORTID_NAME}_${dsn_port_pcie_ncperst}] -iostandard LVCMOS18
+#set_assignment [get_ports tosw_pcie_perst_n] -pin [get_hw_fpga_pins  ${FPGA_NAME_1}/U33]  -iostandard LVCMOS18
+#set_assignment [get_ports frsw_pcie_perst_n] -pin [get_hw_fpga_pins ${FPGA_NAME_1}/CN11] -iostandard LVTTL30
+#
+#set_assignment [get_ports pwron_n_uhfi] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_cpwron_uhfi}] -iostandard LVCMOS18
+#set_assignment [get_ports prsnt_n_uhfi] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_ncprsnt_uhfi}] -iostandard LVCMOS18
+#set_assignment [get_ports wake_n_uhfi] -track [get_hw_interface_tracks ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_ncwake_uhfi}] -iostandard LVCMOS18
+#set_assignment [get_ports pdeb_pcie_perst_n_uhfi] -track [get_hw_interface_tracks  ${PD_LOC_NAME_2}_${PORTID_NAME}_${dsn_port_pcie_ncperst_uhfi}] -iostandard LVCMOS18
+#set_assignment [get_ports tosw_pcie_perst_n_uhfi] -pin [get_hw_fpga_pins  ${FPGA_NAME_2}/BL38]  -iostandard LVCMOS18
+#set_assignment [get_ports frsw_pcie_perst_n_uhfi] -pin [get_hw_fpga_pins ${FPGA_NAME_2}/CN59] -iostandard LVTTL30

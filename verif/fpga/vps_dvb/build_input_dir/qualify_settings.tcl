@@ -1,0 +1,287 @@
+#set_control redmem_extract true
+
+#set_control set_blackbox_dontdup true
+#NO CLOCK path
+#set_no_clock_file $env(WORKAREA)/verif/fpga/vps_dvb/build_input_dir/no_clocks.txt 
+#add_tie_net_file $env(WORKAREA)/verif/fpga/vps_dvb/build_input_dir/tie.txt
+
+# User's generated clock list - copy and paste clock names to it, one per line
+set generated_clock_list {
+}
+foreach clk $generated_clock_list {
+    set_ggcc_control_net $clk
+}
+# User's keep generated clock list - copy and paste clock names to it, one per line
+set keep_generated_clock_list {
+}
+foreach clk $keep_generated_clock_list {
+    set_control ggcc_keep_generated_clock $clk
+}
+# User's control net list - copy and paste control names to it, one per line
+set control_net_list {
+}
+foreach net $control_net_list {
+    set_ggcc_control_net $net
+}
+# Final clean up
+set_ggcc_control_net {*}
+
+#jmoctezu (21-april)
+#set generated_clock_list {
+#pch.pargpcom3.pargpcom3_pwell_wrapper.spi_io1.spi_link_io_top1.clock_gen.visa_bus_coreclk.negclk
+#pch.pargpcom3.pargpcom3_pwell_wrapper.spi_io1.spi_link_io_top1.clock_gen.visa_bus_coreclk.posclk
+#pch.parnpk.parnpk_pwell_wrapper.northpeak1.i_npk_aon_gated_wrapper.EN_TSCU.i_gth_tscu.EN_XCLK_DIVIDER.i_npk_clk_divider_prescc_clk.clkout
+#}
+#foreach clk $generated_clock_list {
+#    set_control ggcc_generated_clock $clk
+#}
+
+
+#set control_net_list {
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_0.fpga_rom.bd_high_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_0.fpga_rom.bd_low_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_0.fpga_rom_parity.bd_0_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_0.fpga_rom_parity.bd_1_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_0.fpga_rom_parity.bd_2_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_0.fpga_rom_parity.bd_3_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_1.fpga_rom.bd_high_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_1.fpga_rom.bd_low_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_1.fpga_rom_parity.bd_0_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_1.fpga_rom_parity.bd_1_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_1.fpga_rom_parity.bd_2_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_1.fpga_rom_parity.bd_3_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_2.fpga_rom.bd_high_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_2.fpga_rom.bd_low_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_2.fpga_rom_parity.bd_0_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_2.fpga_rom_parity.bd_1_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_2.fpga_rom_parity.bd_2_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_2.fpga_rom_parity.bd_3_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_3.fpga_rom.bd_high_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_3.fpga_rom.bd_low_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_3.fpga_rom_parity.bd_0_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_3.fpga_rom_parity.bd_1_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_3.fpga_rom_parity.bd_2_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_3.fpga_rom_parity.bd_3_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_4.fpga_rom.bd_high_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_4.fpga_rom.bd_low_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_4.fpga_rom_parity.bd_0_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_4.fpga_rom_parity.bd_1_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_4.fpga_rom_parity.bd_2_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_4.fpga_rom_parity.bd_3_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_5.fpga_rom.bd_high_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_5.fpga_rom.bd_low_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_5.fpga_rom_parity.bd_0_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_5.fpga_rom_parity.bd_1_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_5.fpga_rom_parity.bd_2_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_5.fpga_rom_parity.bd_3_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_6.fpga_rom.bd_high_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_6.fpga_rom.bd_low_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_6.fpga_rom_parity.bd_0_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_6.fpga_rom_parity.bd_1_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_6.fpga_rom_parity.bd_2_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_6.fpga_rom_parity.bd_3_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_7.fpga_rom.bd_high_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_7.fpga_rom.bd_low_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_7.fpga_rom_parity.bd_0_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_7.fpga_rom_parity.bd_1_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_7.fpga_rom_parity.bd_2_mem_rd_en_q
+#pch.parcfmia.parcfmia_pwell_wrapper.csmea_cfmia.moa_cse_cfmia.cse_cfmia_bist_wrappers.cfmia_bist_wrapper_fwrom.rom_7.fpga_rom_parity.bd_3_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[0].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[0].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[10].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[10].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[11].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[11].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[12].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[12].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[13].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[13].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[14].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[14].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[15].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[15].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[1].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[1].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[2].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[2].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[3].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[3].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[4].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[4].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[5].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[5].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[6].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[6].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[7].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[7].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[8].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[8].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[9].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_data[9].i_rf_128x32m2_dfx_wrapper_data_sprw_soft.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_sai_sav_res[0].i_rf_128x32m2_dfx_wrapper_sai_sav_res.ram_fd128x32_bd64x64_inst.bd_high_mem_rd_en_q
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_ram_wrapper.rf_sai_sav_res[0].i_rf_128x32m2_dfx_wrapper_sai_sav_res.ram_fd128x32_bd64x64_inst.bd_low_mem_rd_en_q
+#pch.parleg.parleg_pwell_wrapper.spi_pw1.spi_pgd_top1.spi_core1.SPI_HW_DECOMPRESSION1.spi_hw_decompression1.xph_rombist_wrapper1.dicrom_wrapper_8kb.fpga_rom.bd_high_mem_rd_en_q
+#pch.parleg.parleg_pwell_wrapper.spi_pw1.spi_pgd_top1.spi_core1.SPI_HW_DECOMPRESSION1.spi_hw_decompression1.xph_rombist_wrapper1.dicrom_wrapper_8kb.fpga_rom.bd_low_mem_rd_en_q
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parlink1.parlink_vug1.pxkp2unit_wrapper1.pxkp2unit1.pxkp_pxkgp_spc1_scr_pciedbg_lr_fosc
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parlink1.parlink_vug1.pxkp2unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[0]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parlink1.parlink_vug1.pxkp2unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[1]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_partlrx1.partlrx_vug1.pxkp3unit_wrapper1.pxkp2unit1.pxkp_pxkgp_spc1_scr_pciedbg_lr_fosc
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_partlrx1.partlrx_vug1.pxkp3unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[0]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_partlrx1.partlrx_vug1.pxkp3unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[1]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parcore1.parcore_vug1.pxkunit_wrapper1.pxkunit1.pxcore_pxlink_spc1_scr_pciedbg_lr_fosc
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parcore1.parcore_vug1.pxkunit_wrapper1.pxkunit1.spc1_scr_pciedbg_nal_fosc[0]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parcore1.parcore_vug1.pxkunit_wrapper1.pxkunit1.spc1_scr_pciedbg_nal_fosc[1]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parcore1.parcore_vug1.pxpgunit_wrapper1.pxpgunit1.pxppg_cpgseq1.accclose_isolatch
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parcore1.parcore_vug1.pxpgunit_wrapper1.pxpgunit1.pxppg_cpgseq1.pgcbunit1.pgcbfsm_isol_latchen
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parcore1.parcore_vug1.pxpgunit_wrapper1.pxpgunit1.pxppg_cpgseq1.sx_isol_latch_flag
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parlogphy1.parlogphy_vug1.pxkp5unit_wrapper1.pxkp2unit1.pxkp_pxkgp_spc1_scr_pciedbg_lr_fosc
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parlogphy1.parlogphy_vug1.pxkp5unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[0]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parlogphy1.parlogphy_vug1.pxkp5unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[1]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_partltx1.partltx_vug1.pxkp4unit_wrapper1.pxkp2unit1.pxkp_pxkgp_spc1_scr_pciedbg_lr_fosc
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_partltx1.partltx_vug1.pxkp4unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[0]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_partltx1.partltx_vug1.pxkp4unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[1]
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_chassis_fuse_ctrl_south_complec_drng.drng_drbgs_inst.drng_rng_validation_inst.stop
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_chassis_fuse_ctrl_south_complec_drng.drng_drbgs_inst.fips_out
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_chassis_fuse_ctrl_south_complec_drng.gen_tgphf_es.i_drng_es_hip.i_out_blk.iclkgen.i3bgdiv_1.s[0]
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_chassis_fuse_ctrl_south_complec_drng.gen_tgphf_es.i_drng_es_hip.i_out_blk.iclkgen.i3bgdiv_1.s[1]
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_chassis_fuse_ctrl_south_complec_drng.gen_tgphf_es.i_drng_es_hip.i_out_blk.iclkgen.i3bgdiv_1.s[2]
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_chassis_fuse_ctrl_south_complec_drng.gen_tgphf_es.i_drng_es_hip.i_out_blk.iclkgen.i3bgdiv_2.s[0]
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_chassis_fuse_ctrl_south_complec_drng.gen_tgphf_es.i_drng_es_hip.i_out_blk.iclkgen.i3bgdiv_2.s[1]
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_chassis_fuse_ctrl_south_complec_drng.gen_tgphf_es.i_drng_es_hip.i_out_blk.iclkgen.i3bgdiv_2.s[2]
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_chassis_fuse_ctrl_south_complec_drng.i_drng_wpr.i_drng_wpr_cregs.esconfin2[25]
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_chassis_fuse_ctrl_south_complec_drng.i_drng_wpr.i_drng_wpr_cregs.esconfin2[30]
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_clock_power_cntrl.fscan_mode_hold_r
+#pch.parfuse.parfuse_pwell_wrapper.fuse_top1.i_fuse_clock_power_cntrl.i_fuse_clkmux_cntrl.i_fuse_clksel_fsm.tck_sel
+#pch.pargpcom4.pargpcom4_pwell_wrapper.gpcom4unit_wrapper1.i_gpcomunit.i_gpiocomreg.i_gpiofamunit.i_gpiopadreg.gpiogenericpadreg_inst[22].i_gpiogenericpadreg.padmode_value[0]
+#pch.pargpcom4.pargpcom4_pwell_wrapper.gpcom4unit_wrapper1.i_gpcomunit.i_gpiocomreg.i_gpiofamunit.i_gpiopadreg.gpiogenericpadreg_inst[22].i_gpiogenericpadreg.padmode_value[1]
+#pch.parleg.parleg_pwell_wrapper.spi_pw1.spi_pgd_top1.iosf_top1.spi_iosfsb_i.iosfsb_fspull_i.strap_array[9][7]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbcorepcr1.crmem3400[2]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbcorepcr1.crmem3400[3]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbcorepcr1.crmem3400[4]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbendpoint1.rtcsbendpoint1.gen_treg.sbetrgtreg.nstate.opcode[0]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbendpoint1.rtcsbendpoint1.gen_treg.sbetrgtreg.nstate.be[0]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbendpoint1.rtcsbendpoint1.gen_treg.sbetrgtreg.nstate.be[1]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbendpoint1.rtcsbendpoint1.gen_treg.sbetrgtreg.nstate.be[2]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbendpoint1.rtcsbendpoint1.gen_treg.sbetrgtreg.nstate.be[3]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbendpoint1.rtcsbendpoint1.gen_treg.sbetrgtreg.pstate.opcode[0]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbendpoint1.rtcsbendpoint1.gen_treg.sbetrgtreg.pstate.be[0]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbendpoint1.rtcsbendpoint1.gen_treg.sbetrgtreg.pstate.be[1]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbendpoint1.rtcsbendpoint1.gen_treg.sbetrgtreg.pstate.be[2]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbendpoint1.rtcsbendpoint1.gen_treg.sbetrgtreg.pstate.be[3]
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbendpoint1.rtcsbendpoint1.gen_treg.sbetrgtreg.treg_np
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbtregif1.fsm_puxrrdy_b
+#pch.parleg.parleg_pwell_wrapper.xr_core1.xrsbunit_wrapper1.xrsbunit1.xrsbtregif1.pu1_puxrsel
+#pch.parleg_espi_determ_mode
+#pch.parleg_spi_determ_mode
+#pch.parleg_tspi_determ_mode_1
+#pch.parleg_tspi_divider_value_1[0]
+#pch.parleg_tspi_divider_value_1[1]
+#pch.parleg_tspi_divider_value_1[2]
+#pch.parlpss.parlpss_pwell_wrapper.mst_dfx_vnn1.i_tam.i_sip_iosf_tam_gated_wrapper.i_sip_iosf_tam_wrapper.cri_sel_b_int
+#pch.parnpk.parnpk_pwell_wrapper.northpeak1.i_npk_aon_gated_wrapper.EN_TSCU.i_gth_tscu.npk_xclkpsd_en_sync
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.tencs
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xhistages[1]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xhistages[2]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xhistages[3]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xhistages[4]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xlowstages[0]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xlowstages[1]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xlowstages[2]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xlowstages[3]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xmidstages[0]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xmidstages[1]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xmidstages[2]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xmidstages[3]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrdivider1.xmidstages[4]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg0[0]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg0[1]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg0[2]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg0[3]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg0[4]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg0[5]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg0[6]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg2[0]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg2[1]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg2[2]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg2[3]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg2[4]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg2[5]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg2[6]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg4[0]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg4[1]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg4[2]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg4[3]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg4[4]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg4[5]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg4[6]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg4[7]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg7[0]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg7[1]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg7[2]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg7[3]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg7[4]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.tenreg7[5]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg1[0]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg1[1]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg1[2]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg1[3]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg1[4]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg1[5]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg1[6]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg1[7]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg3[0]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg3[1]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg3[2]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg3[3]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg3[4]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg3[5]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg3[6]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg3[7]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg5[0]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg5[1]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg5[2]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg5[3]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg5[4]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg5[5]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg5[6]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrtenram1.xtenreg5[7]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.ramstater.tacread
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.ramstater.tacwrite
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.upper.carryon
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.upstater.pres_state[0]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.upstater.pres_state[10]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.upstater.pres_state[1]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.upstater.pres_state[2]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.upstater.pres_state[3]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.upstater.pres_state[4]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.upstater.pres_state[5]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.upstater.pres_state[6]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.upstater.pres_state[7]
+#pch.parrtc.parrtc_rtcwell_wrapper.xr_rtc1.xrrtcunit_wrapper1.xrupctrl1.upstater.pres_state[9]
+#uhfi_rtl_top.uhfi_pcie_ctrl.switch_box_u0.u0_pio_top.u0_controller.ctrl_ps[1]
+#uhfi_rtl_top.uhfi_pcie_ctrl.switch_box_u0.u0_pio_top.u0_controller.ctrl_ps[2]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parlink1.parlink_vug1.pxkp2unit_wrapper1.pxkp2unit1.pxkp_pxkgp_spc1_scr_pciedbg_lr_fosc
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parlink1.parlink_vug1.pxkp2unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[0]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_parlink1.parlink_vug1.pxkp2unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[1]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_partlrx1.partlrx_vug1.pxkp3unit_wrapper1.pxkp2unit1.pxkp_pxkgp_spc1_scr_pciedbg_lr_fosc
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_partlrx1.partlrx_vug1.pxkp3unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[0]
+#pch.pardmi.pardmi_pwell_wrapper.sippdmi_partlrx1.partlrx_vug1.pxkp3unit_wrapper1.pxkp2unit1.spc1_scr_pciedbg_nal_fosc_int[1]
+#}
+#foreach net $control_net_list {
+#    set_control ggcc_control_net $net
+#}
+#
+
+
+# set_control ggcc_generated_clock {soc.drng_wrap.drng_top.i_drng_drbgs.drng_rcms_inst.gen_divided_clk.i_drng_clkdiv.clkdiv}
+# set_control ggcc_generated_clock {soc.drng_wrap.drng_top.i_drng_drbgs.drng_rcms_inst.rcm_num[0].drng_rcm_inst.gen_divided_clk.i_es2_hip_clkdiv.clkdiv}
+# set_control ggcc_generated_clock {soc.drng_wrap.drng_top.i_gen_es_hip[0].i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.ies1.i_out_blk.iclkgen.idiv4_1.outclk}
+# set_control ggcc_generated_clock {soc.drng_wrap.drng_top.i_gen_es_hip[0].i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.ies1.i_out_blk.iclkgen.idiv4_2.outclk}
+# set_control ggcc_generated_clock {soc.drng_wrap.drng_top.i_gen_es_hip[0].i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.ies1.i_out_blk.iclkgen.idiv8.outclkd8}
+# set_control ggcc_generated_clock {soc.fuse_top_wrap.fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip[0].i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.ies1.i_out_blk.iclkgen.idiv4_1.outclk}
+# set_control ggcc_generated_clock {soc.fuse_top_wrap.fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip[0].i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.ies1.i_out_blk.iclkgen.idiv4_2.outclk}
+# set_control ggcc_generated_clock {soc.fuse_top_wrap.fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip[0].i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.ies1.i_out_blk.iclkgen.idiv8.outclkd8}
+
+
+
+#set_control ggcc_control_net {*}

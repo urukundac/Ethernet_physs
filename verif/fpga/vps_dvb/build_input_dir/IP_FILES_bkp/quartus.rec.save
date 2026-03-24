@@ -1,0 +1,6 @@
+# Start logging TCL commands
+# Mon Apr 7 10:57:48 2025
+project_open "/nfs/site/disks/xne_tip_0003/urukunda/quartus_20_3_grr/s10_xcvr_phy_reset_controller/ip_gen.qpf"
+project_close
+# End of logging TCL commands
+# Mon Apr 7 10:59:43 2025

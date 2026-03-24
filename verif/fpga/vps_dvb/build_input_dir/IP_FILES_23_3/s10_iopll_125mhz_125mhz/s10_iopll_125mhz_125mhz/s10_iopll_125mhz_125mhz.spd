@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_iopll_1931/sim/s10_iopll_125mhz_125mhz_altera_iopll_1931_35qpuni.vo"
+   type="VERILOG"
+   library="altera_iopll_1931" />
+ <file
+   path="altera_iopll_1931/sim/stratix10_altera_iopll.v"
+   type="VERILOG"
+   library="altera_iopll_1931" />
+ <file
+   path="sim/s10_iopll_125mhz_125mhz.v"
+   type="VERILOG"
+   library="s10_iopll_125mhz_125mhz"
+   hasInlineConfiguration="true" />
+ <topLevel name="s10_iopll_125mhz_125mhz.s10_iopll_125mhz_125mhz" />
+ <deviceFamily name="stratix10" />
+ <device name="1SG280LU3F50E1VG" />
+</simPackage>

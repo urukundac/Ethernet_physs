@@ -1,0 +1,5 @@
+module::cpm_genram_bees_knees_v_rtl_lib.cpm_genram_bees_knees
+begin
+lat_data
+cycm 1
+end

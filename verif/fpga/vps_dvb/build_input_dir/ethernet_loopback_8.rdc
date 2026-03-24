@@ -1,0 +1,229 @@
+#set fpga1 MB5_FA1_F2
+
+# Create clocks 
+create_clock -name refclk125_p1_p  -period 8 [get_ports clk_125mhz]    ;# 125 MHz reference for PCS
+set_property preserve_period TRUE [get_clocks refclk125_p1_p ]
+
+
+create_clock -name {physs_func_clk} [get_ports {physs_func_clk}] -period {1000.0}
+create_clock -name {soc_per_clk} [get_ports {soc_per_clk}] -period {1000.0}
+#50KhZ
+#create_clock -name {i2c_apb_clk} [get_ports {i2c_apb_clk}] -period {20000.0}
+#2.7Mhz
+#create_clock -name {i2c_apb_clk} [get_ports {i2c_apb_clk}] -period {370}
+create_clock -name {reference_clk} [get_ports {reference_clk}] -period {8.0}
+set_property preserve_period TRUE [get_clocks reference_clk ]
+create_clock -name {rclk_diff_p} [get_ports {rclk_diff_p}] -period {1000.0}
+create_clock -name {rclk_diff_n} [get_ports {rclk_diff_n}] -period {1000.0}
+create_clock -name {physs_intf0_clk} [get_ports {physs_intf0_clk}] -period {1000.0}
+create_clock -name {physs_funcx2_clk} [get_ports {physs_funcx2_clk}] -period {1000.0}
+create_clock -name {timeref_clk} [get_ports {timeref_clk}] -period {1000.0}
+create_reset -name i_reset [get_ports i_reset] -clock [get_clocks reference_clk] -active high
+#create_reset -name i_reset [get_ports i_reset] -clock [get_clocks refclk125_p1_p] -active high
+#create_reset -name i_reset [get_ports i_reset] -clock [get_clocks outclk_0] -active high
+create_reset -name physs_func_rst_raw_n [get_ports physs_func_rst_raw_n] -clock [get_clocks physs_func_clk] -active low
+#create_reset -name physs_func_rst_raw_n [get_ports physs_func_rst_raw_n] -clock [get_clocks refclk125_p1_p] -active low
+
+# Connections Port 1
+
+#create_reset -name i_reset [get_ports i_reset] -clock [get_clocks reference_clk] -active high
+
+set fpga1 MB5_FA1_F2
+create_clock -name refclk125_p1_p_0  -period 8 [get_ports clk_125mhz\[0\] ]    ;# 125 MHz reference for PCS
+set_property preserve_period TRUE [get_clocks refclk125_p1_p_0 ]
+
+create_clock -name i2c_apb_clk_0  -period 370 [get_ports i2c_apb_clk\[0\]]
+create_clock -name {reference_clk} [get_ports {reference_clk}] -period {8.0}
+create_reset -name i_reset [get_ports i_reset] -clock [get_clocks reference_clk] -active high
+set_property preserve_period TRUE [get_clocks reference_clk ]
+set_port_assignment [get_ports clk_125mhz\[0\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_1]
+set_port_assignment [get_ports rx_serial_data\[0\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_1]
+set_port_assignment [get_ports tx_serial_data\[0\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_1]
+
+
+set_port_assignment [get_ports I2C_SCL\[0\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SCL]
+set_port_assignment [get_ports I2C_SDA\[0\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SDA]
+set_port_assignment [get_ports I2C_MODSELL\[0\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODSELL]
+set_port_assignment [get_ports I2C_MODPRSL\[0\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODPRSL]
+set_port_assignment [get_ports I2C_INTL\[0\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_INTL]
+set_port_assignment [get_ports I2C_RESETL\[0\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_RESETL]
+set_port_assignment [get_ports I2C_LPMODE\[0\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_LPMODE]
+
+#2
+set fpga2 MB5_FB1_F2
+create_clock -name refclk125_p1_p_1  -period 8 [get_ports clk_125mhz\[1\] ]    ;# 125 MHz reference for PCS
+set_property preserve_period TRUE [get_clocks refclk125_p1_p_1 ]
+create_clock -name i2c_apb_clk_1  -period 370 [get_ports i2c_apb_clk\[1\]]
+set_port_assignment [get_ports clk_125mhz\[1\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga2/mb5_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_1]
+set_port_assignment [get_ports rx_serial_data\[1\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga2/mb5_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_1]
+set_port_assignment [get_ports tx_serial_data\[1\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga2/mb5_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_1]
+
+set_port_assignment [get_ports I2C_SCL\[1\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga2/mb5_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SCL]
+set_port_assignment [get_ports I2C_SDA\[1\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga2/mb5_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SDA]
+set_port_assignment [get_ports I2C_MODSELL\[1\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga2/mb5_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODSELL]
+set_port_assignment [get_ports I2C_MODPRSL\[1\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga2/mb5_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODPRSL]
+set_port_assignment [get_ports I2C_INTL\[1\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga2/mb5_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_INTL]
+set_port_assignment [get_ports I2C_RESETL\[1\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga2/mb5_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_RESETL]
+set_port_assignment [get_ports I2C_LPMODE\[1\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga2/mb5_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_LPMODE]
+
+#3
+set fpga3 MB5_FA2_F2
+create_clock -name refclk125_p1_p_2  -period 8 [get_ports clk_125mhz\[2\] ]    ;# 125 MHz reference for PCS
+set_property preserve_period TRUE [get_clocks refclk125_p1_p_2 ]
+create_clock -name i2c_apb_clk_2  -period 370 [get_ports i2c_apb_clk\[2\]]
+set_port_assignment [get_ports clk_125mhz\[2\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga3/mb5_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_1]
+set_port_assignment [get_ports rx_serial_data\[2\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga3/mb5_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_1]
+set_port_assignment [get_ports tx_serial_data\[2\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga3/mb5_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_1]
+
+set_port_assignment [get_ports I2C_SCL\[2\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga3/mb5_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SCL]
+set_port_assignment [get_ports I2C_SDA\[2\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga3/mb5_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SDA]
+set_port_assignment [get_ports I2C_MODSELL\[2\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga3/mb5_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODSELL]
+set_port_assignment [get_ports I2C_MODPRSL\[2\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga3/mb5_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODPRSL]
+set_port_assignment [get_ports I2C_INTL\[2\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga3/mb5_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_INTL]
+set_port_assignment [get_ports I2C_RESETL\[2\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga3/mb5_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_RESETL]
+set_port_assignment [get_ports I2C_LPMODE\[2\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga3/mb5_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_LPMODE]
+
+#4
+set fpga4 MB5_FB2_F2
+create_clock -name refclk125_p1_p_3  -period 8 [get_ports clk_125mhz\[3\] ]    ;# 125 MHz reference for PCS
+set_property preserve_period TRUE [get_clocks refclk125_p1_p_3 ]
+create_clock -name i2c_apb_clk_3  -period 370 [get_ports i2c_apb_clk\[3\]]
+set_port_assignment [get_ports clk_125mhz\[3\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga4/mb5_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_1]
+set_port_assignment [get_ports rx_serial_data\[3\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga4/mb5_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_1]
+set_port_assignment [get_ports tx_serial_data\[3\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga4/mb5_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_1]
+set_port_assignment [get_ports I2C_SCL\[3\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga4/mb5_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SCL]
+set_port_assignment [get_ports I2C_SDA\[3\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga4/mb5_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SDA]
+set_port_assignment [get_ports I2C_MODSELL\[3\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga4/mb5_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODSELL]
+set_port_assignment [get_ports I2C_MODPRSL\[3\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga4/mb5_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODPRSL]
+set_port_assignment [get_ports I2C_INTL\[3\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga4/mb5_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_INTL]
+set_port_assignment [get_ports I2C_RESETL\[3\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga4/mb5_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_RESETL]
+set_port_assignment [get_ports I2C_LPMODE\[3\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga4/mb5_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_LPMODE]
+
+#5
+set fpga5 MB6_FA1_F2
+create_clock -name refclk125_p1_p_4  -period 8 [get_ports clk_125mhz\[4\] ]    ;# 125 MHz reference for PCS
+set_property preserve_period TRUE [get_clocks refclk125_p1_p_4 ]
+create_clock -name i2c_apb_clk_4  -period 370 [get_ports i2c_apb_clk\[4\]]
+set_port_assignment [get_ports clk_125mhz\[4\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga5/mb6_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_1]
+set_port_assignment [get_ports rx_serial_data\[4\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga5/mb6_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_1]
+set_port_assignment [get_ports tx_serial_data\[4\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga5/mb6_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_1]
+
+set_port_assignment [get_ports I2C_SCL\[4\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga5/mb6_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SCL]
+set_port_assignment [get_ports I2C_SDA\[4\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga5/mb6_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SDA]
+set_port_assignment [get_ports I2C_MODSELL\[4\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga5/mb6_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODSELL]
+set_port_assignment [get_ports I2C_MODPRSL\[4\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga5/mb6_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODPRSL]
+set_port_assignment [get_ports I2C_INTL\[4\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga5/mb6_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_INTL]
+set_port_assignment [get_ports I2C_RESETL\[4\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga5/mb6_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_RESETL]
+set_port_assignment [get_ports I2C_LPMODE\[4\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga5/mb6_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_LPMODE]
+
+#6
+set fpga6 MB6_FB1_F2
+create_clock -name refclk125_p1_p_5  -period 8 [get_ports clk_125mhz\[5\] ]    ;# 125 MHz reference for PCS
+set_property preserve_period TRUE [get_clocks refclk125_p1_p_5 ]
+create_clock -name i2c_apb_clk_5  -period 370 [get_ports i2c_apb_clk\[5\]]
+set_port_assignment [get_ports clk_125mhz\[5\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga6/mb6_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_1]
+set_port_assignment [get_ports rx_serial_data\[5\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga6/mb6_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_1]
+set_port_assignment [get_ports tx_serial_data\[5\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga6/mb6_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_1]
+
+set_port_assignment [get_ports I2C_SCL\[5\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga6/mb6_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SCL]
+set_port_assignment [get_ports I2C_SDA\[5\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga6/mb6_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SDA]
+set_port_assignment [get_ports I2C_MODSELL\[5\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga6/mb6_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODSELL]
+set_port_assignment [get_ports I2C_MODPRSL\[5\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga6/mb6_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODPRSL]
+set_port_assignment [get_ports I2C_INTL\[5\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga6/mb6_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_INTL]
+set_port_assignment [get_ports I2C_RESETL\[5\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga6/mb6_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_RESETL]
+set_port_assignment [get_ports I2C_LPMODE\[5\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga6/mb6_fb1_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_LPMODE]
+
+
+#7
+set fpga7 MB6_FA2_F2
+create_clock -name refclk125_p1_p_6  -period 8 [get_ports clk_125mhz\[6\] ]    ;# 125 MHz reference for PCS
+set_property preserve_period TRUE [get_clocks refclk125_p1_p_6 ]
+create_clock -name i2c_apb_clk_6  -period 370 [get_ports i2c_apb_clk\[6\]]
+set_port_assignment [get_ports clk_125mhz\[6\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga7/mb6_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_1]
+set_port_assignment [get_ports rx_serial_data\[6\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga7/mb6_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_1]
+set_port_assignment [get_ports tx_serial_data\[6\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga7/mb6_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_1]
+
+set_port_assignment [get_ports I2C_SCL\[6\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga7/mb6_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SCL]
+set_port_assignment [get_ports I2C_SDA\[6\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga7/mb6_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SDA]
+set_port_assignment [get_ports I2C_MODSELL\[6\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga7/mb6_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODSELL]
+set_port_assignment [get_ports I2C_MODPRSL\[6\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga7/mb6_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODPRSL]
+set_port_assignment [get_ports I2C_INTL\[6\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga7/mb6_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_INTL]
+set_port_assignment [get_ports I2C_RESETL\[6\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga7/mb6_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_RESETL]
+set_port_assignment [get_ports I2C_LPMODE\[6\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga7/mb6_fa2_tb1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_LPMODE]
+
+#8
+set fpga8 MB6_FB2_F2
+create_clock -name refclk125_p1_p_7  -period 8 [get_ports clk_125mhz\[7\] ]    ;# 125 MHz reference for PCS
+set_property preserve_period TRUE [get_clocks refclk125_p1_p_7 ]
+create_clock -name i2c_apb_clk_7  -period 370 [get_ports i2c_apb_clk\[7\]]
+set_port_assignment [get_ports clk_125mhz\[7\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga8/mb6_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_1]
+set_port_assignment [get_ports rx_serial_data\[7\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga8/mb6_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_1]
+set_port_assignment [get_ports tx_serial_data\[7\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga8/mb6_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_1]
+
+set_port_assignment [get_ports I2C_SCL\[7\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga8/mb6_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SCL]
+set_port_assignment [get_ports I2C_SDA\[7\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga8/mb6_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SDA]
+set_port_assignment [get_ports I2C_MODSELL\[7\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga8/mb6_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODSELL]
+set_port_assignment [get_ports I2C_MODPRSL\[7\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga8/mb6_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODPRSL]
+set_port_assignment [get_ports I2C_INTL\[7\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga8/mb6_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_INTL]
+set_port_assignment [get_ports I2C_RESETL\[7\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga8/mb6_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_RESETL]
+set_port_assignment [get_ports I2C_LPMODE\[7\] ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga8/mb6_fb2_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_LPMODE]
+
+set_clock_groups -asynchronous -group [list refclk125_p1_p] -group [list physs_func_clk]
+set_clock_groups -asynchronous -group [list refclk125_p1_p] -group [list soc_per_clk]
+set_clock_groups -asynchronous -group [list refclk125_p1_p] -group [list timeref_clk]
+set_clock_groups -asynchronous -group [list refclk125_p1_p] -group [list physs_funcx2_clk]
+set_clock_groups -asynchronous -group [list refclk125_p1_p] -group [list physs_intf0_clk]
+
+#set_clock_groups -asynchronous -group [list outclk_0] -group [list physs_func_clk]
+#set_clock_groups -asynchronous -group [list outclk_0] -group [list soc_per_clk]
+#set_clock_groups -asynchronous -group [list outclk_0] -group [list timeref_clk]
+#set_clock_groups -asynchronous -group [list outclk_0] -group [list physs_funcx2_clk]
+#set_clock_groups -asynchronous -group [list outclk_0] -group [list physs_intf0_clk]
+#
+
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_INTL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_LPMODE 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_MODPRSL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_MODSELL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_RESETL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_SCL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_SDA 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_INTL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_LPMODE 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODPRSL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODSELL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_RESETL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SCL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SDA 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_N_1
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_N_2
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_N_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_N_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_P_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_P_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_P_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_P_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_N_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_N_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_N_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_N_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_P_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_P_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_P_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_P_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_N_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_N_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_N_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_N_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_N_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_N_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_N_3
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_N_4
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_1
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_3 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_4 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_N_0 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_N_1 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_N_2 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_0 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_1 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_2
+#

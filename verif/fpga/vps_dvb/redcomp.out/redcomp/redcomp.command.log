@@ -1,0 +1,6 @@
+
+cat /etc/*release* |& tee -a /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/redcomp.out/redcomp/redcomp.args
+uname -a |& tee -a /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/redcomp.out/redcomp/redcomp.args
+ldd --version |& tee -a /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/redcomp.out/redcomp/redcomp.args
+env |& tee -a /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/redcomp.out/redcomp/redcomp.args
+/nfs/site/disks/crt_tools_062/mentor/VPS/2023.06/partitioner/bin/redreport /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/redcomp.out -sort_spnr_info fpga

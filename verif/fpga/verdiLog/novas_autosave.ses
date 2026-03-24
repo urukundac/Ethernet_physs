@@ -1,0 +1,93 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_W-2024.09
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[OneSearch]
+isExisted = TRUE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[fusa]
+fdb_server = 
+fdb_proj = 
+fdb_campaign = 
+fdb_tool = 
+[hb]
+postSimFile = /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/i2c_synpsys/verif/emu/inter.fsdb
+syncTime = 350
+viewport = 57 159 1738 888 0 0 203 1736
+activeNode = "physs_eth_tb.physs_eth.A00_i2c.U_DW_apb_i2c_regfile"
+activeFile = "/nfs/site/disks/cnic.mod.001/release/nac_ss/nac_ss-cnic-a0-master-25ww21c/subip/sip/imc_i2c/src/Imc_DW_apb_i2c_regfile.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 1233
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+safetyAwareAnnot = True
+amsAnnot = True
+DnDtraceCrossHierOnly = True
+leadingZero = False
+signalPane = True
+SourceVerticalScrollLines = 5
+Scope1 = "physs_eth_tb"
+rangeSelection = 1236 1236 40 41 2 1
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-dbdir" "/nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/i2c_synpsys/output/physs_eth_tb/emu/haps_vcs_emuvcs/synpsys_1/MMG_PSS_SOC/vcs/simv.daidir" 
+invokeDir = /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga
+[hb.sourceTab.1]
+File = /nfs/site/disks/ipx_prd_cnic_nss_001/picache/nss_cnic/imc_i2c/25ww1/1/nss_cnic.imc_i2c/src/Imc_DW_apb_i2c_regfile.v
+Line = 1234
+[nMemoryManager]
+WaveformFile = /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/i2c_synpsys/verif/emu/inter.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 25 1738 463 224 248
+primaryWindow = TRUE
+SessionFile = /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+waveformToolTip = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE
+fsaRegMask = TRUE
+fsaCoreMask = TRUE
+fsaSfsmMask = TRUE
+fsaEcrMask = TRUE
+tPropMask = TRUE

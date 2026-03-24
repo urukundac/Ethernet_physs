@@ -1,0 +1,50 @@
+EC_SITE=zsc14
+
+[COMPUTE]
+    NAME      = vps@${EC_SITE}
+    TARGET    = zsc14_critical_gk
+    QSLOT     = /XNE/fe/build/cnic
+    CLASS_ANA = SLES12SP5&&2G
+    CLASS_FE  = SLES12SP5&&32G
+    CLASS_BE  = SLES12SP5&&32G
+
+[COMPUTE]
+    Name      = VpsFrontend@${EC_SITE}
+    TARGET    = zsc14_critical_gk
+    QSLOT     = /XNE/fe/build/cnic
+    OS        = SLES12SP5
+    RAM       = 8
+
+[COMPUTE]
+    Name      = VpsBackend@${EC_SITE}
+    TARGET    = zsc14_critical_gk
+    QSLOT     = /XNE/fe/build/cnic
+    OS        = SLES12SP5
+    RAM       = 16
+
+[COMPUTE]
+    Name      = VpsDefault@${EC_SITE}
+    TARGET    = zsc14_critical_gk
+    QSLOT     = /XNE/fe/build/cnic
+    OS        = SLES12SP5
+    RAM       = 512
+
+[COMPUTE]
+    Name      = VpsMemLow@${EC_SITE}
+    RAM       = 8
+    TASKS     = rtlc
+
+[COMPUTE]
+    Name      = VpsMidMem1@${EC_SITE}
+    RAM       = 32
+    TASKS     = rtlc_launcher
+
+[COMPUTE]
+    Name      = VpsMidMem2@${EC_SITE}
+    RAM       = 64
+    TASKS     = part split route wrap
+
+[COMPUTE]
+    Name      = VpsMemHigh@${EC_SITE}
+    RAM       = 128
+    TASKS     = condition qualify spnr

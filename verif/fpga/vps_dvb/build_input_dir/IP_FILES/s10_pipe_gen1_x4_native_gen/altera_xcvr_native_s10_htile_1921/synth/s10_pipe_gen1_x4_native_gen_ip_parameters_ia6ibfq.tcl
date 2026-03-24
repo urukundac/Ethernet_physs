@@ -1,0 +1,39 @@
+if {0} {
+   unset native_phy_ip_params
+}
+
+set native_phy_ip_params [dict create]
+
+dict set native_phy_ip_params profile_cnt "1"
+set ::GLOBAL_corename s10_pipe_gen1_x4_native_gen_altera_xcvr_native_s10_htile_1921_ia6ibfq
+# -------------------------------- #
+# --- Default Profile settings --- #
+# -------------------------------- #
+dict set native_phy_ip_params channels_profile0 "4"
+dict set native_phy_ip_params set_data_rate_profile0 "2500"
+dict set native_phy_ip_params bonded_mode_profile0 "pma_pcs"
+dict set native_phy_ip_params tx_enable_profile0 "1"
+dict set native_phy_ip_params rx_enable_profile0 "1"
+dict set native_phy_ip_params rcfg_enable_profile0 "0"
+dict set native_phy_ip_params set_prbs_soft_logic_enable_profile0 "0"
+dict set native_phy_ip_params l_tx_fifo_transfer_mode_profile0 "x1"
+dict set native_phy_ip_params l_rx_fifo_transfer_mode_profile0 "x1"
+dict set native_phy_ip_params std_pcs_pma_width_profile0 "10"
+dict set native_phy_ip_params enh_pcs_pma_width_profile0 "40"
+dict set native_phy_ip_params pcs_direct_width_profile0 "8"
+dict set native_phy_ip_params datapath_select_profile0 "Standard"
+dict set native_phy_ip_params protocol_mode_profile0 "pipe_g1"
+dict set native_phy_ip_params tx_fifo_mode_profile0 "Phase compensation"
+dict set native_phy_ip_params rx_fifo_mode_profile0 "Phase compensation"
+dict set native_phy_ip_params std_tx_byte_ser_mode_profile0 "Serialize x2"
+dict set native_phy_ip_params std_rx_byte_deser_mode_profile0 "Deserialize x2"
+dict set native_phy_ip_params duplex_mode_profile0 "duplex"
+dict set native_phy_ip_params enable_hip_profile0 "0"
+dict set native_phy_ip_params tx_clkout_sel_profile0 "pcs_clkout"
+dict set native_phy_ip_params rx_clkout_sel_profile0 "pcs_clkout"
+dict set native_phy_ip_params enable_port_tx_clkout2_profile0 "1"
+dict set native_phy_ip_params enable_port_rx_clkout2_profile0 "0"
+dict set native_phy_ip_params tx_clkout2_sel_profile0 "pcs_x2_clkout"
+dict set native_phy_ip_params rx_clkout2_sel_profile0 "pcs_clkout"
+dict set native_phy_ip_params tx_pma_div_clkout_divider_profile0 "0"
+dict set native_phy_ip_params rx_pma_div_clkout_divider_profile0 "0"

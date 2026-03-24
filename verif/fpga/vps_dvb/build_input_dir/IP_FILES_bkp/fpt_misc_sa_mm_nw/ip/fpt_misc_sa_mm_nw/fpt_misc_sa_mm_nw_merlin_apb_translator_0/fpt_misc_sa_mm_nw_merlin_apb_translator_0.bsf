@@ -1,0 +1,186 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 304 296)
+	(text "fpt_misc_sa_mm_nw_merlin_apb_translator_0" (rect 13 -1 205 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 280 20 292)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "s0_paddr[12..0]" (rect 0 0 61 12)(font "Arial" (font_size 8)))
+		(text "s0_paddr[12..0]" (rect 4 61 94 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 96 72)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "s0_psel" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "s0_psel" (rect 4 77 46 88)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 96 88)(line_width 1))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "s0_penable" (rect 0 0 44 12)(font "Arial" (font_size 8)))
+		(text "s0_penable" (rect 4 93 64 104)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 96 104)(line_width 1))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "s0_pwrite" (rect 0 0 37 12)(font "Arial" (font_size 8)))
+		(text "s0_pwrite" (rect 4 109 58 120)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 96 120)(line_width 1))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "s0_pwdata[31..0]" (rect 0 0 66 12)(font "Arial" (font_size 8)))
+		(text "s0_pwdata[31..0]" (rect 4 125 100 136)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 96 136)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" (font_size 8)))
+		(text "clk" (rect 4 213 22 224)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 96 224)(line_width 1))
+	)
+	(port
+		(pt 0 264)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" (font_size 8)))
+		(text "reset" (rect 4 253 34 264)(font "Arial" (font_size 8)))
+		(line (pt 0 264)(pt 96 264)(line_width 1))
+	)
+	(port
+		(pt 304 152)
+		(input)
+		(text "m0_prdata[31..0]" (rect 0 0 67 12)(font "Arial" (font_size 8)))
+		(text "m0_prdata[31..0]" (rect 190 141 286 152)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 304 168)
+		(input)
+		(text "m0_pready" (rect 0 0 47 12)(font "Arial" (font_size 8)))
+		(text "m0_pready" (rect 215 157 269 168)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 0 152)
+		(output)
+		(text "s0_prdata[31..0]" (rect 0 0 63 12)(font "Arial" (font_size 8)))
+		(text "s0_prdata[31..0]" (rect 4 141 100 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 96 152)(line_width 3))
+	)
+	(port
+		(pt 0 168)
+		(output)
+		(text "s0_pslverr" (rect 0 0 43 12)(font "Arial" (font_size 8)))
+		(text "s0_pslverr" (rect 4 157 64 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 96 168)(line_width 1))
+	)
+	(port
+		(pt 0 184)
+		(output)
+		(text "s0_pready" (rect 0 0 43 12)(font "Arial" (font_size 8)))
+		(text "s0_pready" (rect 4 173 58 184)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 96 184)(line_width 1))
+	)
+	(port
+		(pt 304 72)
+		(output)
+		(text "m0_paddr[12..0]" (rect 0 0 64 12)(font "Arial" (font_size 8)))
+		(text "m0_paddr[12..0]" (rect 193 61 283 72)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 304 88)
+		(output)
+		(text "m0_psel" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "m0_psel" (rect 229 77 271 88)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 304 104)
+		(output)
+		(text "m0_penable" (rect 0 0 48 12)(font "Arial" (font_size 8)))
+		(text "m0_penable" (rect 211 93 271 104)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 304 120)
+		(output)
+		(text "m0_pwrite" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "m0_pwrite" (rect 218 109 272 120)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 304 136)
+		(output)
+		(text "m0_pwdata[31..0]" (rect 0 0 69 12)(font "Arial" (font_size 8)))
+		(text "m0_pwdata[31..0]" (rect 184 125 280 136)(font "Arial" (font_size 8)))
+	)
+	(drawing
+		(text "s0" (rect 83 43 178 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "paddr" (rect 101 67 232 144)(font "Arial" (color 0 0 0)))
+		(text "psel" (rect 101 83 226 176)(font "Arial" (color 0 0 0)))
+		(text "penable" (rect 101 99 244 208)(font "Arial" (color 0 0 0)))
+		(text "pwrite" (rect 101 115 238 240)(font "Arial" (color 0 0 0)))
+		(text "pwdata" (rect 101 131 238 272)(font "Arial" (color 0 0 0)))
+		(text "prdata" (rect 101 147 238 304)(font "Arial" (color 0 0 0)))
+		(text "pslverr" (rect 101 163 244 336)(font "Arial" (color 0 0 0)))
+		(text "pready" (rect 101 179 238 368)(font "Arial" (color 0 0 0)))
+		(text "clk" (rect 81 195 180 403)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 101 219 220 448)(font "Arial" (color 0 0 0)))
+		(text "clk_reset" (rect 43 235 140 483)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 101 259 232 528)(font "Arial" (color 0 0 0)))
+		(text "m0" (rect 177 43 366 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "paddr" (rect 149 67 328 144)(font "Arial" (color 0 0 0)))
+		(text "psel" (rect 156 83 336 176)(font "Arial" (color 0 0 0)))
+		(text "penable" (rect 141 99 324 208)(font "Arial" (color 0 0 0)))
+		(text "pwrite" (rect 148 115 332 240)(font "Arial" (color 0 0 0)))
+		(text "pwdata" (rect 144 131 324 272)(font "Arial" (color 0 0 0)))
+		(text "prdata" (rect 146 147 328 304)(font "Arial" (color 0 0 0)))
+		(text "pready" (rect 143 163 322 336)(font "Arial" (color 0 0 0)))
+		(text " fpt_misc_sa_mm_nw_merlin_apb_translator_0 " (rect 65 280 388 570)(font "Arial" ))
+		(line (pt 96 32)(pt 176 32)(line_width 1))
+		(line (pt 176 32)(pt 176 280)(line_width 1))
+		(line (pt 96 280)(pt 176 280)(line_width 1))
+		(line (pt 96 32)(pt 96 280)(line_width 1))
+		(line (pt 97 52)(pt 97 188)(line_width 1))
+		(line (pt 98 52)(pt 98 188)(line_width 1))
+		(line (pt 97 204)(pt 97 228)(line_width 1))
+		(line (pt 98 204)(pt 98 228)(line_width 1))
+		(line (pt 97 244)(pt 97 268)(line_width 1))
+		(line (pt 98 244)(pt 98 268)(line_width 1))
+		(line (pt 272 72)(pt 176 72)(line_width 3))
+		(line (pt 272 88)(pt 176 88)(line_width 1))
+		(line (pt 272 104)(pt 176 104)(line_width 1))
+		(line (pt 272 120)(pt 176 120)(line_width 1))
+		(line (pt 272 136)(pt 176 136)(line_width 3))
+		(line (pt 272 152)(pt 176 152)(line_width 3))
+		(line (pt 272 168)(pt 176 168)(line_width 1))
+		(line (pt 175 52)(pt 175 172)(line_width 1))
+		(line (pt 174 52)(pt 174 172)(line_width 1))
+		(line (pt 0 0)(pt 306 0)(line_width 1))
+		(line (pt 306 0)(pt 306 296)(line_width 1))
+		(line (pt 0 296)(pt 306 296)(line_width 1))
+		(line (pt 0 0)(pt 0 296)(line_width 1))
+	)
+)

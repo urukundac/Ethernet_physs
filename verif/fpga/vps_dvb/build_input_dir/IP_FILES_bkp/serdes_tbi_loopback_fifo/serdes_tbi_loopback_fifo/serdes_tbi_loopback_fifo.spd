@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="fifo_1923/sim/serdes_tbi_loopback_fifo_fifo_1923_titfvra.v"
+   type="VERILOG"
+   library="fifo_1923" />
+ <file
+   path="fifo_1923/sim/serdes_tbi_loopback_fifo_fifo_1923_titfvra.sdc"
+   type="SDC_ENTITY"
+   library="fifo_1923" />
+ <file
+   path="sim/serdes_tbi_loopback_fifo.v"
+   type="VERILOG"
+   library="serdes_tbi_loopback_fifo"
+   hasInlineConfiguration="true" />
+ <topLevel name="serdes_tbi_loopback_fifo.serdes_tbi_loopback_fifo" />
+ <deviceFamily name="stratix10" />
+ <device name="1SG10MHN3F74C2LG_U1" />
+</simPackage>

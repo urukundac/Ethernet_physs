@@ -1,0 +1,268 @@
+
+###==== BEGIN Header
+
+# Synopsys, Inc. constraint file
+# /home/emu/mlbroadh/bel/lbg/ww37e/emu_bek_2-lb/scripts/emu/haps/cnstr/clocks.fdc
+# Written on Fri Sep 19 11:44:54 2014
+# by Synplify Premier, I-2014.03-1  FDC Constraint Editor
+
+# Custom constraint commands may be added outside of the SCOPE tab sections bounded with BEGIN/END.
+# These sections are generated from SCOPE spreadsheet tabs.
+
+###==== END Header
+
+#define_global_attribute syn_useioff {1}
+#define_global_attribute syn_dspstyle {logic}
+
+###==== BEGIN Collections - (Populated from tab in SCOPE, do not edit)
+###==== END Collections
+
+###==== BEGIN Clocks - (Populated from tab in SCOPE, do not edit)
+
+#create_clock  -name {phy_ref_in_clk} [get_ports {pcie_ref_clk_p}] -period {10.0}
+
+###==== UHFI clocks
+create_clock  -name hci_refclk -period 10  [get_ports pcie_ref_clk_p]
+set_property preserve_period on [get_clocks hci_refclk]
+set_clock_groups -asynchronous -group [get_clocks hci_refclk]
+##TODO create_clock  -name clk_100mhz -period 10  [get_ports clk_uhfi_p]
+##TODO set_property preserve_period on [get_clocks clk_100mhz]
+
+#jmoctezu, already in physical.rdc set_port_assignment [get_ports CO18_PCIE_RESET_N] -tie1
+
+#create_clock -name pipe_clock -period 8 [get_pins uhfi/uhfi_pcie_ctrl/i_pcie_bridge_top/u_phy_top/genblk1i.pcie_phy_wrapper/pipe_clk]
+create_clock -name pipe_clock -period 8 [get_pins uhfi/uhfi_pcie_ctrl/i_pcie_bridge_top/u_phy_top/pipe_clk]
+set_property preserve_period on [get_clocks pipe_clock]
+set_clock_groups -asynchronous -group [get_clocks pipe_clock]
+
+#create_clock  -name {hci_sysclk}          [get_pins -hier {*pcie_phy_wrapper.pcie_phy.bufg_gt_sysclk.O}]                            -period {10}
+#create_clock  -name {hci_pclk}          [get_pins -hier {*pcie_phy_wrapper.pcie_phy.u_xcvu440_pcie_phy.phy_pclk}]                 -period {8}
+#create_clock  -name {uhfi_userclk} -period 8  [get_pins -hier {*i_aalpcie_top_xcvu440.i_pcie_top_xcvu440.user_clk}]
+
+#create_clock  -name {clk_100mhz}          [get_ports {*uhfi_100mhz_clk}        -period {10.00}
+
+#create_clock  -name {dut_phy_clk} [get_pins {i_hi_top.i_xilinx_pipe.gtwizard_0.inst.pipe_clock_int\.pipe_clock_i.pclk_i1_bufg\.pclk_i1.O} -period {8.0}
+#create_generated_clock -name GT_TXOUTCLK -source [get_pins [get_pins {i_hi_top.i_xilinx_pipe.gt_top_i.phy_lane\[0\]\.gt_channel_int\.gt_channel_i.gthe3_channel_i.GTREFCLK0}] -edges {1 2 3} -edge_shift {0.000 -4.000 -8.000} -add -master_clock [get_clocks {phy_ref_clk}] [get_pins [get_pins {i_hi_top.i_xilinx_pipe.gt_top_i.phy_lane\[0\]\.gt_channel_int\.gt_channel_i.gthe3_channel_i.TXOUTCLK}]
+#create_clock  -name {dut_phy_clk} [get_pins {i_hi_top.i_xilinx_pipe.gt_top_i.phy_clk_i.bufg_gt_pclk.O} -period {8.0}
+#create_clock  -name {phy_ref_clk} [get_pins {i_hi_top.i_xilinx_pipe.refclk_ibuf.O} -period {10.0}
+#create_clock  -name {phy_ref_odiv2_clk} [get_pins {i_hi_top.i_xilinx_pipe.refclk_ibuf.ODIV2} -period {10.0}
+#create_clock  -name {side_clk} [get_ports {GCLK1_P}] -period {833.3333}
+#create_clock  -name {prim_clk} [get_ports {GCLK2_P}] -period {166.6667}
+#create_clock  -name {onpi_clk} [get_ports {GCLK3_P} -period {200.0}
+create_clock  -name {cpm_p_clk} [get_ports {GCLK4_P}] -period {100.0}
+#create_clock  -name {cpm_p_clk} [get_ports {GCLK4_P}] -period {83.3333}
+create_clock  -name {uhfi_100mhz_clk} [get_ports {GCLK5_P}] -period {10.0}
+
+#added for pgcb clock
+create_clock  -name {pgcb_clk} [get_ports {GCLK6_P}] -period {1000.0}
+
+#added for side and prim clock
+
+#create_generated_clock -name {side_clk} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/parcpmhi/side_clk_parcpmhi_pdop/u_gnr_ctech_pdop_div_by_4/u_ctech_lib_clk_pdop_div_by_4/d2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {4}
+#create_generated_clock -name {prim_clk} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/parcpmhi/prim_clk_parcpmhi_pdop/u_gnr_ctech_pdop_div_by_4/u_ctech_lib_clk_pdop_div_by_4/d2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {4}
+#create_generated_clock -name {h_clk_aram} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/parcpmaram/h_clk_parcpmaram_pdop/u_gnr_ctech_pdop_div_by_4/u_ctech_lib_clk_pdop_div_by_4/d2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {4}
+#create_generated_clock -name {p_clk_aram} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/parcpmaram/p_clk_parcpmaram_pdop/u_gnr_ctech_pdop_div_by_2/u_ctech_lib_clk_pdop_div_by_2/div2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {2}
+#create_generated_clock -name {h_clk_hi} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/parcpmhi/h_clk_parcpmhi_pdop/u_gnr_ctech_pdop_div_by_4/u_ctech_lib_clk_pdop_div_by_4/d2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {4}
+#create_generated_clock -name {p_clk_hi} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/parcpmhi/p_clk_parcpmhi_pdop/u_gnr_ctech_pdop_div_by_2/u_ctech_lib_clk_pdop_div_by_2/div2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {2}
+#create_generated_clock -name {p_clk_cast} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/parcpmcast1/p_clk_parcpmcast_pdop/u_gnr_ctech_pdop_div_by_2/u_ctech_lib_clk_pdop_div_by_2/div2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {2}
+
+###==== For Media ========================
+#create_generated_clock -name {p_clk_e_part0} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/cpm_vid_top/parvc8000e_part0/p_clk_parvc8000e_part0_pdop/u_gnr_ctech_pdop_div_by_2/u_ctech_lib_clk_pdop_div_by_2/div2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {2}
+#
+#create_generated_clock -name {p_clk_e_ss} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/cpm_vid_top/parvc8000e_ss/p_clk_parvc8000e_ss_pdop/u_gnr_ctech_pdop_div_by_2/u_ctech_lib_clk_pdop_div_by_2/div2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {2}
+#
+#create_generated_clock -name {p_clk_e_part3} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/cpm_vid_top/parvc8000e_part3/p_clk_parvc8000e_part3_pdop/u_gnr_ctech_pdop_div_by_2/u_ctech_lib_clk_pdop_div_by_2/div2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {2}
+#
+#create_generated_clock -name {p_clk_e_part1} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/cpm_vid_top/parvc8000e_part1/p_clk_parvc8000e_part1_pdop/u_gnr_ctech_pdop_div_by_2/u_ctech_lib_clk_pdop_div_by_2/div2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {2}
+#create_generated_clock -name {p_clk_d_ss} -source [get_ports {GCLK4_P}] [get_nets {i_cpm_top/cpm_vid_top/parvc8000d_ss/p_clk_parvc8000d_ss_pdop/u_gnr_ctech_pdop_div_by_2/u_ctech_lib_clk_pdop_div_by_2/div2}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {2}
+
+
+
+##=======================================================
+#create_generated_clock -name {drng_clkdiv4} -source [get_nets {i_cpm_top/parcpmhi/side_clk_parcpmhi_pdop/u_gnr_ctech_pdop_div_by_4/u_ctech_lib_clk_pdop_div_by_4/d2}] [get_nets {i_fuse_top/i_chassis_fuse_ctrl_south_complec_drng/i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst/i_drng_es_hip/i_out_blk/clkdiv4}] -master_clock [get_clocks {side_clk}] -divide_by {4}
+#create_generated_clock -name {drng_clkdsdiv4} -source [get_nets {i_cpm_top/parcpmhi/side_clk_parcpmhi_pdop/u_gnr_ctech_pdop_div_by_4/u_ctech_lib_clk_pdop_div_by_4/d2}] [get_nets {i_fuse_top/i_chassis_fuse_ctrl_south_complec_drng/i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst/i_drng_es_hip/i_out_blk/clkdsdiv4}] -master_clock [get_clocks {side_clk}]  -divide_by {16}
+#create_generated_clock -name {drng_clkdsdiv32} -source [get_nets {i_cpm_top/parcpmhi/side_clk_parcpmhi_pdop/u_gnr_ctech_pdop_div_by_4/u_ctech_lib_clk_pdop_div_by_4/d2}] [get_nets {i_fuse_top/i_chassis_fuse_ctrl_south_complec_drng/i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst/i_drng_es_hip/i_out_blk/clkdsdiv32}] -master_clock [get_clocks {side_clk}] -invert -divide_by {128}
+
+
+#set_clock_groups -derive -asynchronous -name {phy_ref_in_clk_grp} -group [get_clocks {phy_ref_in_clk}]
+#set_clock_groups  -asynchronous  -group [get_clocks {side_clk drng_clkdiv4 drng_clkdsdiv4 }]
+#set_clock_groups  -asynchronous  -group [get_clocks {prim_clk}]
+set_clock_groups  -asynchronous -group [get_clocks {uhfi_100mhz_clk}]
+set_clock_groups  -asynchronous  -group [get_clocks {pgcb_clk}]
+set_clock_groups  -asynchronous  -group [get_clocks {cpm_p_clk}]
+#set_clock_groups  -asynchronous  -group [get_clocks {side_clk h_clk_aram h_clk_hi p_clk_aram p_clk_hi p_clk_cast p_clk_d_ss  p_clk_e_part0 p_clk_e_ss p_clk_e_part3 p_clk_e_part1}]
+#set_clock_groups  -asynchronous  -group [get_clocks {prim_clk side_clk h_clk_aram h_clk_hi p_clk_aram p_clk_hi p_clk_cast p_clk_d_ss p_clk_e_part0 p_clk_e_ss p_clk_e_part3 p_clk_e_part1}]
+
+###==== BEGIN "Generated Clocks" - (Populated from tab in SCOPE, do not edit)
+#create_generated_clock -name {h_clk} -source [get_ports {GCLK4_P } [get_pins {i_cpm_top.parcpmhiri.i_cpm_hiri.i_cpmhi_divider.\\clk_div2_ncpm_ep_ascan_preclk_h_clk.div2.clkout.Q[0]} -master_clock [get_clocks {p_clk} -divide_by {2}
+#create_generated_clock -name {aram_clk} -source [get_ports {GCLK4_P } [get_pins {i_cpm_top.parcpmaram.i_aram_top.\\clk_div2_ascan_preclk_aram_clk.div2.clkout.Q[0]} -master_clock [get_clocks {p_clk} -divide_by {2}
+#create_generated_clock -name {h_clk} -source [get_ports {GCLK4_P } [get_pins {i_cpm_top.parcpmhiri.i_cpm_hiri.i_cpmhi_divider.\\clk_div2_ncpm_ep_ascan_preclk_h_clk.div2.ctech_lib_clk_ffb_rstb.clkout.Q[0]} -master_clock [get_clocks {p_clk} -divide_by {2}
+#create_generated_clock -name {aram_clk} -source [get_ports {GCLK4_P } [get_pins {i_cpm_top.parcpmaram.i_aram_top.\\clk_div2_ascan_preclk_aram_clk.div2.ctech_lib_clk_ffb_rstb.clkout.Q[0]} -master_clock [get_clocks {p_clk} -divide_by {2}
+#create_generated_clock -name {h_clk} -source [get_ports {GCLK4_P } [get_pins {i_cpm_top.parcpmhiri.i_cpm_hiri.i_cpmhi_divider_nonscan.\\clk_div2_ncpm_ep_ascan_preclk_h_clk.div2.ctech_lib_clk_ffb_rstb.clkout.Q[0]} -master_clock [get_clocks {p_clk} -divide_by {2}
+#create_generated_clock -name {aram_clk} -source [get_ports {GCLK4_P } [get_pins {i_cpm_top.parcpmaram.i_aram_top.\\clk_div2_nonscan_preclk_aram_clk.div2.ctech_lib_clk_ffb_rstb.clkout.Q[0]} -master_clock [get_clocks {p_clk} -divide_by {2}
+#create_generated_clock -name {aram_clk} -source [get_ports {GCLK4_P } [get_pins {i_cpm_top.i_hi_top.parcpmaram.cpm_clk_vcfn_ccdu_parcpmaram_wrapper.p_clk_vcfn_ccdu_parcpmaram.i_cpm_p_clk_vcfn_ccdu_parcpmaram_p_clk_gclk_pccdu_dop_wrapper.i_cpm_p_clk_vcfn_ccdu_parcpmaram_h_clk_gclk_pccdu_dop.i_h_clk_ctech_clk_dop_div2.i_ctech_lib_glbdrvdclk.clkdiv2.Q[0]} -master_clock [get_clocks {p_clk} -divide_by {2}
+#create_generated_clock -name {aram_clk} -source [get_ports {GCLK4_P }] [get_pins {i_cpm_top/parcpmaram/cpm_clk_vcfn_ccdu_parcpmaram_wrapper/cpm_clk_vcfn_ccdu_parcpmaram/i_cpm_cpm_clk_vcfn_ccdu_parcpmaram_cpm_clk_gclk_pccdu_dop_wrapper/i_cpm_cpm_clk_vcfn_ccdu_parcpmaram_h_clk_gclk_pccdu_dop/i_h_clk_ctech_clk_dop_div2/i_ctech_lib_glbdrvdclk/clkout}] -master_clock [get_clocks {cpm_p_clk}] -divide_by {2}
+#create_generated_clock -name {hiri_h_clk} -source [get_ports {GCLK4_P } [get_pins {i_cpm_top.i_hi_top.parcpmhiri.cpm_hiri_aon.cpm_clk_vcfn_ccdu_parcpmhiri_wrapper.p_clk_vcfn_ccdu_parcpmhiri.i_cpm_p_clk_vcfn_ccdu_parcpmhiri_p_clk_gclk_pccdu_dop_wrapper.i_cpm_p_clk_vcfn_ccdu_parcpmhiri_h_clk_gclk_pccdu_dop.i_h_clk_ctech_clk_dop_div2.i_ctech_lib_glbdrvdclk.clkdiv2.Q[0]} -master_clock [get_clocks {p_clk} -divide_by {2}
+#create_generated_clock -name {hiri_h_clk} -source [get_ports {GCLK4_P }] [get_pins {i_cpm_top/parcpmhi/cpm_hiri_aon/cpm_clk_vcfn_ccdu_cpm_hiri_aon_wrapper/cpm_clk_vcfn_ccdu_cpm_hiri_aon/i_cpm_cpm_clk_vcfn_ccdu_cpm_hiri_aon_cpm_clk_gclk_pccdu_dop_wrapper/i_cpm_cpm_clk_vcfn_ccdu_cpm_hiri_aon_h_clk_gclk_pccdu_dop/i_h_clk_ctech_clk_dop_div2/i_ctech_lib_glbdrvdclk/clkout}]-master_clock [get_clocks {cpm_p_clk}] -divide_by {2}
+#create_generated_clock -name {hiti_h_clk} -source [get_ports {GCLK4_P } [get_pins {i_cpm_top.i_hi_top.parcpmhiti.cpm_clk_vcfn_ccdu_parcpmhiti_wrapper.p_clk_vcfn_ccdu_parcpmhiti.i_cpm_p_clk_vcfn_ccdu_parcpmhiti_p_clk_gclk_pccdu_dop_wrapper.i_cpm_p_clk_vcfn_ccdu_parcpmhiti_h_clk_gclk_pccdu_dop.i_h_clk_ctech_clk_dop_div2.i_ctech_lib_glbdrvdclk.clkdiv2.Q[0]} -master_clock [get_clocks {p_clk} -divide_by {2}
+#create_generated_clock -name {hiti_h_clk} -source [get_ports {GCLK4_P }  -master_clock [get_clocks {p_clk} -divide_by {2}
+#create_generated_clock -name {drng_clkdiv4} -source [get_ports {GCLK1_P }] [get_nets {i_fuse_top/i_chassis_fuse_ctrl_south_complec_drng/i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst/i_drng_es_hip/i_out_blk/clkdiv4}] -master_clock [get_clocks {side_clk}] -divide_by {4}
+#create_generated_clock -name {drng_clkdsdiv4} -source [get_ports {GCLK1_P }] [get_nets {i_fuse_top/i_chassis_fuse_ctrl_south_complec_drng/i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst/i_drng_es_hip/i_out_blk/clkdsdiv4}] -master_clock [get_clocks {side_clk}] -divide_by {16}
+#create_generated_clock -name {drng_clkdsdiv32} -source [get_ports {GCLK1_P }] [get_nets {i_fuse_top/i_chassis_fuse_ctrl_south_complec_drng/i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst/i_drng_es_hip/i_out_blk/clkdsdiv32}] -master_clock [get_clocks {side_clk}] -divide_by {128}
+
+###==== UHFI generated clocks
+#create_generated_clock -name {uhfi_clk_20mhz}    [get_pins -hier {*i_uhfi_mmcm_vu_clk_wiz.mmcme3_adv_inst.CLKOUT0}]
+#create_generated_clock -name {uhfi_clk_40mhz}    [get_pins -hier {*i_uhfi_mmcm_vu_clk_wiz.mmcme3_adv_inst.CLKOUT1}]
+#create_generated_clock -name {uhfi_clk_100mhz}   [get_pins -hier {*i_uhfi_mmcm_vu_clk_wiz.mmcme3_adv_inst.CLKOUT2}]
+#create_generated_clock -name {uhfi_clk_120mhz}   [get_pins -hier {*i_uhfi_mmcm_vu_clk_wiz.mmcme3_adv_inst.CLKOUT3}]
+
+
+###==== END "Generated Clocks"
+
+###==== END Clocks
+
+#set_clock_groups -derive -asynchronous -name {dut_phy_clk_grp} -group { [get_clocks {dut_phy_clk} }
+#set_clock_groups -derive -asynchronous -name {phy_ref_clk_grp} -group { [get_clocks {phy_ref_clk} }
+#set_clock_groups -derive -asynchronous -name {phy_ref_odiv2_clk_grp} -group { [get_clocks {phy_ref_odiv2_clk} }
+
+#set_clock_groups -derive -asynchronous -name {phy_ref_in_clk_grp} -group { [get_clocks {phy_ref_in_clk}] }
+#set_clock_groups -asynchronous -group { [get_clocks {side_clk drng_clkdiv4 drng_clkdsdiv4}]} #[get_clocks {drng_clkdsdiv32}] }
+#set_clock_groups -asynchronous -group [get_clocks side_clk drng_clkdiv4 drng_clkdsdiv4]
+#set_clock_groups -asynchronous -group [get_clocks {prim_clk}]
+#set_clock_groups -derive -asynchronous -name {onpi_grp}     -group { [get_clocks {onpi_clk} }
+#set_clock_groups -asynchronous -group [get_clocks cpm_p_clk aram_clk hiri_h_clk]
+#set_clock_groups -derive -asynchronous -name {cpm_grp}     -group { [get_clocks {p_clk} [get_clocks {h_clk} [get_clocks {aram_clk} }
+#set_clock_groups -asynchronous -group [get_clocks {uhfi_100mhz_clk}]
+
+###==== UHFI groups
+#set_clock_groups -asynchronous -derive -name {group_hci_in}          -group {hci_refclk hci_sysclk}
+#set_clock_groups -asynchronous -derive -name {group_uhfi_userclk}      -group {uhfi_userclk}
+#set_clock_groups -asynchronous -derive -name {group_pclk}            -group {hci_pclk}
+#set_clock_groups -asynchronous -name {group_desc_clk}        -group {uhfi_clk_20mhz}
+
+#Set False paths on Synopsys inferred gpiolink module
+#set_clock_groups -asynchronous -derive -name  {UMR_CLK_grp}         -group [get_clocks {HAPS_umr_clkin}]
+
+#define_attribute {n:i_cpm_top.i_hi_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_at.i_at_tlbm.i_AtTlbmCtxMd.array_latch\.int_parity\.gt_ram_packed_strg.if_latch_based7_un1_wraddr_lat\[*\]_*} syn_noclockbuf {1}
+#define_attribute [get_ports {i_cpm_top.i_hi_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_at.i_at_tlbm.i_AtTlbmCtxMd.array_latch\.int_parity\.gt_ram_packed_strg.if_latch_based7_un1_wraddr_lat\[*\]_*} syn_noclockbuf {1}
+#define_attribute [get_pins {i_cpm_top.i_hi_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_at.i_at_tlbm.i_AtTlbmCtxMd.array_latch\.int_parity\.gt_ram_packed_strg.if_latch_based7_un1_wraddr_lat\[*\]_*.OUT} syn_noclockbuf {1}
+#define_attribute {n:i_cpm_top.i_hi_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_at.i_at_tlbm.i_AtTlbmCtxMd.array_latch\.int_parity\.gt_ram_packed_strg.if_latch_based7_un1_wraddr_lat\[*\]_*}
+
+#define_attribute {n:i_cpm_top.i_cpp_cluster_top0.parcpmssmb.i_cpmssmb_0.i_cpm_cpr_main_logic_0.i_oel.i_oel_ofifo.ARRAY_LATCH_STORAGE\.i_cpm_genram_packed.array_latch\.ext_or_no_parity\.gt_ram_packed_strg.if_latch_based7_un1_wren1_lat_masked_emul_1}  {.gcc_notclock} {1}
+#define_attribute {n:i_cpm_top.i_cpp_cluster_top0.parcpmssmb.i_cpmssmb_0.i_cpm_cpr_main_logic_0.i_oel.i_cpr_lz4_enc.i_lz4_enc_data_q.ARRAY_LATCH_STORAGE\.i_cpm_genram_packed.array_latch\.ext_or_no_parity\.gt_ram_packed_strg.if_latch_based7_un1_wren1_lat_masked_emul_1}  {.gcc_notclock} {1}
+
+###==== BEGIN Inputs/Outputs - (Populated from tab in SCOPE, do not edit)
+###==== END Inputs/Outputs
+
+###==== BEGIN Registers - (Populated from tab in SCOPE, do not edit)
+###==== END Registers
+
+###==== BEGIN "Delay Paths" - (Populated from tab in SCOPE, do not edit)
+#set_false_path -through [get_pins {i_cpm_top.i_cpp_cluster_top0.parcpmssmb.i_cpmssmb_0.i_cpm_cpr_main_logic_0.i_oel.i_oel_ofifo.ARRAY_LATCH_STORAGE\.i_cpm_genram_packed.array_latch\.ext_or_no_parity\.gt_ram_packed_strg.lat_data\[*\][64:0].D[*]}
+#set_false_path -through [get_pins {i_cpm_top.i_cpp_cluster_top0.parcpmssmb.i_cpmssmb_0.i_cpm_cpr_main_logic_0.i_oel.i_cpr_lz4_enc.i_lz4_enc_data_q.ARRAY_LATCH_STORAGE\.i_cpm_genram_packed.array_latch\.ext_or_no_parity\.gt_ram_packed_strg.lat_data\[*\][133:0].D[*]}
+
+#set_false_path -through [get_pins {i_cpm_top.i_hi_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_at.i_at_srm.srt_cam\[*\]\.i_SrtData.array_latch\.int_parity\.gt_ram_packed_strg.wraddr_lat\[0\][2:0].Q[*]}
+#set_multicycle_path 2 -through [get_pins {i_cpm_top.i_hi_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_at.i_at_srm.srt_cam\[*\]\.i_SrtData.array_latch\.int_parity\.gt_ram_packed_strg.lat_data\[*\][7:0].Q[*]}
+#set_multicycle_path 2 -through [get_pins {i_cpm_top.i_hi_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_at.i_at_srm.srt_cam\[*\]\.i_SrtData.array_latch\.int_parity\.gt_ram_packed_strg.if_latch_based7_un1_wraddr_lat\[*\]_*.OUT}
+
+#set_false_path  -through [get_pins {i_cpm_top.i_hi_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_at.i_at_srm.srt_cam\[*\]\.i_SrtData.array_latch\.int_parity\.gt_ram_packed_strg.lat_data\[*\][15:0].Q[*]}
+#set_false_path  -through [get_pins {i_cpm_top.i_hi_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_at.i_at_srm.srt_cam\[*\]\.i_SrtData.array_latch\.int_parity\.gt_ram_packed_strg.lat_data\[*\][15:0].D[*]}
+#      
+#set_false_path  -through [get_pins {i_cpm_top.i_hi_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_at.i_at_tlbm.i_AtTlbmCtxMd.array_latch\.int_parity\.gt_ram_packed_strg.lat_data\[*\][99:0].D[*]}
+#set_false_path  -through [get_pins {i_cpm_top.i_hi_top.parcpmhi.i_cpm_hiti.i_ti.i_ti_cd.i_ti_at.i_at_tlbm.i_AtTlbmCtxMd.array_latch\.int_parity\.gt_ram_packed_strg.lat_data\[*\][99:0].Q[*]}
+#set_false_path -from [get_pins {i_fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.i_out_blk.enclkdsdiv4.D[0]} -to [get_pins {i_fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.i_out_blk.clkdsdiv4.D[0]}
+#set_false_path -through [get_nets {i_fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.i_out_blk.enclkdsdiv4}]
+#set_false_path -through [get_nets {i_fuse_top.i_chassis_fuse_ctrl_south_complec_drng.i_gen_es_hip\[0\]\.i_drng_ip10xrngeshearttop_wrapper_inst.i_drng_es_hip.i_out_blk.enclkdsdiv4}]
+#set_false_path -through [get_pins {i_platform_doublesync_rst.d}]
+#set_false_path -through [get_pins {i_powergood_doublesync_rst.d}]
+#set_false_path -through [get_pins {i_primary_doublesync_rst.d}]
+#set_false_path -through [get_pins {i_sideband_doublesync_rst.d}]
+###==== END "Delay Paths"
+
+###==== BEGIN Attributes - (Populated from tab in SCOPE, do not edit)
+#define_attribute  [get_pins {i_hi_top.i_xilinx_pipe.refclk_ibuf.O}] {syn_noclockbuf} {1}
+#define_global_attribute syn_reduce_controlset_size {15}
+
+###==== UHFI attributes
+#define_attribute [get_pins -hier {*i_aalpcie_top_xcvu440.i_pcie_top_xcvu440.user_clk}] syn_noclockbuf {1}
+#define_attribute [get_pins -hier {*i_pcie_top_xcvu440.i_pcie3_ultrascale_xcvu440.user_clk}] syn_noclockbuf {1}
+#define_attribute [get_nets -hier {*uhfi_pcie_ctrl.reset_mng.srst}] {syn_maxfan} {50}
+
+#define_attribute {i:i_fuse_top.i_fuse_clock_power_cntrl.i_fuse_clkmux_cntrl} syn_insert_buffer {BUFGMUX}
+
+###==== END Attributes
+
+###==== BEGIN "I/O Standards" - (Populated from tab in SCOPE, do not edit)
+#define_io_standard [get_ports {*uhfi_100mhz_clk}  -delay_type input   syn_pad_type {LVDS_18}
+#define_io_standard [get_ports {*uhfi_100mhz_clk}  -delay_type input   syn_pad_type {LVDS_18}
+###==== END "I/O Standards"
+
+###==== BEGIN "Compile Points" - (Populated from tab in SCOPE, do not edit)
+###==== END "Compile Points"
+
+#set_false_path -through {n:pe_rst_n}
+
+#define_attribute {v:i_cpm_top.i_cpp_cluster_top0.parcpmcast1.cpm_shac_cpp_admin_unit.i_shac.shac_rf_mems.rf_wrap_mem_cfc_fabrom_shell_8192x52.ram_row_0_col_0.ip7413rfshpmrom1024x52m8p2img0m5._infer_rom} {syn_ramstyle} {no_rw_check}   
+#define_attribute {v:i_cpm_top.i_cpp_cluster_top0.parcpmcast1.cpm_shac_cpp_admin_unit.i_shac.shac_rf_mems.rf_wrap_mem_cfc_fabrom_shell_8192x52.ram_row_1_col_0.ip7413rfshpmrom1024x52m8p2img1m5._infer_rom} {syn_ramstyle} {no_rw_check}
+#define_attribute {v:i_cpm_top.i_cpp_cluster_top0.parcpmcast1.cpm_shac_cpp_admin_unit.i_shac.shac_rf_mems.rf_wrap_mem_cfc_fabrom_shell_8192x52.ram_row_2_col_0.ip7413rfshpmrom1024x52m8p2img2m5._infer_rom} {syn_ramstyle} {no_rw_check}
+#define_attribute {v:i_cpm_top.i_cpp_cluster_top0.parcpmcast1.cpm_shac_cpp_admin_unit.i_shac.shac_rf_mems.rf_wrap_mem_cfc_fabrom_shell_8192x52.ram_row_3_col_0.ip7413rfshpmrom1024x52m8p2img3m5._infer_rom} {syn_ramstyle} {no_rw_check}
+#define_attribute {v:i_cpm_top.i_cpp_cluster_top0.parcpmcast1.cpm_shac_cpp_admin_unit.i_shac.shac_rf_mems.rf_wrap_mem_cfc_fabrom_shell_8192x52.ram_row_4_col_0.ip7413rfshpmrom1024x52m8p2img4m5._infer_rom} {syn_ramstyle} {no_rw_check}
+#define_attribute {v:i_cpm_top.i_cpp_cluster_top0.parcpmcast1.cpm_shac_cpp_admin_unit.i_shac.shac_rf_mems.rf_wrap_mem_cfc_fabrom_shell_8192x52.ram_row_5_col_0.ip7413rfshpmrom1024x52m8p2img5m5._infer_rom} {syn_ramstyle} {no_rw_check}
+#define_attribute {v:i_cpm_top.i_cpp_cluster_top0.parcpmcast1.cpm_shac_cpp_admin_unit.i_shac.shac_rf_mems.rf_wrap_mem_cfc_fabrom_shell_8192x52.ram_row_6_col_0.ip7413rfshpmrom1024x52m8p2img6m5._infer_rom} {syn_ramstyle} {no_rw_check}
+#define_attribute {v:i_cpm_top.i_cpp_cluster_top0.parcpmcast1.cpm_shac_cpp_admin_unit.i_shac.shac_rf_mems.rf_wrap_mem_cfc_fabrom_shell_8192x52.ram_row_7_col_0.ip7413rfshpmrom1024x52m8p2img7m5._infer_rom} {syn_ramstyle} {no_rw_check}
+
+
+## BEGIN P2 PCH ADPS
+#
+#------------------------------------
+# UHFI assignments
+#------------------------------------
+set FPGA_NAME {MB1_FB1_F2}
+set PD_LOC_NAME {MB1_FB1_F2_fb1_tb1_eb1}
+#R3
+#set PROTID_NAME {PCIE}
+#set dsn_port_pcie_refclk_p {sys_clk_p}
+#set dsn_port_pcie_refclk_n {sys_clk_n}
+#set dsn_port_pcie_cpwron   {CPWRON}
+#set dsn_port_pcie_ncprsnt  {nCPRSNT}
+#set dsn_port_pcie_ncwake   {nCWAKE}
+#set dsn_port_pcie_ncperst  {nCPERST}
+
+#R4
+set PROTID_NAME {DEFAULT_EB_PDS_PCIe_Cable_R4}
+set dsn_port_pcie_refclk_p {FPGA_REF_CLK_P_0}
+set dsn_port_pcie_refclk_n {FPGA_REF_CLK_N_0}
+set dsn_port_pcie_cpwron   {FPGA_CPWRON_0}
+set dsn_port_pcie_ncprsnt  {FPGA_NCPRSNT_0}
+set dsn_port_pcie_ncwake   {FPGA_NCWAKE_0}
+set dsn_port_pcie_ncperst  {FPGA_NCPERST_0}
+
+set_assignment [get_ports pci_exp_rxp\[0\] ] -fpga ${FPGA_NAME} -user_managed
+set_assignment [get_ports pci_exp_rxp\[1\] ] -fpga ${FPGA_NAME} -user_managed
+set_assignment [get_ports pci_exp_rxp\[2\] ] -fpga ${FPGA_NAME} -user_managed
+set_assignment [get_ports pci_exp_rxp\[3\] ] -fpga ${FPGA_NAME} -user_managed
+set_assignment [get_ports pci_exp_txp\[0\] ] -fpga ${FPGA_NAME} -user_managed
+set_assignment [get_ports pci_exp_txp\[1\] ] -fpga ${FPGA_NAME} -user_managed                                                              
+set_assignment [get_ports pci_exp_txp\[2\] ] -fpga ${FPGA_NAME} -user_managed                                                              
+set_assignment [get_ports pci_exp_txp\[3\] ] -fpga ${FPGA_NAME} -user_managed     
+
+create_reset -name RESET [get_ports sys_rst_n] -clock [get_clocks uhfi_100mhz_clk] -active low
+set_assignment [get_ports led_red] -disconnect
+
+set_assignment [get_ports {pci_exp_txn[3]}] -disconnect
+set_assignment [get_ports {pci_exp_txn[2]}] -disconnect
+set_assignment [get_ports {pci_exp_txn[1]}] -disconnect
+set_assignment [get_ports {pci_exp_txn[0]}] -disconnect
+
+set_assignment [get_ports pcie_ref_clk_p] -track [get_hw_interface_tracks ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_refclk_p}] -iostandard none
+set_assignment [get_ports pcie_ref_clk_n] -track [get_hw_interface_tracks ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_refclk_n}] -iostandard none
+
+set_assignment [get_ports pwron_n] -track [get_hw_interface_tracks ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_cpwron}] -iostandard LVCMOS18
+set_assignment [get_ports prsnt_n] -track [get_hw_interface_tracks ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_ncprsnt}] -iostandard LVCMOS18
+set_assignment [get_ports wake_n] -track [get_hw_interface_tracks ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_ncwake}] -iostandard LVCMOS18
+set_assignment [get_ports pdeb_pcie_perst_n] -track [get_hw_interface_tracks  ${PD_LOC_NAME}_${PROTID_NAME}_${dsn_port_pcie_ncperst}] -iostandard LVCMOS18
+set_assignment [get_ports tosw_pcie_perst_n] -pin [get_hw_fpga_pins  ${FPGA_NAME}/U33]  -iostandard LVCMOS18
+set_assignment [get_ports frsw_pcie_perst_n] -pin [get_hw_fpga_pins ${FPGA_NAME}/CN11] -iostandard LVCMOS18
+#set_assignment [get_ports frsw_pcie_perst_n] -pin [get_hw_fpga_pins ${FPGA_NAME}/CN11] -iostandard LVTTL30
+
+

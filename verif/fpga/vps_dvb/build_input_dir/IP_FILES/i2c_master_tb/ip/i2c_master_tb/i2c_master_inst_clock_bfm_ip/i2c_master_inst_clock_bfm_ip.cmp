@@ -1,0 +1,10 @@
+	component i2c_master_inst_clock_bfm_ip is
+		generic (
+			CLOCK_RATE : positive := 50000000;
+			CLOCK_UNIT : positive := 1
+		);
+		port (
+			clk : out std_logic   -- clk
+		);
+	end component i2c_master_inst_clock_bfm_ip;
+

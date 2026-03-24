@@ -1,0 +1,13 @@
+$ip/src/rtl/pattern_gen.sv
+$ip/src/rtl/physs_eth.sv
+$ip/src/rtl/physs0.sv
+$ip/src/rtl/tristate_buf.v
+$ip/src/rtl/tristate_buf_new.v
+$ip/src/rtl/altera_phy/ethernet_1g_altera_phy.v
+$ip/src/rtl/altera_phy/IW_sync_reset.sv
+$ip/src/rtl/altera_phy/ethernet_loopback_usercontrol_altera_phy.v
+$ip/verif/fpga/vps_dvb/build_input_dir/IP_FILES/io_pll_125mhz_eth_clks/io_pll_125mhz_eth_clks/synth/io_pll_125mhz_eth_clks.v
+$ip/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_fpll_ref125Mhz_625Mhz/s10_fpll_ref125Mhz_625Mhz/synth/s10_fpll_ref125Mhz_625Mhz.v
+$ip/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_serdes_Ltile_with8b10b_tbi_eth/s10_serdes_Ltile_with8b10b_tbi_eth/synth/s10_serdes_Ltile_with8b10b_tbi_eth.v
+$ip/verif/fpga/vps_dvb/build_input_dir/IP_FILES/s10_xcvr_phy_reset_controller/s10_xcvr_phy_reset_controller/synth/s10_xcvr_phy_reset_controller.v
+$ip/verif/fpga/vps_dvb/build_input_dir/IP_FILES/serdes_tbi_loopback_fifo/serdes_tbi_loopback_fifo/synth/serdes_tbi_loopback_fifo.v

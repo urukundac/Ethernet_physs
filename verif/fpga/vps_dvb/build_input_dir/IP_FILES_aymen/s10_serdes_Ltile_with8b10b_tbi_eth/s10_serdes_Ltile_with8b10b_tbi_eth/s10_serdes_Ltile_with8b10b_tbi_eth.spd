@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/altera_xcvr_native_s10_functions_h.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_common_sv_packages"
+   systemVerilogPackageName="altera_xcvr_native_s10_functions_h" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_arbiter.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/altera_std_synchronizer_nocut.v"
+   type="VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_resync_std.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_reset_counter_s10.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/s10_avmm_h.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_native_avmm_csr.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_native_prbs_accum.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_native_odi_accel.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_native_rcfg_arb.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_early_spd_chng_s10_htile.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_native_anlg_reset_seq.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_native_dig_reset_seq.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_native_reset_seq.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_native_anlg_reset_seq_wrapper.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_native_re_cal_chnl.v"
+   type="VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_pcie_rx_eios_prot.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_native_rx_maib_wa.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/plain_files.txt"
+   type="OTHER"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/mentor_files.txt"
+   type="OTHER"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/cadence_files.txt"
+   type="OTHER"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/synopsys_files.txt"
+   type="OTHER"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/aldec_files.txt"
+   type="OTHER"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/docs/s10_serdes_Ltile_with8b10b_tbi_eth_altera_xcvr_native_s10_htile_1930_xmzqn2a_parameters.csv"
+   type="OTHER"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/s10_serdes_Ltile_with8b10b_tbi_eth_altera_xcvr_native_s10_htile_1930_xmzqn2a.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="altera_xcvr_native_s10_htile_1930/sim/alt_xcvr_native_rcfg_opt_logic_xmzqn2a.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_native_s10_htile_1930" />
+ <file
+   path="sim/s10_serdes_Ltile_with8b10b_tbi_eth.v"
+   type="VERILOG"
+   library="s10_serdes_Ltile_with8b10b_tbi_eth"
+   hasInlineConfiguration="true" />
+ <topLevel
+   name="s10_serdes_Ltile_with8b10b_tbi_eth.s10_serdes_Ltile_with8b10b_tbi_eth" />
+ <deviceFamily name="stratix10" />
+ <device name="1SG10MHN3F74C2LG_U2" />
+</simPackage>

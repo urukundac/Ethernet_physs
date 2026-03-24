@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ip name="FIFO Intel FPGA IP">
+ <timestamp>2025-04-07T11:01:24.531</timestamp>
+ <file></file>
+ <old_version>19.1.0</old_version>
+ <new_version>19.2.3</new_version>
+ <changes>
+  <change> No parameter change </change>
+  <change> No port change </change>
+  <change> Quartus infrastructure maintenance </change>
+ </changes>
+</ip>

@@ -1,0 +1,46 @@
+	s10_phy u0 (
+		.tx_analogreset            (_connected_to_tx_analogreset_),            //   input,    width = 4,            tx_analogreset.tx_analogreset
+		.rx_analogreset            (_connected_to_rx_analogreset_),            //   input,    width = 4,            rx_analogreset.rx_analogreset
+		.tx_digitalreset           (_connected_to_tx_digitalreset_),           //   input,    width = 4,           tx_digitalreset.tx_digitalreset
+		.rx_digitalreset           (_connected_to_rx_digitalreset_),           //   input,    width = 4,           rx_digitalreset.rx_digitalreset
+		.tx_analogreset_stat       (_connected_to_tx_analogreset_stat_),       //  output,    width = 4,       tx_analogreset_stat.tx_analogreset_stat
+		.rx_analogreset_stat       (_connected_to_rx_analogreset_stat_),       //  output,    width = 4,       rx_analogreset_stat.rx_analogreset_stat
+		.tx_digitalreset_stat      (_connected_to_tx_digitalreset_stat_),      //  output,    width = 4,      tx_digitalreset_stat.tx_digitalreset_stat
+		.rx_digitalreset_stat      (_connected_to_rx_digitalreset_stat_),      //  output,    width = 4,      rx_digitalreset_stat.rx_digitalreset_stat
+		.tx_cal_busy               (_connected_to_tx_cal_busy_),               //  output,    width = 4,               tx_cal_busy.tx_cal_busy
+		.rx_cal_busy               (_connected_to_rx_cal_busy_),               //  output,    width = 4,               rx_cal_busy.rx_cal_busy
+		.tx_bonding_clocks         (_connected_to_tx_bonding_clocks_),         //   input,   width = 24,         tx_bonding_clocks.clk
+		.rx_cdr_refclk0            (_connected_to_rx_cdr_refclk0_),            //   input,    width = 1,            rx_cdr_refclk0.clk
+		.tx_serial_data            (_connected_to_tx_serial_data_),            //  output,    width = 4,            tx_serial_data.tx_serial_data
+		.rx_serial_data            (_connected_to_rx_serial_data_),            //   input,    width = 4,            rx_serial_data.rx_serial_data
+		.rx_seriallpbken           (_connected_to_rx_seriallpbken_),           //   input,    width = 4,           rx_seriallpbken.rx_seriallpbken
+		.rx_is_lockedtoref         (_connected_to_rx_is_lockedtoref_),         //  output,    width = 4,         rx_is_lockedtoref.rx_is_lockedtoref
+		.rx_is_lockedtodata        (_connected_to_rx_is_lockedtodata_),        //  output,    width = 4,        rx_is_lockedtodata.rx_is_lockedtodata
+		.tx_coreclkin              (_connected_to_tx_coreclkin_),              //   input,    width = 4,              tx_coreclkin.clk
+		.rx_coreclkin              (_connected_to_rx_coreclkin_),              //   input,    width = 4,              rx_coreclkin.clk
+		.tx_clkout                 (_connected_to_tx_clkout_),                 //  output,    width = 4,                 tx_clkout.clk
+		.tx_clkout2                (_connected_to_tx_clkout2_),                //  output,    width = 4,                tx_clkout2.clk
+		.rx_clkout                 (_connected_to_rx_clkout_),                 //  output,    width = 4,                 rx_clkout.clk
+		.tx_parallel_data          (_connected_to_tx_parallel_data_),          //   input,   width = 64,          tx_parallel_data.tx_parallel_data
+		.tx_datak                  (_connected_to_tx_datak_),                  //   input,    width = 8,                  tx_datak.tx_datak
+		.pipe_tx_compliance        (_connected_to_pipe_tx_compliance_),        //   input,    width = 4,        pipe_tx_compliance.pipe_tx_compliance
+		.pipe_tx_elecidle          (_connected_to_pipe_tx_elecidle_),          //   input,    width = 4,          pipe_tx_elecidle.pipe_tx_elecidle
+		.pipe_tx_detectrx_loopback (_connected_to_pipe_tx_detectrx_loopback_), //   input,    width = 4, pipe_tx_detectrx_loopback.pipe_tx_detectrx_loopback
+		.pipe_powerdown            (_connected_to_pipe_powerdown_),            //   input,    width = 8,            pipe_powerdown.pipe_powerdown
+		.pipe_tx_margin            (_connected_to_pipe_tx_margin_),            //   input,   width = 12,            pipe_tx_margin.pipe_tx_margin
+		.pipe_tx_swing             (_connected_to_pipe_tx_swing_),             //   input,    width = 4,             pipe_tx_swing.pipe_tx_swing
+		.pipe_rx_polarity          (_connected_to_pipe_rx_polarity_),          //   input,    width = 4,          pipe_rx_polarity.pipe_rx_polarity
+		.unused_tx_parallel_data   (_connected_to_unused_tx_parallel_data_),   //   input,  width = 208,   unused_tx_parallel_data.unused_tx_parallel_data
+		.rx_parallel_data          (_connected_to_rx_parallel_data_),          //  output,   width = 64,          rx_parallel_data.rx_parallel_data
+		.rx_datak                  (_connected_to_rx_datak_),                  //  output,    width = 8,                  rx_datak.rx_datak
+		.rx_syncstatus             (_connected_to_rx_syncstatus_),             //  output,    width = 8,             rx_syncstatus.rx_syncstatus
+		.pipe_phy_status           (_connected_to_pipe_phy_status_),           //  output,    width = 4,           pipe_phy_status.pipe_phy_status
+		.pipe_rx_valid             (_connected_to_pipe_rx_valid_),             //  output,    width = 4,             pipe_rx_valid.pipe_rx_valid
+		.pipe_rx_status            (_connected_to_pipe_rx_status_),            //  output,   width = 12,            pipe_rx_status.pipe_rx_status
+		.unused_rx_parallel_data   (_connected_to_unused_rx_parallel_data_),   //  output,  width = 220,   unused_rx_parallel_data.unused_rx_parallel_data
+		.pipe_hclk_in              (_connected_to_pipe_hclk_in_),              //   input,    width = 1,              pipe_hclk_in.clk
+		.pipe_hclk_out             (_connected_to_pipe_hclk_out_),             //  output,    width = 1,             pipe_hclk_out.clk
+		.pipe_rx_eidleinfersel     (_connected_to_pipe_rx_eidleinfersel_),     //   input,   width = 12,     pipe_rx_eidleinfersel.pipe_rx_eidleinfersel
+		.pipe_rx_elecidle          (_connected_to_pipe_rx_elecidle_)           //  output,    width = 4,          pipe_rx_elecidle.pipe_rx_elecidle
+	);
+

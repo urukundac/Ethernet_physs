@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_iopll_1930/sim/uhfi_iopll_s10_gen_altera_iopll_1930_y2izzey.vo"
+   type="VERILOG"
+   library="altera_iopll_1930" />
+ <file
+   path="altera_iopll_1930/sim/stratix10_altera_iopll.v"
+   type="VERILOG"
+   library="altera_iopll_1930" />
+ <file
+   path="sim/uhfi_iopll_s10_gen.v"
+   type="VERILOG"
+   library="uhfi_iopll_s10_gen"
+   hasInlineConfiguration="true" />
+ <topLevel name="uhfi_iopll_s10_gen.uhfi_iopll_s10_gen" />
+ <deviceFamily name="stratix10" />
+</simPackage>

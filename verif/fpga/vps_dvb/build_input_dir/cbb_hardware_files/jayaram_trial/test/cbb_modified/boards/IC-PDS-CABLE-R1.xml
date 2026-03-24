@@ -1,0 +1,24 @@
+<BOARD>
+  <NAME value="IC-PDS-CABLE-R1"/>
+  <TYPE value="CABLE"/>
+  <REV_HIGH value="1"/>
+  <REV_LOW value="0"/>
+  <VENDOR value="ProDesign"/>
+  <ORDER_CODE value="40cm: 286461; 80cm: 286462"/>
+  <BOARD_STATUS value="active"/> 
+  <PRODUCT value="Veloce PF Interco Cable-40cm/-80cm"/>
+  <SERIAL_NO value="n.a."/>
+  <DESCRIPTION value="Interconnection Cable"/>
+  <CONNECTORS>
+    <PLUG1>
+      <MIN_VOLTAGE value="-32768"/>
+      <DEF_VOLTAGE value="32767"/>
+      <MAX_VOLTAGE value="32767"/>
+    </PLUG1>
+    <PLUG2>
+      <MIN_VOLTAGE value="-32768"/>
+      <DEF_VOLTAGE value="32767"/>
+      <MAX_VOLTAGE value="32767"/>
+    </PLUG2>
+  </CONNECTORS>
+</BOARD>

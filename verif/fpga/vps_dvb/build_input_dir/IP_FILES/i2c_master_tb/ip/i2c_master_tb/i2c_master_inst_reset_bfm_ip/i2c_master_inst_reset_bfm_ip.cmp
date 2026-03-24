@@ -1,0 +1,11 @@
+	component i2c_master_inst_reset_bfm_ip is
+		generic (
+			ASSERT_HIGH_RESET    : integer := 0;
+			INITIAL_RESET_CYCLES : integer := 50
+		);
+		port (
+			reset : out std_logic;        -- reset_n
+			clk   : in  std_logic := 'X'  -- clk
+		);
+	end component i2c_master_inst_reset_bfm_ip;
+

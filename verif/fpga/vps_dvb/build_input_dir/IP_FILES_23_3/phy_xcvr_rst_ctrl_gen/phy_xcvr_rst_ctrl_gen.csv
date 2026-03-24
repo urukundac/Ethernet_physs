@@ -1,0 +1,28 @@
+# system info phy_xcvr_rst_ctrl_gen on 2020.02.19.02:53:34
+system_info:
+name,value
+DEVICE,1SG10MHN3F74C2LG_U1
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for phy_xcvr_rst_ctrl_gen on 2020.02.19.02:53:34
+files:
+filepath,kind,attributes,module,is_top
+sim/phy_xcvr_rst_ctrl_gen.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,phy_xcvr_rst_ctrl_gen,true
+altera_xcvr_reset_control_s10_1911/sim/altera_std_synchronizer_nocut.v,VERILOG,,altera_xcvr_reset_control_s10,false
+altera_xcvr_reset_control_s10_1911/sim/alt_xcvr_resync_std.sv,SYSTEM_VERILOG,,altera_xcvr_reset_control_s10,false
+altera_xcvr_reset_control_s10_1911/sim/altera_xcvr_reset_control_s10.sv,SYSTEM_VERILOG,,altera_xcvr_reset_control_s10,false
+altera_xcvr_reset_control_s10_1911/sim/alt_xcvr_reset_counter_s10.sv,SYSTEM_VERILOG,,altera_xcvr_reset_control_s10,false
+altera_xcvr_reset_control_s10_1911/sim/mentor/altera_xcvr_reset_control_s10.sv,SYSTEM_VERILOG_ENCRYPT,MENTOR_SPECIFIC,altera_xcvr_reset_control_s10,false
+altera_xcvr_reset_control_s10_1911/sim/mentor/alt_xcvr_reset_counter_s10.sv,SYSTEM_VERILOG_ENCRYPT,MENTOR_SPECIFIC,altera_xcvr_reset_control_s10,false
+altera_xcvr_reset_control_s10_1911/sim/plain_files.txt,OTHER,,altera_xcvr_reset_control_s10,false
+altera_xcvr_reset_control_s10_1911/sim/mentor_files.txt,OTHER,,altera_xcvr_reset_control_s10,false
+altera_xcvr_reset_control_s10_1911/sim/cadence_files.txt,OTHER,,altera_xcvr_reset_control_s10,false
+altera_xcvr_reset_control_s10_1911/sim/synopsys_files.txt,OTHER,,altera_xcvr_reset_control_s10,false
+altera_xcvr_reset_control_s10_1911/sim/aldec_files.txt,OTHER,,altera_xcvr_reset_control_s10,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+phy_xcvr_rst_ctrl_gen.xcvr_reset_control_s10_0,altera_xcvr_reset_control_s10

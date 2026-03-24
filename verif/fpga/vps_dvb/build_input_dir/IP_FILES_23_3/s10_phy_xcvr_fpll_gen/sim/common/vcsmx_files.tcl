@@ -1,0 +1,67 @@
+
+namespace eval s10_phy_xcvr_fpll_gen {
+  proc get_design_libraries {} {
+    set libraries [dict create]
+    dict set libraries altera_common_sv_packages       1
+    dict set libraries altera_xcvr_fpll_s10_htile_1911 1
+    dict set libraries s10_phy_xcvr_fpll_gen           1
+    return $libraries
+  }
+  
+  proc get_memory_files {QSYS_SIMDIR} {
+    set memory_files [list]
+    return $memory_files
+  }
+  
+  proc get_common_design_files {USER_DEFINED_COMPILE_OPTIONS USER_DEFINED_VERILOG_COMPILE_OPTIONS USER_DEFINED_VHDL_COMPILE_OPTIONS QSYS_SIMDIR} {
+    set design_files [dict create]
+    dict set design_files "altera_common_sv_packages::altera_xcvr_native_s10_functions_h" "vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/../altera_xcvr_fpll_s10_htile_1911/sim/altera_xcvr_native_s10_functions_h.sv\"  -work altera_common_sv_packages"
+    return $design_files
+  }
+  
+  proc get_design_files {USER_DEFINED_COMPILE_OPTIONS USER_DEFINED_VERILOG_COMPILE_OPTIONS USER_DEFINED_VHDL_COMPILE_OPTIONS QSYS_SIMDIR} {
+    set design_files [list]
+    lappend design_files "vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/../altera_xcvr_fpll_s10_htile_1911/sim/altera_std_synchronizer_nocut.v\"  -work altera_xcvr_fpll_s10_htile_1911"                                           
+    lappend design_files "vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/../altera_xcvr_fpll_s10_htile_1911/sim/s10_avmm_h.sv\"  -work altera_xcvr_fpll_s10_htile_1911"                                                   
+    lappend design_files "vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/../altera_xcvr_fpll_s10_htile_1911/sim/alt_xcvr_native_anlg_reset_seq.sv\"  -work altera_xcvr_fpll_s10_htile_1911"                               
+    lappend design_files "vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/../altera_xcvr_fpll_s10_htile_1911/sim/alt_xcvr_pll_rcfg_arb.sv\"  -work altera_xcvr_fpll_s10_htile_1911"                                        
+    lappend design_files "vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/../altera_xcvr_fpll_s10_htile_1911/sim/alt_xcvr_pll_embedded_debug.sv\"  -work altera_xcvr_fpll_s10_htile_1911"                                  
+    lappend design_files "vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/../altera_xcvr_fpll_s10_htile_1911/sim/alt_xcvr_pll_avmm_csr.sv\"  -work altera_xcvr_fpll_s10_htile_1911"                                        
+    lappend design_files "vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/../altera_xcvr_fpll_s10_htile_1911/sim/alt_xcvr_resync.sv\"  -work altera_xcvr_fpll_s10_htile_1911"                                              
+    lappend design_files "vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/../altera_xcvr_fpll_s10_htile_1911/sim/alt_xcvr_arbiter.sv\"  -work altera_xcvr_fpll_s10_htile_1911"                                             
+    lappend design_files "vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/../altera_xcvr_fpll_s10_htile_1911/sim/s10_phy_xcvr_fpll_gen_altera_xcvr_fpll_s10_htile_1911_6tjuk2i.sv\"  -work altera_xcvr_fpll_s10_htile_1911"
+    lappend design_files "vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/../altera_xcvr_fpll_s10_htile_1911/sim/alt_xcvr_pll_rcfg_opt_logic_6tjuk2i.sv\"  -work altera_xcvr_fpll_s10_htile_1911"                          
+    lappend design_files "vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"$QSYS_SIMDIR/s10_phy_xcvr_fpll_gen.v\"  -work s10_phy_xcvr_fpll_gen"                                                                                                    
+    return $design_files
+  }
+  
+  proc get_elab_options {SIMULATOR_TOOL_BITNESS} {
+    set ELAB_OPTIONS ""
+    if ![ string match "bit_64" $SIMULATOR_TOOL_BITNESS ] {
+    } else {
+    }
+    return $ELAB_OPTIONS
+  }
+  
+  
+  proc get_sim_options {SIMULATOR_TOOL_BITNESS} {
+    set SIM_OPTIONS ""
+    if ![ string match "bit_64" $SIMULATOR_TOOL_BITNESS ] {
+    } else {
+    }
+    return $SIM_OPTIONS
+  }
+  
+  
+  proc get_env_variables {SIMULATOR_TOOL_BITNESS} {
+    set ENV_VARIABLES [dict create]
+    set LD_LIBRARY_PATH [dict create]
+    dict set ENV_VARIABLES "LD_LIBRARY_PATH" $LD_LIBRARY_PATH
+    if ![ string match "bit_64" $SIMULATOR_TOOL_BITNESS ] {
+    } else {
+    }
+    return $ENV_VARIABLES
+  }
+  
+  
+}

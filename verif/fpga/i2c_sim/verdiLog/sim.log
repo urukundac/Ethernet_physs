@@ -1,0 +1,8 @@
+Command: /nfs/site/disks/zsc14.xne_cnic.emu-fpga.002/pragyaro/i2c/output/physs_eth_tb/emu/haps_vcs_emuvcs/i2c_sim/MMG_PSS_SOC/vcs/simv +cxp_fastsimtrain +cxp_fast_eq_off +ppht_pll_quicksimlock +define+CXP_FAST_SIM_TRAIN +SVA_OFF -assert dumpoff +vpdfile+design.vpd -sml=verdi +UVM_VERDI_TRACE=UVM_AWARE +fsdb+gate=off -ucli2Proc -ucli -l /nfs/site/disks/zsc14.xne_cnic.emu-fpga.001/kumarlok/nac_09_06_nvm_debug_partition/physs_eth_standalone/verif/fpga/i2c_sim/verdiLog/sim.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Jul 23 14:47 2025
+Message: From $vcdpluson at time 0: [VCD+-SVFN]: 
+Setting VPD File by "+vpdfile+" switch to design.vpd.
+
+ucli% 

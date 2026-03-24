@@ -1,0 +1,9 @@
+	component i2c_master_inst_conduit_end_bfm_ip is
+		port (
+			sig_conduit_data_in : out std_logic_vector(0 downto 0);                    -- conduit_data_in
+			sig_conduit_clk_in  : out std_logic_vector(0 downto 0);                    -- conduit_clk_in
+			sig_conduit_data_oe : in  std_logic_vector(0 downto 0) := (others => 'X'); -- conduit_data_oe
+			sig_conduit_clk_oe  : in  std_logic_vector(0 downto 0) := (others => 'X')  -- conduit_clk_oe
+		);
+	end component i2c_master_inst_conduit_end_bfm_ip;
+

@@ -1,0 +1,5 @@
+RTLC_OPTIONS = -fpga_prototype_flow -acceptance_level medium -distributed
+VELCOMP_DISTRIB_FLOW = custom
+GLOB_PLATFORM = RED
+GLOB_VELOCE_APP_MODE = legacy
+GLOB_APP_MODE = legacy

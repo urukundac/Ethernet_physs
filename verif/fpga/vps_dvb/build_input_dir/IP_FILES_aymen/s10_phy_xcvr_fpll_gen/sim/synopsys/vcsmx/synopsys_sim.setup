@@ -1,0 +1,14 @@
+
+WORK > DEFAULT
+DEFAULT:                         ./libraries/work/                           
+work:                            ./libraries/work/                           
+altera_common_sv_packages:       ./libraries/altera_common_sv_packages/      
+altera_xcvr_fpll_s10_htile_1911: ./libraries/altera_xcvr_fpll_s10_htile_1911/
+s10_phy_xcvr_fpll_gen:           ./libraries/s10_phy_xcvr_fpll_gen/          
+altera_ver:                      ./libraries/altera_ver/                     
+lpm_ver:                         ./libraries/lpm_ver/                        
+sgate_ver:                       ./libraries/sgate_ver/                      
+altera_mf_ver:                   ./libraries/altera_mf_ver/                  
+altera_lnsim_ver:                ./libraries/altera_lnsim_ver/               
+fourteennm_ver:                  ./libraries/fourteennm_ver/                 
+fourteennm_ct1_ver:              ./libraries/fourteennm_ct1_ver/             

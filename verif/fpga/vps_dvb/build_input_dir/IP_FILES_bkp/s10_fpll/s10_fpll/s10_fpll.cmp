@@ -1,0 +1,11 @@
+	component s10_fpll is
+		port (
+			pll_refclk0       : in  std_logic                    := 'X'; -- clk
+			tx_serial_clk     : out std_logic;                           -- clk
+			pll_locked        : out std_logic;                           -- pll_locked
+			pll_pcie_clk      : out std_logic;                           -- pll_pcie_clk
+			pll_cal_busy      : out std_logic;                           -- pll_cal_busy
+			tx_bonding_clocks : out std_logic_vector(5 downto 0)         -- clk
+		);
+	end component s10_fpll;
+

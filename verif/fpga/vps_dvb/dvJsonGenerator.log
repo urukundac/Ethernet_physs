@@ -1,0 +1,726 @@
+-I-:    dvJsonGenerator    Successfully added log-file logger-handler: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_2/MMG_PSS_SOC/vps/genfilelist_dv/dvJsonGenerator.log
+-I-:    dvJsonGenerator    Ignoring provided spark-transactor module as 'NO_SPARK' is set to 1.
+-I-:    dvJsonGenerator    *********** Start reading '/nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/verif/fpga/model.cfg'
+-I-:    dvJsonGenerator    =========== Finish reading '/nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/verif/fpga/model.cfg'
+-W-:    dvJsonGenerator    No info provided for inter-dependency amongs src-list. Returning the same list order.
+-I-:    dvJsonGenerator    Working with MODEL-CFG file: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/verif/fpga/model.cfg
+
+-I-:    dvJsonGenerator    Expanded MODEL-CFG file: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_2/MMG_PSS_SOC/vps/genfilelist_dv/expanded_model.cfg
+
+-I-:    dvJsonGenerator    
+###############################################
+Generating DV-JSON data for model 'MMG_PSS_SOC'
+###############################################
+
+-I-:    dvJsonGenerator    Successfully added log-file logger-handler: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_2/MMG_PSS_SOC/vps/genfilelist_dv/model/MMG_PSS_SOC/log/dvJsonGenerator.log
+-I-:    dvJsonGenerator    Checking whether model 'MMG_PSS_SOC' is a variant lib model.
+-I-:    dvJsonGenerator    key 'analysis_opts_string' has different value in global and model-specific model-cfg data:
+    model  key: -mfcu -sv +define+INTEL_FPGA +libext+.sv+.v+.vs+.vh -all_file_cunit_scope -sv31acompat -vcs_compat +librescan
+    global key: -mfcu -sv +define+INTEL_FPGA -all_file_cunit_scope -sv31acompat -vcs_compat  +librescan
+-I-:    dvJsonGenerator    Marking all libs of model 'MMG_PSS_SOC' as lib variant as analysis-options for model is different from global.
+-I-:    dvJsonGenerator    Command /nfs/site/disks/crt_tools_013/dvb/2024.06.fe.DVB.1.3/dvb/scripts/dat2bash_csh.pl -dat /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_2/MMG_PSS_SOC/vps/genfilelist_dv/model/MMG_PSS_SOC/model_cfg_env exit status is 0 (success).
+-I-:    dvJsonGenerator    Loading RTL_JSON_DATA from dv_handoff_json and additional_rtl_jsons files: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/genfile/json/physs_eth_sim_filelist.json /nfs/site/disks/zsc14.xne_cnic.rtl.003/physs_ips/physs_bbl/physs_bbl-cnic_ev2_early_model/output/physs/genfilelist/json/physs_bbl_sim_filelist.json
+-I-:    dvJsonGenerator    Loading dv_handoff_json file: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/genfile/json/physs_eth_sim_filelist.json
+-I-:    dvJsonGenerator    Loading ADDITIONAL_RTL_JSON file: /nfs/site/disks/zsc14.xne_cnic.rtl.003/physs_ips/physs_bbl/physs_bbl-cnic_ev2_early_model/output/physs/genfilelist/json/physs_bbl_sim_filelist.json
+-I-:    dvJsonGenerator    Successfully loaded RTL_JSON_DATA for model 'MMG_PSS_SOC' using dv_handoff_json and additional_rtl_jsons files.
+-I-:    dvJsonGenerator    Not loading xtor-data as 'NO_SPARK' is set to 1.
+-W-:    dvJsonGenerator    No info provided for inter-dependency amongs src-list. Returning the same list order.
+-I-:    dvJsonGenerator    *********** Start reading '/nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/verif/fpga/change.cfg'
+-I-:    dvJsonGenerator    =========== Finish reading '/nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/verif/fpga/change.cfg'
+-I-:    dvJsonGenerator    applyChangeCfg: Processing config CXL_IP_conf under change-cfg config order: CXL_IP_conf
+-W-:    dvJsonGenerator    Unable to find path for IP brkxmp_ns_1lane_pma (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/brkxmp_ns_1lane_pma
+-I-:    dvJsonGenerator    "Updating brkxmp_ns_1lane_pma_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating brkxmp_ns_1lane_pma_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating brkxmp_ns_1lane_pma_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating brkxmp_ns_1lane_pma_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP socviewpin_32to1digimux (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/socviewpin_32to1digimux
+-I-:    dvJsonGenerator    "Updating socviewpin_32to1digimux_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating socviewpin_32to1digimux_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating socviewpin_32to1digimux_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating socviewpin_32to1digimux_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf128x162s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf128x162s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x162s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x162s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x162s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x162s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf128x42s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf128x42s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x42s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x42s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x42s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x42s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf128x82s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf128x82s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x82s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x82s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x82s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x82s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf16x130s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf16x130s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x130s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x130s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x130s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x130s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf16x80s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf16x80s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x80s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x80s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x80s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x80s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf32x180s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf32x180s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x180s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x180s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x180s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x180s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf32x64s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf32x64s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x64s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x64s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x64s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x64s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf32x66s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf32x66s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x66s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x66s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x66s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x66s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf512x32s0c1r1p0d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf512x32s0c1r1p0d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf512x32s0c1r1p0d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf512x32s0c1r1p0d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf512x32s0c1r1p0d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf512x32s0c1r1p0d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf64x158s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf64x158s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x158s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x158s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x158s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x158s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf64x190s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf64x190s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x190s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x190s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x190s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x190s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf64x56s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf64x56s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x56s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x56s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x56s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x56s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf64x64s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf64x64s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x64s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x64s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x64s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x64s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783rfhs2r2w128x46s0c1p3d0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783rfhs2r2w128x46s0c1p3d0
+-I-:    dvJsonGenerator    "Updating eth_ip783rfhs2r2w128x46s0c1p3d0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783rfhs2r2w128x46s0c1p3d0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783rfhs2r2w128x46s0c1p3d0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783rfhs2r2w128x46s0c1p3d0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP DWC_ether_hse_statistics (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/DWC_ether_hse_statistics
+-I-:    dvJsonGenerator    "Updating DWC_ether_hse_statistics_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating DWC_ether_hse_statistics_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating DWC_ether_hse_statistics_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating DWC_ether_hse_statistics_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP DW_ahb (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/DW_ahb
+-I-:    dvJsonGenerator    "Updating DW_ahb_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating DW_ahb_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating DW_ahb_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating DW_ahb_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP mac100 (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/mac100
+-I-:    dvJsonGenerator    "Updating mac100_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating mac100_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating mac100_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating mac100_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP mac400 (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/mac400
+-I-:    dvJsonGenerator    "Updating mac400_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating mac400_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating mac400_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating mac400_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP nic400_physs (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/nic400_physs
+-I-:    dvJsonGenerator    "Updating nic400_physs_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating nic400_physs_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating nic400_physs_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating nic400_physs_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP nic400_quad (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/nic400_quad
+-I-:    dvJsonGenerator    "Updating nic400_quad_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating nic400_quad_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating nic400_quad_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating nic400_quad_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP pcs400 (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/pcs400
+-I-:    dvJsonGenerator    "Updating pcs400_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating pcs400_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating pcs400_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating pcs400_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP quad100 (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/quad100
+-I-:    dvJsonGenerator    "Updating quad100_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating quad100_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-I-:    dvJsonGenerator    top_pcs_sgmii_refck_host_xlgmii_10b.v found 1 times. Replacing all such instances.
+-I-:    dvJsonGenerator    "Updating quad100_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating quad100_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP versa_4x1lane (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/versa_4x1lane
+-I-:    dvJsonGenerator    "Updating versa_4x1lane_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating versa_4x1lane_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating versa_4x1lane_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating versa_4x1lane_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP visa (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/visa
+-I-:    dvJsonGenerator    "Updating visa_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating visa_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating visa_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating visa_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP physs_bbl (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/physs_bbl
+-I-:    dvJsonGenerator    "Updating physs_bbl_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating physs_bbl_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating physs_bbl_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating physs_bbl_lib lib content for vlog_opts using remove
+-I-:    dvJsonGenerator    "Updating physs_lib_10m lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating physs_lib_10m lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating physs_lib_10m lib content for file using remove
+-I-:    dvJsonGenerator    "Updating physs_lib_10m lib content for vlog_opts using remove
+-I-:    dvJsonGenerator    Successfully generate DV-JSON data for model 'MMG_PSS_SOC'. Details could be find at:
+    MODEL-PATH: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_2/MMG_PSS_SOC/vps/genfilelist_dv/MMG_PSS_SOC
+
+
+-I-:    dvJsonGenerator    Provided log-file is successfully removed from logger-handlers: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_2/MMG_PSS_SOC/vps/genfilelist_dv/model/MMG_PSS_SOC/log/dvJsonGenerator.log
+-I-:    dvJsonGenerator    Successfully added log-file logger-handler: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_3/MMG_PSS_SOC/vps/genfilelist_dv/dvJsonGenerator.log
+-I-:    dvJsonGenerator    Ignoring provided spark-transactor module as 'NO_SPARK' is set to 1.
+-I-:    dvJsonGenerator    *********** Start reading '/nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/verif/fpga/model.cfg'
+-I-:    dvJsonGenerator    =========== Finish reading '/nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/verif/fpga/model.cfg'
+-W-:    dvJsonGenerator    No info provided for inter-dependency amongs src-list. Returning the same list order.
+-I-:    dvJsonGenerator    Working with MODEL-CFG file: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/verif/fpga/model.cfg
+
+-I-:    dvJsonGenerator    Expanded MODEL-CFG file: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_3/MMG_PSS_SOC/vps/genfilelist_dv/expanded_model.cfg
+
+-I-:    dvJsonGenerator    
+###############################################
+Generating DV-JSON data for model 'MMG_PSS_SOC'
+###############################################
+
+-I-:    dvJsonGenerator    Successfully added log-file logger-handler: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_3/MMG_PSS_SOC/vps/genfilelist_dv/model/MMG_PSS_SOC/log/dvJsonGenerator.log
+-I-:    dvJsonGenerator    Checking whether model 'MMG_PSS_SOC' is a variant lib model.
+-I-:    dvJsonGenerator    key 'analysis_opts_string' has different value in global and model-specific model-cfg data:
+    model  key: -mfcu -sv +define+INTEL_FPGA +libext+.sv+.v+.vs+.vh -all_file_cunit_scope -sv31acompat -vcs_compat +librescan
+    global key: -mfcu -sv +define+INTEL_FPGA -all_file_cunit_scope -sv31acompat -vcs_compat  +librescan
+-I-:    dvJsonGenerator    Marking all libs of model 'MMG_PSS_SOC' as lib variant as analysis-options for model is different from global.
+-I-:    dvJsonGenerator    Command /nfs/site/disks/crt_tools_013/dvb/2024.06.fe.DVB.1.3/dvb/scripts/dat2bash_csh.pl -dat /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_3/MMG_PSS_SOC/vps/genfilelist_dv/model/MMG_PSS_SOC/model_cfg_env exit status is 0 (success).
+-I-:    dvJsonGenerator    Loading RTL_JSON_DATA from dv_handoff_json and additional_rtl_jsons files: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/genfile/json/physs_eth_sim_filelist.json /nfs/site/disks/zsc14.xne_cnic.rtl.003/physs_ips/physs_bbl/physs_bbl-cnic_ev2_early_model/output/physs/genfilelist/json/physs_bbl_sim_filelist.json
+-I-:    dvJsonGenerator    Loading dv_handoff_json file: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/genfile/json/physs_eth_sim_filelist.json
+-I-:    dvJsonGenerator    Loading ADDITIONAL_RTL_JSON file: /nfs/site/disks/zsc14.xne_cnic.rtl.003/physs_ips/physs_bbl/physs_bbl-cnic_ev2_early_model/output/physs/genfilelist/json/physs_bbl_sim_filelist.json
+-I-:    dvJsonGenerator    Successfully loaded RTL_JSON_DATA for model 'MMG_PSS_SOC' using dv_handoff_json and additional_rtl_jsons files.
+-I-:    dvJsonGenerator    Not loading xtor-data as 'NO_SPARK' is set to 1.
+-W-:    dvJsonGenerator    No info provided for inter-dependency amongs src-list. Returning the same list order.
+-I-:    dvJsonGenerator    *********** Start reading '/nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/verif/fpga/change.cfg'
+-I-:    dvJsonGenerator    =========== Finish reading '/nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/verif/fpga/change.cfg'
+-I-:    dvJsonGenerator    applyChangeCfg: Processing config CXL_IP_conf under change-cfg config order: CXL_IP_conf
+-W-:    dvJsonGenerator    Unable to find path for IP brkxmp_ns_1lane_pma (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/brkxmp_ns_1lane_pma
+-I-:    dvJsonGenerator    "Updating brkxmp_ns_1lane_pma_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating brkxmp_ns_1lane_pma_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating brkxmp_ns_1lane_pma_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating brkxmp_ns_1lane_pma_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP socviewpin_32to1digimux (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/socviewpin_32to1digimux
+-I-:    dvJsonGenerator    "Updating socviewpin_32to1digimux_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating socviewpin_32to1digimux_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating socviewpin_32to1digimux_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating socviewpin_32to1digimux_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf128x162s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf128x162s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x162s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x162s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x162s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x162s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf128x42s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf128x42s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x42s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x42s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x42s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x42s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf128x82s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf128x82s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x82s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x82s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x82s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf128x82s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf16x130s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf16x130s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x130s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x130s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x130s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x130s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf16x80s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf16x80s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x80s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x80s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x80s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf16x80s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf32x180s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf32x180s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x180s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x180s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x180s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x180s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf32x64s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf32x64s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x64s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x64s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x64s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x64s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf32x66s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf32x66s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x66s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x66s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x66s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf32x66s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf512x32s0c1r1p0d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf512x32s0c1r1p0d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf512x32s0c1r1p0d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf512x32s0c1r1p0d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf512x32s0c1r1p0d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf512x32s0c1r1p0d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf64x158s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf64x158s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x158s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x158s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x158s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x158s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf64x190s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf64x190s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x190s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x190s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x190s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x190s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf64x56s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf64x56s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x56s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x56s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x56s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x56s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hd2prf64x64s0c1r1p3d0v0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hd2prf64x64s0c1r1p3d0v0
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x64s0c1r1p3d0v0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x64s0c1r1p3d0v0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x64s0c1r1p3d0v0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hd2prf64x64s0c1r1p3d0v0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x52m8b2s1c1r2p0d0a2_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783hdspsr4096x40m8b2s0c1r2p0d0a2_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP eth_ip783rfhs2r2w128x46s0c1p3d0 (IP-type: hip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/hip/eth_ip783rfhs2r2w128x46s0c1p3d0
+-I-:    dvJsonGenerator    "Updating eth_ip783rfhs2r2w128x46s0c1p3d0_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating eth_ip783rfhs2r2w128x46s0c1p3d0_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating eth_ip783rfhs2r2w128x46s0c1p3d0_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating eth_ip783rfhs2r2w128x46s0c1p3d0_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP DWC_ether_hse_statistics (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/DWC_ether_hse_statistics
+-I-:    dvJsonGenerator    "Updating DWC_ether_hse_statistics_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating DWC_ether_hse_statistics_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating DWC_ether_hse_statistics_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating DWC_ether_hse_statistics_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP DW_ahb (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/DW_ahb
+-I-:    dvJsonGenerator    "Updating DW_ahb_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating DW_ahb_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating DW_ahb_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating DW_ahb_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP mac100 (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/mac100
+-I-:    dvJsonGenerator    "Updating mac100_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating mac100_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating mac100_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating mac100_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP mac400 (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/mac400
+-I-:    dvJsonGenerator    "Updating mac400_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating mac400_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating mac400_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating mac400_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP nic400_physs (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/nic400_physs
+-I-:    dvJsonGenerator    "Updating nic400_physs_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating nic400_physs_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating nic400_physs_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating nic400_physs_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP nic400_quad (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/nic400_quad
+-I-:    dvJsonGenerator    "Updating nic400_quad_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating nic400_quad_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating nic400_quad_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating nic400_quad_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP pcs400 (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/pcs400
+-I-:    dvJsonGenerator    "Updating pcs400_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating pcs400_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating pcs400_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating pcs400_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP quad100 (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/quad100
+-I-:    dvJsonGenerator    "Updating quad100_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating quad100_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-I-:    dvJsonGenerator    top_pcs_sgmii_refck_host_xlgmii_10b.v found 1 times. Replacing all such instances.
+-I-:    dvJsonGenerator    "Updating quad100_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating quad100_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP versa_4x1lane (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/versa_4x1lane
+-I-:    dvJsonGenerator    "Updating versa_4x1lane_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating versa_4x1lane_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating versa_4x1lane_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating versa_4x1lane_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP visa (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/visa
+-I-:    dvJsonGenerator    "Updating visa_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating visa_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating visa_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating visa_lib lib content for vlog_opts using remove
+-W-:    dvJsonGenerator    Unable to find path for IP physs_bbl (IP-type: sip). IP Search paths:
+-W-:    dvJsonGenerator        /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/subip/sip/physs_bbl
+-I-:    dvJsonGenerator    "Updating physs_bbl_lib lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating physs_bbl_lib lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating physs_bbl_lib lib content for file using remove
+-I-:    dvJsonGenerator    "Updating physs_bbl_lib lib content for vlog_opts using remove
+-I-:    dvJsonGenerator    "Updating physs_lib_10m lib content for vlog_opts using add
+-I-:    dvJsonGenerator    "Updating physs_lib_10m lib content for file using replace
+-W-:    dvJsonGenerator    No file exists in provided filelist, with fxp_cxp_cse_osm.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with dwc_pcie5_phy_x4_ns.v file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with hif_upp_beu.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with parnss.sv file-name.
+-W-:    dvJsonGenerator    No file exists in provided filelist, with top_pcs_sgmii_refck_host_xlgmii_10b.v file-name.
+-I-:    dvJsonGenerator    "Updating physs_lib_10m lib content for file using remove
+-I-:    dvJsonGenerator    "Updating physs_lib_10m lib content for vlog_opts using remove
+-I-:    dvJsonGenerator    Successfully generate DV-JSON data for model 'MMG_PSS_SOC'. Details could be find at:
+    MODEL-PATH: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_3/MMG_PSS_SOC/vps/genfilelist_dv/MMG_PSS_SOC
+
+
+-I-:    dvJsonGenerator    Provided log-file is successfully removed from logger-handlers: /nfs/site/disks/xne_tip_0003/urukunda/pragya_barak_phy/pragay_phy_intg/output/physs_eth/fpga/vps_dvb_vps/pcs_3/MMG_PSS_SOC/vps/genfilelist_dv/model/MMG_PSS_SOC/log/dvJsonGenerator.log

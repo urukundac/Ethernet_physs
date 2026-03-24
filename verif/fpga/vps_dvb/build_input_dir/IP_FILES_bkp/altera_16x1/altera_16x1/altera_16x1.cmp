@@ -1,0 +1,14 @@
+	component altera_16x1 is
+		port (
+			data    : in  std_logic := 'X'; -- datain
+			wrreq   : in  std_logic := 'X'; -- wrreq
+			rdreq   : in  std_logic := 'X'; -- rdreq
+			wrclk   : in  std_logic := 'X'; -- wrclk
+			rdclk   : in  std_logic := 'X'; -- rdclk
+			aclr    : in  std_logic := 'X'; -- aclr
+			q       : out std_logic;        -- dataout
+			rdempty : out std_logic;        -- rdempty
+			wrfull  : out std_logic         -- wrfull
+		);
+	end component altera_16x1;
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/altera_std_synchronizer_nocut.v"
+   type="VERILOG"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/alt_xcvr_resync_std.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/altera_xcvr_reset_control_s10.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/alt_xcvr_reset_counter_s10.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/plain_files.txt"
+   type="OTHER"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/mentor_files.txt"
+   type="OTHER"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/cadence_files.txt"
+   type="OTHER"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/synopsys_files.txt"
+   type="OTHER"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="altera_xcvr_reset_control_s10_1911/sim/aldec_files.txt"
+   type="OTHER"
+   library="altera_xcvr_reset_control_s10_1911" />
+ <file
+   path="sim/s10_xcvr_phy_reset_controller.v"
+   type="VERILOG"
+   library="s10_xcvr_phy_reset_controller"
+   hasInlineConfiguration="true" />
+ <topLevel name="s10_xcvr_phy_reset_controller.s10_xcvr_phy_reset_controller" />
+ <deviceFamily name="stratix10" />
+ <device name="1SG10MHN3F74C2LG_U1" />
+</simPackage>

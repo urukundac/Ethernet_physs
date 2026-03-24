@@ -1,0 +1,30 @@
+-----------------------------------------------------------
+-- General Information --
+-- Veloce Prototyping System version: 2023.06
+-- Veloce Prototyping System build: 5694875
+-- Time: Wed Apr  3 19:44:32 2024
+-----------------------------------------------------------
+
+Hostname: scfc121907
+-- Memory info --
+	MemTotal                                : 1056160436 kB       
+	MemFree                                 : 326752100 kB        
+-- Uptime info --
+	The uptime                              : 33297990.34 (seconds)
+	The time spent in the idle task         : 1559242583.08 (seconds)
+-- CPU info --
+	Model	: Intel(R) Xeon(R) Gold 6336Y CPU @ 2.40GHz
+		24 cores with bogomips 4800.00
+		24 cores with bogomips 4825.72
+	Total number of processor cores	: 48
+-- Resource limits granted by the Operating System --
+	Stack limit: soft limit: 8388608 bytes / hard limit: unlimited
+	Maximum number of opened files: soft limit: 16384 files / hard limit: 32768 files
+--------------------------------
+
+Wall time  | User CPU time | System CPU time | Virtual memory + inc | Resident set + inc | load/5m | Cumulative Wall time | <Tool section>
+     0.00s |         0.00s |           0.00s |      91 +      91 MB |     12 +     12 MB |    1.51 |                0.00s | <boardgen/begin>
+     0.00s |         0.00s |           0.00s |      91 +       0 MB |     12 +      0 MB |    1.51 |                0.00s | <Processing inputs/Reading input file>
+     0.00s |         0.00s |           0.00s |      91 +       0 MB |     12 +      0 MB |    1.51 |                0.00s | <Processing inputs>
+     0.00s |         0.00s |           0.00s |      91 +       0 MB |     12 +      0 MB |    1.51 |                0.00s | <boardgen/end>
+

@@ -1,0 +1,19 @@
+# system info io_pll_125mhz_eth_clks on 2025.04.07.10:48:58
+system_info:
+name,value
+DEVICE,1SG10MHN3F74C2LG_U1
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for io_pll_125mhz_eth_clks on 2025.04.07.10:48:58
+files:
+filepath,kind,attributes,module,is_top
+sim/io_pll_125mhz_eth_clks.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,io_pll_125mhz_eth_clks,true
+altera_iopll_1931/sim/io_pll_125mhz_eth_clks_altera_iopll_1931_37l27yq.vo,VERILOG,,io_pll_125mhz_eth_clks_altera_iopll_1931_37l27yq,false
+altera_iopll_1931/sim/stratix10_altera_iopll.v,VERILOG,,io_pll_125mhz_eth_clks_altera_iopll_1931_37l27yq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+io_pll_125mhz_eth_clks.iopll_0,io_pll_125mhz_eth_clks_altera_iopll_1931_37l27yq

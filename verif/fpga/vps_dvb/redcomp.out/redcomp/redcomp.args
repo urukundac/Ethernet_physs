@@ -1,0 +1,282 @@
+######################################################################
+#    Veloce Prototyping System
+#    /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/redcomp.out/redcomp/redcomp.args -- Automatically generated from redcomp
+#    Version: 2023.06
+#    Build : 5694875
+#    Date : Fri Jan 17 02:10:13 2025
+#    Unpublished work. Copyright 2023 Siemens
+#    This material contains trade secrets or otherwise
+#    confidential information owned by Siemens Industry Software Inc.
+#    or its affiliates (collectively, "SISW"), or its licensors.
+#    Access to and use of this information is strictly limited as
+#    set forth in the Customer's applicable agreements with SISW.
+######################################################################
+
+Launching Command: /nfs/site/disks/crt_tools_062/mentor/VPS/2023.06/partitioner/bin/redcomp -settings redcomp.tcl -task view.post_condition 
+
+##################### PLATFORM DETAILS ######################
+SUSE Linux Enterprise Server 12 (x86_64)
+VERSION = 12
+PATCHLEVEL = 5
+# This file is deprecated and will be removed in a future service pack or release.
+# Please check /etc/os-release for details about this release.
+NAME="SLES"
+VERSION="12-SP5"
+VERSION_ID="12.5"
+PRETTY_NAME="SUSE Linux Enterprise Server 12 SP5"
+ID="sles"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:suse:sles:12:sp5"
+Linux sccc16403126 4.12.14-122.201-default #1 SMP Tue Mar 12 13:01:34 UTC 2024 (b92bd5a/lp-ae6fcba) x86_64 x86_64 x86_64 GNU/Linux
+ldd (GNU libc) 2.22
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Written by Roland McGrath and Ulrich Drepper.
+
+
+##################### ENVIRONMENT DETAILS ######################
+SW_PLATFORM=TBX
+RED_VIS_HOME=/p/hdk/rtl/cad/x86-64_linux26/mentor/visualizer/2021.4
+NBTASK_FILE=/p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/template/common/make_targets.task
+REMOTEHOST=scce04040116.zsc7.intel.com
+LESSKEY=/etc/lesskey.bin
+GCC_HOME=/usr/intel/pkgs/gcc/6.4.0
+CMD_TIMESTAMP=2025-01-16T03:02:12,827052628-08:00
+PRODUCT_NAME=MMG800
+MANPATH=/usr/local/man:/usr/share/man:/opt/quest/man:/usr/intel/man:/usr/share/man:/usr/local/man:/opt/quest/man
+NNTPSERVER=news.intel.com
+SPARK_MODULE_DIR=/emu/transactors
+SALT_LICENSE_SERVER=1717@mentor03p.elic.intel.com:1717@FMYLIC7010.fm.intel.com:1717@fmylic7006.fm.intel.com:1717@mentor06p.elic.intel.com:1717@mentor14p.elic.intel.com:1717@mentor03p.elic.intel.com:1717@mentor04p.elic.intel.com
+BUILD_OUTDIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss
+USER_ITOOLS=/nfs/site/home/kumarlok/.itools
+__NB_SUBMISSION_POOL=zsc7_ion
+RTLD_DEEPBIND=0
+HOSTNAME=sccc16403126.zsc7.intel.com
+DV_JSON_FILE=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/genfile/dvb_sim_filelist.json
+WORKAREA=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss
+IP_MODELS=/p/hdk/rtl/ip_models/nhdk
+XKEYSYMDB=/usr/X11R6/lib/X11/XKeysymDB
+analysis_opts_string=-mfcu -sv +define+INTEL_FPGA +libext+.sv+.v+.vs+.vh -all_file_cunit_scope -sv31acompat -vcs_compat +librescan
+USECASE=simics
+SVDPI_INC_PATH=/p/hdk/rtl/cad/x86-64_linux26/mentor/VPS/2022.12.2/os3fp/tbx/include
+VELCOMP_TASK_CONF_FILE=/p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/scripts/cde/velcomp_custom_task_distrib.conf
+PRODUCT_STEP=A0
+__NB_RUNNING_ON_DYNAMIC_WSM=false
+HOST=sccc16403126
+SHELL=/bin/tcsh
+__NB_QUEUE=zsc7_interactive
+__NB_LOG_FILE=/dev/null
+TERM=xterm
+VENDOR_TOOL_PATH=/p/hdk/rtl/cad/x86-64_linux26/mentor/VPS/2023.06
+TOP_IP_NAME=physs_top
+CTECH_PATH=/p/hdk/cad/ctech/c4v20ww16d_hdk161_p1276_19ww35.5_g1m_f.0/source/v
+ANALYZED_LIBS_DIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/analyzed_libs
+FVWM_USERDIR=/nfs/site/home/kumarlok
+__NB_CLASS=tool
+VMW_RSH=/usr/bin/ssh2
+NB=1
+IP_RELEASES=/p/hdk/rtl/ip_releases/nhdk
+top_module_names=mmg_pss_lib.physs_wrap
+NBCLASS_TB=SLES12SP5&&32G
+DVB_PYTHON=/p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/.venv/bin/python3
+CENTRAL_TOOL_ORDER=/p/hdk/pu_tu/prd/global_tools/mmg800/24.04.002/central_tool_order.cth
+MMG_MODEL_FSDB=/nfs/site/disks/mmg800.zsc7.model_fsdb.001
+CENTRAL_TOOL_CONFIG=/p/hdk/pu_tu/prd/global_tools/mmg800/24.04.002
+PERL5LIB=/nfs/site/proj/hdk/pu_tu/prd/liteinfra/1.17/commonFlow/lib/perl
+QSYS_HOME=/p/hdk/rtl/cad/x86-64_linux26/altera/quartus_prime_pro/21.2.0.72/quartus/sopc_builder
+EC_ENV_PROJ=default
+VIVADO_HOME=/p/hdk/rtl/cad/x86-64_linux26/xilinx/vivado/2022.2a
+NB_CMD_FE=nbjob run --target cth_dvb_kumarlok_sccc16403126 --class "SLES12SP5&&32G"  --log-file-dir /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/log/250116.030157 --mode blocking
+MORE=-sl
+LM_PROJECT=DCG_MOUNTMORGAN
+WINDOWID=39845896
+NUM_ANALYZE_PARALLEL_JOBS=20
+__NB_LOCAL_BIN=/var/netstar/bin
+NBQSLOT=/DCG/MountMorgan/RTL/build
+CTH_ENV_INDICATOR=1
+__NB_JOBID=zsc7_ion.122479327
+EC_SITE=zsc7
+OS=linux
+PREDICTION_ENTITY=___vps_
+NBTASK=vps_Jan16_030200_6370
+NBCLASS_ANA=SLES12SP5&&2G
+DUT=physs_top
+analysis_vhdl_opts_string=-comment_transoff_regions
+CFG_PROJECT=nhdk
+VELCOMP_CDE_CLASS_APPEND=SLES12SP5
+TMP_OUTPUT=/tmp/netbatch/physs_top_kumarlok_250116.030157
+JRE_HOME=/usr/lib64/jvm/jre-openjdk
+GROFF_NO_SGR=yes
+GROUP=intelall
+USER=kumarlok
+XTERM_SHELL=/usr/intel/bin/tcsh
+LD_LIBRARY_PATH=:/p/hdk/rtl/cad/x86-64_linux26/mentor/VPS/2022.12.2/profpga/lib/linux_x86_64:/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/simics_workspace/linux64/lib:/usr/intel/pkgs/glib/2.24.2/lib64:/usr/intel/pkgs/pango/1.28.1/lib64:/usr/intel/pkgs/gtk+/2.20.1/lib64:/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/lib:/p/hdk/cad/windriver/simics/6.0.153/linux64/sys/lib:
+GK_TTASK_NDUT=dut_option_not_set_by_ttask
+LS_COLORS=no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.lzma=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.xz=00;31:*.avi=01;35:*.bmp=01;35:*.fli=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mng=01;35:*.mov=01;35:*.mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.tga=01;35:*.tif=01;35:*.xbm=01;35:*.xpm=01;35:*.dl=01;35:*.gl=01;35:*.wmv=01;35:*.aiff=00;32:*.au=00;32:*.mid=00;32:*.mp3=00;32:*.ogg=00;32:*.voc=00;32:*.wav=00;32:
+TARGET_DIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps
+CURDIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga
+CTECH_EXP_PATH=/p/hdk/cad/ctech/ctech_exp_c4v20ww35_hdk162_xpg/source/v
+SPLUNK_PROJECT=MOUNTMORGAN800
+CTH_PERL5LIB=/nfs/site/proj/hdk/pu_tu/prd/liteinfra/1.17/commonFlow/lib/perl
+CSHRCREAD=true
+MYSQL_HISTFILE=/dev/null
+WORKDIR=build_pss
+XNLSPATH=/usr/share/X11/nls
+REPOSITORY_JSON=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/filelists/val/transactors.json
+SIMICS_USE_REALPATH=0
+MAKE_EXEC=make
+GIT_REPOS=/p/hdk/rtl/git_repos/nhdk
+CTH_SESSION_ID=kumarlok_24772_805133980
+HOSTTYPE=x86_64-linux
+__NB_QSLOT=DCG/ACCCIP/RTL
+MODEL_NAME=physs_wrap
+XILINXD_LICENSE_FILE=2100@xilinx05p.elic.intel.com:2100@xilinx02p.elic.intel.com:2100@xilinx03p.elic.intel.com:2100@xilinx01p.elic.intel.com:2100@xilinx02p.elic.intel.com:2100@xilinx03p.elic.intel.com:2100@xilinx05p.elic.intel.com:2100@fmylic7003.fm.intel.com
+FLOW_ROOT=/p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/makefiles/vps
+FLOW=vps
+RTLMODELS=/p/hdk/rtl/ip_models/nhdk
+FROM_HEADER=
+USERNAME=kumarlok
+OUTDIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top
+PAGER=less
+EC_ZONE=zsc7
+SIMICS_HOME=/p/hdk/cad/windriver/simics/6.0.153
+NBLOG_DIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/NBLOGS
+CSHEDIT=emacs
+CTECH_EXP=/p/hdk/cad/ctech/ctech_exp_c4v20ww35_hdk162_xpg
+XDG_CONFIG_DIRS=/etc/xdg
+__NB_POOL=zsc7_ion
+CTH_QUERY_TOOL_ACCESS=-tool vps
+MINICOM=-c on
+__NB_UNIQUE_EXEC_ID=60229
+areLibsVariant=1
+INFRA_GETLF_PATH=/var/licenses/getLf
+PATH=:/usr/intel/pkgs/gmake/4.2.1/bin:/p/hdk/rtl/cad/x86-64_linux26/mentor/visualizer/2021.4/bin:/p/hdk/rtl/cad/x86-64_linux26/mentor/VPS/2022.12.2/profpga/bin/linux_x86_64:/p/hdk/rtl/cad/x86-64_linux26/mentor/VPS/2023.06/bin:/p/hdk/rtl/cad/x86-64_linux26/mentor/questasim/2021.4/bin:/p/hdk/rtl/cad/x86-64_linux26/altera/quartus_prime_pro/21.2.0.72/quartus/sopc_builder/bin:/p/hdk/rtl/cad/x86-64_linux26/altera/quartus_prime_pro/24.1/quartus/bin:/p/hdk/rtl/cad/x86-64_linux26/xilinx/vivado/2022.2a/bin:/usr/intel/pkgs/gcc/6.4.0/bin:/usr/intel/pkgs/git/2.4.1/bin:/p/hdk/pu_tu/prd/proj_bin/mmg800/24.01.004:/usr/intel/bin:/nfs/site/home/kumarlok/bin:/bin:/usr/bin:/usr/bin/X11:.:/usr/sbin:/usr/local/bin:/usr/games:/nfs/site/proj/hdk/pu_tu/prd/liteinfra/1.17/commonFlow/bin/:/usr/intel/bin:/usr/intel/pkgs/git/2.4.1/bin:/p/hdk/pu_tu/prd/proj_bin/mmg800/24.01.004:/usr/intel/bin:/nfs/site/home/kumarlok/bin:/bin:/usr/bin:/usr/bin/X11:.:/usr/sbin:/usr/local/bin:/usr/games:/nfs/site/proj/hdk/pu_tu/prd/liteinfra/1.17/commonFlow/bin/
+MAIL=/var/spool/mail/kumarlok
+top_module_name=physs_top
+CPU=x86_64
+NO_SPARK=1
+NB_CMD_BE=nbjob run --target cth_dvb_kumarlok_sccc16403126 --class "SLES12SP5&&32G"  --log-file-dir /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/log/250116.030157 --mode blocking
+MODEL=MMG_PSS_SOC
+COPY_NFS_AREA=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps
+FE_BASELINE_TOOLS=baseline_tools
+JAVA_BINDIR=/usr/lib64/jvm/jre-openjdk/bin
+LC_COLLATE=C
+__NB_HOME=/nfs/site/disks/ec_netbatch/install/8.6.1_0985_16
+RED_NC=/usr/intel/bin/nc
+INPUTRC=/etc/inputrc
+PWD=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb
+DV_TOP_LIB=mmg_pss_lib
+TESTBENCH_GCC=/usr/intel/pkgs/gcc/6.4.0
+LOG_DIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/log/250116.030157
+ENABLE_CDE=1
+JAVA_HOME=/usr/lib64/jvm/jre-openjdk
+RED_SOFTMODEL_HOME=/p/hdk/rtl/cad/x86-64_linux26/mentor/VirtuaLAB/v21.2/red_softmodel
+__NB_CLASSRESERVATION=int_users=1,cores=0.2,int_memory=2,memory=2,int_cores=0.2
+EDITOR=/bin/vi
+additional_rtl_jsons=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/physs_sim_filelist.json
+NBCLASS_FE=SLES12SP5&&32G
+MAKEFILE=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/Makefile
+DOMAIN=mmg800
+LANG=en_US.UTF-8
+flatten_val_library_list=1
+RED_HOME=/nfs/site/disks/crt_tools_062/mentor/VPS/2023.06
+QUARTUS_HOME=/p/hdk/rtl/cad/x86-64_linux26/altera/quartus_prime_pro/24.1/quartus
+__NB_SUBMIT_PWD=/tmp
+PYTHONSTARTUP=/etc/pythonstart
+__NB_SUBMITTING_USER=kumarlok
+FE_ACTIVITY_MAPPING=baseline_tools/activity_dir.map
+TZ=PST8PDT
+top_ip_name=physs_top
+project=MMG_PSS
+TBX_HOME=/p/hdk/rtl/cad/x86-64_linux26/mentor/VPS/2022.12.2/os3fp/tbx
+NBCLASS_BE=SLES12SP5&&32G
+CREATE_EMPTY_SIMICS_PKGS_LIST=0
+WASH_LIST=-g mmg800 -n cip gmdhw hdk10nm hdk10nmproc hdk7nm hdk7nmproc intelall isg_concord mmg mmg800 n5 siphdk soc srvr10nm
+INPUT_BACKUP_DIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/user_inputs
+WRAP_SETTING_FILE=build_input_dir/wrap_settings.tcl
+NB_CMD_ANA=nbjob run --target cth_dvb_kumarlok_sccc16403126 --class "SLES12SP5&&2G" --log-file-dir /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/log/250116.030157 --mode blocking
+NBFEEDER_IDLE_TIMEOUT=7200
+LM_LICENSE_FILE=1800@altera02p.elic.intel.com:1800@altera05p.elic.intel.com
+XTERM_VERSION=X.Org 7.7.0(308)
+XTERM_LOCALE=en_US.UTF-8
+TMP_LOG_DIR=/log/250116.030157
+NBFEEDER_MAX_MEM=2G
+MODEL_CFG=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/build_input_dir/cbb_hardware_files/301.cfg
+JEM=/p/hdk/rtl/cad/em64t_SLES12/dt/jem/23.3.2_64
+DVB_PERL=/usr/intel/pkgs/perl/5.34.0/bin/perl
+COMMON_SPARK_MODULE_DIR=1
+CTH_SETUP_CMD=/nfs/site/proj/hdk/pu_tu/prd/liteinfra/1.17/commonFlow/bin/cth_psetup -proj mmg800/24.04.008 -cfg mmg800a0.cth -read_only
+VELCOMP_CDE_USE_MEM_REQ_FOR_CLASS=1
+REPLAY_DIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/replay
+INTEL_FPGA=1
+BUILD_DIRNAME=vps_dvb
+PROJ_DBIN_CTH=/p/hdk/pu_tu/prd/proj_dbin/epg
+QT_SYSTEM_DIR=/usr/share/desktop-data
+SHLVL=4
+HOME=/nfs/site/home/kumarlok
+NUM_SPARK_BUILD_PARALLEL_JOBS=12
+PRODUCT_MILESTONE=P00
+LICENSE_DATA_OVRD=/p/hdk/rtl/proj_tools/license_data/nhdk/latest
+OSTYPE=linux
+LESS_ADVANCED_PREPROCESSOR=no
+MGC_HOME=/p/hdk/rtl/cad/x86-64_linux26/mentor/questasim/2021.4
+CTH_CONFIG_ROOT=/p/hdk/etc/Projects
+EC_OU=unknown
+change_cfg_conf=CXL_IP_conf
+SHADOW_DIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/.shadow
+MODEL_CFG_ENV=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/genfile/model_cfg_env.bash
+XCURSOR_THEME=Industrial
+LS_OPTIONS=-N --color=tty -T 0
+elab_opts_string=-libmap_verbose -config_verbose -ignore driver_checks -kdb=postelab fw_lib.dumpvars -error=noZEMI-LENCW
+NBFEEDER=cth_dvb_kumarlok_sccc16403126
+CTECH_SOURCE=/p/hdk/cad/ctech/c4v20ww43c_hdk162/source/v
+ADMINDISK=/nfs/site/disks/mmg800_arc_admin
+XDG_CACHE_HOME=/tmp/kdecache-kumarlok
+__NB_TIMES_RESTARTED=0
+VENDOR=unknown
+PYTHONPATH=/p/hdk/rtl/cad/x86-64_linux26/mentor/VPS/2022.12.2/profpga/lib/linux_x86_64
+DVB_ROOT=/p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb
+BU=NEX_NCNG
+MACHTYPE=x86_64
+G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-15,CP1252
+LOGNAME=kumarlok
+LESS=-M -I -R
+MGLS_LICENSE_FILE=1717@mentor03p.elic.intel.com:1717@FMYLIC7010.fm.intel.com:1717@fmylic7006.fm.intel.com:1717@mentor06p.elic.intel.com:1717@mentor14p.elic.intel.com:1717@mentor03p.elic.intel.com:1717@mentor04p.elic.intel.com
+DEFAULT_FPGA=mb1_uA
+BUILD_DIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb
+PROJ_MONITOR_NAME=MOUNTMORGAN800
+CVS_RSH=ssh
+PREDICTION_PHS=dvb_vps.physs_top.clean_xtor
+XDG_DATA_DIRS=/usr/share
+__NB_INTERACTIVE_SESSIONID=zsc7_ion.122479327
+VISUALIZER_HOME=/p/hdk/rtl/cad/x86-64_linux26/mentor/visualizer/2021.4
+__NB_WSM_JETTY_CONTROLLER_PORT=31556
+MAKEFILE_LIST=Makefile /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/Makefile /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/verif/fpga/vps_dvb/Makefile.cfg /p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/makefiles/vps/Makefile.ENV /p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/makefiles/vps/Makefile.fpga.ENV /p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/makefiles/vps/Makefile.common.ENV /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/.dvb_kumarlok/250116.030157_6255/cth_query.envs.mk /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/.dvb_kumarlok/250116.030157_6255/cth_query.envs.mk /p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/makefiles/vps/Makefile.NB.ENV /p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/makefiles/vps/Makefile.vps /p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/makefiles/vps/Makefile.emu /p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/makefiles/vps/Makefile.common /p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/makefiles/vps/Makefile.simics.TB
+FE_REPO_CMD=/usr/intel/bin/git rev-parse --show-toplevel
+LESSOPEN=lessopen.sh %s
+BUILD_MODEL_OUTDIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC
+IWRAPPER_DEPTH=0,1736235167
+NBNAME=vps@zsc7
+INFOPATH=/usr/intel/pkgs/info/LATEST
+NB_JOB_IDS_TRACE=zsc7_ion.122476070 zsc7_ion.122479327 
+NB_CMD_TB=nbjob run --target cth_dvb_kumarlok_sccc16403126 --class "SLES12SP5&&32G"  --log-file-dir /nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output/physs_top/fpga/vps_dvb_vps/build_pss/MMG_PSS_SOC/vps/log/250116.030157 --mode blocking
+DISPLAY=scce04040116.zsc7.intel.com:14
+change_cfg=change.cfg
+PROFPGA_HOME=/p/hdk/rtl/cad/x86-64_linux26/mentor/VPS/2022.12.2/profpga
+NBTARGET=zsc7_normal
+VELCOMP_CUSTOM_TASK_DISTRIB_TOOLS=/p/hdk/cad/dvb/2024.06.fe.DVB.1.3/dvb/scripts/cde
+RTL_PROJ_TOOLS=/p/hdk/rtl/proj_tools
+__NB_USER_LOG_FILE=/dev/null
+CTH_PYTHONPATH=/nfs/site/proj/hdk/pu_tu/prd/liteinfra/1.17/commonFlow/lib/python
+EC_SITECODE=SC
+EC_UNAME=Linux_4.12.14-122.201-default_x86_64
+LESSCLOSE=lessclose.sh %s %s
+DV_TOP=physs_wrap
+STEPPING=mmg800-a0
+PROJ_ARCHIVE=/nfs/site/disks/mmg800_arc_proj_archive
+G_BROKEN_FILENAMES=1
+OUTPUT_DIR=/nfs/site/disks/zsc7.xne_acccip.001/kumarlok/gellakiy/cnic_pss/output
+COLORTERM=1
+EC_ENV_ROOT=/usr/intel/pkgs/eclogin/1.0
+JAVA_ROOT=/usr/lib64/jvm/jre-openjdk

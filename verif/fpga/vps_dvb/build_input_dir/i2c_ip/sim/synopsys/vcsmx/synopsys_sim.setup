@@ -1,0 +1,13 @@
+
+WORK > DEFAULT
+DEFAULT:                              ./libraries/work/                                
+work:                                 ./libraries/work/                                
+altera_i2cslave_to_avlmm_bridge_1915: ./libraries/altera_i2cslave_to_avlmm_bridge_1915/
+i2c_ip:                               ./libraries/i2c_ip/                              
+lpm_ver:                              ./libraries/lpm_ver/                             
+sgate_ver:                            ./libraries/sgate_ver/                           
+altera_ver:                           ./libraries/altera_ver/                          
+altera_mf_ver:                        ./libraries/altera_mf_ver/                       
+altera_lnsim_ver:                     ./libraries/altera_lnsim_ver/                    
+fourteennm_ver:                       ./libraries/fourteennm_ver/                      
+fourteennm_hssi_ver:                  ./libraries/fourteennm_hssi_ver/                 

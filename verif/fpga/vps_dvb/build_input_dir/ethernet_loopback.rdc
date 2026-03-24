@@ -1,0 +1,111 @@
+#set fpga1 MB5_FA1_F2
+
+# Create clocks 
+#create_clock -name refclk125_p1_p  -period 8 [get_ports clk_125mhz]    ;# 125 MHz reference for PCS
+#set_property preserve_period TRUE [get_clocks refclk125_p1_p ]
+
+
+create_clock -name {physs_func_clk} [get_ports {physs_func_clk}] -period {1000.0}
+create_clock -name {soc_per_clk} [get_ports {soc_per_clk}] -period {1000.0}
+#50KhZ
+#create_clock -name {i2c_apb_clk} [get_ports {i2c_apb_clk}] -period {20000.0}
+#2.7Mhz
+#create_clock -name {i2c_apb_clk} [get_ports {i2c_apb_clk}] -period {370}
+create_clock -name {reference_clk} [get_ports {reference_clk}] -period {8.0}
+set_property preserve_period TRUE [get_clocks reference_clk ]
+create_clock -name {rclk_diff_p} [get_ports {rclk_diff_p}] -period {1000.0}
+create_clock -name {rclk_diff_n} [get_ports {rclk_diff_n}] -period {1000.0}
+create_clock -name {physs_intf0_clk} [get_ports {physs_intf0_clk}] -period {1000.0}
+create_clock -name {physs_funcx2_clk} [get_ports {physs_funcx2_clk}] -period {1000.0}
+create_clock -name {timeref_clk} [get_ports {timeref_clk}] -period {1000.0}
+create_reset -name i_reset [get_ports i_reset] -clock [get_clocks reference_clk] -active high
+#create_reset -name i_reset [get_ports i_reset] -clock [get_clocks refclk125_p1_p] -active high
+#create_reset -name i_reset [get_ports i_reset] -clock [get_clocks outclk_0] -active high
+create_reset -name physs_func_rst_raw_n [get_ports physs_func_rst_raw_n] -clock [get_clocks physs_func_clk] -active low
+#create_reset -name physs_func_rst_raw_n [get_ports physs_func_rst_raw_n] -clock [get_clocks refclk125_p1_p] -active low
+
+# Connections Port 1
+
+#create_reset -name i_reset [get_ports i_reset] -clock [get_clocks reference_clk] -active high
+
+set fpga1 MB5_FA1_F2
+create_clock -name refclk125_p1_p  -period 8 [get_ports clk_125mhz ]    ;# 125 MHz reference for PCS
+set_property preserve_period TRUE [get_clocks refclk125_p1_p ]
+
+create_clock -name i2c_apb_clk  -period 370 [get_ports i2c_apb_clk]
+set_property preserve_period TRUE [get_clocks i2c_apb_clk ]
+#create_clock -name {reference_clk} [get_ports {reference_clk}] -period {8.0}
+#create_reset -name i_reset [get_ports i_reset] -clock [get_clocks reference_clk] -active high
+#set_property preserve_period TRUE [get_clocks reference_clk ]
+set_port_assignment [get_ports clk_125mhz ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_1]
+set_port_assignment [get_ports rx_serial_data ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_1]
+set_port_assignment [get_ports tx_serial_data ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_1]
+
+
+set_port_assignment [get_ports I2C_SCL ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SCL]
+set_port_assignment [get_ports I2C_SDA ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SDA]
+set_port_assignment [get_ports I2C_MODSELL ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODSELL]
+set_port_assignment [get_ports I2C_MODPRSL ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODPRSL]
+set_port_assignment [get_ports I2C_INTL ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_INTL]
+set_port_assignment [get_ports I2C_RESETL ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_RESETL]
+set_port_assignment [get_ports I2C_LPMODE ] -protocol_instance_pin [get_hw_protocol_instance_pins $fpga1/mb5_fa1_ta1_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_LPMODE]
+
+set_clock_groups -asynchronous -group [list refclk125_p1_p] -group [list physs_func_clk]
+set_clock_groups -asynchronous -group [list refclk125_p1_p] -group [list soc_per_clk]
+set_clock_groups -asynchronous -group [list refclk125_p1_p] -group [list timeref_clk]
+set_clock_groups -asynchronous -group [list refclk125_p1_p] -group [list physs_funcx2_clk]
+set_clock_groups -asynchronous -group [list refclk125_p1_p] -group [list physs_intf0_clk]
+
+#set_clock_groups -asynchronous -group [list outclk_0] -group [list physs_func_clk]
+#set_clock_groups -asynchronous -group [list outclk_0] -group [list soc_per_clk]
+#set_clock_groups -asynchronous -group [list outclk_0] -group [list timeref_clk]
+#set_clock_groups -asynchronous -group [list outclk_0] -group [list physs_funcx2_clk]
+#set_clock_groups -asynchronous -group [list outclk_0] -group [list physs_intf0_clk]
+#
+
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_INTL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_LPMODE 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_MODPRSL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_MODSELL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_RESETL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_SCL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_A_SDA 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_INTL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_LPMODE 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODPRSL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_MODSELL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_RESETL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SCL 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/P1V8_QSFP_B_SDA 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_N_1
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_N_2
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_N_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_N_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_P_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_P_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_P_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_RX_P_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_N_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_N_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_N_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_N_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_P_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_P_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_P_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_A_TX_P_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_N_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_N_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_N_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_N_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_3 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_RX_P_4 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_N_1 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_N_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_N_3
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_N_4
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_1
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_2 
+#MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_3 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_B_TX_P_4 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_N_0 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_N_1 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_N_2 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_0 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_1 MB1_FA2_F1/fa2_ta2_eb1_DEFAULT_EB_PDS_QSFP+_R1/QSFP_MGT_REFCLK_P_2
+#

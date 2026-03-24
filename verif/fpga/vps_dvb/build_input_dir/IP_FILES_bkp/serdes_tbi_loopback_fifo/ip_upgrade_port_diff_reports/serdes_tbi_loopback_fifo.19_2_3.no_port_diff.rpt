@@ -1,0 +1,23 @@
+IP Ports Diff Report for serdes_tbi_loopback_fifo
+Mon Apr  7 11:01:34 2025
+Quartus Prime Version 23.3.0 Build 104 09/20/2023 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. IP Information
+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; IP Information                                                                                                                                                   ;
++----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; IP Variation Name    ; serdes_tbi_loopback_fifo                                                                                                                  ;
+; Prior Version        ; 19.1.0                                                                                                                                    ;
+; New Version          ; 19.2.3                                                                                                                                    ;
+; New File             ; /nfs/site/disks/xne_tip_0003/urukunda/quartus_20_3_grr/serdes_tbi_loopback_fifo/serdes_tbi_loopback_fifo/synth/serdes_tbi_loopback_fifo.v ;
+; Has Port Differences ; No                                                                                                                                        ;
++----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+

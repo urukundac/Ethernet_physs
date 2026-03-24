@@ -1,0 +1,19 @@
+# system info uhfi_iopll_s10_gen on 2020.02.19.03:39:04
+system_info:
+name,value
+DEVICE,1SG10MHN3F74C2LG_U1
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for uhfi_iopll_s10_gen on 2020.02.19.03:39:04
+files:
+filepath,kind,attributes,module,is_top
+sim/uhfi_iopll_s10_gen.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,uhfi_iopll_s10_gen,true
+altera_iopll_1930/sim/uhfi_iopll_s10_gen_altera_iopll_1930_y2izzey.vo,VERILOG,,uhfi_iopll_s10_gen_altera_iopll_1930_y2izzey,false
+altera_iopll_1930/sim/stratix10_altera_iopll.v,VERILOG,,uhfi_iopll_s10_gen_altera_iopll_1930_y2izzey,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+uhfi_iopll_s10_gen.iopll_0,uhfi_iopll_s10_gen_altera_iopll_1930_y2izzey
