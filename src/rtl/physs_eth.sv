@@ -695,13 +695,13 @@ logic dbg_tx_serial_data;
 wire  [3:0]	pcs_loopback_en;
 
 physs0 physs0(.*);
-assign physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.clk_eth_ref_125mhz = clk_125mhz;
-assign physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reference_clk = reference_clk;
-assign physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.i_reset = i_reset;
-assign physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.rx_serial_data = rx_serial_data;
-assign tx_serial_data = physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.tx_serial_data;
+//assign physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.clk_eth_ref_125mhz = clk_125mhz;
+//assign physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.reference_clk = reference_clk;
+//assign physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.i_reset = i_reset;
+//assign physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.rx_serial_data = rx_serial_data;
+//assign tx_serial_data = physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.tx_serial_data;
 //assign physs0.parquad0.pcs100_wrap_0.quadpcs100_0.U_PCS_TOP.U_SGMII4x_USXGMII4x_INST.U_SGMII_10B_0.sgpcs_ena = 1 ;
-assign physs0.parmquad0.physs_registers_wrapper_0.physs_common_registers_0.pcs100_sgmii0_reg_sg0_sgpcs_ena = 1'b1;
+assign physs_eth.physs0.parmquad0.physs_registers_wrapper_0.physs_common_registers_0.pcs100_sgmii0_reg_sg0_sgpcs_ena = 1;
 
     wire  xcvr_tx_serial_clk0;
     wire  fpll_locked_SGMII;
@@ -715,6 +715,8 @@ assign physs0.parmquad0.physs_registers_wrapper_0.physs_common_registers_0.pcs10
     wire  [31:0]   usr_cntrl_0;
         wire  [3:0]    serdes_loopback_en;
 	
+    wire   rx_serial_data;
+    wire   tx_serial_data;
     wire i_cfg_pcs_loopback;
 
 	   //I2C Interface Signals
@@ -797,6 +799,8 @@ wire            apb_pslverr   ;
 
 //    generate
 //      for (k=0; k<NUM_PORTS; k++) begin : GEN_I2C
+
+assign physs0.parmquad0.physs_registers_wrapper_0.physs_common_registers_0.pcs100_sgmii0_reg_sg0_sgpcs_ena = 1;
 
 assign physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.sg0_sgpcs_ena_s = 1'b1;
 assign physs0.parmquad0.pcs100_wrap_0.quadpcs100_0.sg0_speed_s[1:0] = 2'b10;
